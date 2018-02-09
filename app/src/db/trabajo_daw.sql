@@ -1,0 +1,1 @@
+update jugadores set partidos=1 where id=5;

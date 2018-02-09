@@ -1,0 +1,9 @@
+Order allow,deny
+Allow from all
+
+DirectoryIndex app/view/index.php?page=login
+Options -Indexes
+
+RewriteEngine on
+RewriteRule ^home/$ app/view/index.php?page=home [L]
+
