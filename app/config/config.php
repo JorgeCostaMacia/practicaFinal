@@ -10,7 +10,7 @@ define("_librariesFileNamePHP", ['mensajes']);
 
 /* PATHS LOADER CSS */
 define("_cssPath", 'practicaFinal/public/css/');
-define("_cssFileName", ['bootstrap.min.css', 'style.css']);
+define("_cssFileName", ['bootstrap.min.css', 'style.min.css']);
 
 /* CONECTION PDO*/
 define("_DBTYPE", "mysql");

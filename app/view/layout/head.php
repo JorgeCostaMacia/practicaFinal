@@ -3,6 +3,6 @@
 <meta name="autor" content="Jorge Costa"/>
 <meta name="visewport" content="width=device-width, initial-scale=1">
 
-<? $includesCSS->getLinks(); ?>
+<?php $services->getIncludes()->css(); ?>
 
-<title><?= $page->getTitle(); ?></title>
+<title><?= $services->getPage()->getTitle(); ?></title>

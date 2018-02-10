@@ -5,8 +5,7 @@ class Services {
     private $DBcliente;
     private $DBgestor;
     private $session;
-    private $includesCSS;
-    private $includesJS;
+    private $includes;
     private $sessionIni;
     private $page;
 
@@ -42,20 +41,12 @@ class Services {
         else { return $this->session; }
     }
 
-    public function getIncludesCSS() {
-        if (!$this->includesCSS) {
-            $this->includesCSS = new IncludesCSS();
-            return $this->includesCSS;
+    public function getIncludes() {
+        if (!$this->includes) {
+            $this->includes = new Includes();
+            return $this->includes;
         }
-        else { return $this->includesCSS; }
-    }
-
-    public function getIncludesJS() {
-        if (!$this->includesJS) {
-            $this->includesJS = new IncludesJS();
-            return $this->includesJS;
-        }
-        else { return $this->includesJS; }
+        else { return $this->includes; }
     }
 
     public function getSessionIni() {
