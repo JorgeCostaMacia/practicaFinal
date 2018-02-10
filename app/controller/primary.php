@@ -26,9 +26,6 @@ if($services->getSession()->getUsuario() != null){
 }
 
 /*
-// SI EXISTE GESTOR EN SESION
-// INCLUCE NAV
-// SEGUN PAGE INCLUYE UNA PAGINA
 if(isset($_SESSION['gestor'])) {
     include_once "views/layout/navCliente.php";
     if(isset($_GET["page"])) {
@@ -39,7 +36,4 @@ if(isset($_SESSION['gestor'])) {
         else if($page == "pieza"){ include_once "views/assets/pieza.php"; }
     }
 }
-
-// INCLUYE SCRIPTS JS
-include_once "includes/scriptsJS.php";
 */
