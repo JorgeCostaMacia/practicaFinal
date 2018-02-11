@@ -33,7 +33,7 @@ else if($action === "acceso"){
     $acceso->insertAcceso($connection, $dataContent);
 }
 else if($action === "registro"){
-    $registro = new Registro();
+    $registro = new RegistroCliente();
 
     $registro->selectCliente($connection, $dataContent);
     $registro->selectSolicitud($connection, $dataContent);
@@ -42,5 +42,11 @@ else if($action === "registro"){
         $registro->insertSolicitud($connection, $dataContent);
     }
 }
+else if($action === "update"){
+    $update = new UpdateCliente();
+
+    $update->updateCliente($connection, $dataContent);
+}
+
 
 echo $dataContent->toJson();

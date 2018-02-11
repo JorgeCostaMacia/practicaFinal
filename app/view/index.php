@@ -6,10 +6,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head><?php $services->getIncludes()->phpHead($services); ?></head>      <!-- HEAD -->
+    <head><?php $services->getIncludes()->phpHead($services); ?></head>
     <body>
         <div id="mensajes"></div>
-        <?php $services->getIncludes()->phpPriController($services); ?>   <!-- CONTROLADOR-->
-        <?php $services->getIncludes()->phpFooter(); ?>           <!-- FOOTER -->
+        <?php $services->getIncludes()->phpPriController($services); ?>
+        <?php $services->getIncludes()->phpFooter(); ?>
     </body>
 </html>

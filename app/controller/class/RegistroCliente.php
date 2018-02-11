@@ -1,6 +1,6 @@
 <?php
 
-class Registro {
+class RegistroCliente {
     function selectCliente($connection, $contendData) {
         $result = $connection->select('nick, cif_dni', 'usuarios_cliente', 'WHERE nick="' . trim($_POST["nick"]) . '" OR cif_dni="' . strtoupper(trim($_POST['cif_dni'])) . '"');
         if ($result["success"]) {
