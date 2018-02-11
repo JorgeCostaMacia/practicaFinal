@@ -4,6 +4,8 @@ Allow from all
 DirectoryIndex app/view/index.php?page=login
 Options -Indexes
 
+ErrorDocument 404 "La pagina buscada no existe o no se encuentra disponible"
+
 RewriteEngine on
 RewriteRule ^home/$ app/view/index.php?page=home [L]
 RewriteRule ^logout/$ app/view/index.php?page=logout [L]

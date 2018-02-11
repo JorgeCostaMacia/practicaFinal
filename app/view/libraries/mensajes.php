@@ -1,7 +1,7 @@
 <?php
 function msjDanger($accion, $text){
     echo '<div class="modal fade bd-example-modal-lg" id="warning" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' .
-        '<div class="modal-dialog modal-sm">' .
+        '<div class="modal-dialog modal-lg">' .
         '<div class="modal-content">' .
         '<div class="modal-header modal-header-warning">' .
         '<h1>' . $accion . '</h1>' .

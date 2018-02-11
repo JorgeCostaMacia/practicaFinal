@@ -2,15 +2,20 @@
 
 define("_actualPath", ['', '../', '../../', '../../../', '../../../../', '../../../../../']);
 
-/* PATHS LOADER PHP */
+/* PATHS PHP */
 define("_controllerPathPHP", ['app/controller/class/']);
 define("_modelPathPHP", ['app/model/db/', 'app/model/entities/', 'app/model/session/']);
 define("_librariesPathPHP", ['app/libraries/', 'app/view/libraries/']);
 define("_librariesFileNamePHP", ['mensajes']);
 
-/* PATHS LOADER CSS */
+/* PATHS CSS */
 define("_cssPath", 'practicaFinal/public/css/');
-define("_cssFileName", ['bootstrap.min.css', 'style.min.css']);
+define("_cssFileName", ['bootstrap.min', 'style.min']);
+
+/* PATHS JS */
+define("_jsPath", 'public/js/');
+define("_jsJquery", 'jquery-3.3.1.min');
+define("jsBootstrap", 'bootstrap.min');
 
 /* CONECTION PDO*/
 define("_DBTYPE", "mysql");

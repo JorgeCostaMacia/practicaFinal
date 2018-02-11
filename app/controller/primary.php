@@ -14,6 +14,9 @@ if($services->getSession()->getUsuario() == null && !isset($_POST["nick"]) && !i
 else if(isset($_POST["nick"]) && isset($_POST["password"])) {
     $services->getSession()->setUsuario($services->getSessionIni()->ini());
 }
+else if($services->getSession()->getUsuario() == null){
+    $services->getPage()->redirectLogin();
+}
 
 if($services->getSession()->getUsuario() != null){
     if($services->getPage()->getPage() != 'login'){
@@ -25,15 +28,11 @@ if($services->getSession()->getUsuario() != null){
             $services->getIncludes()->phpDatosCliente($services);
             $services->getIncludes()->jsDatosCliente();
         }
-
+        else if($services->getPage()->getPage() === 'realizarPedidosCliente'){
+            $services->getIncludes()->phpPedidosCliente($services);
+            $services->getIncludes()->jsPedidosCliente();
+        }
 
     }
     else if($services->getPage()->getPage() === 'login'){ $services->getPage()->redirectHome();}
-
-
-
-
-
-
-
 }

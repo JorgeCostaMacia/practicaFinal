@@ -1,7 +1,7 @@
 <div id="page-content-wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-lg-11 col-lg-offset-1">
+            <div class="col-lg-12">
                 <div class="container" id="formAcountContainer">
                     <form id="formGetAccount" method="POST" class="col-md-6 col-md-offset-2 panel panel-default">
                         <input type="hidden" name="usuario" value="cliente">
@@ -16,8 +16,6 @@
                                 <input type="text" name="cod_cliente" id="cod_cliente" maxlength="30" class="form-control" placeholder="Nick" aria-describedby="sizing-addon1" value="<?=$services->getSession()->getUsuario()->getCodCliente();?>" required disabled>
                             </div>
                             <br>
-
-
                             <div class="input-group input-group-lg">
                 <span class="input-group-addon "><i class="fa fa-user" aria-hidden="true">
                         <span class="glyphicon glyphicon-user"></span>
