@@ -2,29 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e713c46a-2ebf-45c8-858a-63d755f86ffd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/app/model/entities/Actividad.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/app/model/entities/Albaranes.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/app/model/entities/Articulos.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/app/model/entities/Facturas.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/app/model/entities/Lineas_albaranes.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/app/model/entities/Lineas_facturas.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/app/model/entities/Lineas_pedidos.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/app/model/entities/Pedidos.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/app/model/entities/Solicitudes.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/app/model/entities/Usuarios_cliente.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/app/model/entities/Usuarios_gestion.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/app/model/session/DataContent.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/app/model/session/Session.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/model/entities/Albaranes.php" afterPath="$PROJECT_DIR$/app/model/entities/Albaranes.php" />
-      <change beforePath="$PROJECT_DIR$/app/model/entities/Facturas.php" afterPath="$PROJECT_DIR$/app/model/entities/Facturas.php" />
-      <change beforePath="$PROJECT_DIR$/app/model/entities/Pedidos.php" afterPath="$PROJECT_DIR$/app/model/entities/Pedidos.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/datosCliente.php" afterPath="$PROJECT_DIR$/app/view/assets/datosCliente.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/navCliente.php" afterPath="$PROJECT_DIR$/app/view/assets/navCliente.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/navGestor.php" afterPath="$PROJECT_DIR$/app/view/assets/navGestor.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/pedidosCliente.php" afterPath="$PROJECT_DIR$/app/view/assets/pedidosCliente.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/index.php" afterPath="$PROJECT_DIR$/app/view/index.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/layout/head.php" afterPath="$PROJECT_DIR$/app/view/layout/head.php" />
       <change beforePath="$PROJECT_DIR$/public/sinMin/css/style.css" afterPath="$PROJECT_DIR$/app/sinMin/public/css/style.css" />
       <change beforePath="$PROJECT_DIR$/public/sinMin/datosCliente/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/app/sinMin/public/datosCliente/controller/class/Ajax.js" />
       <change beforePath="$PROJECT_DIR$/public/sinMin/datosCliente/controller/class/Update.js" afterPath="$PROJECT_DIR$/app/sinMin/public/datosCliente/controller/class/Update.js" />
@@ -60,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/app/controller/primary.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+              <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -101,7 +78,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="101">
               <caret line="13" column="157" lean-forward="false" selection-start-line="13" selection-start-column="157" selection-end-line="13" selection-end-column="157" />
-              <folding />
+              <folding>
+                <marker date="1518420019000" expanded="true" signature="1903:1926" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,7 +90,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-              <folding />
+              <folding>
+                <marker date="1518420014000" expanded="true" signature="254:279" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -271,15 +252,15 @@
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="model" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
@@ -293,6 +274,11 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="layout" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -318,10 +304,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/sinMin/public" />
+      <recent name="$PROJECT_DIR$/app/sinMin/public/css" />
       <recent name="$PROJECT_DIR$/public/sinMin/login/controller" />
       <recent name="$PROJECT_DIR$/public/sinMin/login" />
       <recent name="$PROJECT_DIR$/public/sinMin/datosCliente/controller/class" />
-      <recent name="$PROJECT_DIR$/public/sinMin/datosCliente/controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -363,12 +349,12 @@
       <workItem from="1518364481545" duration="36000" />
       <workItem from="1518364685665" duration="344000" />
       <workItem from="1518367371261" duration="10451000" />
-      <workItem from="1518418519158" duration="1349000" />
+      <workItem from="1518418519158" duration="1504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35339000" />
+    <option name="totallyTimeSpent" value="35494000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -750,7 +736,7 @@
     <entry file="file://$PROJECT_DIR$/app/controller/primary.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <caret line="8" column="30" lean-forward="false" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -759,7 +745,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
           <caret line="13" column="157" lean-forward="false" selection-start-line="13" selection-start-column="157" selection-end-line="13" selection-end-column="157" />
-          <folding />
+          <folding>
+            <marker date="1518420019000" expanded="true" signature="1903:1926" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -767,7 +755,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="21" lean-forward="false" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
+          <folding>
+            <marker date="1518420014000" expanded="true" signature="254:279" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
