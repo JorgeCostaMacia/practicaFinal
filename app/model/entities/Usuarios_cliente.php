@@ -11,7 +11,7 @@ class Usuarios_cliente {
     private $telefono;
     private $nick;
     private $password;
-    private $activo;
+    private $estado;
 
     public function getCodCliente(){return $this->cod_cliente;}
     public function setCodCliente($cod_cliente){$this->cod_cliente = $cod_cliente;}
@@ -43,6 +43,6 @@ class Usuarios_cliente {
     public function getPassword(){return $this->password;}
     public function setPassword($password){$this->password = $password;}
 
-    public function getActivo(){return $this->activo;}
-    public function setActivo($activo){$this->activo = $activo;}
+    public function getEstado(){return $this->estado;}
+    public function setEstado($estado){$this->estado = $estado;}
 }

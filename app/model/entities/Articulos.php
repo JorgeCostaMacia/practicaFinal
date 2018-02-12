@@ -7,7 +7,7 @@ class Articulos {
     private $precio;
     private $descuento;
     private $iva;
-    private $activo;
+    private $estado;
 
     public function getCodArticulo() { return $this->cod_articulo; }
     public function setCodArticulo($cod_articulo) { $this->cod_articulo = $cod_articulo; }
@@ -27,6 +27,6 @@ class Articulos {
     public function getIva() { return $this->iva; }
     public function setIva($iva) { $this->iva = $iva; }
 
-    public function getActivo() { return $this->activo; }
-    public function setActivo($activo) { $this->activo = $activo; }
+    public function getEstado() { return $this->estado; }
+    public function setEstado($estado) { $this->estado = $estado; }
 }

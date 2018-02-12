@@ -7,6 +7,9 @@ define("_controllerPathPHP", ['app/controller/class/']);
 define("_modelPathPHP", ['app/model/db/', 'app/model/entities/', 'app/model/session/']);
 define("_librariesPathPHP", ['app/libraries/', 'app/view/libraries/']);
 define("_librariesFileNamePHP", ['mensajes']);
+define("_assetsPathPHP", 'assets/');
+define("_layoutsPathPHP", 'layout/');
+
 
 /* PATHS CSS */
 define("_cssPath", 'practicaFinal/public/css/');

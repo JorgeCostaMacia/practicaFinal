@@ -18,28 +18,37 @@ class Includes {
 
     function jsLogin(){
         $this->jsComun();
-        echo '<script src="public/js/login.min.js"></script>';
+        echo '<script src="' . _jsPath . 'login.min.js"></script>';
     }
     function jsHome(){
         $this->jsComun('../');
-        echo  '<script src="../public/js/home.min.js"></script>';
+        echo  '<script src="../' . _jsPath . 'home.min.js"></script>';
     }
     function jsDatosCliente(){
         $this->jsComun('../');
-        echo '<script src="../public/js/datosCliente.min.js"></script>';
+        echo '<script src="../' . _jsPath . 'datosCliente.min.js"></script>';
     }
     function jsPedidosCliente(){
         $this->jsComun('../');
     }
+    function jsRealizarPedidosCliente(){
+        $this->jsComun('../');
+        echo   '<script src="../public/realizarPedidosCliente/view/mensajes.js"></script>' .
+            '<script src="../public/realizarPedidosCliente/view/realizarPedidosCliente.js"></script>' .
+            '<script src="../public/realizarPedidosCliente/controller/class/Ajax.js"></script>' .
+            '<script src="../public/realizarPedidosCliente/controller/class/RealizarPedidosCliente.js"></script>' .
+            '<script src="../public/realizarPedidosCliente/controller/realizarPedidosCliente.js"></script>' .
+            '<script src="../public/realizarPedidosCliente/controller/ini.js"></script>';
+    }
 
-
-    function phpHead($services){ include_once "layout/head.php"; }
+    function phpHead($services){ include_once _layoutsPathPHP . "head.php"; }
     function phpPriController($services){ include_once "../controller/primary.php"; }
-    function phpFooter(){ include_once "layout/footer.php"; }
+    function phpFooter(){ include_once _layoutsPathPHP . "footer.php"; }
 
-    function phpLogin(){ include_once "assets/login.php";}
-    function phpNavCliente($services){ include_once "assets/navCliente.php";}
-    function phpNavGestor($services){ include_once "assets/navGestor.php";}
-    function phpDatosCliente($services){ include_once "assets/datosCliente.php"; }
-    function phpPedidosCliente($services){include_once "assets/pedidosCliente.php";}
+    function phpLogin(){ include_once _assetsPathPHP . "login.php";}
+    function phpNavCliente($services){ include_once _assetsPathPHP . "navCliente.php";}
+    function phpNavGestor($services){ include_once _assetsPathPHP . "navGestor.php";}
+    function phpDatosCliente($services){ include_once _assetsPathPHP . "datosCliente.php"; }
+    function phpPedidosCliente($services){include_once _assetsPathPHP . "pedidosCliente.php";}
+    function phpRealizarPedidosCliente($services){include_once _assetsPathPHP . "RealizarPedidosCliente.php";}
 }

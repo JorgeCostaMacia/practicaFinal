@@ -29,6 +29,10 @@ if($services->getSession()->getUsuario() != null){
             $services->getIncludes()->jsDatosCliente();
         }
         else if($services->getPage()->getPage() === 'realizarPedidosCliente'){
+            $services->getIncludes()->phpRealizarPedidosCliente($services);
+            $services->getIncludes()->jsRealizarPedidosCliente();
+        }
+        else if($services->getPage()->getPage() === 'pedidosCliente'){
             $services->getIncludes()->phpPedidosCliente($services);
             $services->getIncludes()->jsPedidosCliente();
         }

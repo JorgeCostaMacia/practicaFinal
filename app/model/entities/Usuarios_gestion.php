@@ -5,7 +5,7 @@ class Usuarios_gestion {
     private $nombre_completo;
     private $nick;
     private $password;
-    private $activo;
+    private $estado;
 
     public function getCodGestor(){return $this->cod_gestor;}
     public function setCodGestor($cod_gestor){$this->cod_gestor = $cod_gestor;}
@@ -19,6 +19,6 @@ class Usuarios_gestion {
     public function getPassword(){return $this->password;}
     public function setPassword($password){$this->password = $password;}
 
-    public function getActivo(){return $this->activo;}
-    public function setActivo($activo){$this->activo = $activo;}
+    public function getEstado(){return $this->estado;}
+    public function setEstado($estado){$this->estado = $estado;}
 }

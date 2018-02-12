@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <form class="col-lg-3 col-md-3 col-sm-12 col-xs-12 navbar-right text-center">
+                <form class="col-lg-2 col-md-2 col-sm-12 col-xs-12 navbar-right text-center">
                     <select class="form-control">
                         <option>cod_articulo</option>
                         <option>nombre</option>
@@ -13,12 +13,12 @@
                     <input placeholder="Buscar articulo" class="form-control" type="text" maxlength="30" />
                     <button type="button" class="btn btn-primary btn-block"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
                     <ul class="pagination">
-                        <li class="page-item disabled"><a class="page-link" href="#">Anterior</a></li>
-                        <li class="page-item disabled"><a class="page-link" href="#">0</a></li>
-                        <li class="page-item"><a class="page-link" href="#">Siguiente</a></li>
+                        <li class="page-item disabled"><button type="button" class="page-link" id="anterior">Anterior</button></li>
+                        <li class="page-item disabled"><button type="button" class="page-link" name="pageActual" id="pageActual" value="0">0</button></li>
+                        <li class="page-item"><button type="button" class="page-link" id="siguiente">Siguiente</button></li>
                     </ul>
                 </form>
-                <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                     <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>

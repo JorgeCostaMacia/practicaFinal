@@ -1,6 +1,6 @@
 <?php
 
-class dataContent {
+class DataContent {
     private $success;
     private $accesos;
     private $actividad;
