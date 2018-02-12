@@ -24,4 +24,7 @@ class Page {
     function redirectLogin(){
         echo '<script>window.location.assign("../"); </script>';
     }
+    function redirectCheckLogin(){
+        echo '<script> if(window.location.href.split("practicaFinal/")[1] != ""){window.location.assign("../");}</script>';
+    }
 }

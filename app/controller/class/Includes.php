@@ -30,6 +30,14 @@ class Includes {
     }
     function jsPedidosCliente(){
         $this->jsComun('../');
+        echo '<script src="../public/pedidosCliente/controller/class/Ajax.js"></script>';
+        echo '<script src="../public/pedidosCliente/controller/class/pedidosCliente.js"></script>';
+        echo '<script src="../public/pedidosCliente/libraries/typeValidate.js"></script>';
+        echo '<script src="../public/pedidosCliente/view/mensajes.js"></script>';
+        echo '<script src="../public/pedidosCliente/view/pedidosCliente.js"></script>';
+        echo '<script src="../public/pedidosCliente/controller/inputsHandler.js"></script>';
+        echo '<script src="../public/pedidosCliente/controller/pedidosCliente.js"></script>';
+        echo '<script src="../public/pedidosCliente/controller/ini.js"></script>';
     }
     function jsRealizarPedidosCliente(){
         $this->jsComun('../');

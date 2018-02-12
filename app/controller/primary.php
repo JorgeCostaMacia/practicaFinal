@@ -1,13 +1,12 @@
 <?php
 if($services->getPage()->getPage() == "logout"){
     $services->getSession()->destroy();
-    $services->getIncludes()->phpLogin();
-    $services->getIncludes()->jsLogin();
     $services->getPage()->redirectLogin();
 }
 
 if($services->getSession()->getUsuario() == null && !isset($_POST["nick"]) && !isset($_POST["password"]) ) {
     $services->getSession()->destroy();
+    $services->getPage()->redirectCheckLogin();
     $services->getIncludes()->phpLogin();
     $services->getIncludes()->jsLogin();
 }
