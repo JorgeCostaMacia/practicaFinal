@@ -13,4 +13,19 @@ class RealizarPedidosCliente {
             $dataContent->addErrores($result["error"]);
         }
     }
+
+    function insertArticulos($connection, $dataContent){
+        $result = $connection->select('*', 'articulos', 'WHERE estado="activo"');
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+            $aux = $connection->format_select_Object($result["result"], 'Articulos');
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error durante el registro"));
+            $dataContent->addErrores($result["error"]);
+        }
+
+    }
+
 }

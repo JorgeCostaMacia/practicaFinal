@@ -1,0 +1,5 @@
+USUARIO CLIENTE
+insert into usuarios_cliente VALUES(1,"74370738p", "Jorge Costa Macia", "jorge.sa", "jorge", "Elche", "jorge@gmail.com", "671840402", "jorgejorge", "jorgejorge", "activo")
+
+ARTICULO
+insert into articulos VALUES(1, "articulo1", "articulo1", 1,0.5,0.21,"activo")

@@ -17,7 +17,7 @@ class Session {
             $this->dataContent = &$_SESSION["dataContent"];
         }
         else {
-            $_SESSION["dataContent"] = new dataContent();
+            $_SESSION["dataContent"] = new DataContent();
             $this->dataContent = &$_SESSION["dataContent"];
         }
     }

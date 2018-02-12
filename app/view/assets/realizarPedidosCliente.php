@@ -15,8 +15,10 @@
                     </select>
                     <input name="textSearch" placeholder="Buscar articulo" class="form-control" type="text" maxlength="30" />
                     <button type="button" id="search" class="btn btn-primary btn-block"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    <button type="button" id="procesar" class="btn btn-warning btn-block" disabled><span class="icon glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
                 </form>
                 <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+                    <form id="formPedido" name="formPedido">
                     <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
@@ -30,11 +32,11 @@
                                 <th>cantidad</th>
                             </tr>
                             </thead>
-                            <tbody>
-                                <form id="formPedido"></form>
+                            <tbody id="tbody">
                             </tbody>
                         </table>
                     </div>
+                    </form>
                 </div>
             </div>
         </div>

@@ -1,16 +1,16 @@
 <?php
 
 class RegistroCliente {
-    function selectCliente($connection, $contendData) {
+    function selectCliente($connection, $dataContent) {
         $result = $connection->select('nick, cif_dni', 'usuarios_cliente', 'WHERE nick="' . trim($_POST["nick"]) . '" OR cif_dni="' . strtoupper(trim($_POST['cif_dni'])) . '"');
         if ($result["success"]) {
-            $contendData->setSuccess(true);
-            $contendData->setUsuariosCliente($connection->format_select_Object($result["result"], 'Usuarios_cliente'));
+            $dataContent->setSuccess(true);
+            $dataContent->setUsuariosCliente($connection->format_select_Object($result["result"], 'Usuarios_cliente'));
         }
         else {
-            $contendData->setSuccess(false);
-            $contendData->addErrores(new DBerror("Se produjo un error durante el registro"));
-            $contendData->addErrores($result["error"]);
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error durante el registro"));
+            $dataContent->addErrores($result["error"]);
         }
     }
     function selectSolicitud($connection, $contendData){

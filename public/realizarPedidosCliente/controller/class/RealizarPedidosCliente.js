@@ -2,8 +2,41 @@
 
 class RealizarPedidosCliente{
     getParameterSearchArticulos(){
-        let parameter = 'action=' + 'searchArticulos&';
+        let parameter = 'action=' + 'searchArticulosCliente&';
         parameter += $("#formSearch").serialize();
         return parameter;
     }
+    getParameterProcesarArticulos(){
+        let parameter = 'action=' + 'procesarArticulosCliente';
+        for(let i = 0; i < articulos.length; i++){
+            if($("#cod_articulo-" + articulos[i]["cod_articulo"]).val() != 0){
+                parameter += '&cod_articulo-' + articulos[i]["cod_articulo"] + '=' + $('#cod_articulo-' + articulos[i]["cod_articulo"]).val();
+            }
+        }
+        return parameter;
+    }
+
+    evalInputsCantidades(){
+        let result = [];
+        result['success'] = true;
+        result['errores'] = [];
+        for(let i = 0; i < articulos.length; i++){
+            if(!validateCantidad($('#cod_articulo-' + articulos[i]["cod_articulo"]).val())) {
+                result['success'] = false;
+                result['errores'].push(articulos[i]["cod_articulo"] + ' - ' + articulos[i]["nombre"]);
+            }
+        }
+
+        return result;
+    }
+
+    getTextErrorCantidades(errores){
+        let errorText = "<strong>Los siguientes articulos tienen un formato de cantidades incorrectas</strong><br>";
+        for(let i = 0; i < errores.length; i++){
+            errorText += errores[i];
+        }
+
+        return errorText;
+    }
+
 }

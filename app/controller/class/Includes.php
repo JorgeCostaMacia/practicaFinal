@@ -35,6 +35,8 @@ class Includes {
         $this->jsComun('../');
         echo   '<script src="../public/realizarPedidosCliente/view/mensajes.js"></script>' .
             '<script src="../public/realizarPedidosCliente/view/realizarPedidosCliente.js"></script>' .
+            '<script src="../public/realizarPedidosCliente/libraries/typeValidate.js"></script>' .
+            '<script src="../public/realizarPedidosCliente/controller/inputsHandler.js"></script>' .
             '<script src="../public/realizarPedidosCliente/controller/class/Ajax.js"></script>' .
             '<script src="../public/realizarPedidosCliente/controller/class/RealizarPedidosCliente.js"></script>' .
             '<script src="../public/realizarPedidosCliente/controller/realizarPedidosCliente.js"></script>' .

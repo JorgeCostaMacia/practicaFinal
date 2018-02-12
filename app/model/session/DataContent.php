@@ -207,6 +207,7 @@ class DataContent {
          foreach($this->actividad as $_actividad){
             $aux = [];
             $aux["cod_actividad"] = $_actividad->getCodActividad();
+
             $aux["tipo_usuario"] = $_actividad->getTipoUsuario();
             $aux["cod_gestor"] = $_actividad->getCodGestor();
             $aux["cod_cliente"] = $_actividad->getCodCliente();
@@ -236,7 +237,7 @@ class DataContent {
             $aux["precio"] = $articulo->getPrecio();
             $aux["descuento"] = $articulo->getDescuento();
             $aux["iva"] = $articulo->getIva();
-            $aux["activo"] = $articulo->getActivo();
+            $aux["estado"] = $articulo->getEstado();
             $returned["articulos"][] = $aux;
         }
 
@@ -322,7 +323,7 @@ class DataContent {
             $aux["telefono"] = $usuario_cliente->getTelefono();
             $aux["nick"] = $usuario_cliente->getNick();
             $aux["password"] = $usuario_cliente->getPassword();
-            $aux["activo"] = $usuario_cliente->getActivo();
+            $aux["estado"] = $usuario_cliente->getEstado();
             $returned["usuarios_cliente"][] = $aux;
         }
 
@@ -332,7 +333,7 @@ class DataContent {
             $aux["nombre_completo"] = $usuario_gestion->getNombreCompleto();
             $aux["nick"] = $usuario_gestion->getNick();
             $aux["password"] = $usuario_gestion->getPassword();
-            $aux["activo"] = $usuario_gestion->getActivo();
+            $aux["estado"] = $usuario_gestion->getEstado();
             $returned["usuarios_gestion"][] = $aux;
         }
 

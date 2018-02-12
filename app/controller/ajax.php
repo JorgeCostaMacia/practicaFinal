@@ -2,7 +2,7 @@
 
 include_once "../config/loader.php";
 
-$dataContent = new dataContent();
+$dataContent = new DataContent();
 $services = new Services();
 
 $action = $_POST["action"];
@@ -47,6 +47,16 @@ else if($action === "update"){
 
     $update->updateCliente($connection, $dataContent);
 }
+else if($action === "searchArticulosCliente"){
+    $realizarPedidosCliente = new RealizarPedidosCliente();
+    $realizarPedidosCliente->selectArticulos($connection, $dataContent);
+}
+else if($action === "procesarArticulosCliente"){
+    $realizarPedidosCliente = new RealizarPedidosCliente();
+   // $realizarPedidosCliente->insertArticulos($connection, $dataContent);
 
+}
 
+header('Content-Type',  'application/json; charset=utf-8');
+header('Content-Encoding',  'gzip');
 echo $dataContent->toJson();
