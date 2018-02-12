@@ -53,8 +53,7 @@ else if($action === "searchArticulosCliente"){
 }
 else if($action === "procesarArticulosCliente"){
     $realizarPedidosCliente = new RealizarPedidosCliente();
-   // $realizarPedidosCliente->insertArticulos($connection, $dataContent);
-
+    $realizarPedidosCliente->insertArticulos($connection, $dataContent);
 }
 
 header('Content-Type',  'application/json; charset=utf-8');

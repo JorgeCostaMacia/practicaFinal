@@ -3,8 +3,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <form id="formSearch" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 navbar-right text-center">
-                    <input type="hidden" name="usuario" value="cliente">
-                    <input type="hidden" name="cod_cliente" value="<?= $services->getSession()->getUsuario()->getCodCliente(); ?>">
+                    <input type="hidden" id="usuario" name="usuario" value="cliente">
+                    <input type="hidden" id="cod_cliente" name="cod_cliente" value="<?= $services->getSession()->getUsuario()->getCodCliente(); ?>">
                     <select name="campSearch" class="form-control">
                         <option value="cod_articulo">Codigo articulo</option>
                         <option value="nombre">Nombre</option>
@@ -19,7 +19,7 @@
                 </form>
                 <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                     <form id="formPedido" name="formPedido">
-                    <div class="table-responsive">
+                        <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
                             <tr>

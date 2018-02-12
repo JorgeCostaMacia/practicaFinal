@@ -263,6 +263,15 @@ abstract class DBquery {
         return $result;
     }
 
+    public function startTransaction(){
+        $this->connection->beginTransaction();
+    }
+
+    public function endTransaction($result){
+        if(!$result['success']){ $this->connection->rollback(); }
+        else { $this->connection->commit(); }
+    }
+
     public function transaction($querys){
         $result = [];
         $result['success'] = true;

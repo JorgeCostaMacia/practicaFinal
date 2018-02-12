@@ -34,5 +34,8 @@ function evalCantidades(){
 }
 
 function callBackEvalCantidades(result){
-
+    if(!result["success"]){
+        msjDanger("PROCESAR", result["errores"][0]["errMessage"]);
+    }
+    else { msjSucces("PROCESAR", "<strong>Se han procesado correctamente sus pedidos</strong>")}
 }

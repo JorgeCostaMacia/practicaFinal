@@ -7,7 +7,7 @@ class RealizarPedidosCliente{
         return parameter;
     }
     getParameterProcesarArticulos(){
-        let parameter = 'action=' + 'procesarArticulosCliente';
+        let parameter = 'action=' + 'procesarArticulosCliente&usuario=' + $('#usuario').val() + '&cod_cliente=' + $('#cod_cliente').val();
         for(let i = 0; i < articulos.length; i++){
             if($("#cod_articulo-" + articulos[i]["cod_articulo"]).val() != 0){
                 parameter += '&cod_articulo-' + articulos[i]["cod_articulo"] + '=' + $('#cod_articulo-' + articulos[i]["cod_articulo"]).val();

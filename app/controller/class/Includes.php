@@ -33,14 +33,7 @@ class Includes {
     }
     function jsRealizarPedidosCliente(){
         $this->jsComun('../');
-        echo   '<script src="../public/realizarPedidosCliente/view/mensajes.js"></script>' .
-            '<script src="../public/realizarPedidosCliente/view/realizarPedidosCliente.js"></script>' .
-            '<script src="../public/realizarPedidosCliente/libraries/typeValidate.js"></script>' .
-            '<script src="../public/realizarPedidosCliente/controller/inputsHandler.js"></script>' .
-            '<script src="../public/realizarPedidosCliente/controller/class/Ajax.js"></script>' .
-            '<script src="../public/realizarPedidosCliente/controller/class/RealizarPedidosCliente.js"></script>' .
-            '<script src="../public/realizarPedidosCliente/controller/realizarPedidosCliente.js"></script>' .
-            '<script src="../public/realizarPedidosCliente/controller/ini.js"></script>';
+        echo   '<script src="../' . _jsPath . 'realizarPedidosCliente.min.js"></script>';
     }
 
     function phpHead($services){ include_once _layoutsPathPHP . "head.php"; }
