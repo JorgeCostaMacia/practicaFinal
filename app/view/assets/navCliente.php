@@ -3,7 +3,7 @@
 
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
         <ul class="nav sidebar-nav">
-            <li class="sidebar-brand"><a href="../datosCliente/"><?php echo $services->getSession()->getUsuario()->getNombreCompleto(); ?></a></li>
+            <li class="sidebar-brand"><a href="../datosCliente/"><?php echo $dependency->getSession()->getUsuario()->getNombreCompleto(); ?></a></li>
             <li><a href="../home/">Home</a></li>
             <li><a href="../realizarPedidosCliente/">Realizar pedidos</a></li>
             <li><a href="../pedidosCliente/">Pedidos</a></li>

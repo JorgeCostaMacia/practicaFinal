@@ -2,60 +2,25 @@
 
 include_once "../config/loader.php";
 
-$dataContent = new DataContent();
-$services = new Services();
+$ajax = new Ajax();
+$dependency = new Dependency();
 
 $action = $_POST["action"];
 $usuario = $_POST["usuario"];
 
-if($usuario == "cliente"){ $connection = $services->getDBcliente(); }
-else if($usuario == "gestor"){ $connection = $services->getDBgestor(); }
-else if($usuario == "limitado"){ $connection = $services->getDBlimitado(); }
+if($usuario == "cliente"){ $connection = $dependency->getDBcliente(); }
+else if($usuario == "gestor"){ $connection = $dependency->getDBgestor(); }
+else if($usuario == "limitado"){ $connection = $dependency->getDBlimitado(); }
 
-if($connection->connection instanceof DBError){
-    $dataContent->setSuccess(false);
-    $dataContent->addErrores($connection->connection);
-    echo $dataContent->toJson();
-    die();
-}
-
-if($action === "login"){
-    $login = new Login();
-
-    if($usuario === "cliente"){ $login->selectCliente($connection, $dataContent); }
-    else if($usuario === "gestor"){ $login->selectGestion($connection, $dataContent); }
-}
-else if($action === "acceso"){
-    $login = new Login();
-    $acceso = new Acceso();
-
-    $login->selectGestion($connection, $dataContent);
-    $acceso->insertAcceso($connection, $dataContent);
-}
-else if($action === "registro"){
-    $registro = new RegistroCliente();
-
-    $registro->selectCliente($connection, $dataContent);
-    $registro->selectSolicitud($connection, $dataContent);
-
-    if(count($dataContent->getUsuariosCliente()) === 0 && count($dataContent->getSolicitudes()) === 0){
-        $registro->insertSolicitud($connection, $dataContent);
-    }
-}
-else if($action === "update"){
-    $update = new UpdateCliente();
-
-    $update->updateCliente($connection, $dataContent);
-}
-else if($action === "searchArticulosCliente"){
-    $realizarPedidosCliente = new RealizarPedidosCliente();
-    $realizarPedidosCliente->selectArticulos($connection, $dataContent);
-}
-else if($action === "procesarArticulosCliente"){
-    $realizarPedidosCliente = new RealizarPedidosCliente();
-    $realizarPedidosCliente->insertArticulos($connection, $dataContent);
-}
+$ajax->checkConnection($connection);
+if($action === "login"){ $ajax->login($usuario, $connection);}
+else if($action === "acceso"){ $ajax->acceso($connection);}
+else if($action === "registro"){$ajax->registro($connection);}
+else if($action === "update"){ $ajax->updateUsuario($connection);}
+else if($action === "searchArticulosCliente"){$ajax->searchArticulosCliente($connection);}
+else if($action === "procesarArticulosCliente"){$ajax->procesarArticulosCliente($connection);}
+else if($action === "searchPedidosCliente"){$ajax->searchPedidosCliente($connection); }
 
 header('Content-Type',  'application/json; charset=utf-8');
 header('Content-Encoding',  'gzip');
-echo $dataContent->toJson();
+echo $ajax->getDataContent()->toJson();

@@ -1,15 +1,15 @@
 <?php
     include_once "../config/loader.php";
-    $services = new Services();
-    $services->getSession();
-?>
+    $dependency = new Dependency();
+    $dependency->getSession();
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
-    <head><?php $services->getIncludes()->phpHead($services); ?></head>
+    <head><?php $dependency->getIncludes()->phpHead($dependency); ?></head>
     <body>
         <div id="mensajes"></div>
-        <?php $services->getIncludes()->phpPriController($services); ?>
-        <?php $services->getIncludes()->phpFooter(); ?>
+        <?php $dependency->getIncludes()->phpPriController($dependency); ?>
+        <?php $dependency->getIncludes()->phpFooter(); ?>
     </body>
 </html>

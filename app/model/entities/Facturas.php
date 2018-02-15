@@ -6,7 +6,8 @@ class Facturas {
     private $fecha;
     private $descuento;
     private $concepto;
-    private $countLineas;
+    private $estado;
+    private $lineas;
 
     public function getCodFactura() { return $this->cod_factura; }
     public function setCodFactura($cod_factura) { $this->cod_factura = $cod_factura; }
@@ -23,6 +24,9 @@ class Facturas {
     public function getConcepto() { return $this->concepto; }
     public function setConcepto($concepto) { $this->concepto = $concepto; }
 
-    public function getCountLineas(){return $this->countLineas;}
-    public function setCountLineas($_countLineas){$this->countLineas = $_countLineas;}
+    public function getEstado(){return $this->estado;}
+    public function setEstado($estado){$this->estado = $estado;}
+
+    public function getLineas(){return $this->lineas;}
+    public function setLineas($_lineas){$this->lineas = $_lineas;}
 }

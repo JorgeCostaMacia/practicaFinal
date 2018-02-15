@@ -5,7 +5,8 @@ class Albaranes {
     private $cod_cliente;
     private $fecha;
     private $concepto;
-    private $countLineas;
+    private $estado;
+    private $lineas;
 
     public function getCodAlbaran() { return $this->cod_albaran; }
     public function setCodAlbaran($cod_albaran) { $this->cod_albaran = $cod_albaran; }
@@ -19,6 +20,9 @@ class Albaranes {
     public function getConcepto() { return $this->concepto; }
     public function setConcepto($concepto) { $this->concepto = $concepto; }
 
-    public function getCountLineas(){return $this->countLineas;}
-    public function setCountLineas($_countLineas){$this->countLineas = $_countLineas;}
+    public function getEstado(){return $this->estado;}
+    public function setEstado($estado){$this->estado = $estado;}
+
+    public function getLineas(){return $this->lineas;}
+    public function setLineas($_lineas){$this->lineas = $_lineas;}
 }

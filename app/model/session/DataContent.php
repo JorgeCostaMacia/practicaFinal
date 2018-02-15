@@ -204,18 +204,15 @@ class DataContent {
             $returned["accesos"][] = $aux;
         }
 
-         foreach($this->actividad as $_actividad){
+        foreach($this->actividad as $_actividad){
             $aux = [];
             $aux["cod_actividad"] = $_actividad->getCodActividad();
-
+            $aux["cod_usuario"] = $_actividad->getCodUsuario();
             $aux["tipo_usuario"] = $_actividad->getTipoUsuario();
-            $aux["cod_gestor"] = $_actividad->getCodGestor();
-            $aux["cod_cliente"] = $_actividad->getCodCliente();
-            $aux["accion"] = $_actividad->getAccion();
+            $aux["cod_tabla"] = $_actividad->getCodTabla();
+            $aux["cod_linea"] = $_actividad->getCodLinea();
             $aux["tabla"] = $_actividad->getTabla();
-            $aux["campos"] = $_actividad->getCampos();
-            $aux["valores"] = $_actividad->getValores();
-            $aux["condiciones"] = $_actividad->getCondiciones();
+            $aux["accion"] = $_actividad->getAccion();
             $aux["fecha"] = $_actividad->getFecha();
             $returned["accesos"][] = $aux;
         }
@@ -226,6 +223,8 @@ class DataContent {
             $aux["cod_cliente"] = $albaran->getCodCliente();
             $aux["fecha"] = $albaran->getFecha();
             $aux["concepto"] = $albaran->getConcepto();
+            $aux["estado"] = $albaran->getEstado();
+            $aux["lineas"] = $albaran->getLineas();
             $returned["albaranes"][] = $aux;
         }
 
@@ -248,6 +247,8 @@ class DataContent {
             $aux["fecha"] = $factura->getFecha();
             $aux["descuento"] = $factura->getDescuento();
             $aux["concepto"] = $factura->getConcepto();
+            $aux["estado"] = $factura->getEstado();
+            $aux["lineas"] = $factura->getLineas();
             $returned["facturas"][] = $aux;
         }
 
@@ -293,6 +294,8 @@ class DataContent {
             $aux["cod_pedido"] = $pedido->getCodPedido();
             $aux["cod_cliente"] = $pedido->getCodCliente();
             $aux["fecha"] = $pedido->getFecha();
+            $aux["estado"] = $pedido->getEstado();
+            $aux["lineas"] = $pedido->getLineas();
             $returned["pedidos"][] = $aux;
         }
 

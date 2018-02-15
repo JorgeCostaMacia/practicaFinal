@@ -1,6 +1,6 @@
 <?php
 
-class Services {
+class Dependency {
     private $DBlimitado;
     private $DBcliente;
     private $DBgestor;

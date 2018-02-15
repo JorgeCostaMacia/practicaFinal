@@ -31,7 +31,7 @@ class Includes {
     function jsPedidosCliente(){
         $this->jsComun('../');
         echo '<script src="../public/pedidosCliente/controller/class/Ajax.js"></script>';
-        echo '<script src="../public/pedidosCliente/controller/class/pedidosCliente.js"></script>';
+        echo '<script src="../public/pedidosCliente/controller/class/PedidosCliente.js"></script>';
         echo '<script src="../public/pedidosCliente/libraries/typeValidate.js"></script>';
         echo '<script src="../public/pedidosCliente/view/mensajes.js"></script>';
         echo '<script src="../public/pedidosCliente/view/pedidosCliente.js"></script>';
@@ -44,14 +44,14 @@ class Includes {
         echo   '<script src="../' . _jsPath . 'realizarPedidosCliente.min.js"></script>';
     }
 
-    function phpHead($services){ include_once _layoutsPathPHP . "head.php"; }
-    function phpPriController($services){ include_once "../controller/primary.php"; }
+    function phpHead($dependency){ include_once _layoutsPathPHP . "head.php"; }
+    function phpPriController($dependency){ include_once "../controller/primary.php"; }
     function phpFooter(){ include_once _layoutsPathPHP . "footer.php"; }
 
     function phpLogin(){ include_once _assetsPathPHP . "login.php";}
-    function phpNavCliente($services){ include_once _assetsPathPHP . "navCliente.php";}
-    function phpNavGestor($services){ include_once _assetsPathPHP . "navGestor.php";}
-    function phpDatosCliente($services){ include_once _assetsPathPHP . "datosCliente.php"; }
-    function phpPedidosCliente($services){include_once _assetsPathPHP . "pedidosCliente.php";}
-    function phpRealizarPedidosCliente($services){include_once _assetsPathPHP . "RealizarPedidosCliente.php";}
+    function phpNavCliente($dependency){ include_once _assetsPathPHP . "navCliente.php";}
+    function phpNavGestor($dependency){ include_once _assetsPathPHP . "navGestor.php";}
+    function phpDatosCliente($dependency){ include_once _assetsPathPHP . "datosCliente.php"; }
+    function phpPedidosCliente($dependency){include_once _assetsPathPHP . "pedidosCliente.php";}
+    function phpRealizarPedidosCliente($dependency){include_once _assetsPathPHP . "RealizarPedidosCliente.php";}
 }
