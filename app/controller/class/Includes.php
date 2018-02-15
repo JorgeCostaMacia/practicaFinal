@@ -37,6 +37,7 @@ class Includes {
         echo '<script src="../public/pedidosCliente/view/pedidosCliente.js"></script>';
         echo '<script src="../public/pedidosCliente/controller/inputsHandler.js"></script>';
         echo '<script src="../public/pedidosCliente/controller/pedidosCliente.js"></script>';
+        echo '<script src="../public/pedidosCliente/controller/lineasCliente.js"></script>';
         echo '<script src="../public/pedidosCliente/controller/ini.js"></script>';
     }
     function jsRealizarPedidosCliente(){

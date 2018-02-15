@@ -6,18 +6,17 @@ class PedidosCliente{
         parameter += $("#formSearch").serialize();
         return parameter;
     }
-    getParameterProcesarArticulos(){
-        let parameter = 'action=' + 'procesarArticulosCliente&usuario=' + $('#usuario').val() + '&cod_cliente=' + $('#cod_cliente').val();
-        for(let i = 0; i < articulos.length; i++){
-            if($("#cod_articulo-" + articulos[i]["cod_articulo"]).val() != 0){
-                parameter += '&cod_articulo-' + articulos[i]["cod_articulo"] + '=' + $('#cod_articulo-' + articulos[i]["cod_articulo"]).val();
-            }
-        }
+
+    getParameterSearchLineas(cod_pedido){
+        let parameter = 'action=' + 'searchLineasPedidosCliente&cod_pedido=' + cod_pedido + "&";
+        parameter += $("#formSearch").serialize();
         return parameter;
     }
 
     evalInputsCantidades(){
-        let result = [];
+        let cantidades = $(document).on('.cantidades', aa);
+        console.log(cantidades);
+       /* let result = [];
         result['success'] = true;
         result['errores'] = [];
         for(let i = 0; i < articulos.length; i++){
@@ -27,7 +26,7 @@ class PedidosCliente{
             }
         }
 
-        return result;
+        return result;*/
     }
 
     getTextErrorCantidades(errores){

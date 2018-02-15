@@ -31,3 +31,7 @@ function addEventsLineas(pedidos){
         $('#cod_pedido-' + pedidos[i]["cod_pedido"]).click(searchLineas);
     }
 }
+
+function addEventsButtonLineas(){
+    $(document).click("#buttonLineas", evalCantidades);
+}

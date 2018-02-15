@@ -3,7 +3,8 @@
 /****************************************************************/
 CREATE USER 'limitado'@'localhost' IDENTIFIED BY 'limitado';
 
-GRANT SELECT, INSERT ON trabajo_daw.solicitudes TO 'limitado'@'localhost';
+GRANT SELECT ON trabajo_daw.solicitudes TO 'limitado'@'localhost';
+GRANT INSERT ON trabajo_daw.solicitudes TO 'limitado'@'localhost';
 GRANT SELECT(nick, cif_dni) ON trabajo_daw.usuarios_cliente TO 'limitado'@'localhost';
 
 FLUSH PRIVILEGES;
@@ -13,7 +14,10 @@ FLUSH PRIVILEGES;
 /****************************************************************/
 CREATE USER 'gestor'@'localhost' IDENTIFIED BY 'gestor';
 
-GRANT SELECT, UPDATE, INSERT, DELETE ON trabajo_daw.* TO 'gestor'@'localhost';
+GRANT SELECT ON trabajo_daw.* TO 'gestor'@'localhost';
+GRANT UPDATE ON trabajo_daw.* TO 'gestor'@'localhost';
+GRANT INSERT ON trabajo_daw.* TO 'gestor'@'localhost';
+GRANT DELETE ON trabajo_daw.* TO 'gestor'@'localhost';
 
 FLUSH PRIVILEGES;
 
@@ -22,10 +26,18 @@ FLUSH PRIVILEGES;
 /****************************************************************/
 CREATE USER 'cliente'@'localhost' IDENTIFIED BY 'cliente';
 
-GRANT SELECT, UPDATE, INSERT ON trabajo_daw.usuarios_cliente TO 'cliente'@'localhost';
+GRANT SELECT ON trabajo_daw.usuarios_cliente TO 'cliente'@'localhost';
+GRANT UPDATE ON trabajo_daw.usuarios_cliente TO 'cliente'@'localhost';
 
-GRANT SELECT, UPDATE, INSERT, DELETE ON trabajo_daw.pedidos TO 'cliente'@'localhost';
-GRANT SELECT, UPDATE, INSERT, DELETE ON trabajo_daw.lineas_pedidos TO 'cliente'@'localhost';
+GRANT SELECT ON trabajo_daw.pedidos TO 'cliente'@'localhost';
+GRANT UPDATE ON trabajo_daw.pedidos TO 'cliente'@'localhost';
+GRANT INSERT ON trabajo_daw.pedidos TO 'cliente'@'localhost';
+GRANT DELETE ON trabajo_daw.pedidos TO 'cliente'@'localhost';
+
+GRANT SELECT ON trabajo_daw.lineas_pedidos TO 'cliente'@'localhost';
+GRANT UPDATE ON trabajo_daw.lineas_pedidos TO 'cliente'@'localhost';
+GRANT INSERT ON trabajo_daw.lineas_pedidos TO 'cliente'@'localhost';
+GRANT DELETE ON trabajo_daw.lineas_pedidos TO 'cliente'@'localhost';
 
 GRANT SELECT ON trabajo_daw.albaranes TO 'cliente'@'localhost';
 GRANT SELECT ON trabajo_daw.lineas_albaranes TO 'cliente'@'localhost';

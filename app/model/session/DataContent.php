@@ -262,6 +262,7 @@ class DataContent {
             $aux["descuento"] = $linea_albaran->getDescuento();
             $aux["iva"] = $linea_albaran->getIva();
             $aux["total"] = $linea_albaran->getTotal();
+            $aux["estado"] = $linea_albaran->getEstado();
             $returned["lineas_albaranes"][] = $aux;
         }
 
@@ -275,6 +276,7 @@ class DataContent {
             $aux["descuento"] = $linea_factura->getDescuento();
             $aux["iva"] = $linea_factura->getIva();
             $aux["total"] = $linea_factura->getTotal();
+            $aux["estado"] = $linea_factura->getEstado();
             $returned["lineas_facturas"][] = $aux;
         }
 
@@ -286,6 +288,7 @@ class DataContent {
             $aux["precio"] = $linea_pedido->getPrecio();
             $aux["cantidad"] = $linea_pedido->getCantidad();
             $aux["total"] = $linea_pedido->getTotal();
+            $aux["estado"] = $linea_pedido->getEstado();
             $returned["lineas_pedidos"][] = $aux;
         }
 

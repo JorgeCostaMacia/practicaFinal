@@ -16,7 +16,7 @@ class Page {
     }
 
     function redirectHome(){
-        echo '<script>window.location.assign("home/"); </script>';
+       echo '<script>window.location.assign("home/"); </script>';
     }
     function redirectLogout(){
         echo '<script>window.location.assign("logout/"); </script>';

@@ -24,12 +24,16 @@ function callBackSearchPedidosCliente(result){
 }
 
 function searchSiguiente(){
+    delEventsSig();
+    delEventsAnt();
     msjClean();
     $('#numPage').val($('#numPage').val() * 1 + 1);
+
     ajaxApp.callController(pedidosClienteApp.getParameterSearchPedidosCliente(),'callBackSearchSiguiente');
 }
 
 function callBackSearchSiguiente(result){
+
     if (!result["success"]) {
         msjDanger("SEARCH PEDIDOS", result["errores"][0]["errMessage"]);
     }
@@ -40,19 +44,17 @@ function callBackSearchSiguiente(result){
             addEventsLineas(result["pedidos"]);
             addEventsSiguiente();
         }
-        else{
-            delEventsSig();
-            $('#numPage').val($('#numPage').val() - 1);
-        }
+        else{ $('#numPage').val($('#numPage').val() * 1 - 1); }
 
-        if($('#numPage').val() === "1" ){ delEventsAnt();}
-        else {addEventsAnterior();}
+        if($('#numPage').val() !== "1" ){ addEventsAnterior();}
 
         injectPageNumber();
     }
 }
 
 function searchAnterior(){
+    delEventsSig();
+    delEventsAnt();
     msjClean();
     $('#numPage').val($('#numPage').val() * 1 - 1);
     ajaxApp.callController(pedidosClienteApp.getParameterSearchPedidosCliente(),'callBackSearchAnterior');
@@ -66,49 +68,9 @@ function callBackSearchAnterior(result){
         cleanTbody();
         injectPedidos(result["pedidos"]);
         addEventsLineas(result["pedidos"]);
-        if($('#numPage').val() === "1" ){ delEventsAnt();}
-        else {addEventsAnterior();}
+        addEventsSiguiente();
+        if($('#numPage').val() !== "1" ){ addEventsAnterior();}
 
         injectPageNumber();
     }
-}
-
-function searchLineas(event){
-    let cod_pedido = event.target.id.split('-')[1];
-    msjClean();
-    ajaxApp.callController(pedidosClienteApp.getParameterSearchLineas(cod_pedido),'callBackSearchLineas');
-}
-
-function callBackSearchLineas(result){
-    if (!result["success"]) {
-        msjDanger("SEARCH PEDIDOS", result["errores"][0]["errMessage"]);
-    }
-    else {
-        console.log(result);
-    }
-}
-
-
-
-
-
-
-
-
-
-function evalCantidades(){
-    msjClean();
-    let result = realizarPedidosClienteApp.evalInputsCantidades();
-
-    if(!result["success"]){
-        msjDanger("PROCESAR", realizarPedidosClienteApp.getTextErrorCantidades(result["errores"]));
-    }
-    else { ajaxApp.callController(realizarPedidosClienteApp.getParameterProcesarArticulos(),'callBackEvalCantidades');}
-}
-
-function callBackEvalCantidades(result){
-    if(!result["success"]){
-        msjDanger("PROCESAR", result["errores"][0]["errMessage"]);
-    }
-    else { msjSucces("PROCESAR", "<strong>Se han procesado correctamente sus pedidos</strong>")}
 }

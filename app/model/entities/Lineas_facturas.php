@@ -9,6 +9,7 @@ class Lineas_facturas {
     private $descuento;
     private $iva;
     private $total;
+    private $estado;
 
     public function getCodLinea() {return $this->cod_linea;}
     public function setCodLinea($cod_linea){$this->cod_linea = $cod_linea;}
@@ -33,4 +34,7 @@ class Lineas_facturas {
 
     public function getTotal(){return $this->total;}
     public function setTotal($total){$this->total = $total;}
+
+    public function getEstado(){return $this->estado;}
+    public function setEstado($estado){$this->estado = $estado;}
 }

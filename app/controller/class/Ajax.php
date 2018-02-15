@@ -62,4 +62,9 @@ class Ajax{
         $searchPedidosCliente = new SearchPedidosCliente();
         $searchPedidosCliente->selectPedidos($connection, $this->getDataContent());
     }
+
+    public function searchLineasPedidosCliente($connection){
+        $searchPedidosCliente = new SearchPedidosCliente();
+        $searchPedidosCliente->selectLineas($connection, $this->getDataContent());
+    }
 }

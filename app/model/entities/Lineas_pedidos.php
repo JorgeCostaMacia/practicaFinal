@@ -7,6 +7,7 @@ class Lineas_pedidos {
     private $precio;
     private $cantidad;
     private $total;
+    private $estado;
 
     public function getCodLinea() {return $this->cod_linea;}
     public function setCodLinea($cod_linea){$this->cod_linea = $cod_linea;}
@@ -25,4 +26,7 @@ class Lineas_pedidos {
 
     public function getTotal(){return $this->total;}
     public function setTotal($total){$this->total = $total;}
+
+    public function getEstado(){return $this->estado;}
+    public function setEstado($estado){$this->estado = $estado;}
 }

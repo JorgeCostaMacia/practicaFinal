@@ -20,6 +20,8 @@ else if($action === "update"){ $ajax->updateUsuario($connection);}
 else if($action === "searchArticulosCliente"){$ajax->searchArticulosCliente($connection);}
 else if($action === "procesarArticulosCliente"){$ajax->procesarArticulosCliente($connection);}
 else if($action === "searchPedidosCliente"){$ajax->searchPedidosCliente($connection); }
+else if($action === "searchLineasPedidosCliente"){$ajax->searchLineasPedidosCliente($connection); }
+
 
 header('Content-Type',  'application/json; charset=utf-8');
 header('Content-Encoding',  'gzip');
