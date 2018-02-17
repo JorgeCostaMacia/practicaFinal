@@ -2,6 +2,7 @@
 
 function search(){
     cleanTbody();
+    restorePedidos();
     delEventsSig();
     delEventsAnt();
     $('#numPage').val(1);
@@ -24,6 +25,7 @@ function callBackSearchPedidosCliente(result){
 }
 
 function searchSiguiente(){
+    restorePedidos();
     delEventsSig();
     delEventsAnt();
     msjClean();
@@ -33,7 +35,6 @@ function searchSiguiente(){
 }
 
 function callBackSearchSiguiente(result){
-
     if (!result["success"]) {
         msjDanger("SEARCH PEDIDOS", result["errores"][0]["errMessage"]);
     }
@@ -53,6 +54,7 @@ function callBackSearchSiguiente(result){
 }
 
 function searchAnterior(){
+    restorePedidos();
     delEventsSig();
     delEventsAnt();
     msjClean();

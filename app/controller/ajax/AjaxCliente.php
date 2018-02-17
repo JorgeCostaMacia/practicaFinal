@@ -52,12 +52,11 @@ class AjaxCliente{
         }
         if($this->dataContent->getSuccess()){
             $crud = new ActividadCRUD();
-            $crud->insert($this->connection, $this->dataContent, $max_cod);
+            $crud->insert($this->connection, $this->dataContent, $max_cod, "pedidos", "crear", trim($_POST['cod_cliente']), 'cliente');
         }
         if($this->dataContent->getSuccess()){
-            $crud->prepare($this->connection, $this->dataContent, $max_cod, $values);
+            $crud->prepareLineas($this->connection, $this->dataContent, $max_cod, $values, 'lineas_pedidos', 'crear', trim($_POST['cod_cliente']), 'cliente');
         }
-
         $this->connection->endTransaction($this->dataContent->getSuccess());
     }
 
@@ -69,5 +68,31 @@ class AjaxCliente{
     public function searchLineasPedidos(){
         $crud = new Lineas_pedidosCRUD();
         $crud->select($this->connection, $this->dataContent, '*','WHERE cod_pedido="' . $_POST["cod_pedido"] . '"');
+    }
+
+    public function updateLineasPedidos(){
+        $crud = new Lineas_pedidosCRUD();
+        $values = $crud->delete($this->connection, $this->dataContent);
+        if($this->dataContent->getSuccess() && count($values[0]) > 0){
+            $crud = new ActividadCRUD();
+            $crud->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, 'lineas_pedidos', 'borrar', trim($_POST['cod_cliente']), 'cliente');
+        }
+        $crud = new Lineas_pedidosCRUD();
+        $values = $crud->update($this->connection, $this->dataContent);
+        if($this->dataContent->getSuccess() && count($values[0]) > 0){
+            $crud = new ActividadCRUD();
+            $crud->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, 'lineas_pedidos', 'cambiar', trim($_POST['cod_cliente']), 'cliente');
+        }
+
+        $crud = new Lineas_pedidosCRUD();
+        $crud->select($this->connection, $this->dataContent, '*', 'WHERE cod_pedido=' . $_POST["cod_pedido"]);
+        if(count($this->dataContent->getLineasPedidos()) === 0){
+            $crud = new PedidosCRUD();
+            $crud->delete($this->connection, $this->dataContent, 'cod_pedido=' . $_POST["cod_pedido"]);
+            if($this->dataContent->getSuccess()){
+                $crud->insert($this->connection, $this->dataContent, $_POST["cod_pedido"], "pedidos", "borrar", trim($_POST['cod_cliente']), 'cliente');
+            }
+        }
+
     }
 }

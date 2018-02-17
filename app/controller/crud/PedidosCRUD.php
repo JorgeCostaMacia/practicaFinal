@@ -28,8 +28,20 @@ class PedidosCRUD{
         }
     }
 
-    function insert($connection, $dataContent, $maxCod_pedido){
-        $result = $connection->insert('pedidos', '(' . $maxCod_pedido . ',"' . trim($_POST["cod_cliente"]) . '","' . date("Y-m-d") . '","pendiente")');
+    function insert($connection, $dataContent, $cod_pedido){
+        $result = $connection->insert('pedidos', '(' . $cod_pedido . ',"' . trim($_POST["cod_cliente"]) . '","' . date("Y-m-d") . '","pendiente")');
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->addErrores($result["error"]);
+        }
+    }
+
+    function delete($connection, $dataContent, $where){
+        $result = $connection->delete('pedidos', $where);
         if ($result["success"]) {
             $dataContent->setSuccess(true);
         }

@@ -19,8 +19,8 @@
                             <li><a href="#" id="siguiente">»</a></li>
                         </ul>
                 </form>
-                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
-                    <div class="table-responsive" id="table-responsive">
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" id="tablePedidos">
+                    <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
                             <tr>
@@ -36,6 +36,7 @@
                         </table>
                     </div>
                 </div>
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" id="tableLineas"></div>
             </div>
         </div>
     </div>

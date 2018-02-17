@@ -28,10 +28,14 @@ function delEventsAnt(){
 
 function addEventsLineas(pedidos){
     for(let i = 0; i  < pedidos.length; i++){
+        $('#cod_pedido-' + pedidos[i]["cod_pedido"]).off();
         $('#cod_pedido-' + pedidos[i]["cod_pedido"]).click(searchLineas);
     }
 }
 
 function addEventsButtonLineas(){
-    $(document).click("#buttonLineas", evalCantidades);
+    $(document).on("#buttonLineas").off();
+    $(document).on("#buttonVolver").off();
+    $(document).on('click', "#buttonLineas", evalCantidades);
+    $(document).on('click', "#buttonVolver", restorePedidos);
 }

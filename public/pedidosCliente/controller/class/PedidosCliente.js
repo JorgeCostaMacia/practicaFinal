@@ -13,28 +13,32 @@ class PedidosCliente{
         return parameter;
     }
 
+    getParameterUpdateLineas(){
+        let parameter = 'action=' + 'updateLineasPedidos&';
+        parameter += $('#formLineas').serialize();
+        return parameter;
+    }
+
     evalInputsCantidades(){
-        console.log(cantidades);
-       /* let result = [];
+        let cantidades = document.getElementsByClassName('cantidades');
+        let result = [];
         result['success'] = true;
         result['errores'] = [];
-        for(let i = 0; i < articulos.length; i++){
-            if(!validateCantidad($('#cod_articulo-' + articulos[i]["cod_articulo"]).val())) {
+        for(let i = 0; i < cantidades.length; i++){
+            if(!validateCantidad(cantidades[i].value)) {
                 result['success'] = false;
-                result['errores'].push(articulos[i]["cod_articulo"] + ' - ' + articulos[i]["nombre"]);
+                result['errores'].push(cantidades[i].name.split('-')[0] + ' - ' + cantidades[i].name.split('-')[1]);
             }
         }
-
-        return result;*/
+        return result;
     }
 
     getTextErrorCantidades(errores){
-        let errorText = "<strong>Los siguientes articulos tienen un formato de cantidades incorrectas</strong><br>";
+        let errorText = "<strong>Las siguientes lineas de pedidos tienen un formato de cantidades incorrectas</strong><br>";
         for(let i = 0; i < errores.length; i++){
             errorText += errores[i];
         }
 
         return errorText;
     }
-
 }

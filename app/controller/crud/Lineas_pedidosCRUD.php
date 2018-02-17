@@ -52,4 +52,59 @@ class Lineas_pedidosCRUD{
 
         return $values;
     }
+
+    function update($connection, $dataContent){
+        $query = 'UPDATE lineas_pedidos SET cantidad=:cantidad WHERE cod_pedido=' . $_POST["cod_pedido"] .  ' AND cod_linea=:cod_linea';
+        $bindParams = ["cantidad", "cod_linea"];
+        $index = 0;
+        $values = [];
+        $values[] = [];
+        foreach($_POST as $key=>$post){
+            if(strpos($key, "cod_linea") !== false) {
+                if ($post > 0) {
+                    $values[$index]["cantidad"] = $post;
+                    $values[$index]["cod_linea"] = explode("-", $key)[1];
+                    $index++;
+                }
+            }
+        }
+
+        $result = $connection->prepare($query, $bindParams, $values);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+        }
+
+        return $values;
+    }
+
+    function delete($connection, $dataContent){
+        $query = 'DELETE FROM lineas_pedidos WHERE cod_pedido=' . $_POST["cod_pedido"] .  ' AND cod_linea=:cod_linea';
+        $bindParams = ["cod_linea"];
+        $index = 0;
+        $values = [];
+        $values[] = [];
+        foreach($_POST as $key=>$post){
+            if(strpos($key, "cod_linea") !== false) {
+                if ($post == 0) {
+                    $values[$index]["cod_linea"] = explode("-", $key)[1];
+                    $index++;
+                }
+            }
+        }
+
+        $result = $connection->prepare($query, $bindParams, $values);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+        }
+
+        return $values;
+    }
 }

@@ -1,8 +1,8 @@
 <?php
 
 class ActividadCRUD{
-    function insert($connection, $dataContent, $maxCod_pedido){
-        $result = $connection->insert('actividad(cod_usuario, tipo_usuario, cod_tabla, tabla, accion, fecha)', '(' . trim($_POST['cod_cliente']) . ', "cliente",' . $maxCod_pedido . ', "pedidos", "crear","' . date("Y-m-d H:i:s") . '")');
+    function insert($connection, $dataContent, $cod_pedido, $tabla, $accion, $cod_usuario, $usuario){
+        $result = $connection->insert('actividad(cod_usuario, tipo_usuario, cod_tabla, tabla, accion, fecha)', '(' . $cod_usuario . ', "' . $usuario .'",' . $cod_pedido . ', "' . $tabla. '", "' . $accion . '","' . date("Y-m-d H:i:s") . '")');
         if ($result["success"]) {
             $dataContent->setSuccess(true);
         } else {
@@ -12,9 +12,9 @@ class ActividadCRUD{
         }
     }
 
-    function prepare($connection, $dataContent, $maxCod_pedido , $values){
-        $query2 = 'INSERT INTO actividad(cod_usuario, tipo_usuario, cod_tabla, cod_linea, tabla, accion, fecha) VALUE(' . trim($_POST['cod_cliente']) . ',"cliente", ' . $maxCod_pedido . ',:cod_linea, "lineas_pedidos", "crear","' . date("Y-m-d H:i:s") . '")';
-        $bindParams2 = ["cod_linea", "cod_linea"];
+    function prepareLineas($connection, $dataContent, $cod_pedido, $values, $tabla, $accion, $cod_usuario, $usuario){
+        $query2 = 'INSERT INTO actividad(cod_usuario, tipo_usuario, cod_tabla, cod_linea, tabla, accion, fecha) VALUE(' . $cod_usuario . ',"' . $usuario .'", ' . $cod_pedido . ',:cod_linea, "' . $tabla . '", "' . $accion . '","' . date("Y-m-d H:i:s") . '")';
+        $bindParams2 = ["cod_linea"];
         $values2 = [];
         $values2[] = [];
 

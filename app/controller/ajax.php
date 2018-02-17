@@ -20,6 +20,7 @@ else if($action === "searchArticulos"){$ajax->searchArticulos();}
 else if($action === "procesarArticulos"){$ajax->procesarArticulos();}
 else if($action === "searchPedidos"){$ajax->searchPedidos(); }
 else if($action === "searchLineasPedidos"){$ajax->searchLineasPedidos(); }
+else if($action === "updateLineasPedidos"){$ajax->updateLineasPedidos(); }
 
 header('Content-Type',  'application/json; charset=utf-8');
 header('Content-Encoding',  'gzip');
