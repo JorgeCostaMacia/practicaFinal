@@ -7,6 +7,7 @@ function searchLineas(event){
 }
 
 function callBackSearchLineas(result){
+    console.log(result);
     if (!result["success"]) {
         msjDanger("SEARCH PEDIDOS", result["errores"][0]["errMessage"]);
     }
@@ -18,7 +19,7 @@ function callBackSearchLineas(result){
 
 function evalCantidades(){
     msjClean();
-    pedidosClienteApp.evalInputsCantidades();
+    let result = pedidosClienteApp.evalInputsCantidades();
 /*
     if(!result["success"]){
         msjDanger("PROCESAR", realizarPedidosClienteApp.getTextErrorCantidades(result["errores"]));

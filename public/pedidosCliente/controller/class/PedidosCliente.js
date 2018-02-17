@@ -14,7 +14,6 @@ class PedidosCliente{
     }
 
     evalInputsCantidades(){
-        let cantidades = $(document).on('.cantidades', aa);
         console.log(cantidades);
        /* let result = [];
         result['success'] = true;
