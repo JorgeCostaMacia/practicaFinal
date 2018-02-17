@@ -268,7 +268,7 @@ abstract class DBquery {
     }
 
     public function endTransaction($result){
-        if(!$result['success']){ $this->connection->rollback(); }
+        if(!$result){ $this->connection->rollback(); }
         else { $this->connection->commit(); }
     }
 

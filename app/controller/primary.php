@@ -11,7 +11,7 @@ if($dependency->getSession()->getUsuario() == null && !isset($_POST["nick"]) && 
     $dependency->getIncludes()->jsLogin();
 }
 else if(isset($_POST["nick"]) && isset($_POST["password"])) {
-    $dependency->getSession()->setUsuario($dependency->getSessionIni()->ini());
+    $dependency->getSession()->setUsuario($dependency->getSessionIni()->ini($dependency));
 }
 else if($dependency->getSession()->getUsuario() == null){
     $dependency->getPage()->redirectLogin();
@@ -28,7 +28,7 @@ if($dependency->getSession()->getUsuario() != null){
             $dependency->getIncludes()->jsDatosCliente();
             if(isset($_POST["nick"])){
                 msjSuccess("UPDATE", "Se ha modificado correctamente");
-                $dependency->getSession()->setUsuario($dependency->getSessionIni()->ini());
+                $dependency->getSession()->setUsuario($dependency->getSessionIni()->ini($dependency));
             }
         }
         else if($dependency->getPage()->getPage() === 'realizarPedidosCliente'){

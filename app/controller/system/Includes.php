@@ -30,7 +30,7 @@ class Includes {
     }
     function jsPedidosCliente(){
         $this->jsComun('../');
-        echo '<script src="../public/pedidosCliente/controller/class/Ajax.js"></script>';
+        echo '<script src="../public/pedidosCliente/controller/class/ajax.js"></script>';
         echo '<script src="../public/pedidosCliente/controller/class/PedidosCliente.js"></script>';
         echo '<script src="../public/pedidosCliente/libraries/typeValidate.js"></script>';
         echo '<script src="../public/pedidosCliente/view/mensajes.js"></script>';

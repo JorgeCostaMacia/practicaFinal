@@ -35,7 +35,7 @@ class DataContent {
         $this->errores = [];
     }
 
-    public function getSucces() { return $this->success; }
+    public function getSuccess() { return $this->success; }
     public function setSuccess($_success) { $this->success = $_success; }
 
     public function getAccesos() { return $this->accesos; }

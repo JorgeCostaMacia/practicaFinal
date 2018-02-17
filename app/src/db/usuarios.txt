@@ -47,7 +47,7 @@ GRANT SELECT ON trabajo_daw.lineas_facturas TO 'cliente'@'localhost';
 
 GRANT SELECT ON trabajo_daw.articulos TO 'cliente'@'localhost';
 
-GRANT INSERT ON trabajo_daw.actividad TO 'gestor'@'localhost';
+GRANT INSERT ON trabajo_daw.actividad TO 'cliente'@'localhost';
 
 FLUSH PRIVILEGES;
 

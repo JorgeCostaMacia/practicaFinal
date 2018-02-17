@@ -1,9 +1,9 @@
 <?php
 
 class SessionIni {
-    public function ini(){
-        if($_POST["usuario"] === "cliente"){ $connection = new DBcliente(); }
-        else { $connection = new DBgestor(); }
+    public function ini($dependency){
+        if($_POST["usuario"] === "cliente"){ $connection = $dependency->getDBcliente(); }
+        else { $connection = $dependency->getDBgestor(); }
 
         if($connection->connection instanceof DBError){
             msjDanger('CONEXION', $connection->connection->getErrMessage());

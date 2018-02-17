@@ -2,13 +2,13 @@
 
 class PedidosCliente{
     getParameterSearchPedidosCliente(){
-        let parameter = 'action=' + 'searchPedidosCliente&';
+        let parameter = 'action=' + 'searchPedidos&';
         parameter += $("#formSearch").serialize();
         return parameter;
     }
 
     getParameterSearchLineas(cod_pedido){
-        let parameter = 'action=' + 'searchLineasPedidosCliente&cod_pedido=' + cod_pedido + "&";
+        let parameter = 'action=' + 'searchLineasPedidos&cod_pedido=' + cod_pedido + "&";
         parameter += $("#formSearch").serialize();
         return parameter;
     }
