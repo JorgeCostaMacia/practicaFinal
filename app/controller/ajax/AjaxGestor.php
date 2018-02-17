@@ -30,7 +30,7 @@ class AjaxGestor{
 
     public function acceso(){
         $crud = new Usuarios_gestionCRUD();
-        $crud->select($this->connection, $this->dataContent, '*','WHERE nick="' . trim($_POST["nick"]) . '" AND password="' . trim($_POST["password"]) . '" AND estado="activo"');
+        $crud->select($this->connection, $this->dataContent, '*','WHERE nick="' . trim($_POST["nick"]) . '" AND password="' . trim($_POST["password"]) . '"');
         $crud = new AccesosCRUD();
         $crud->insert($this->connection, $this->dataContent);
     }

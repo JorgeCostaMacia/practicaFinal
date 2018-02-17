@@ -8,12 +8,7 @@ function evalLogin(){
     if(!result["succes"]){
         msjDanger("LOGIN", loginApp.getTextErrorLogin(result["errores"]));
     }
-    else {
-        if($("#usuario").val() === "cliente"){
-            ajaxApp.callController(loginApp.getParameterLogin(),'callBackEvalLogin');
-        }
-        else { ajaxApp.callController(loginApp.getParameterLogin(), "callBackEvalLogin"); }
-    }
+    else { ajaxApp.callController(loginApp.getParameterLogin(),'callBackEvalLogin'); }
 }
 
 function callBackEvalLogin(result) {

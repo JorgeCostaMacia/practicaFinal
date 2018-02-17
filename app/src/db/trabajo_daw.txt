@@ -5,7 +5,7 @@
 create table actividad(
 	cod_actividad SMALLINT NOT NULL UNIQUE AUTO_INCREMENT,
 	cod_usuario SMALLINT,
-    tipo_usuario ENUM('gerente', 'cliente'),
+    tipo_usuario ENUM('gestor', 'cliente'),
     cod_tabla SMALLINT,
     cod_linea SMALLINT,
     tabla VARCHAR(30),

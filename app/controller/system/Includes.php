@@ -28,21 +28,13 @@ class Includes {
         $this->jsComun('../');
         echo '<script src="../' . _jsPath . 'datosCliente.min.js"></script>';
     }
-    function jsPedidosCliente(){
-        $this->jsComun('../');
-        echo '<script src="../public/pedidosCliente/controller/class/ajax.js"></script>';
-        echo '<script src="../public/pedidosCliente/controller/class/PedidosCliente.js"></script>';
-        echo '<script src="../public/pedidosCliente/libraries/typeValidate.js"></script>';
-        echo '<script src="../public/pedidosCliente/view/mensajes.js"></script>';
-        echo '<script src="../public/pedidosCliente/view/pedidosCliente.js"></script>';
-        echo '<script src="../public/pedidosCliente/controller/inputsHandler.js"></script>';
-        echo '<script src="../public/pedidosCliente/controller/pedidosCliente.js"></script>';
-        echo '<script src="../public/pedidosCliente/controller/lineasCliente.js"></script>';
-        echo '<script src="../public/pedidosCliente/controller/ini.js"></script>';
-    }
     function jsRealizarPedidosCliente(){
         $this->jsComun('../');
         echo   '<script src="../' . _jsPath . 'realizarPedidosCliente.min.js"></script>';
+    }
+    function jsPedidosCliente(){
+        $this->jsComun('../');
+        echo '<script src="../' . _jsPath . 'pedidosCliente.min.js"></script>';
     }
 
     function phpHead($dependency){ include_once _layoutsPathPHP . "head.php"; }
@@ -53,6 +45,7 @@ class Includes {
     function phpNavCliente($dependency){ include_once _assetsPathPHP . "navCliente.php";}
     function phpNavGestor($dependency){ include_once _assetsPathPHP . "navGestor.php";}
     function phpDatosCliente($dependency){ include_once _assetsPathPHP . "datosCliente.php"; }
-    function phpPedidosCliente($dependency){include_once _assetsPathPHP . "pedidosCliente.php";}
     function phpRealizarPedidosCliente($dependency){include_once _assetsPathPHP . "RealizarPedidosCliente.php";}
+    function phpPedidosCliente($dependency){include_once _assetsPathPHP . "pedidosCliente.php";}
+
 }

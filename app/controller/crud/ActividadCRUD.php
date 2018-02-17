@@ -12,8 +12,8 @@ class ActividadCRUD{
         }
     }
 
-    function prepareLineas($connection, $dataContent, $cod_pedido, $values, $tabla, $accion, $cod_usuario, $usuario){
-        $query2 = 'INSERT INTO actividad(cod_usuario, tipo_usuario, cod_tabla, cod_linea, tabla, accion, fecha) VALUE(' . $cod_usuario . ',"' . $usuario .'", ' . $cod_pedido . ',:cod_linea, "' . $tabla . '", "' . $accion . '","' . date("Y-m-d H:i:s") . '")';
+    function prepareLineas($connection, $dataContent, $cod, $values, $tabla, $accion, $cod_usuario, $usuario){
+        $query2 = 'INSERT INTO actividad(cod_usuario, tipo_usuario, cod_tabla, cod_linea, tabla, accion, fecha) VALUE(' . $cod_usuario . ',"' . $usuario .'", ' . $cod . ',:cod_linea, "' . $tabla . '", "' . $accion . '","' . date("Y-m-d H:i:s") . '")';
         $bindParams2 = ["cod_linea"];
         $values2 = [];
         $values2[] = [];

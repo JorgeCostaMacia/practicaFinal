@@ -33,5 +33,9 @@ function callBackEvalCantidades(result){
     if(!result["success"]){
         msjDanger("PROCESAR", result["errores"][0]["errMessage"]);
     }
-    else { msjSucces("ACTUALIZAR PEDIDO", "<strong>Se ha actualizado correctamente su pedido</strong>")}
+    else {
+        msjSucces("ACTUALIZAR PEDIDO", "<strong>Se ha actualizado correctamente su pedido</strong>");
+        restorePedidos();
+        cleanTbody();
+    }
 }

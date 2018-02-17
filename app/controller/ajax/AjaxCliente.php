@@ -88,11 +88,11 @@ class AjaxCliente{
         $crud->select($this->connection, $this->dataContent, '*', 'WHERE cod_pedido=' . $_POST["cod_pedido"]);
         if(count($this->dataContent->getLineasPedidos()) === 0){
             $crud = new PedidosCRUD();
-            $crud->delete($this->connection, $this->dataContent, 'cod_pedido=' . $_POST["cod_pedido"]);
-            if($this->dataContent->getSuccess()){
+            $crud->delete($this->connection, $this->dataContent, " cod_pedido=" . $_POST["cod_pedido"]);
+            if($this->dataContent->getSuccess()) {
+                $crud = new ActividadCRUD();
                 $crud->insert($this->connection, $this->dataContent, $_POST["cod_pedido"], "pedidos", "borrar", trim($_POST['cod_cliente']), 'cliente');
             }
         }
-
     }
 }

@@ -27,7 +27,7 @@ class Login{
     }
 
     getParameterAccesos(){
-        let parameter = 'action=' + 'accesos&';
+        let parameter = 'action=' + 'acceso&';
         parameter += $("#formLogin").serialize();
         return parameter;
     }

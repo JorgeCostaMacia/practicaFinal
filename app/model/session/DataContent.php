@@ -335,7 +335,7 @@ class DataContent {
 
         foreach($this->usuarios_gestion as $usuario_gestion){
             $aux = [];
-            $aux["cod_gestor"] = $usuario_gestion->getCodGestion();
+            $aux["cod_gestor"] = $usuario_gestion->getCodGestor();
             $aux["nombre_completo"] = $usuario_gestion->getNombreCompleto();
             $aux["nick"] = $usuario_gestion->getNick();
             $aux["password"] = $usuario_gestion->getPassword();

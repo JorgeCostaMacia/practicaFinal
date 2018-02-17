@@ -23,7 +23,7 @@
                 </i></span>
                 <select class="form-control" name="usuario" id="usuario">
                     <option value="cliente">Cliente</option>
-                    <option value="gestion">Gestion</option>
+                    <option value="gestor">Gestor</option>
                 </select>
             </div>
             <br>

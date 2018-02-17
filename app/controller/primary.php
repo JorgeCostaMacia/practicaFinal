@@ -1,5 +1,12 @@
 <?php
 if($dependency->getPage()->getPage() == "logout"){
+    if($dependency->getSession()->getUsuario() instanceof Usuarios_gestion){
+        $connection = $dependency->getDBgestor();
+        $dataContent = $dependency->getSession()->getDataContent();
+        $crud = new AccesosCRUD();
+        $maxAcceso = $crud->selectMax($connection, $dataContent, 'WHERE cod_gestor=' . $dependency->getSession()->getUsuario()->getCodGestor());
+        $crud->updateSalida($connection, $dataContent, $maxAcceso, $dependency->getSession()->getUsuario()->getCodGestor());
+    }
     $dependency->getSession()->destroy();
     $dependency->getPage()->redirectLogin();
 }
