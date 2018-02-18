@@ -2,21 +2,15 @@
 
 class PedidosCliente{
     getParameterSearchPedidosCliente(){
-        let parameter = 'action=' + 'searchPedidos&';
-        parameter += $("#formSearch").serialize();
-        return parameter;
+        return 'action=' + 'searchPedidos&' + $("#formSearch").serialize();
     }
 
     getParameterSearchLineas(cod_pedido){
-        let parameter = 'action=' + 'searchLineasPedidos&cod_pedido=' + cod_pedido + "&";
-        parameter += $("#formSearch").serialize();
-        return parameter;
+        return 'action=' + 'searchLineasPedidos&cod_pedido=' + cod_pedido + "&" + $("#formSearch").serialize();
     }
 
     getParameterUpdateLineas(){
-        let parameter = 'action=' + 'updateLineasPedidos&';
-        parameter += $('#formLineas').serialize();
-        return parameter;
+        return 'action=' + 'updateLineasPedidos&' + $('#formLineas').serialize();
     }
 
     evalInputsCantidades(){

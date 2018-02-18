@@ -40,11 +40,7 @@ class Update{
         return result;
     }
 
-    getParameterUpdate(){
-        let parameter = 'action=' + 'update&';
-        parameter += $("#formGetAccount").serialize();
-        return parameter;
-    }
+    getParameterUpdate(){ return 'action=' + 'update&' + $("#formGetAccount").serialize(); }
 
     getTextErrorUpdate(result){
         let errorText = "";

@@ -16,7 +16,8 @@ else if($dependency->getPage()->getPage() === 'datosGestor'){
 else if($dependency->getPage()->getPage() === 'solicitudesGestor'){
     $dependency->getIncludesGestor()->phpSolicitudesGestor($dependency);
     $dependency->getIncludesGestor()->jsSolicitudesGestor();
-    if(isset($_POST["nick"])){
-        msjSuccess("UPDATE", "Se ha validado correctamente");
-    }
+}
+else if($dependency->getPage()->getPage() === 'clientesGestor'){
+    $dependency->getIncludesGestor()->phpClientesGestor($dependency);
+    $dependency->getIncludesGestor()->jsSolicitudesGestor();
 }

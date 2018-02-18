@@ -2,10 +2,9 @@
 
 class RealizarPedidosCliente{
     getParameterSearchArticulos(){
-        let parameter = 'action=' + 'searchArticulos&';
-        parameter += $("#formSearch").serialize();
-        return parameter;
+        return 'action=' + 'searchArticulos&' + $("#formSearch").serialize();
     }
+
     getParameterProcesarArticulos(){
         let parameter = 'action=' + 'procesarArticulos&usuario=' + $('#usuario').val() + '&cod_cliente=' + $('#cod_cliente').val();
         for(let i = 0; i < articulos.length; i++){

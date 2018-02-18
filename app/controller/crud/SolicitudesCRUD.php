@@ -25,4 +25,16 @@ class SolicitudesCRUD{
             $dataContent->addErrores($result["error"]);
         }
     }
+
+    function delete($connection, $dataContent, $where){
+        $result = $connection->delete('solicitudes', $where);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->addErrores($result["error"]);
+        }
+    }
 }

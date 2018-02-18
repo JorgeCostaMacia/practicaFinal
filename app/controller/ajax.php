@@ -21,6 +21,10 @@ else if($action === "procesarArticulos"){$ajax->procesarArticulos();}
 else if($action === "searchPedidos"){$ajax->searchPedidos(); }
 else if($action === "searchLineasPedidos"){$ajax->searchLineasPedidos(); }
 else if($action === "updateLineasPedidos"){$ajax->updateLineasPedidos(); }
+else if($action === "searchSolicitudes"){$ajax->searchSolicitudes();}
+else if($action === "aceptarSolicitud"){$ajax->aceptarSolicitud();}
+else if($action === "cancelarSolicitud"){$ajax->cancelarSolicitud();}
+
 
 header('Content-Type',  'application/json; charset=utf-8');
 header('Content-Encoding',  'gzip');

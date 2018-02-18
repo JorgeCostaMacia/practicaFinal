@@ -56,9 +56,7 @@ class Registro{
     }
 
     getParameterRegistro(){
-        let parameter = 'action=' + 'registro&';
-        parameter += $("#formGetAccount").serialize();
-        return parameter;
+        return 'action=' + 'registro&' + $("#formGetAccount").serialize();
     }
 
     getTextErrorRegistro(result){

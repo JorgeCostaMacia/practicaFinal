@@ -21,15 +21,11 @@ class Login{
     }
 
     getParameterLogin(){
-        let parameter = 'action=' + 'login&';
-        parameter += $("#formLogin").serialize();
-        return parameter;
+        return 'action=' + 'login&' + $("#formLogin").serialize();
     }
 
     getParameterAccesos(){
-        let parameter = 'action=' + 'acceso&';
-        parameter += $("#formLogin").serialize();
-        return parameter;
+        return 'action=' + 'acceso&' + $("#formLogin").serialize();
     }
 
     getTextErrorLogin(result){

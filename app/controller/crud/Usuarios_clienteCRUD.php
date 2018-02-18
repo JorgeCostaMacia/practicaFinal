@@ -25,4 +25,16 @@ class Usuarios_clienteCRUD{
             $dataContent->addErrores($result["error"]);
         }
     }
+
+    function insert($connection, $dataContent, $cif_dni, $nombre_completo, $razon_social, $domicilio_social, $ciudad, $email, $telefono, $nick, $password){
+        $result = $connection->insert('usuarios_cliente(cif_dni, nombre_completo, razon_social, domicilio_social, ciudad, email, telefono, nick, password, estado)', '("' . $cif_dni . '","' .  $nombre_completo . '","' . $razon_social . '","' .   $domicilio_social . '","' .   $ciudad . '","' .   $email . '","' .   $telefono . '","' .   $nick . '","' .   $password  . '", "activo")');
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->addErrores($result["error"]);
+        }
+    }
 }
