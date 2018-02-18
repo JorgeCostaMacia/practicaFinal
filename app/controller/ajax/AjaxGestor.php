@@ -34,4 +34,9 @@ class AjaxGestor{
         $crud = new AccesosCRUD();
         $crud->insert($this->connection, $this->dataContent);
     }
+
+    public function updateUser(){
+        $crud = new Usuarios_gestionCRUD();
+        $crud->update($this->connection, $this->dataContent);
+    }
 }

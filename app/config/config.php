@@ -17,7 +17,8 @@ define("_cssFileName", ['bootstrap.min', 'style.min']);
 /* PATHS JS */
 define("_jsPath", 'public/js/');
 define("_jsJquery", 'jquery-3.3.1.min');
-define("jsBootstrap", 'bootstrap.min');
+define("_jsBootstrap", 'bootstrap.min');
+define("_jsComun", 'comun.min');
 
 /* CONECTION PDO*/
 define("_DBTYPE", "mysql");

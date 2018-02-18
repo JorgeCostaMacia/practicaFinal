@@ -9,8 +9,12 @@ ErrorDocument 404 "La pagina buscada no existe o no se encuentra disponible"
 RewriteEngine on
 RewriteRule ^home/$ app/view/index.php?page=home [L]
 RewriteRule ^logout/$ app/view/index.php?page=logout [L]
+
 RewriteRule ^datosCliente/$ app/view/index.php?page=datosCliente [L]
 RewriteRule ^realizarPedidosCliente/$ app/view/index.php?page=realizarPedidosCliente [L]
 RewriteRule ^pedidosCliente/$ app/view/index.php?page=pedidosCliente [L]
 RewriteRule ^albaranesCliente/$ app/view/index.php?page=albaranesCliente [L]
 RewriteRule ^facturasCliente/$ app/view/index.php?page=facturasCliente [L]
+
+RewriteRule ^datosGestor/$ app/view/index.php?page=datosGestor [L]
+RewriteRule ^solicitudesGestor/$ app/view/index.php?page=solicitudesGestor [L]

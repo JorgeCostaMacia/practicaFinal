@@ -1,4 +1,9 @@
 <?php
+
+/*
+ * LOGOUT
+ * DESTRUYE SESSION Y SI ES GESTOR AGREGA SALIDA ACCESO
+ */
 if($dependency->getPage()->getPage() == "logout"){
     if($dependency->getSession()->getUsuario() instanceof Usuarios_gestion){
         $connection = $dependency->getDBgestor();
@@ -11,12 +16,20 @@ if($dependency->getPage()->getPage() == "logout"){
     $dependency->getPage()->redirectLogin();
 }
 
+/*
+ * LOGIN - NO EXISTE SESSION NI LOGIN
+ * CARGA FORM LOGIN Y DESTRUYE SESSION Y GET/POST
+ */
 if($dependency->getSession()->getUsuario() == null && !isset($_POST["nick"]) && !isset($_POST["password"]) ) {
     $dependency->getSession()->destroy();
     $dependency->getPage()->redirectCheckLogin();
     $dependency->getIncludes()->phpLogin();
     $dependency->getIncludes()->jsLogin();
 }
+/*
+ * LOGIN - EXISTE LOGIN
+ * INICIALIZA SESSION
+ */
 else if(isset($_POST["nick"]) && isset($_POST["password"])) {
     $dependency->getSession()->setUsuario($dependency->getSessionIni()->ini($dependency));
 }
@@ -24,29 +37,20 @@ else if($dependency->getSession()->getUsuario() == null){
     $dependency->getPage()->redirectLogin();
 }
 
+/*
+ * PAGES - EXISTE SESSION
+ * CARGA NAV Y CONTROLADOR SEGUN USUARIO
+ */
 if($dependency->getSession()->getUsuario() != null){
     if($dependency->getPage()->getPage() != 'login'){
-        if($dependency->getSession()->getUsuario() instanceof Usuarios_cliente){$dependency->getIncludes()->phpNavCliente($dependency);}
-        else { $dependency->getIncludes()->phpNavGestor($dependency); }
-        $dependency->getIncludes()->jsHome();
-
-        if($dependency->getPage()->getPage() === 'datosCliente'){
-            $dependency->getIncludes()->phpDatosCliente($dependency);
-            $dependency->getIncludes()->jsDatosCliente();
-            if(isset($_POST["nick"])){
-                msjSuccess("UPDATE", "Se ha modificado correctamente");
-                $dependency->getSession()->setUsuario($dependency->getSessionIni()->ini($dependency));
-            }
+        if($dependency->getSession()->getUsuario() instanceof Usuarios_cliente){
+            $dependency->getIncludesCliente()->phpNavCliente($dependency);
+            $dependency->getIncludesCliente()->phpClienteController($dependency);
         }
-        else if($dependency->getPage()->getPage() === 'realizarPedidosCliente'){
-            $dependency->getIncludes()->phpRealizarPedidosCliente($dependency);
-            $dependency->getIncludes()->jsRealizarPedidosCliente();
+        else {
+            $dependency->getIncludesGestor()->phpNavGestor($dependency);
+            $dependency->getIncludesGestor()->phpGestorController($dependency);
         }
-        else if($dependency->getPage()->getPage() === 'pedidosCliente'){
-            $dependency->getIncludes()->phpPedidosCliente($dependency);
-            $dependency->getIncludes()->jsPedidosCliente();
-        }
-
     }
-    else if($dependency->getPage()->getPage() === 'login'){ $dependency->getPage()->redirectHome();}
+    else { $dependency->getPage()->redirectHome();}
 }

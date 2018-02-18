@@ -13,4 +13,16 @@ class Usuarios_gestionCRUD{
             $dataContent->addErrores($result["error"]);
         }
     }
+
+    function update($connection, $dataContent){
+        $result = $connection->update('usuarios_gestion', 'password="' . trim($_POST['password']) . '"', 'WHERE cod_gestor="' . $_POST['cod_gestor'] . '"');
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->addErrores($result["error"]);
+        }
+    }
 }

@@ -6,6 +6,8 @@ class Dependency {
     private $DBgestor;
     private $session;
     private $includes;
+    private $includesGestor;
+    private $includesCliente;
     private $sessionIni;
     private $page;
 
@@ -47,6 +49,20 @@ class Dependency {
             return $this->includes;
         }
         else { return $this->includes; }
+    }
+    public function getIncludesGestor() {
+        if (!$this->includesGestor) {
+            $this->includesGestor = new IncludesGestor();
+            return $this->includesGestor;
+        }
+        else { return $this->includesGestor; }
+    }
+    public function getIncludesCliente() {
+        if (!$this->includesCliente) {
+            $this->includesCliente = new IncludesCliente();
+            return $this->includesCliente;
+        }
+        else { return $this->includesCliente; }
     }
 
     public function getSessionIni() {
