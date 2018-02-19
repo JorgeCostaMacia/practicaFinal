@@ -112,6 +112,7 @@ create table lineas_pedidos(
     cod_articulo SMALLINT,
 	precio DOUBLE,
 	cantidad DOUBLE,
+	iva DOUBLE,
 	total DOUBLE,
 	estado ENUM('procesado', 'pendiente')
 )ENGINE=InnoDB;

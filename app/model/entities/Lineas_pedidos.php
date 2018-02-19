@@ -4,9 +4,11 @@ class Lineas_pedidos {
     private $cod_linea;
     private $cod_pedido;
     private $cod_articulo;
+    private $nombre_articulo;
     private $precio;
     private $cantidad;
     private $total;
+    private $iva;
     private $estado;
 
     public function getCodLinea() {return $this->cod_linea;}
@@ -18,6 +20,9 @@ class Lineas_pedidos {
     public function getCodArticulo(){return $this->cod_articulo;}
     public function setCodArticulo($cod_articulo){$this->cod_articulo = $cod_articulo;}
 
+    public function getNombreArticulo(){return $this->nombre_articulo;}
+    public function setNombreArticulo($nombre_articulo){$this->nombre_articulo = $nombre_articulo;}
+
     public function getPrecio(){return $this->precio;}
     public function setPrecio($precio){$this->precio = $precio;}
 
@@ -26,6 +31,9 @@ class Lineas_pedidos {
 
     public function getTotal(){return $this->total;}
     public function setTotal($total){$this->total = $total;}
+
+    public function getIva(){return $this->iva;}
+    public function setIva($iva){$this->iva = $iva;}
 
     public function getEstado(){return $this->estado;}
     public function setEstado($estado){$this->estado = $estado;}

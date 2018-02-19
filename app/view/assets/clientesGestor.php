@@ -28,6 +28,7 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
+                                <th>cod_cliente</th>
                                 <th>cif_dni</th>
                                 <th>nombre_completo</th>
                                 <th>razon_social</th>
@@ -39,7 +40,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" id="tablaCliente"></div>
+                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" id="tableModificar"></div>
             </div>
         </div>
     </div>

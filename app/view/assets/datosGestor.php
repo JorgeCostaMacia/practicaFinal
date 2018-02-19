@@ -8,7 +8,7 @@
                         <input type="hidden" name="cod_gestor" value="<?=$dependency->getSession()->getUsuario()->getCodGestor();?>">
                         <input type="hidden" name="nick" value="<?= $dependency->getSession()->getUsuario()->getNick(); ?>">
                         <div class="panel-body">
-                            <h3 class="text-center">Datos cliente</h3>
+                            <h3 class="text-center">Datos gestor</h3>
                             <div class="input-group input-group-lg">
                 <span class="input-group-addon "><i class="fa fa-user" aria-hidden="true">
                         <span class="glyphicon glyphicon-user"></span>

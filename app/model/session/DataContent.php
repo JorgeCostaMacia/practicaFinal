@@ -285,8 +285,10 @@ class DataContent {
             $aux["cod_linea"] = $linea_pedido->getCodLinea();
             $aux["cod_pedido"] = $linea_pedido->getCodPedido();
             $aux["cod_articulo"] = $linea_pedido->getCodArticulo();
+            $aux["nombre_articulo"] = $linea_pedido->getNombreArticulo();
             $aux["precio"] = $linea_pedido->getPrecio();
             $aux["cantidad"] = $linea_pedido->getCantidad();
+            $aux["iva"] = $linea_pedido->getIva();
             $aux["total"] = $linea_pedido->getTotal();
             $aux["estado"] = $linea_pedido->getEstado();
             $returned["lineas_pedidos"][] = $aux;

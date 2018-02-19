@@ -6,9 +6,18 @@
             <li class="sidebar-brand"><a href="../datosGestor/"><?php echo $dependency->getSession()->getUsuario()->getNombreCompleto(); ?></a></li>
             <li><a href="../home/">Home</a></li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuarios<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Altas<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header">Usuarios</li>
+                    <li class="dropdown-header">Altas</li>
+                    <li><a href="../altaArticulo/">Alta articulo</a></li>
+                    <li><a href="../altaCliente/">Alta cliente</a></li>
+                    <li><a href="../altaGestor/">Alta gestor</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ver/modificar usuarios<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Ver/modificar usuarios</li>
                     <li><a href="../solicitudesGestor/">Solicitudes</a></li>
                     <li><a href="../clientesGestor/">Clientes</a></li>
                     <li><a href="../gestoresGestor/">Gestores</a></li>

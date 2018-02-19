@@ -14,7 +14,7 @@ function callBackSearchSolicitudes(result){
         solicitudes = result["solicitudes"];
         if(result["solicitudes"].length !== 0){
             injectSolicitudes(result["solicitudes"]);
-            addEventsDetalles(result["solicitudes"]);
+            addEventsModificar(result["solicitudes"]);
             addEventsAcceptar(result["solicitudes"]);
             addEventsCancelar(result["solicitudes"]);
         }

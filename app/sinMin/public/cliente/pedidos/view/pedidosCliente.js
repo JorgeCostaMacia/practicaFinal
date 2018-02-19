@@ -31,6 +31,7 @@ function injectPageNumber(){
 
 function injectLineas(lineas){
     let tableLineas = '<form id="formLineas" name="formLineas">' +
+        '<h2>cod_pedido ' + lineas[0]["cod_pedido"] +'</h2>' +
         '<input type="hidden" id="usuario" name="usuario" value="cliente">' +
         '<input type="hidden" name="cod_cliente" value="' + $('#cod_cliente').val() + '">' +
         '<input type="hidden" id="cod_pedido" name="cod_pedido" value="' + lineas[0]["cod_pedido"] + '">' +
@@ -39,9 +40,9 @@ function injectLineas(lineas){
         '<thead>' +
         '<tr>' +
         '<th>cod_linea</th>' +
-        '<th>cod_pedido</th>' +
-        '<th>cod_articulo</th>' +
+        '<th>articulo</th>' +
         '<th>precio</th>' +
+        '<th>iva</th>' +
         '<th>total</th>' +
         '<th>estado</th>' +
         '<th>cantidad</th>' +
@@ -51,9 +52,9 @@ function injectLineas(lineas){
     for(let i = 0; i < lineas.length; i++){
         tableLineas +=
             '<tr><td><input type="button" value="' + lineas[i]["cod_linea"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + lineas[i]["cod_pedido"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + lineas[i]["cod_articulo"] + '" class="form-control btn-default"></td>' +
+            '<td><input type="button" value="' + lineas[i]["nombre_articulo"] + '" class="form-control btn-default"></td>' +
             '<td><input type="button" value="' + lineas[i]["precio"] + '" class="form-control btn-default"></td>' +
+            '<td><input type="button" value="' + lineas[i]["iva"] + '" class="form-control btn-default"></td>' +
             '<td><input type="button" value="' + lineas[i]["total"] + '" class="form-control btn-default"></td>' +
             '<td><input type="button" value="' + lineas[i]["estado"] + '" class="form-control btn-default"></td>';
 

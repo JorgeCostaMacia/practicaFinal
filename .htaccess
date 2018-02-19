@@ -17,5 +17,8 @@ RewriteRule ^albaranesCliente/$ app/view/index.php?page=albaranesCliente [L]
 RewriteRule ^facturasCliente/$ app/view/index.php?page=facturasCliente [L]
 
 RewriteRule ^datosGestor/$ app/view/index.php?page=datosGestor [L]
+
 RewriteRule ^solicitudesGestor/$ app/view/index.php?page=solicitudesGestor [L]
 RewriteRule ^clientesGestor/$ app/view/index.php?page=clientesGestor [L]
+RewriteRule ^gestoresGestor/$ app/view/index.php?page=gestoresGestor [L]
+

@@ -67,7 +67,7 @@ class AjaxCliente{
 
     public function searchLineasPedidos(){
         $crud = new Lineas_pedidosCRUD();
-        $crud->select($this->connection, $this->dataContent, '*','WHERE cod_pedido="' . $_POST["cod_pedido"] . '"');
+        $crud->select($this->connection, $this->dataContent, 'cod_linea, cod_pedido, lineas_pedidos.cod_articulo, nombre as nombre_articulo, lineas_pedidos.precio, cantidad, lineas_pedidos.iva, total, lineas_pedidos.estado','INNER JOIN articulos ON lineas_pedidos.cod_articulo = articulos.cod_articulo WHERE cod_pedido="' . $_POST["cod_pedido"] . '" GROUP BY cod_linea');
     }
 
     public function updateLineasPedidos(){

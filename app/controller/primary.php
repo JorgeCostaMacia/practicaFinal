@@ -1,5 +1,4 @@
 <?php
-
 /*
  * LOGOUT
  * DESTRUYE SESSION Y SI ES GESTOR AGREGA SALIDA ACCESO
@@ -26,6 +25,7 @@ if($dependency->getSession()->getUsuario() == null && !isset($_POST["nick"]) && 
     $dependency->getIncludes()->phpLogin();
     $dependency->getIncludes()->jsLogin();
 }
+
 /*
  * LOGIN - EXISTE LOGIN
  * INICIALIZA SESSION

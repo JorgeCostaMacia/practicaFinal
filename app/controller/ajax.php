@@ -24,7 +24,8 @@ else if($action === "updateLineasPedidos"){$ajax->updateLineasPedidos(); }
 else if($action === "searchSolicitudes"){$ajax->searchSolicitudes();}
 else if($action === "aceptarSolicitud"){$ajax->aceptarSolicitud();}
 else if($action === "cancelarSolicitud"){$ajax->cancelarSolicitud();}
-
+else if($action === "searchClientes"){$ajax->searchClientes();}
+else if($action === "updateCliente"){$ajax->updateCliente();}
 
 header('Content-Type',  'application/json; charset=utf-8');
 header('Content-Encoding',  'gzip');

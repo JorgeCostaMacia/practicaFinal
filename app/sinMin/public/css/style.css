@@ -3,7 +3,7 @@
 		margin-top: 50px;
 	}
 	#formAcountContainer{
-		 margin-top: 50px;
+		margin-top: 50px;
 	}
 }
 
@@ -109,15 +109,15 @@ html { height: 100%;}
 }
 
 #wrapper.toggled {
-	padding-left: 220px;
+	padding-left: 350px;
 }
 
 #sidebar-wrapper {
 	z-index: 1000;
-	left: 220px;
+	left: 350px;
 	width: 0;
 	height: 100%;
-	margin-left: -220px;
+	margin-left: -350px;
 	overflow-y: auto;
 	overflow-x: hidden;
 	background: #1a1a1a;
@@ -132,7 +132,7 @@ html { height: 100%;}
 }
 
 #wrapper.toggled #sidebar-wrapper {
-	width: 220px;
+	width: 350px;
 }
 
 #page-content-wrapper {
@@ -142,13 +142,13 @@ html { height: 100%;}
 
 #wrapper.toggled #page-content-wrapper {
 	position: absolute;
-	margin-right: -220px;
+	margin-right: -350px;
 }
 
 .sidebar-nav {
 	position: absolute;
 	top: 0;
-	width: 220px;
+	width: 350px;
 	margin: 0;
 	padding: 0;
 	list-style: none;

@@ -60,4 +60,14 @@ class AjaxGestor{
         $crud = new SolicitudesCRUD();
         $crud->delete($this->connection, $this->dataContent, 'cod_solicitud=' . $_POST["cod_solicitud"]);
     }
+
+    public function searchClientes(){
+        $crud = new Usuarios_clienteCRUD();
+        $crud->select($this->connection, $this->dataContent, '*', 'WHERE ' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%" LIMIT ' . $this->offest . ',' . $this->itemsPage);
+    }
+
+    public function updateCliente(){
+        $crud = new Usuarios_clienteCRUD();
+        $crud->update($this->connection, $this->dataContent);
+    }
 }

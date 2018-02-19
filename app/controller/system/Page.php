@@ -13,6 +13,14 @@ class Page {
 
     function getTitle(){
         if($this->page === "login") { return "Login"; }
+        else if($this->page === "home") { return "Home"; }
+        else if($this->page === "datosCliente") { return "Mis datos"; }
+        else if($this->page === "realizarPedidosCliente") { return "Realizar pedido"; }
+        else if($this->page === "pedidosCliente") { return "Pedidos"; }
+
+        else if($this->page === "datosGestor") { return "Mis datos"; }
+        else if($this->page === "solicitudesGestor") { return "Solicitudes"; }
+        else if($this->page === "clientesGestor") { return "Clientes"; }
     }
 
     function redirectHome(){

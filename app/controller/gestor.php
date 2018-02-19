@@ -19,5 +19,9 @@ else if($dependency->getPage()->getPage() === 'solicitudesGestor'){
 }
 else if($dependency->getPage()->getPage() === 'clientesGestor'){
     $dependency->getIncludesGestor()->phpClientesGestor($dependency);
-    $dependency->getIncludesGestor()->jsSolicitudesGestor();
+    $dependency->getIncludesGestor()->jsClientesGestor();
+}
+else if($dependency->getPage()->getPage() === 'gestoresGestor'){
+    $dependency->getIncludesGestor()->phpClientesGestor($dependency);
+    $dependency->getIncludesGestor()->jsClientesGestor();
 }
