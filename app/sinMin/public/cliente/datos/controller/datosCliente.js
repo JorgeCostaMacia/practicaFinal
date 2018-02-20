@@ -17,7 +17,5 @@ function callBackEvalUpdate(result){
     if (!result["success"]) {
         msjDanger("UPDATE", result["errores"][0]["errMessage"]);
     }
-    else {
-        msjInfo("UPDATE", "Se ha modificado correctamente");
-    }
+    else { $('#formGetAccount').submit();}
 }

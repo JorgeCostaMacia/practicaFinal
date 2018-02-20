@@ -3,12 +3,12 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="container" id="formAcountContainer">
-                    <form id="formGetAccount" method="POST" class="col-md-6 col-md-offset-2 panel panel-default">
+                    <form id="formGetAccount" action="../misDatos/" method="POST" class="col-md-6 col-md-offset-2 panel panel-default">
                         <input type="hidden" name="usuario" value="gestor">
                         <input type="hidden" name="cod_gestor" value="<?=$dependency->getSession()->getUsuario()->getCodGestor();?>">
                         <input type="hidden" name="nick" value="<?= $dependency->getSession()->getUsuario()->getNick(); ?>">
                         <div class="panel-body">
-                            <h3 class="text-center">Datos gestor</h3>
+                            <h3 class="text-center">Mis datos</h3>
                             <div class="input-group input-group-lg">
                 <span class="input-group-addon "><i class="fa fa-user" aria-hidden="true">
                         <span class="glyphicon glyphicon-user"></span>

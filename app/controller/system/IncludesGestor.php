@@ -1,22 +1,30 @@
 <?php
 
 class IncludesGestor extends Includes{
-    public function jsDatosGestor(){
+    public function jsMisDatos(){
         $this->jsComun('../');
         echo '<script src="../' . _jsPath . 'datosGestor.min.js"></script>';
     }
-    public function jsSolicitudesGestor(){
+    public function jsAltaCliente(){
         $this->jsComun('../');
         echo '<script src="../' . _jsPath . 'solicitudesGestor.min.js"></script>';
     }
-    public function jsClientesGestor(){
+
+
+    public function jsSolicitudes(){
+        $this->jsComun('../');
+        echo '<script src="../' . _jsPath . 'solicitudesGestor.min.js"></script>';
+    }
+    public function jsClientes(){
         $this->jsComun('../');
         echo '<script src="../' . _jsPath . 'clientesGestor.min.js"></script>';
     }
 
-    public function phpGestorController($dependency){ include_once "../controller/gestor.php"; }
-    public function phpNavGestor($dependency){ include_once _assetsPathPHP . "navGestor.php";}
-    public function phpDatosGestor($dependency){ include_once _assetsPathPHP . "datosGestor.php"; }
-    public function phpSolicitudesGestor($dependency){ include_once _assetsPathPHP . "solicitudesGestor.php"; }
-    public function phpClientesGestor($dependency){ include_once _assetsPathPHP . "clientesGestor.php"; }
+    public function phpController($dependency){ include_once "../controller/gestor.php"; }
+    public function phpNav($dependency){ include_once _assetsPathPHP . "navGestor.php";}
+    public function phpMisDatos($dependency){ include_once _assetsPathPHP . "datosGestor.php"; }
+    public function phpAltaCliente($dependency){ include_once _assetsPathPHP . "datosGestor.php"; }
+
+    public function phpSolicitudes($dependency){ include_once _assetsPathPHP . "solicitudesGestor.php"; }
+    public function phpClientes($dependency){ include_once _assetsPathPHP . "clientesGestor.php"; }
 }

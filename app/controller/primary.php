@@ -44,12 +44,12 @@ else if($dependency->getSession()->getUsuario() == null){
 if($dependency->getSession()->getUsuario() != null){
     if($dependency->getPage()->getPage() != 'login'){
         if($dependency->getSession()->getUsuario() instanceof Usuarios_cliente){
-            $dependency->getIncludesCliente()->phpNavCliente($dependency);
-            $dependency->getIncludesCliente()->phpClienteController($dependency);
+            $dependency->getIncludesCliente()->phpNav($dependency);
+            $dependency->getIncludesCliente()->phpController($dependency);
         }
         else {
-            $dependency->getIncludesGestor()->phpNavGestor($dependency);
-            $dependency->getIncludesGestor()->phpGestorController($dependency);
+            $dependency->getIncludesGestor()->phpNav($dependency);
+            $dependency->getIncludesGestor()->phpController($dependency);
         }
     }
     else { $dependency->getPage()->redirectHome();}

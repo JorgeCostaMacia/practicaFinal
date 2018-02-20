@@ -14,13 +14,16 @@ class Page {
     function getTitle(){
         if($this->page === "login") { return "Login"; }
         else if($this->page === "home") { return "Home"; }
-        else if($this->page === "datosCliente") { return "Mis datos"; }
-        else if($this->page === "realizarPedidosCliente") { return "Realizar pedido"; }
-        else if($this->page === "pedidosCliente") { return "Pedidos"; }
-
-        else if($this->page === "datosGestor") { return "Mis datos"; }
-        else if($this->page === "solicitudesGestor") { return "Solicitudes"; }
-        else if($this->page === "clientesGestor") { return "Clientes"; }
+        else if($this->page === "misDatos") { return "Mis datos"; }
+        else if($this->page === "realizarPedidos") { return "Realizar pedido"; }
+        else if($this->page === "pedidos") { return "Pedidos"; }
+        else if($this->page === "albaranes") { return "Albaranes"; }
+        else if($this->page === "facturas") { return "Facturas"; }
+        else if($this->page === "solicitudes") { return "Solicitudes"; }
+        else if($this->page === "clientes") { return "Clientes"; }
+        else if($this->page === "gestores") { return "Gestores"; }
+        else if($this->page === "accesos") { return "Accesos"; }
+        else if($this->page === "actividad") { return "Actividad"; }
     }
 
     function redirectHome(){
