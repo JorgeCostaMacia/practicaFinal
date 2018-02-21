@@ -22,8 +22,8 @@ else if($dependency->getPage()->getPage() === 'altaCliente'){
     $dependency->getIncludesGestor()->jsAltaCliente();
 }
 else if($dependency->getPage()->getPage() === 'altaGestor'){
-    $dependency->getIncludesGestor()->phpSolicitudes($dependency);
-    $dependency->getIncludesGestor()->jsSolicitudes();
+    $dependency->getIncludesGestor()->phpAltaGestor($dependency);
+    $dependency->getIncludesGestor()->jsAltaGestor();
 }
 else if($dependency->getPage()->getPage() === 'solicitudes'){
     $dependency->getIncludesGestor()->phpSolicitudes($dependency);

@@ -24,7 +24,7 @@ class IncludesCliente extends Includes{
 
     function phpController($dependency){ include_once "../controller/cliente.php"; }
     function phpNav($dependency){ include_once _assetsPathPHP . "navCliente.php";}
-    function phpMisDatos($dependency){ include_once _assetsPathPHP . "datosCliente.php"; }
-    function phpRealizarPedidos($dependency){include_once _assetsPathPHP . "RealizarPedidosCliente.php";}
-    function phpPedidos($dependency){include_once _assetsPathPHP . "pedidosCliente.php";}
+    function phpMisDatos($dependency){ include_once _assetsPathPHP . "cliente/misDatos.php"; }
+    function phpRealizarPedidos($dependency){include_once _assetsPathPHP . "cliente/realizarPedidos.php";}
+    function phpPedidos($dependency){include_once _assetsPathPHP . "pedidos.php";}
 }

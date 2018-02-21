@@ -1,6 +1,5 @@
 <div id="wrapper">
     <div class="overlay"></div>
-
     <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
         <ul class="nav sidebar-nav">
             <li class="sidebar-brand"><a href="../misDatos/"><?php echo $dependency->getSession()->getUsuario()->getNombreCompleto(); ?></a></li>
@@ -15,12 +14,13 @@
                 </ul>
             </li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ver/modificar usuarios<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ver / modificar<span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                    <li class="dropdown-header">Ver/modificar usuarios</li>
+                    <li class="dropdown-header">Ver / modificar</li>
                     <li><a href="../solicitudes/">Solicitudes</a></li>
                     <li><a href="../clientes/">Clientes</a></li>
                     <li><a href="../gestores/">Gestores</a></li>
+                    <li><a href="../articulos/">Articulos</a></li>
                 </ul>
             </li>
             <li class="dropdown">
@@ -31,10 +31,16 @@
                     <li><a href="../actividad/">Actividad</a></li>
                 </ul>
             </li>
-            <li><a href="../realizarPedidos/">Realizar pedidos</a></li>
-            <li><a href="../pedidos/">Pedidos</a></li>
-            <li><a href="../albaranes/">Albaranes</a></li>
-            <li><a href="../facturas/">Facturas</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tienda<span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li class="dropdown-header">Tienda</li>
+                    <li><a href="../realizarPedidos/">Realizar pedidos</a></li>
+                    <li><a href="../pedidos/">Pedidos</a></li>
+                    <li><a href="../albaranes/">Albaranes</a></li>
+                    <li><a href="../facturas/">Facturas</a></li>
+                </ul>
+            </li>
             <li><a href="../logout/">Salir</a></li>
         </ul>
     </nav>

@@ -91,4 +91,12 @@ class AjaxGestor{
             $crud->insert($this->connection, $this->dataContent, trim(strtoupper($_POST["cif_dni"])), trim($_POST["nombre_completo"]), trim($_POST["razon_social"]), trim($_POST["domicilio_social"]), trim($_POST["ciudad"]), trim($_POST["email"]), trim($_POST["telefono"]), trim($_POST["nick"]), trim($_POST["password"]));
         }
     }
+
+    public function altaGestor(){
+        $crud = new Usuarios_gestionCRUD();
+        $crud->select($this->connection, $this->dataContent, 'nick','WHERE nick="' . trim($_POST["nick"]) . '"');
+        if(count($this->dataContent->getUsuariosGestion()) === 0) {
+            $crud->insert($this->connection, $this->dataContent, trim($_POST["nombre_completo"]), trim($_POST["nick"]), trim($_POST["password"]));
+        }
+    }
 }
