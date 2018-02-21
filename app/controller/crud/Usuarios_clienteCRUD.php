@@ -15,10 +15,7 @@ class Usuarios_clienteCRUD{
     }
 
     function update($connection, $dataContent){
-        $estado = "";
-        if(isset($_POST["estado"])){ $estado = ' ,estado="' . $_POST["estado"]. '"';}
-
-        $result = $connection->update('usuarios_cliente', 'razon_social="' . trim($_POST['razon_social']) . '", domicilio_social="' . trim($_POST['domicilio_social']) . '", ciudad="' . trim($_POST['ciudad']) . '", email="' . trim($_POST['email']) . '", telefono="' . trim($_POST['telefono']) . '", password="' . trim($_POST['password']) . '"' . $estado, 'WHERE cod_cliente="' . $_POST['cod_cliente'] . '"');
+        $result = $connection->update('usuarios_cliente', 'razon_social="' . trim($_POST['razon_social']) . '", domicilio_social="' . trim($_POST['domicilio_social']) . '", ciudad="' . trim($_POST['ciudad']) . '", email="' . trim($_POST['email']) . '", telefono="' . trim($_POST['telefono']) . '", password="' . trim($_POST['password']) . '", estado="' . $_POST["estado"]. '"', 'WHERE cod_cliente="' . $_POST['cod_cliente'] . '"');
         if ($result["success"]) {
             $dataContent->setSuccess(true);
         }

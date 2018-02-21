@@ -18,4 +18,3 @@ RewriteRule ^facturas/$ app/view/index.php?page=facturas [L]
 RewriteRule ^solicitudes/$ app/view/index.php?page=solicitudes [L]
 RewriteRule ^clientes/$ app/view/index.php?page=clientes [L]
 RewriteRule ^gestores/$ app/view/index.php?page=gestores [L]
-

@@ -1,30 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e713c46a-2ebf-45c8-858a-63d755f86ffd" name="Default" comment="update">
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/cliente.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/comun.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/css/gestor.min.css" />
+    <list default="true" id="e713c46a-2ebf-45c8-858a-63d755f86ffd" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/public/css/cliente.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/public/css/comun.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/public/css/gestor.css" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.php" afterPath="$PROJECT_DIR$/app/config/config.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/system/Includes.php" afterPath="$PROJECT_DIR$/app/controller/system/Includes.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/system/IncludesCliente.php" afterPath="$PROJECT_DIR$/app/controller/system/IncludesCliente.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" afterPath="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" />
-      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/pedidos/controller/ini.js" afterPath="$PROJECT_DIR$/app/sinMin/public/cliente/pedidos/controller/ini.js" />
-      <change beforePath="$PROJECT_DIR$/app/sinMin/public/css/style.css" afterPath="$PROJECT_DIR$/app/sinMin/public/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/clientes/controller/ini.js" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/clientes/controller/ini.js" />
-      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/clientes/view/clientes.js" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/clientes/view/clientes.js" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/datosCliente.php" afterPath="$PROJECT_DIR$/app/view/assets/datosCliente.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/datosGestor.php" afterPath="$PROJECT_DIR$/app/view/assets/datosGestor.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/login.php" afterPath="$PROJECT_DIR$/app/view/assets/login.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/navGestor.php" afterPath="$PROJECT_DIR$/app/view/assets/navGestor.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/index.php" afterPath="$PROJECT_DIR$/app/view/index.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/layout/footer.php" afterPath="$PROJECT_DIR$/app/view/layout/footer.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/layout/head.php" afterPath="$PROJECT_DIR$/app/view/layout/head.php" />
+      <change beforePath="$PROJECT_DIR$/app/controller/crud/Usuarios_clienteCRUD.php" afterPath="$PROJECT_DIR$/app/controller/crud/Usuarios_clienteCRUD.php" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/css/style.css" afterPath="" />
       <change beforePath="$PROJECT_DIR$/app/view/libraries/mensajes.php" afterPath="$PROJECT_DIR$/app/view/libraries/mensajes.php" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/js/clientesGestor.min.js" afterPath="$PROJECT_DIR$/public/js/clientesGestor.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/pedidosCliente.min.js" afterPath="$PROJECT_DIR$/public/js/pedidosCliente.min.js" />
+      <change beforePath="$PROJECT_DIR$/public/css/cliente.min.css" afterPath="$PROJECT_DIR$/public/css/cliente.min.css" />
+      <change beforePath="$PROJECT_DIR$/public/css/comun.min.css" afterPath="$PROJECT_DIR$/public/css/comun.min.css" />
+      <change beforePath="$PROJECT_DIR$/public/css/gestor.min.css" afterPath="$PROJECT_DIR$/public/css/gestor.min.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -63,7 +51,6 @@
         <option value="$PROJECT_DIR$/public/css/404.css" />
         <option value="$PROJECT_DIR$/app/view/assets/errorDocument.php" />
         <option value="$PROJECT_DIR$/app/view/layout/errorDocument.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
         <option value="$PROJECT_DIR$/app/controller/cliente.php" />
         <option value="$PROJECT_DIR$/app/controller/gestor.php" />
         <option value="$PROJECT_DIR$/app/sinMin/public/cliente/datos/controller/datosCliente.js" />
@@ -81,7 +68,6 @@
         <option value="$PROJECT_DIR$/app/controller/crud/Lineas_pedidosCRUD.php" />
         <option value="$PROJECT_DIR$/app/controller/crud/ActividadCRUD.php" />
         <option value="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" />
-        <option value="$PROJECT_DIR$/app/controller/crud/Usuarios_clienteCRUD.php" />
         <option value="$PROJECT_DIR$/app/view/assets/solicitudesGestor.php" />
         <option value="$PROJECT_DIR$/app/view/assets/datosCliente.php" />
         <option value="$PROJECT_DIR$/app/view/assets/datosGestor.php" />
@@ -102,13 +88,15 @@
         <option value="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" />
         <option value="$PROJECT_DIR$/app/view/assets/login.php" />
         <option value="$PROJECT_DIR$/app/controller/head.php" />
-        <option value="$PROJECT_DIR$/public/css/gestor.min.css" />
-        <option value="$PROJECT_DIR$/public/css/cliente.min.css" />
-        <option value="$PROJECT_DIR$/public/css/comun.min.css" />
         <option value="$PROJECT_DIR$/app/view/assets/navCliente.php" />
         <option value="$PROJECT_DIR$/app/view/index.php" />
         <option value="$PROJECT_DIR$/app/view/layout/footer.php" />
         <option value="$PROJECT_DIR$/app/view/libraries/mensajes.php" />
+        <option value="$PROJECT_DIR$/app/controller/crud/Usuarios_clienteCRUD.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/public/css/cliente.min.css" />
+        <option value="$PROJECT_DIR$/public/css/comun.min.css" />
+        <option value="$PROJECT_DIR$/public/css/gestor.min.css" />
       </list>
     </option>
   </component>
@@ -160,49 +148,6 @@
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="layout" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="libraries" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -225,11 +170,11 @@
       <recent name="$PROJECT_DIR$/app/sinMin/public/gestor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jorge Costa Macia\Desktop\Dropbox\ProyectosClase\XAMPP\PHP\practicaFinal\app\sinMin\public\css" />
       <recent name="$PROJECT_DIR$/public/src/img" />
       <recent name="$PROJECT_DIR$/public/css" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/clientes/controller" />
-      <recent name="$PROJECT_DIR$/public/clientes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -292,7 +237,7 @@
       <workItem from="1519126820612" duration="727000" />
       <workItem from="1519154142968" duration="3108000" />
       <workItem from="1519164657646" duration="3092000" />
-      <workItem from="1519200533351" duration="9490000" />
+      <workItem from="1519200533351" duration="9835000" />
     </task>
     <task id="LOCAL-00001" summary="add model crud">
       <created>1518858853743</created>
@@ -357,17 +302,24 @@
       <option name="project" value="LOCAL" />
       <updated>1519157164562</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="update">
+      <created>1519210198456</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1519210198456</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190357000" />
+    <option name="totallyTimeSpent" value="190702000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="900" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -411,29 +363,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controller/gestor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="1" lean-forward="false" selection-start-line="26" selection-start-column="1" selection-end-line="26" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/Ajax/AjaxLimitado.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="169" lean-forward="true" selection-start-line="32" selection-start-column="169" selection-end-line="32" selection-end-column="169" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/Ajax/AjaxCliente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="31" lean-forward="false" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/Ajax/AjaxGestor.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
@@ -472,14 +401,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
           <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/crud/Usuarios_clienteCRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -752,42 +673,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/layout/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="10" lean-forward="false" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/libraries/mensajes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="2" lean-forward="false" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/gestor.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="30" lean-forward="true" selection-start-line="25" selection-start-column="30" selection-end-line="25" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/cliente.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -808,18 +697,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/comun.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="318" column="19" lean-forward="true" selection-start-line="318" selection-start-column="19" selection-end-line="318" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/assets/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/libraries/mensajes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/crud/Usuarios_clienteCRUD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="47" lean-forward="false" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/Ajax/AjaxCliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="32" column="47" lean-forward="true" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="60" lean-forward="false" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/gestor.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="550" lean-forward="false" selection-start-line="0" selection-start-column="550" selection-end-line="0" selection-end-column="550" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/sinMin/public/css/cliente.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/comun.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="5961" lean-forward="false" selection-start-line="0" selection-start-column="5961" selection-end-line="0" selection-end-column="5961" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/cliente.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="488" lean-forward="false" selection-start-line="0" selection-start-column="488" selection-end-line="0" selection-end-column="488" />
           <folding />
         </state>
       </provider>
