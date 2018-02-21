@@ -14,8 +14,8 @@ else if($dependency->getPage()->getPage() === 'misDatos'){
     }
 }
 else if($dependency->getPage()->getPage() === 'altaArticulo'){
-    $dependency->getIncludesGestor()->phpSolicitudes($dependency);
-    $dependency->getIncludesGestor()->jsSolicitudes();
+    $dependency->getIncludesGestor()->phpAltaArticulo($dependency);
+    $dependency->getIncludesGestor()->jsAltaArticulo();
 }
 else if($dependency->getPage()->getPage() === 'altaCliente'){
     $dependency->getIncludesGestor()->phpAltaCliente($dependency);

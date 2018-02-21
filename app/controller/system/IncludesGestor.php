@@ -13,6 +13,10 @@ class IncludesGestor extends Includes{
         $this->jsComun('../');
         echo '<script src="../' . _jsPath . 'datosGestor.min.js"></script>';
     }
+    public function jsAltaArticulo(){
+        $this->jsComun('../');
+        echo '<script src="../' . _jsPath . 'altaCliente.min.js"></script>';
+    }
     public function jsAltaCliente(){
         $this->jsComun('../');
         echo '<script src="../' . _jsPath . 'altaCliente.min.js"></script>';
@@ -35,7 +39,7 @@ class IncludesGestor extends Includes{
     }
 
     public function phpController($dependency){ include_once "../controller/gestor.php"; }
-    public function phpNav($dependency){ include_once _assetsPathPHP . "navGestor.php";}
+    public function phpNav($dependency){ include_once _assetsPathPHP . "gestor/nav.php";}
     public function phpMisDatos($dependency){ include_once _assetsPathPHP . "gestor/misDatos.php"; }
     public function phpAltaCliente($dependency){ include_once _assetsPathPHP . "gestor/altaCliente.php"; }
     public function phpAltaGestor($dependency){ include_once _assetsPathPHP . "gestor/altaGestor.php"; }

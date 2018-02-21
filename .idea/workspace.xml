@@ -2,33 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e713c46a-2ebf-45c8-858a-63d755f86ffd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/altaGestor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/class/Ajax.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/class/AltaGestor.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/ini.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/inputsHandler.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/libraries/typeValidate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/view/mensajes.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/view/assets/gestor/altaArticulo.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/view/assets/gestor/altaGestor.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/altaGestor.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/altaArticulo/controller/altaArticulo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/altaArticulo/controller/class/Ajax.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/altaArticulo/controller/class/AltaArticulo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/altaArticulo/controller/ini.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/altaArticulo/controller/inputsHandler.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/altaArticulo/libraries/typeValidate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/altaArticulo/view/mensajes.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/controller/ajax.php" afterPath="$PROJECT_DIR$/app/controller/ajax.php" />
       <change beforePath="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" afterPath="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/crud/Usuarios_gestionCRUD.php" afterPath="$PROJECT_DIR$/app/controller/crud/Usuarios_gestionCRUD.php" />
       <change beforePath="$PROJECT_DIR$/app/controller/gestor.php" afterPath="$PROJECT_DIR$/app/controller/gestor.php" />
       <change beforePath="$PROJECT_DIR$/app/controller/system/IncludesCliente.php" afterPath="$PROJECT_DIR$/app/controller/system/IncludesCliente.php" />
       <change beforePath="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" afterPath="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/altaCliente.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/altaCliente.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/altaGestor.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/clientesGestor.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/clientes.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/datosCliente.php" afterPath="$PROJECT_DIR$/app/view/assets/cliente/misDatos.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/datosGestor.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/misDatos.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/gestoresGestor.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/gestores.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/navGestor.php" afterPath="$PROJECT_DIR$/app/view/assets/navGestor.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/pedidosCliente.php" afterPath="$PROJECT_DIR$/app/view/assets/cliente/pedidos.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/realizarPedidosCliente.php" afterPath="$PROJECT_DIR$/app/view/assets/cliente/realizarPedidos.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/solicitudesGestor.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/solicitudes.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/assets/gestor/altaArticulo.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/altaArticulo.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/assets/navCliente.php" afterPath="$PROJECT_DIR$/app/view/assets/cliente/nav.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/assets/navGestor.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/nav.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,11 +30,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="altaArticulo.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/altaArticulo.php">
+      <file leaf-file-name="Ajax.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/altaArticulo/controller/class/Ajax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inputsHandler.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/altaArticulo/controller/inputsHandler.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ini.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/altaArticulo/controller/ini.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="altaArticulo.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/altaArticulo/controller/altaArticulo.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -73,9 +91,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/view/layout/footer.php" />
-        <option value="$PROJECT_DIR$/app/view/libraries/mensajes.php" />
-        <option value="$PROJECT_DIR$/app/controller/crud/Usuarios_clienteCRUD.php" />
         <option value="$PROJECT_DIR$/public/css/cliente.min.css" />
         <option value="$PROJECT_DIR$/public/css/comun.min.css" />
         <option value="$PROJECT_DIR$/public/css/gestor.min.css" />
@@ -111,19 +126,22 @@
         <option value="$PROJECT_DIR$/public/altaCliente/controller/altaCliente.js" />
         <option value="$PROJECT_DIR$/public/js/altaCliente.min.js" />
         <option value="$PROJECT_DIR$/app/view/assets/altaGestor.php" />
-        <option value="$PROJECT_DIR$/app/controller/gestor.php" />
         <option value="$PROJECT_DIR$/public/altaGestor/controller/class/AltaGestor.js" />
         <option value="$PROJECT_DIR$/public/altaGestor/controller/ini.js" />
         <option value="$PROJECT_DIR$/public/altaGestor/controller/inputsHandler.js" />
         <option value="$PROJECT_DIR$/app/controller/ajax.php" />
         <option value="$PROJECT_DIR$/app/controller/crud/Usuarios_gestionCRUD.php" />
-        <option value="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" />
         <option value="$PROJECT_DIR$/public/altaGestor/controller/altaGestor.js" />
         <option value="$PROJECT_DIR$/public/js/altaGestor.min.js" />
         <option value="$PROJECT_DIR$/app/view/assets/navGestor.php" />
-        <option value="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" />
         <option value="$PROJECT_DIR$/app/controller/system/IncludesCliente.php" />
+        <option value="$PROJECT_DIR$/app/controller/gestor.php" />
+        <option value="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" />
+        <option value="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" />
         <option value="$PROJECT_DIR$/app/view/assets/gestor/altaArticulo.php" />
+        <option value="$PROJECT_DIR$/public/altaArticulo/controller/class/AltaArticulo.js" />
+        <option value="$PROJECT_DIR$/public/altaArticulo/controller/ini.js" />
+        <option value="$PROJECT_DIR$/public/altaArticulo/controller/altaArticulo.js" />
       </list>
     </option>
   </component>
@@ -182,41 +200,28 @@
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="system" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="altaArticulo" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="altaArticulo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="altaArticulo" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="class" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -234,18 +239,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/altaArticulo" />
       <recent name="$PROJECT_DIR$/public/altaGestor" />
       <recent name="$PROJECT_DIR$/public/altaCliente" />
       <recent name="C:\Users\Jorge Costa Macia\Desktop\Dropbox\ProyectosClase\XAMPP\PHP\practicaFinal\public\gestores" />
       <recent name="C:\Users\Jorge Costa Macia\Desktop\Dropbox\ProyectosClase\XAMPP\PHP\practicaFinal\app\sinMin\public\css" />
-      <recent name="$PROJECT_DIR$/public/src/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/view/assets/gestor" />
+      <recent name="$PROJECT_DIR$/app/view/assets/cliente" />
       <recent name="$PROJECT_DIR$/app/view/assets" />
       <recent name="$PROJECT_DIR$/app/view/gestor" />
       <recent name="$PROJECT_DIR$/app/view/cliente" />
-      <recent name="$PROJECT_DIR$/app/sinMin/public/gestor" />
-      <recent name="C:\Users\Jorge Costa Macia\Desktop\Dropbox\ProyectosClase\XAMPP\PHP\practicaFinal\app\controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -309,7 +314,7 @@
       <workItem from="1519154142968" duration="3108000" />
       <workItem from="1519164657646" duration="3092000" />
       <workItem from="1519200533351" duration="12866000" />
-      <workItem from="1519216461548" duration="8763000" />
+      <workItem from="1519216461548" duration="10752000" />
     </task>
     <task id="LOCAL-00001" summary="add model crud">
       <created>1518858853743</created>
@@ -402,11 +407,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519224382842</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add alta gestor">
+      <created>1519226436445</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1519226436445</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="202496000" />
+    <option name="totallyTimeSpent" value="204485000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -451,7 +463,8 @@
     <MESSAGE value="update css and separate to comun cliente and gestor" />
     <MESSAGE value="add gestores" />
     <MESSAGE value="add alta cliente" />
-    <option name="LAST_COMMIT_MESSAGE" value="add alta cliente" />
+    <MESSAGE value="add alta gestor" />
+    <option name="LAST_COMMIT_MESSAGE" value="add alta gestor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -477,46 +490,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/cliente/pedidos/controller/class/Ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/cliente/pedidos/controller/class/PedidosCliente.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="5" lean-forward="true" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/realizarPedidosCliente.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="696" lean-forward="false" selection-start-line="0" selection-start-column="696" selection-end-line="0" selection-end-column="696" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ajax/AjaxCliente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="37" column="0" lean-forward="false" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/cliente/realizarPedidos/controller/class/RealizarPedidosCliente.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="50" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/solicitudes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
@@ -541,18 +514,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/navCliente.php">
+    <entry file="file://$PROJECT_DIR$/app/view/assets/cliente/nav.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -739,30 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/altaCliente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/gestor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="38" column="1" lean-forward="true" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/db/trabajo_daw.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-538">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/ajax.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -843,34 +784,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="101" column="1" lean-forward="true" selection-start-line="101" selection-start-column="1" selection-end-line="101" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/navGestor.php">
+    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/nav.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="660">
           <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/system/IncludesGestor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="41" column="108" lean-forward="false" selection-start-line="41" selection-start-column="108" selection-end-line="41" selection-end-column="108" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/system/IncludesCliente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="1" lean-forward="true" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -883,10 +800,106 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/altaCliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/altaArticulo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="19" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/system/IncludesCliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="76" lean-forward="false" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/system/IncludesGestor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="17" column="76" lean-forward="false" selection-start-line="17" selection-start-column="76" selection-end-line="17" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/db/trabajo_daw.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-847">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="97" column="43" lean-forward="false" selection-start-line="97" selection-start-column="43" selection-end-line="97" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/gestor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/altaArticulo/controller/class/AltaArticulo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/altaArticulo/controller/class/Ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/altaArticulo/controller/inputsHandler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/altaArticulo/controller/ini.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/altaArticulo/controller/altaArticulo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
           <folding />
         </state>
       </provider>

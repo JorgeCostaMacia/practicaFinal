@@ -80,7 +80,9 @@ class AjaxGestor{
         $crud = new Usuarios_gestionCRUD();
         $crud->update($this->connection, $this->dataContent);
     }
+    public function altaArticulo(){
 
+    }
     public function altaCliente(){
         $crud = new SolicitudesCRUD();
         $crud->select($this->connection, $this->dataContent, '*','WHERE nick="' . trim($_POST["nick"]) . '" OR cif_dni="' . strtoupper(trim($_POST['cif_dni'])) . '"');
