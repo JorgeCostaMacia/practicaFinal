@@ -1,7 +1,7 @@
 <div id="page-content-wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="container" id="formAcountContainer">
                     <form id="formGetAccount" action="../misDatos/" method="POST">
                         <input type="hidden" name="usuario" value="cliente">

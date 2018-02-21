@@ -25,12 +25,12 @@ class AjaxGestor{
 
     public function login(){
         $crud = new Usuarios_gestionCRUD();
-        $crud->select($this->connection, $this->dataContent,'*', 'WHERE nick="' . trim($_POST["nick"]) . '" AND password="' . trim($_POST["password"]) . '" AND estado="activo"');
+        $crud->select($this->connection, $this->dataContent,'*', 'WHERE nick="' . $_POST["nick"] . '" AND password="' . $_POST["password"] . '" AND estado="activo"');
     }
 
     public function acceso(){
         $crud = new Usuarios_gestionCRUD();
-        $crud->select($this->connection, $this->dataContent, '*','WHERE nick="' . trim($_POST["nick"]) . '" AND password="' . trim($_POST["password"]) . '"');
+        $crud->select($this->connection, $this->dataContent, '*','WHERE nick="' . $_POST["nick"] . '" AND password="' . $_POST["password"] . '"');
         $crud = new AccesosCRUD();
         $crud->insert($this->connection, $this->dataContent);
     }
@@ -69,5 +69,26 @@ class AjaxGestor{
     public function updateCliente(){
         $crud = new Usuarios_clienteCRUD();
         $crud->update($this->connection, $this->dataContent);
+    }
+
+    public function searchGestores(){
+        $crud = new Usuarios_gestionCRUD();
+        $crud->select($this->connection, $this->dataContent, '*', 'WHERE ' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%" LIMIT ' . $this->offest . ',' . $this->itemsPage);
+    }
+
+    public function updateGestor(){
+        $crud = new Usuarios_gestionCRUD();
+        $crud->update($this->connection, $this->dataContent);
+    }
+
+    public function altaCliente(){
+        $crud = new SolicitudesCRUD();
+        $crud->select($this->connection, $this->dataContent, '*','WHERE nick="' . trim($_POST["nick"]) . '" OR cif_dni="' . strtoupper(trim($_POST['cif_dni'])) . '"');
+        $crud = new Usuarios_clienteCRUD();
+        $crud->select($this->connection, $this->dataContent, 'nick, cif_dni','WHERE nick="' . trim($_POST["nick"]) . '" OR cif_dni="' . strtoupper(trim($_POST['cif_dni'])) . '"');
+
+        if(count($this->dataContent->getUsuariosCliente()) === 0 && count($this->dataContent->getSolicitudes()) === 0) {
+            $crud->insert($this->connection, $this->dataContent, trim(strtoupper($_POST["cif_dni"])), trim($_POST["nombre_completo"]), trim($_POST["razon_social"]), trim($_POST["domicilio_social"]), trim($_POST["ciudad"]), trim($_POST["email"]), trim($_POST["telefono"]), trim($_POST["nick"]), trim($_POST["password"]));
+        }
     }
 }

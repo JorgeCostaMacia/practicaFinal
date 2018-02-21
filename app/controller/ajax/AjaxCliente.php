@@ -33,7 +33,7 @@ class AjaxCliente{
         $crud->update($this->connection, $this->dataContent);
     }
 
-    public function searchArticulos(){
+    public function searchArticulosActivos(){
         $crud = new ArticulosCRUD();
         $crud->select($this->connection, $this->dataContent, '*', 'WHERE estado="activo" AND ' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%"');
     }

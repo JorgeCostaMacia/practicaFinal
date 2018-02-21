@@ -1,7 +1,7 @@
 <div id="page-content-wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <form id="formSearch" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 navbar-right text-center">
                     <input type="hidden" id="usuario" name="usuario" value="cliente">
                     <input type="hidden" id="cod_cliente" name="cod_cliente" value="<?= $dependency->getSession()->getUsuario()->getCodCliente(); ?>">

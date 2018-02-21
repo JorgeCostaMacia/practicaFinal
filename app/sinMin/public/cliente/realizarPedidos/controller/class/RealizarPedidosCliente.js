@@ -2,7 +2,7 @@
 
 class RealizarPedidosCliente{
     getParameterSearchArticulos(){
-        return 'action=' + 'searchArticulos&' + $("#formSearch").serialize();
+        return 'action=' + 'searchArticulosActivos&' + $("#formSearch").serialize();
     }
 
     getParameterProcesarArticulos(){
