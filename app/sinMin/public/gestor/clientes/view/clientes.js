@@ -33,7 +33,6 @@ function injectModificar(cliente){
     let tableModificar = '<form id="formGetAccount" method="POST">' +
         '<input type="hidden" id="usuario" name="usuario" value="gestor">' +
         '<input type="hidden" name="cod_cliente" value="' + cliente["cod_cliente"] + '">' +
-        '<input type="hidden" name="estado" value="' + cliente["estado"] + '">' +
         '<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">' +
             '<div class="input-group input-group-lg">'+
                 '<span class="input-group-addon "><span class="glyphicon glyphicon-user"></span></span>'+

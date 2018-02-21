@@ -26,6 +26,8 @@ else if($action === "aceptarSolicitud"){$ajax->aceptarSolicitud();}
 else if($action === "cancelarSolicitud"){$ajax->cancelarSolicitud();}
 else if($action === "searchClientes"){$ajax->searchClientes();}
 else if($action === "updateCliente"){$ajax->updateCliente();}
+else if($action === "searchGestores"){$ajax->searchGestores();}
+else if($action === "updateGestor"){$ajax->updateGestor();}
 
 header('Content-Type',  'application/json; charset=utf-8');
 header('Content-Encoding',  'gzip');

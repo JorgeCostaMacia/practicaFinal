@@ -34,6 +34,6 @@ else if($dependency->getPage()->getPage() === 'clientes'){
     $dependency->getIncludesGestor()->jsClientes();
 }
 else if($dependency->getPage()->getPage() === 'gestores'){
-    $dependency->getIncludesGestor()->phpClientes($dependency);
-    $dependency->getIncludesGestor()->jsClientes();
+    $dependency->getIncludesGestor()->phpGestores($dependency);
+    $dependency->getIncludesGestor()->jsGestores();
 }

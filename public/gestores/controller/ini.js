@@ -1,12 +1,12 @@
 "use strict";
 
-var clientesApp = new Clientes();
+var gestoresApp = new Gestores();
 var ajaxApp = new Ajax();
-var clientes = "";
+var gestores = "";
 
-document.onload = addEventsClientes();
+document.onload = addEventsGestores();
 
-function addEventsClientes(){
+function addEventsGestores(){
     $("#search").click(search);
 }
 
@@ -28,14 +28,14 @@ function delEventsAnt(){
 
 function addEventsModificar(clientes){
     for(let i = 0; i < clientes.length; i++){
-        $('#modificar-' + clientes[i]['cod_cliente']).off();
-        $('#modificar-' + clientes[i]['cod_cliente']).click(showCliente);
+        $('#modificar-' + gestores[i]['cod_gestor']).off();
+        $('#modificar-' + gestores[i]['cod_gestor']).click(showGestores);
     }
 }
 
 function addEventsUpdate(){
-    $("#updateCliente").off();
+    $("#updateGestor").off();
     $("#buttonVolver").off();
-    $(document).on('click', "#updateCliente", evalModificar);
-    $(document).on('click', "#buttonVolver", restoreClientes);
+    $(document).on('click', "#updateGestor", evalModificar);
+    $(document).on('click', "#buttonVolver", restoreGestores);
 }

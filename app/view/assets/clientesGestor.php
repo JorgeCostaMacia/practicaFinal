@@ -14,8 +14,9 @@
                         <option value="email">Email</option>
                         <option value="telefono">Telefono</option>
                         <option value="nick">Nick</option>
+                        <option value="estado">Estado</option>
                     </select>
-                    <input name="textSearch" placeholder="Buscar articulo" class="form-control" type="text" maxlength="30" />
+                    <input name="textSearch" placeholder="Buscar clientes" class="form-control" type="text" maxlength="30" />
                     <button type="button" id="search" class="btn btn-primary btn-block"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
                     <ul class="pagination">
                         <li><a href="#" id="anterior">«</a></li>

@@ -7,6 +7,7 @@
                         <input type="hidden" name="usuario" value="cliente">
                         <input type="hidden" name="cod_cliente" value="<?=$dependency->getSession()->getUsuario()->getCodCliente();?>">
                         <input type="hidden" name="nick" value="<?= $dependency->getSession()->getUsuario()->getNick(); ?>">
+                        <input type="hidden" name="estado" value="<?= $dependency->getSession()->getUsuario()->getEstado(); ?>">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div class="input-group input-group-lg">
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>

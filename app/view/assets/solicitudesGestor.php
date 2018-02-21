@@ -14,7 +14,7 @@
                         <option value="telefono">Telefono</option>
                         <option value="nick">Nick</option>
                     </select>
-                    <input name="textSearch" placeholder="Buscar articulo" class="form-control" type="text" maxlength="30" />
+                    <input name="textSearch" placeholder="Buscar solicitudes" class="form-control" type="text" maxlength="30" />
                     <button type="button" id="search" class="btn btn-primary btn-block"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
                 </form>
                 <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">

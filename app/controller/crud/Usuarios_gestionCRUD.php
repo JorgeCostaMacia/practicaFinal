@@ -15,7 +15,7 @@ class Usuarios_gestionCRUD{
     }
 
     function update($connection, $dataContent){
-        $result = $connection->update('usuarios_gestion', 'password="' . trim($_POST['password']) . '"', 'WHERE cod_gestor="' . $_POST['cod_gestor'] . '"');
+        $result = $connection->update('usuarios_gestion', 'password="' . trim($_POST['password']) . '", estado="' . $_POST["estado"]. '"', 'WHERE cod_gestor="' . $_POST['cod_gestor'] . '"');
         if ($result["success"]) {
             $dataContent->setSuccess(true);
         }
