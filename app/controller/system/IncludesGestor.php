@@ -1,6 +1,14 @@
 <?php
 
 class IncludesGestor extends Includes{
+    function css(){
+        foreach(_actualPath as $apath){
+            $filePath = $apath . _cssPath . _cssGestorFileName . '.css';
+            if (file_exists($filePath) && is_file($filePath)) {
+                echo '<link rel="stylesheet" href="' . $filePath . '">';
+            }
+        }
+    }
     public function jsMisDatos(){
         $this->jsComun('../');
         echo '<script src="../' . _jsPath . 'datosGestor.min.js"></script>';

@@ -34,8 +34,8 @@ function addEventsModificar(clientes){
 }
 
 function addEventsUpdate(){
-    $(document).on("#updateCliente").off();
-    $(document).on("#buttonVolver").off();
+    $("#updateCliente").on("#updateCliente");
+    $("#buttonVolver").on("#buttonVolver");
     $(document).on('click', "#updateCliente", evalModificar);
     $(document).on('click', "#buttonVolver", restoreClientes);
 }

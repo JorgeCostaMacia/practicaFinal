@@ -5,4 +5,4 @@ function msjDanger($accion, $text){
 
 function msjSuccess($accion, $text){
     echo '<script>msjInfo("' . $accion .'","' . $text . '");</script>';
-}
+}s

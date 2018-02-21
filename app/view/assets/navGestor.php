@@ -38,7 +38,6 @@
             <li><a href="../logout/">Salir</a></li>
         </ul>
     </nav>
-
     <button type="button" class="menu-cross is-closed" data-toggle="offcanvas">
         <span class="cross-top"></span>
         <span class="cross-middle"></span>

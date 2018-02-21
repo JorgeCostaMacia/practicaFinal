@@ -7,9 +7,9 @@
 	}
 }
 
-table{
-	margin-bottom: 50px;
-}
+table{margin-bottom: 100px;}
+form{margin-bottom: 100px;}
+.panel{margin-bottom: 100px;}
 
 .modal-header-success {
 	color:#fff;
@@ -50,7 +50,6 @@ table{
 	border-top-right-radius: 5px;
 }
 
-/** MENSAJES **/
 .modal-header-info {
 	color:#fff;
 	padding:9px 15px;
@@ -64,7 +63,6 @@ table{
 	border-top-right-radius: 5px;
 }
 
-/** MENSAJES **/
 .modal-header-primary {
 	color:#fff;
 	padding:9px 15px;
@@ -78,7 +76,6 @@ table{
 	border-top-right-radius: 5px;
 }
 
-/** FOOTER **/
 .footer-bottom {
 	height: 50px;
 	padding-top: 10px;
@@ -89,13 +86,13 @@ table{
 	color: white;
 }
 
-
+/*
 body {
 	position: relative;
 	overflow-x: hidden;
 }
-body,
-html { height: 100%;}
+*/
+body, html { height: 100%;}
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {background-color: transparent;}

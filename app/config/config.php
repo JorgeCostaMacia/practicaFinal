@@ -12,7 +12,9 @@ define("_layoutsPathPHP", 'layout/');
 
 /* PATHS CSS */
 define("_cssPath", 'practicaFinal/public/css/');
-define("_cssFileName", ['bootstrap.min', 'style.min']);
+define("_cssComunFileName", ['bootstrap.min', 'comun.min']);
+define("_cssClienteFileName", 'cliente.min');
+define("_cssGestorFileName", 'gestor.min');
 
 /* PATHS JS */
 define("_jsPath", 'public/js/');

@@ -6,10 +6,10 @@
 
 <!DOCTYPE html>
 <html lang="en">
-    <head><?php $dependency->getIncludes()->phpHead($dependency); ?></head>
+    <head><?php $dependency->getIncludes()->phpHeadController($dependency); ?></head>
     <body>
         <div id="mensajes"></div>
         <?php $dependency->getIncludes()->phpPriController($dependency); ?>
-        <?php $dependency->getIncludes()->phpFooter(); ?>
+        <?php //$dependency->getIncludes()->phpFooter(); ?>
     </body>
 </html>

@@ -2,4 +2,4 @@
     <div class="container text-center">
         <a href="https://github.com/JorgeCostaMacia"> Copyright © Jorge Costa Macia 2018. All right reserved. </a>
     </div>
-</footer>
+</footer>s

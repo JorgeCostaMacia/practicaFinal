@@ -34,8 +34,8 @@ function addEventsLineas(pedidos){
 }
 
 function addEventsButtonLineas(){
-    $(document).on("#buttonLineas").off();
-    $(document).on("#buttonVolver").off();
+    $("#buttonLineas").off();
+    $("#buttonVolver").off();
     $(document).on('click', "#buttonLineas", evalCantidades);
     $(document).on('click', "#buttonVolver", restorePedidos);
 }
