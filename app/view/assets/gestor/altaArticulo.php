@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <form id="formGetAccount" method="POST">
+                <form id="formAltaArticulo" method="POST">
                     <input type="hidden" id="usuario" name="usuario" value="gestor">
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="input-group input-group-lg">
@@ -28,7 +28,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="input-group input-group-lg">
                             <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
-                            <input type="number" name="descuento" id="descuento" maxlength="10" step="1" min="0" class="form-control" placeholder="Descuento" required>
+                            <input type="number" name="descuento" id="descuento" maxlength="10" step="0.01" min="0" max="1" class="form-control" placeholder="Descuento" required>
                         </div>
                         <br>
                     </div>

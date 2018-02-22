@@ -13,4 +13,16 @@ class ArticulosCRUD{
             $dataContent->addErrores($result["error"]);
         }
     }
+    function insert($connection, $dataContent, $nombre, $descripcion, $precio, $descuento, $iva) {
+        $result = $connection->insert('articulos(nombre, descripcion, precio, descuento, iva, estado)', '("' . $nombre . '","' . $descripcion . '",' . $precio . ',' . $descuento . ',' . $iva . ',"activo")');
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->addErrores($result["error"]);
+        }
+    }
+
 }

@@ -30,6 +30,8 @@ else if($action === "searchGestores"){$ajax->searchGestores();}
 else if($action === "updateGestor"){$ajax->updateGestor();}
 else if($action === "altaCliente"){$ajax->altaCliente();}
 else if($action === "altaGestor"){$ajax->altaGestor();}
+else if($action === "altaArticulo"){$ajax->altaArticulo();}
+
 
 
 header('Content-Type',  'application/json; charset=utf-8');

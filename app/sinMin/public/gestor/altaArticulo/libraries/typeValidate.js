@@ -59,6 +59,11 @@ function esNumeros(dato){
     return controlDato;
 }
 
+function esNumeroDecimal(dato){
+    let nums = dato.split('.');
+    return nums.length === 2 && (nums[0] === "0" || parseInt(nums[0])) && (nums[1] === "0" || parseInt(nums[1]));
+}
+
 function esTextoEspacioPuntoComaBarraNumero(dato){
     let controlDato = true;
     if(dato !== "" && dato !== null){

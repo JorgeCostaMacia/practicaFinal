@@ -56,6 +56,7 @@ class AjaxGestor{
 
         $this->connection->endTransaction($this->dataContent->getSuccess());
     }
+
     public function cancelarSolicitud(){
         $crud = new SolicitudesCRUD();
         $crud->delete($this->connection, $this->dataContent, 'cod_solicitud=' . $_POST["cod_solicitud"]);
@@ -80,9 +81,12 @@ class AjaxGestor{
         $crud = new Usuarios_gestionCRUD();
         $crud->update($this->connection, $this->dataContent);
     }
-    public function altaArticulo(){
 
+    public function altaArticulo(){
+        $crud = new ArticulosCRUD();
+        $crud->insert($this->connection, $this->dataContent, trim($_POST["nombre"]), trim($_POST["descripcion"]), $_POST["precio"], $_POST["descuento"], $_POST["iva"]);
     }
+
     public function altaCliente(){
         $crud = new SolicitudesCRUD();
         $crud->select($this->connection, $this->dataContent, '*','WHERE nick="' . trim($_POST["nick"]) . '" OR cif_dni="' . strtoupper(trim($_POST['cif_dni'])) . '"');
@@ -101,4 +105,5 @@ class AjaxGestor{
             $crud->insert($this->connection, $this->dataContent, trim($_POST["nombre_completo"]), trim($_POST["nick"]), trim($_POST["password"]));
         }
     }
+
 }

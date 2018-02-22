@@ -15,7 +15,7 @@ function evalRegistro(){
 
 function callBackEvalRegistro(result){
     if (!result["success"]) {
-        msjDanger("ALTA GESTOR", result["errores"][0]["errMessage"]);
+        msjDanger("ALTA ARTICULO", result["errores"][0]["errMessage"]);
     }
     else {
         msjInfo("ALTA ARTICULO", "Se ha efectuado el alta correctamente");

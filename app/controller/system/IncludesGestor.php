@@ -15,7 +15,7 @@ class IncludesGestor extends Includes{
     }
     public function jsAltaArticulo(){
         $this->jsComun('../');
-        echo '<script src="../' . _jsPath . 'altaCliente.min.js"></script>';
+        echo '<script src="../' . _jsPath . 'altaArticulo.min.js"></script>';
     }
     public function jsAltaCliente(){
         $this->jsComun('../');
