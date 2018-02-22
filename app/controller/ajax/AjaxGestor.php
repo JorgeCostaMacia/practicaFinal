@@ -82,6 +82,16 @@ class AjaxGestor{
         $crud->update($this->connection, $this->dataContent);
     }
 
+    public function searchArticulos(){
+        $crud = new ArticulosCRUD();
+        $crud->select($this->connection, $this->dataContent, '*', 'WHERE ' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%" LIMIT ' . $this->offest . ',' . $this->itemsPage);
+    }
+
+    public function updateArticulo(){
+        $crud = new ArticulosCRUD();
+        $crud->update($this->connection, $this->dataContent);
+    }
+
     public function altaArticulo(){
         $crud = new ArticulosCRUD();
         $crud->insert($this->connection, $this->dataContent, trim($_POST["nombre"]), trim($_POST["descripcion"]), $_POST["precio"], $_POST["descuento"], $_POST["iva"]);
@@ -105,5 +115,6 @@ class AjaxGestor{
             $crud->insert($this->connection, $this->dataContent, trim($_POST["nombre_completo"]), trim($_POST["nick"]), trim($_POST["password"]));
         }
     }
+
 
 }

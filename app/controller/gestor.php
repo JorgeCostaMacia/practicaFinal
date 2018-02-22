@@ -9,7 +9,7 @@ else if($dependency->getPage()->getPage() === 'misDatos'){
     $dependency->getIncludesGestor()->phpMisDatos($dependency);
     $dependency->getIncludesGestor()->jsMisDatos();
     if(isset($_POST["nick"])){
-        msjSuccess("UPDATE", "Se ha modificado correctamente");
+        msjSuccess("MIS DATOS", "<strong>Se ha modificado correctamente</strong>");
         $dependency->getSession()->setUsuario($dependency->getSessionIni()->ini($dependency));
     }
 }
@@ -36,4 +36,8 @@ else if($dependency->getPage()->getPage() === 'clientes'){
 else if($dependency->getPage()->getPage() === 'gestores'){
     $dependency->getIncludesGestor()->phpGestores($dependency);
     $dependency->getIncludesGestor()->jsGestores();
+}
+else if($dependency->getPage()->getPage() === 'articulos'){
+    $dependency->getIncludesGestor()->phpArticulos($dependency);
+    $dependency->getIncludesGestor()->jsArticulos();
 }

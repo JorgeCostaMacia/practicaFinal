@@ -9,7 +9,7 @@ else if($dependency->getPage()->getPage() === 'misDatos'){
     $dependency->getIncludesCliente()->phpMisDatos($dependency);
     $dependency->getIncludesCliente()->jsMisDatos();
     if(isset($_POST["nick"])){
-        msjSuccess("UPDATE", "Se ha modificado correctamente");
+        msjSuccess("MIS DATOS", "<strong>Se ha modificado correctamente</strong>");
         $dependency->getSession()->setUsuario($dependency->getSessionIni()->ini($dependency));
     }
 }

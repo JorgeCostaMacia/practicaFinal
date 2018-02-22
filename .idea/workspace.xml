@@ -2,21 +2,135 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e713c46a-2ebf-45c8-858a-63d755f86ffd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/inputsHandler.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/altaArticulo.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/view/assets/gestor/articulos.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/cliente/misDatos.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/cliente/pedidos.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/cliente/realizarPedidos.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/gestor/altaCliente.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/gestor/articulos.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/gestor/misDatos.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/sinMin/cliente/misDatos/view/mensajes.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/sinMin/cliente/pedidos/view/mensajes.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/sinMin/gestor/articulos/controller/articulos.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/sinMin/gestor/articulos/controller/class/Articulos.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/sinMin/gestor/articulos/controller/ini.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/sinMin/gestor/articulos/controller/inputsHandler.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/sinMin/gestor/articulos/libraries/typeValidate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/sinMin/gestor/articulos/view/articulos.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/sinMin/gestor/articulos/view/mensajes.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/sinMin/gestor/solicitudes/controller/class/Ajax.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/sinMin/login/controller/ini.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/public/sinMin/login/view/mensajes.js" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/app/controller/ajax.php" afterPath="$PROJECT_DIR$/app/controller/ajax.php" />
       <change beforePath="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" afterPath="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" />
+      <change beforePath="$PROJECT_DIR$/app/controller/cliente.php" afterPath="$PROJECT_DIR$/app/controller/cliente.php" />
       <change beforePath="$PROJECT_DIR$/app/controller/crud/ArticulosCRUD.php" afterPath="$PROJECT_DIR$/app/controller/crud/ArticulosCRUD.php" />
+      <change beforePath="$PROJECT_DIR$/app/controller/gestor.php" afterPath="$PROJECT_DIR$/app/controller/gestor.php" />
+      <change beforePath="$PROJECT_DIR$/app/controller/system/IncludesCliente.php" afterPath="$PROJECT_DIR$/app/controller/system/IncludesCliente.php" />
       <change beforePath="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" afterPath="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/gestor/altaArticulo.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/altaArticulo.php" />
-      <change beforePath="$PROJECT_DIR$/public/altaArticulo/controller/altaArticulo.js" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/altaArticulo.js" />
-      <change beforePath="$PROJECT_DIR$/public/altaArticulo/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/altaArticulo/controller/class/AltaArticulo.js" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/class/AltaArticulo.js" />
-      <change beforePath="$PROJECT_DIR$/public/altaArticulo/controller/ini.js" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/ini.js" />
-      <change beforePath="$PROJECT_DIR$/public/altaArticulo/controller/inputsHandler.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/public/altaArticulo/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/libraries/typeValidate.js" />
-      <change beforePath="$PROJECT_DIR$/public/altaArticulo/view/mensajes.js" afterPath="$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/view/mensajes.js" />
+      <change beforePath="$PROJECT_DIR$/app/controller/system/Page.php" afterPath="$PROJECT_DIR$/app/controller/system/Page.php" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/datos/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/misDatos/controller/class/Ajax.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/datos/controller/class/Update.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/misDatos/controller/class/Update.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/datos/controller/datosCliente.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/misDatos/controller/misDatos.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/datos/controller/ini.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/misDatos/controller/ini.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/datos/controller/inputsHandler.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/misDatos/controller/inputsHandler.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/datos/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/misDatos/libraries/typeValidate.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/datos/view/mensajes.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/realizarPedidos/view/mensajes.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/pedidos/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/pedidos/controller/class/Ajax.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/pedidos/controller/class/PedidosCliente.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/pedidos/controller/class/Pedidos.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/pedidos/controller/ini.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/pedidos/controller/ini.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/pedidos/controller/inputsHandler.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/pedidos/controller/inputsHandler.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/pedidos/controller/lineasCliente.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/pedidos/controller/lineas.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/pedidos/controller/pedidosCliente.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/pedidos/controller/pedidos.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/pedidos/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/pedidos/libraries/typeValidate.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/pedidos/view/mensajes.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaArticulo/view/mensajes.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/pedidos/view/pedidosCliente.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/pedidos/view/pedidos.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/realizarPedidos/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/realizarPedidos/controller/class/Ajax.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/realizarPedidos/controller/class/RealizarPedidosCliente.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/realizarPedidos/controller/class/RealizarPedidos.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/realizarPedidos/controller/ini.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/realizarPedidos/controller/ini.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/realizarPedidos/controller/inputsHandler.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/realizarPedidos/controller/inputsHandler.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/realizarPedidos/controller/realizarPedidosCliente.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/realizarPedidos/controller/realizarPedidos.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/realizarPedidos/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/realizarPedidos/libraries/typeValidate.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/realizarPedidos/view/mensajes.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaCliente/view/mensajes.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/cliente/realizarPedidos/view/realizarPedidosCliente.js" afterPath="$PROJECT_DIR$/public/sinMin/cliente/realizarPedidos/view/realizarPedidos.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/css/cliente.css" afterPath="$PROJECT_DIR$/public/sinMin/css/cliente.css" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/css/comun.css" afterPath="$PROJECT_DIR$/public/sinMin/css/comun.css" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/css/gestor.css" afterPath="$PROJECT_DIR$/public/sinMin/css/gestor.css" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/altaArticulo.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaArticulo/controller/altaArticulo.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaArticulo/controller/class/Ajax.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/class/AltaArticulo.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaArticulo/controller/class/AltaArticulo.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/ini.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaArticulo/controller/ini.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/inputsHandler.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaArticulo/controller/inputsHandler.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaArticulo/libraries/typeValidate.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/view/mensajes.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaGestor/view/mensajes.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaCliente/controller/altaCliente.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaCliente/controller/altaCliente.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaCliente/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaCliente/controller/class/Ajax.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaCliente/controller/class/AltaCliente.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaCliente/controller/class/AltaCliente.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaCliente/controller/ini.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaCliente/controller/ini.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaCliente/controller/inputsHandler.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaCliente/controller/inputsHandler.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaCliente/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaCliente/libraries/typeValidate.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaCliente/view/mensajes.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/clientes/view/mensajes.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/altaGestor.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaGestor/controller/altaGestor.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaGestor/controller/class/Ajax.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/class/AltaGestor.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaGestor/controller/class/AltaGestor.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/ini.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaGestor/controller/ini.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/inputsHandler.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaGestor/controller/inputsHandler.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/altaGestor/libraries/typeValidate.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/view/mensajes.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/gestores/view/mensajes.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/clientes/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/articulos/controller/class/Ajax.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/clientes/controller/class/Clientes.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/clientes/controller/class/Clientes.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/clientes/controller/clientes.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/clientes/controller/clientes.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/clientes/controller/ini.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/clientes/controller/ini.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/clientes/controller/inputsHandler.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/clientes/controller/inputsHandler.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/clientes/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/clientes/libraries/typeValidate.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/clientes/view/clientes.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/clientes/view/clientes.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/clientes/view/mensajes.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/misDatos/view/mensajes.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/datos/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/clientes/controller/class/Ajax.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/datos/controller/class/Update.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/misDatos/controller/class/Update.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/datos/controller/datosGestor.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/misDatos/controller/misDatos.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/datos/controller/ini.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/misDatos/controller/ini.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/datos/controller/inputsHandler.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/misDatos/controller/inputsHandler.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/datos/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/gestores/libraries/typeValidate.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/datos/view/mensajes.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/solicitudes/view/mensajes.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/gestores/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/gestores/controller/class/Ajax.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/gestores/controller/class/Gestores.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/gestores/controller/class/Gestores.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/gestores/controller/gestores.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/gestores/controller/gestores.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/gestores/controller/ini.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/gestores/controller/ini.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/gestores/controller/inputsHandler.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/gestores/controller/inputsHandler.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/gestores/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/misDatos/libraries/typeValidate.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/gestores/view/gestores.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/gestores/view/gestores.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/gestores/view/mensajes.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/solicitudes/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/misDatos/controller/class/Ajax.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/solicitudes/controller/class/Solicitudes.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/solicitudes/controller/class/Solicitudes.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/solicitudes/controller/ini.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/solicitudes/controller/ini.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/solicitudes/controller/solicitudes.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/solicitudes/controller/solicitudes.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/solicitudes/view/mensajes.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/gestor/solicitudes/view/solicitudes.js" afterPath="$PROJECT_DIR$/public/sinMin/gestor/solicitudes/view/solicitudes.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/login/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/sinMin/login/controller/class/Ajax.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/login/controller/class/Login.js" afterPath="$PROJECT_DIR$/public/sinMin/login/controller/class/Login.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/login/controller/class/Registro.js" afterPath="$PROJECT_DIR$/public/sinMin/login/controller/class/Registro.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/login/controller/ini.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/login/controller/inputsHandler.js" afterPath="$PROJECT_DIR$/public/sinMin/login/controller/inputsHandler.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/login/controller/login.js" afterPath="$PROJECT_DIR$/public/sinMin/login/controller/login.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/login/controller/registro.js" afterPath="$PROJECT_DIR$/public/sinMin/login/controller/registro.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/login/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/sinMin/login/libraries/typeValidate.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/login/view/login.js" afterPath="$PROJECT_DIR$/public/sinMin/login/view/login.js" />
+      <change beforePath="$PROJECT_DIR$/app/sinMin/public/login/view/mensajes.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/app/view/assets/cliente/misDatos.php" afterPath="$PROJECT_DIR$/app/view/assets/cliente/misDatos.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/libraries/mensajes.php" afterPath="$PROJECT_DIR$/app/view/libraries/mensajes.php" />
+      <change beforePath="$PROJECT_DIR$/public/js/altaArticulo.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/altaArticulo.min.js" />
+      <change beforePath="$PROJECT_DIR$/public/js/altaCliente.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/altaGestor.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/altaGestor.min.js" />
+      <change beforePath="$PROJECT_DIR$/public/js/clientesGestor.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/clientes.min.js" />
+      <change beforePath="$PROJECT_DIR$/public/js/datosCliente.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/datosGestor.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/gestoresGestor.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/gestores.min.js" />
+      <change beforePath="$PROJECT_DIR$/public/js/login.min.js" afterPath="$PROJECT_DIR$/public/js/login.min.js" />
+      <change beforePath="$PROJECT_DIR$/public/js/pedidosCliente.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/realizarPedidosCliente.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/js/solicitudesGestor.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/solicitudes.min.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,57 +164,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/sinMin/public/gestor/clientes/controller/ini.js" />
-        <option value="$PROJECT_DIR$/public/gestores/controller/ini.js" />
-        <option value="$PROJECT_DIR$/public/gestores/controller/inputsHandler.js" />
-        <option value="$PROJECT_DIR$/public/gestores/view/clientes.js" />
-        <option value="$PROJECT_DIR$/app/controller/Ajax/AjaxGestor.php" />
-        <option value="$PROJECT_DIR$/app/sinMin/public/gestor/clientes/view/clientes.js" />
-        <option value="$PROJECT_DIR$/public/gestores/controller/gestores.js" />
-        <option value="$PROJECT_DIR$/public/gestores/view/gestores.js" />
-        <option value="$PROJECT_DIR$/public/js/datosCliente.min.js" />
-        <option value="$PROJECT_DIR$/app/controller/cliente.php" />
-        <option value="$PROJECT_DIR$/public/js/pedidosCliente.min.js" />
-        <option value="$PROJECT_DIR$/public/js/gestoresGestor.min.js" />
-        <option value="$PROJECT_DIR$/app/view/index.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/app/sinMin/public/cliente/realizarPedidos/controller/class/RealizarPedidosCliente.js" />
-        <option value="$PROJECT_DIR$/public/js/realizarPedidosCliente.min.js" />
-        <option value="$PROJECT_DIR$/app/view/assets/altaCliente.php" />
-        <option value="$PROJECT_DIR$/app/view/assets/clientesGestor.php" />
-        <option value="$PROJECT_DIR$/app/view/assets/datosCliente.php" />
-        <option value="$PROJECT_DIR$/app/view/assets/datosGestor.php" />
-        <option value="$PROJECT_DIR$/app/view/assets/gestoresGestor.php" />
-        <option value="$PROJECT_DIR$/app/view/assets/pedidosCliente.php" />
-        <option value="$PROJECT_DIR$/app/view/assets/realizarPedidosCliente.php" />
-        <option value="$PROJECT_DIR$/app/view/assets/solicitudesGestor.php" />
-        <option value="$PROJECT_DIR$/public/altaCliente/controller/class/Ajax.js" />
-        <option value="$PROJECT_DIR$/public/altaCliente/controller/class/Registro.js" />
-        <option value="$PROJECT_DIR$/public/altaCliente/controller/class/AltaCliente.js" />
-        <option value="$PROJECT_DIR$/public/altaCliente/controller/ini.js" />
-        <option value="$PROJECT_DIR$/public/altaCliente/controller/altaCliente.js" />
-        <option value="$PROJECT_DIR$/public/js/altaCliente.min.js" />
-        <option value="$PROJECT_DIR$/app/view/assets/altaGestor.php" />
-        <option value="$PROJECT_DIR$/public/altaGestor/controller/class/AltaGestor.js" />
-        <option value="$PROJECT_DIR$/public/altaGestor/controller/ini.js" />
-        <option value="$PROJECT_DIR$/public/altaGestor/controller/inputsHandler.js" />
-        <option value="$PROJECT_DIR$/app/controller/crud/Usuarios_gestionCRUD.php" />
-        <option value="$PROJECT_DIR$/public/altaGestor/controller/altaGestor.js" />
-        <option value="$PROJECT_DIR$/public/js/altaGestor.min.js" />
-        <option value="$PROJECT_DIR$/app/view/assets/navGestor.php" />
+        <option value="$PROJECT_DIR$/public/sinMin/cliente/misDatos/controller/class/DatosCliente.js" />
+        <option value="$PROJECT_DIR$/app/view/assets/cliente/misDatos.php" />
+        <option value="$PROJECT_DIR$/public/sinMin/cliente/misDatos/controller/class/Update.js" />
+        <option value="$PROJECT_DIR$/app/view/libraries/mensajes.php" />
+        <option value="$PROJECT_DIR$/public/sinMin/cliente/pedidos/controller/class/Pedidos.js" />
         <option value="$PROJECT_DIR$/app/controller/system/IncludesCliente.php" />
+        <option value="$PROJECT_DIR$/public/sinMin/cliente/pedidos/controller/ini.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/misDatos/view/mensajes.js" />
+        <option value="$PROJECT_DIR$/public/js/gestor/misDatos.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/altaArticulo/view/mensajes.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/misDatos/controller/misDatos.js" />
+        <option value="$PROJECT_DIR$/public/js/gestor/misDatos.min.js" />
+        <option value="$PROJECT_DIR$/app/controller/cliente.php" />
         <option value="$PROJECT_DIR$/app/controller/gestor.php" />
-        <option value="$PROJECT_DIR$/public/altaArticulo/controller/ini.js" />
-        <option value="$PROJECT_DIR$/public/altaArticulo/libraries/typeValidate.js" />
-        <option value="$PROJECT_DIR$/public/altaArticulo/controller/altaArticulo.js" />
-        <option value="$PROJECT_DIR$/app/view/assets/gestor/altaArticulo.php" />
-        <option value="$PROJECT_DIR$/public/altaArticulo/controller/class/AltaArticulo.js" />
-        <option value="$PROJECT_DIR$/app/controller/ajax.php" />
-        <option value="$PROJECT_DIR$/app/controller/crud/ArticulosCRUD.php" />
-        <option value="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" />
-        <option value="$PROJECT_DIR$/public/altaArticulo/controller/inputsHandler.js" />
-        <option value="$PROJECT_DIR$/public/js/altaArticulo.min.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/cliente/misDatos/controller/misDatos.js" />
+        <option value="$PROJECT_DIR$/public/js/cliente/misDatos.min.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/cliente/realizarPedidos/controller/realizarPedidos.js" />
+        <option value="$PROJECT_DIR$/public/js/cliente/realizarPedidos.min.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/cliente/pedidos/controller/pedidos.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/cliente/pedidos/controller/lineas.js" />
+        <option value="$PROJECT_DIR$/public/js/cliente/pedidos.min.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/altaArticulo/controller/altaArticulo.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/altaArticulo/controller/inputsHandler.js" />
+        <option value="$PROJECT_DIR$/public/js/gestor/altaArticulo.min.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/altaCliente/controller/altaCliente.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/altaCliente/view/mensajes.js" />
+        <option value="$PROJECT_DIR$/public/js/altaCliente.min.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/altaGestor/view/mensajes.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/altaGestor/controller/altaGestor.js" />
+        <option value="$PROJECT_DIR$/public/js/gestor/altaGestor.min.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/solicitudes/view/mensajes.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/solicitudes/controller/ini.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/solicitudes/controller/solicitudes.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/solicitudes/controller/class/Solicitudes.js" />
+        <option value="$PROJECT_DIR$/public/js/gestor/solicitudes.min.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/login/controller/registro.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/login/controller/ini.js" />
+        <option value="$PROJECT_DIR$/public/js/login.min.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/clientes/view/mensajes.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/clientes/controller/clientes.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/gestores/view/mensajes.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/gestores/controller/gestores.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/gestores/view/gestores.js" />
+        <option value="$PROJECT_DIR$/public/js/gestor/gestores.min.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/clientes/view/clientes.js" />
+        <option value="$PROJECT_DIR$/public/js/gestor/clientes.min.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/articulos/controller/articulos.js" />
         <option value="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/articulos/controller/inputsHandler.js" />
+        <option value="$PROJECT_DIR$/public/js/gestor/articulos.min.js" />
+        <option value="$PROJECT_DIR$/public/sinMin/gestor/articulos/view/articulos.js" />
       </list>
     </option>
   </component>
@@ -168,27 +282,84 @@
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="system" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="articulos" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="articulos" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="articulos" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="class" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="articulos" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="libraries" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="articulos" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -205,18 +376,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/sinMin/public/gestor" />
-      <recent name="$PROJECT_DIR$/app/view/assets/gestor" />
-      <recent name="$PROJECT_DIR$/app/view/assets/cliente" />
-      <recent name="$PROJECT_DIR$/app/view/assets" />
-      <recent name="$PROJECT_DIR$/app/view/gestor" />
+      <recent name="$PROJECT_DIR$/public/js/gestor" />
+      <recent name="$PROJECT_DIR$/public/js/cliente" />
+      <recent name="$PROJECT_DIR$/public/sinMin" />
+      <recent name="$PROJECT_DIR$/public/sinMin/public/gestor" />
+      <recent name="$PROJECT_DIR$/public" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/articulos" />
       <recent name="$PROJECT_DIR$/public/altaArticulo" />
       <recent name="$PROJECT_DIR$/public/altaGestor" />
       <recent name="$PROJECT_DIR$/public/altaCliente" />
       <recent name="C:\Users\Jorge Costa Macia\Desktop\Dropbox\ProyectosClase\XAMPP\PHP\practicaFinal\public\gestores" />
-      <recent name="C:\Users\Jorge Costa Macia\Desktop\Dropbox\ProyectosClase\XAMPP\PHP\practicaFinal\app\sinMin\public\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -282,7 +453,7 @@
       <workItem from="1519200533351" duration="12866000" />
       <workItem from="1519216461548" duration="10778000" />
       <workItem from="1519282619088" duration="112000" />
-      <workItem from="1519285274239" duration="3308000" />
+      <workItem from="1519285274239" duration="20927000" />
     </task>
     <task id="LOCAL-00001" summary="add model crud">
       <created>1518858853743</created>
@@ -389,11 +560,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519228455989</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add alta articulo">
+      <created>1519289090623</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1519289090623</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="207931000" />
+    <option name="totallyTimeSpent" value="225550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -408,7 +586,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2956381" sideWeight="0.5048143" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19807428" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4511692" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -439,405 +617,420 @@
     <MESSAGE value="add alta cliente" />
     <MESSAGE value="add alta gestor" />
     <MESSAGE value="ini alta articulo" />
-    <option name="LAST_COMMIT_MESSAGE" value="ini alta articulo" />
+    <MESSAGE value="add alta articulo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add alta articulo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controller/ajax/AjaxCliente.php</url>
-          <line>35</line>
-          <option name="timeStamp" value="413" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controller/ajax/AjaxCliente.php</url>
-          <line>36</line>
-          <option name="timeStamp" value="414" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/app/controller/ajax/AjaxCliente.php</url>
-          <line>37</line>
-          <option name="timeStamp" value="415" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="427" />
+      <option name="time" value="461" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/misDatos.php">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/altaGestor/controller/class/Ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="63" lean-forward="false" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/cliente/misDatos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="63" lean-forward="false" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/clientes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="63" lean-forward="false" selection-start-line="3" selection-start-column="63" selection-end-line="3" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/altaCliente/view/login.js" />
-    <entry file="file://$PROJECT_DIR$/app/controller/ajax/AjaxLimitado.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaCliente/controller/class/Ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="11" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaCliente/controller/ini.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaCliente/libraries/typeValidate.js">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/altaGestor/controller/class/AltaGestor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="137" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="137" selection-end-column="1" />
+        <state relative-caret-position="403">
+          <caret line="64" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="64" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/altaCliente.min.js">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/solicitudes/controller/solicitudes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="56" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/solicitudes/view/mensajes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="80" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/gestor/solicitudes.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="10128" lean-forward="false" selection-start-line="0" selection-start-column="10128" selection-end-line="0" selection-end-column="10128" />
+          <caret line="0" column="6044" lean-forward="false" selection-start-line="0" selection-start-column="6044" selection-end-line="0" selection-end-column="6044" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaCliente/view/mensajes.js">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/solicitudes/view/solicitudes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="84" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="84" selection-end-column="1" />
+        <state relative-caret-position="403">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaCliente/controller/inputsHandler.js">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/solicitudes/controller/class/Ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
+        <state relative-caret-position="240">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/solicitudes/controller/class/Solicitudes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/solicitudes/controller/ini.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/login/controller/class/Ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/login/controller/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="29" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/login/controller/registro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/login/libraries/typeValidate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="137" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="137" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/login/view/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/login/view/mensajes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="80" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="80" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/login.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="11740" lean-forward="false" selection-start-line="0" selection-start-column="11740" selection-end-line="0" selection-end-column="11740" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/login/controller/class/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="46" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/login/controller/class/Registro.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="137" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="137" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/login/controller/ini.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/login/controller/inputsHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
           <caret line="97" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaCliente/controller/altaCliente.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="25" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaCliente/controller/class/AltaCliente.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="137" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="137" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/crud/PedidosCRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/crud/Lineas_pedidosCRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-178">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/altaGestor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="10" lean-forward="true" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/login/controller/class/Registro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="136" column="5" lean-forward="true" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/login/controller/registro.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="44" lean-forward="false" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/crud/Usuarios_clienteCRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="38" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/altaGestor.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7065" lean-forward="false" selection-start-line="0" selection-start-column="7065" selection-end-line="0" selection-end-column="7065" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/view/mensajes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="84" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="84" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/libraries/typeValidate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="137" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="137" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/ini.js">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/clientes/view/mensajes.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="80" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/inputsHandler.js">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/clientes/controller/ini.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="1" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+        <state relative-caret-position="403">
+          <caret line="40" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="40" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/altaGestor.js">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/clientes/controller/inputsHandler.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="25" selection-end-column="1" />
+        <state relative-caret-position="388">
+          <caret line="71" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="71" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/class/Ajax.js">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/clientes/libraries/typeValidate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="137" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="137" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/clientes/controller/class/Ajax.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/nav.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="13" lean-forward="true" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaGestor/controller/class/AltaGestor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/altaCliente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="24" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="77" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/system/IncludesCliente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="76" lean-forward="false" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/db/trabajo_daw.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-847">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/gestor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="17" column="52" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/system/Includes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="29" lean-forward="false" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/cliente/datos/controller/class/Update.js">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/clientes/controller/class/Clientes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="71" selection-end-column="68" />
+        <state relative-caret-position="403">
+          <caret line="92" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="92" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/clientes/controller/clientes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="108" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="108" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/gestores/view/gestores.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="78" column="18" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="87" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/gestor/gestores.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="0" column="10409" lean-forward="false" selection-start-line="0" selection-start-column="10409" selection-end-line="0" selection-end-column="10409" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/gestores/view/mensajes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-923">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="80" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/crud/Usuarios_gestionCRUD.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        <state relative-caret-position="158">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/altaArticulo.php">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/gestores/controller/class/Ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="4" column="42" lean-forward="false" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="42" />
+        <state relative-caret-position="240">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/crud/AccesosCRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/crud/ActividadCRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="9" lean-forward="true" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
-          <folding>
-            <marker date="1519167486000" expanded="true" signature="810:1040" ph="INSERT INTO actividad... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/crud/ArticulosCRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ajax.php">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/gestores/controller/class/Gestores.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
-          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <caret line="34" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="34" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/ini.js">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/gestores/controller/gestores.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="1605">
+          <caret line="107" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="107" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/altaArticulo.min.js">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/gestores/controller/ini.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="7244" lean-forward="false" selection-start-line="0" selection-start-column="7244" selection-end-line="0" selection-end-column="7244" />
+        <state relative-caret-position="344">
+          <caret line="40" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="40" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/libraries/typeValidate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="142" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="142" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/view/mensajes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/inputsHandler.js">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/gestores/controller/inputsHandler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/class/Ajax.js">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/gestores/libraries/typeValidate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="137" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="137" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/gestor/clientes.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="0" column="13597" lean-forward="false" selection-start-line="0" selection-start-column="13597" selection-end-line="0" selection-end-column="13597" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/clientes/view/clientes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="120" column="20" lean-forward="true" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/comun.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="10" lean-forward="true" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/altaArticulo/controller/inputsHandler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/class/AltaArticulo.js">
+    <entry file="file://$PROJECT_DIR$/public/js/gestor/articulos.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="64" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="64" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="14032" lean-forward="false" selection-start-line="0" selection-start-column="14032" selection-end-line="0" selection-end-column="14032" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/sinMin/public/gestor/altaArticulo/controller/altaArticulo.js">
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/articulos/view/articulos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="22" selection-end-column="1" />
+        <state relative-caret-position="247">
+          <caret line="85" column="82" lean-forward="false" selection-start-line="85" selection-start-column="82" selection-end-line="85" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/articulos/view/mensajes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="80" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="80" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/articulos/controller/inputsHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="19" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/articulos/libraries/typeValidate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="142" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/articulos/controller/class/Ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="31" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/articulos/controller/class/Articulos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="66" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="66" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/articulos/controller/articulos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="107" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="107" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/sinMin/gestor/articulos/controller/ini.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="40" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="40" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controller/system/IncludesGestor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        <state relative-caret-position="247">
+          <caret line="53" column="102" lean-forward="false" selection-start-line="53" selection-start-column="102" selection-end-line="53" selection-end-column="102" />
           <folding />
         </state>
       </provider>

@@ -11,31 +11,35 @@ class IncludesGestor extends Includes{
     }
     public function jsMisDatos(){
         $this->jsComun('../');
-        echo '<script src="../' . _jsPath . 'datosGestor.min.js"></script>';
+        echo '<script src="../' . _jsPath . 'gestor/misDatos.min.js"></script>';
     }
     public function jsAltaArticulo(){
         $this->jsComun('../');
-        echo '<script src="../' . _jsPath . 'altaArticulo.min.js"></script>';
+        echo '<script src="../' . _jsPath . 'gestor/altaArticulo.min.js"></script>';
     }
     public function jsAltaCliente(){
         $this->jsComun('../');
-        echo '<script src="../' . _jsPath . 'altaCliente.min.js"></script>';
+        echo '<script src="../' . _jsPath . 'gestor/altaCliente.min.js"></script>';
     }
     public function jsAltaGestor(){
         $this->jsComun('../');
-        echo '<script src="../' . _jsPath . 'altaGestor.min.js"></script>';
+        echo '<script src="../' . _jsPath . 'gestor/altaGestor.min.js"></script>';
     }
     public function jsSolicitudes(){
         $this->jsComun('../');
-        echo '<script src="../' . _jsPath . 'solicitudesGestor.min.js"></script>';
+        echo '<script src="../' . _jsPath . 'gestor/solicitudes.min.js"></script>';
     }
     public function jsClientes(){
         $this->jsComun('../');
-        echo '<script src="../' . _jsPath . 'clientesGestor.min.js"></script>';
+        echo '<script src="../' . _jsPath . 'gestor/clientes.min.js"></script>';
     }
     public function jsGestores(){
         $this->jsComun('../');
-        echo '<script src="../' . _jsPath . 'gestoresGestor.min.js"></script>';
+        echo '<script src="../' . _jsPath . 'gestor/gestores.min.js"></script>';
+    }
+    public function jsArticulos(){
+        $this->jsComun('../');
+        echo '<script src="../' . _jsPath . 'gestor/articulos.min.js"></script>';
     }
 
     public function phpController($dependency){ include_once "../controller/gestor.php"; }
@@ -47,4 +51,5 @@ class IncludesGestor extends Includes{
     public function phpSolicitudes($dependency){ include_once _assetsPathPHP . "gestor/solicitudes.php"; }
     public function phpClientes($dependency){ include_once _assetsPathPHP . "gestor/clientes.php"; }
     public function phpGestores($dependency){ include_once _assetsPathPHP . "gestor/gestores.php"; }
+    public function phpArticulos($dependency){ include_once _assetsPathPHP . "gestor/articulos.php"; }
 }
