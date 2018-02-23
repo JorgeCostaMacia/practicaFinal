@@ -25,11 +25,11 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>cod_pedido</th>
-                                <th>cod_cliente</th>
-                                <th>fecha</th>
-                                <th>estado</th>
-                                <th>lineas</th>
+                                <th>Codigo</th>
+                                <th>Cliente</th>
+                                <th>Fecha</th>
+                                <th>Estado</th>
+                                <th>Lineas</th>
                             </tr>
                             </thead>
                             <tbody id="tbody">

@@ -5,6 +5,7 @@
                 <form id="formSearch" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 navbar-right text-center">
                     <input type="hidden" id="usuario" name="usuario" value="cliente">
                     <input type="hidden" id="cod_cliente" name="cod_cliente" value="<?= $dependency->getSession()->getUsuario()->getCodCliente(); ?>">
+                    <input type="hidden" id="numPage" name="numPage" value="1">
                     <select name="campSearch" class="form-control">
                         <option value="cod_articulo">Codigo articulo</option>
                         <option value="nombre">Nombre</option>
@@ -17,6 +18,11 @@
                     <button type="button" id="search" class="btn btn-primary btn-block"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
                     <br>
                     <button type="button" id="procesar" class="btn btn-warning btn-block" disabled><span class="icon glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+                    <ul class="pagination">
+                        <li><a href="#" id="anterior">«</a></li>
+                        <li class="active"><a href="#" id="pageActual">1<span class="sr-only">(current)</span></a></li>
+                        <li><a href="#" id="siguiente">»</a></li>
+                    </ul>
                 </form>
                 <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
                     <form id="formPedido" name="formPedido">
@@ -24,13 +30,13 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>codigo</th>
-                                <th>nombre</th>
-                                <th>descripcion</th>
-                                <th>precio</th>
-                                <th>descuento</th>
-                                <th>iva</th>
-                                <th>cantidad</th>
+                                <th>Codigo</th>
+                                <th>Nombre</th>
+                                <th>Descripcion</th>
+                                <th>Precio</th>
+                                <th>Descuento</th>
+                                <th>Iva</th>
+                                <th>Cantidad</th>
                             </tr>
                             </thead>
                             <tbody id="tbody">

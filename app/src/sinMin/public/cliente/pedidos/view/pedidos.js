@@ -15,10 +15,10 @@ function cleanLineas(){
 function injectPedidos(pedidos){
     for(let i = 0; i < pedidos.length; i++){
         $('#tbody').append(
-            '<tr><td><input type="button" value="' + pedidos[i]["cod_pedido"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + pedidos[i]["cod_cliente"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + pedidos[i]["fecha"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + pedidos[i]["estado"] + '" class="form-control btn-default"></td>' +
+            '<tr><td>' + pedidos[i]["cod_pedido"] + '</td>' +
+            '<td>' + pedidos[i]["cod_cliente"] + ' - ' + pedidos[i]["nombre_cliente"] + '</td>' +
+            '<td>' + pedidos[i]["fecha"] + '</td>' +
+            '<td>' + pedidos[i]["estado"] + '</td>' +
             '<td><input type="button" id="cod_pedido-' + pedidos[i]["cod_pedido"] + '" value="' + pedidos[i]["lineas"] + '" class="form-control btn-primary"></td></tr>'
         );
     }
@@ -31,7 +31,7 @@ function injectPageNumber(){
 
 function injectLineas(lineas){
     let tableLineas = '<form id="formLineas" name="formLineas">' +
-        '<h2>cod_pedido ' + lineas[0]["cod_pedido"] +'</h2>' +
+        '<h2>Pedido ' + lineas[0]["cod_pedido"] +'</h2>' +
         '<input type="hidden" id="usuario" name="usuario" value="cliente">' +
         '<input type="hidden" name="cod_cliente" value="' + $('#cod_cliente').val() + '">' +
         '<input type="hidden" id="cod_pedido" name="cod_pedido" value="' + lineas[0]["cod_pedido"] + '">' +
@@ -39,24 +39,24 @@ function injectLineas(lineas){
         '<table class="table table-hover">' +
         '<thead>' +
         '<tr>' +
-        '<th>cod_linea</th>' +
-        '<th>articulo</th>' +
-        '<th>precio</th>' +
-        '<th>iva</th>' +
-        '<th>total</th>' +
-        '<th>estado</th>' +
-        '<th>cantidad</th>' +
+        '<th>Linea</th>' +
+        '<th>Articulo</th>' +
+        '<th>Precio</th>' +
+        '<th>Iva</th>' +
+        '<th>Total</th>' +
+        '<th>Estao</th>' +
+        '<th>Cantidad</th>' +
         '</tr>' +
         '</thead>' +
         '<tbody>';
     for(let i = 0; i < lineas.length; i++){
         tableLineas +=
-            '<tr><td><input type="button" value="' + lineas[i]["cod_linea"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + lineas[i]["nombre_articulo"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + lineas[i]["precio"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + lineas[i]["iva"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + lineas[i]["total"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + lineas[i]["estado"] + '" class="form-control btn-default"></td>';
+            '<tr><td>' + lineas[i]["cod_linea"] + '</td>' +
+            '<td>' + lineas[i]["cod_articulo"] + ' - ' + lineas[i]["nombre_articulo"] + '</td>' +
+            '<td>' + lineas[i]["precio"] + '</td>' +
+            '<td>' + lineas[i]["iva"] + '</td>' +
+            '<td>' + lineas[i]["total"] + '</td>' +
+            '<td>' + lineas[i]["estado"] + '</td>';
 
         if(lineas[i]["estado"] === 'pendiente'){
             tableLineas += '<td><input type="number" name="cod_linea-' + lineas[i]["cod_linea"] + '" value="' + lineas[i]["cantidad"] + '" class="cantidades form-control" min="0" step="1"></td></tr>';

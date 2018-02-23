@@ -41,7 +41,6 @@ function callBackSearchArticulos(result){
     }
 }
 
-
 function searchSiguiente(){
     delEventsSig();
     delEventsAnt();

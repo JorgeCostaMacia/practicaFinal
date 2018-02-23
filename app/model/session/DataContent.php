@@ -302,6 +302,7 @@ class DataContent {
             $aux["fecha"] = $pedido->getFecha();
             $aux["estado"] = $pedido->getEstado();
             $aux["lineas"] = $pedido->getLineas();
+            $aux["nombre_cliente"] = $pedido->getNombreCliente();
             $returned["pedidos"][] = $aux;
         }
 

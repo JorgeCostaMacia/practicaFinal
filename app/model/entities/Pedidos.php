@@ -6,6 +6,7 @@ class Pedidos {
     private $fecha;
     private $estado;
     private $lineas;
+    private $nombre_cliente;
 
     public function getCodPedido(){return $this->cod_pedido;}
     public function setCodPedido($cod_pedido){$this->cod_pedido = $cod_pedido;}
@@ -21,4 +22,7 @@ class Pedidos {
 
     public function getLineas(){return $this->lineas;}
     public function setLineas($_lineas){$this->lineas = $_lineas;}
+
+    public function getNombrecliente(){return $this->nombre_cliente;}
+    public function setNombrecliente($nombre_cliente){$this->nombre_cliente = $nombre_cliente;}
 }

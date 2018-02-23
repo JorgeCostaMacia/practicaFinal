@@ -35,7 +35,7 @@ class AjaxCliente{
 
     public function searchArticulosActivos(){
         $crud = new ArticulosCRUD();
-        $crud->select($this->connection, $this->dataContent, '*', 'WHERE estado="activo" AND ' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%"');
+        $crud->select($this->connection, $this->dataContent, '*', 'WHERE estado="activo" AND ' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%" LIMIT ' . $this->offest . ',' . $this->itemsPage );
     }
 
     public function procesarArticulos(){
@@ -62,7 +62,7 @@ class AjaxCliente{
 
     public function searchPedidos(){
         $crud = new PedidosCRUD();
-        $crud->select($this->connection, $this->dataContent, 'pedidos.cod_pedido, pedidos.cod_cliente, pedidos.fecha, pedidos.estado, COUNT(cod_linea) as lineas', 'INNER JOIN lineas_pedidos ON pedidos.cod_pedido = lineas_pedidos.cod_pedido WHERE ' . 'pedidos.' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%"' . ' AND cod_cliente="' . $_POST["cod_cliente"] . '" GROUP BY cod_pedido LIMIT ' . $this->offest . ',' . $this->itemsPage);
+        $crud->select($this->connection, $this->dataContent, 'pedidos.cod_pedido, pedidos.cod_cliente, pedidos.fecha, pedidos.estado, COUNT(cod_linea) as lineas, usuarios_cliente.nombre_completo as nombre_cliente', 'INNER JOIN lineas_pedidos ON pedidos.cod_pedido = lineas_pedidos.cod_pedido INNER JOIN usuarios_cliente ON pedidos.cod_cliente = usuarios_cliente.cod_cliente WHERE ' . 'pedidos.' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%"' . ' AND pedidos.cod_cliente="' . $_POST["cod_cliente"] . '" GROUP BY cod_pedido LIMIT ' . $this->offest . ',' . $this->itemsPage);
     }
 
     public function searchLineasPedidos(){
