@@ -23,3 +23,6 @@ RewriteRule ^solicitudes/$ app/view/index.php?page=solicitudes [L]
 RewriteRule ^clientes/$ app/view/index.php?page=clientes [L]
 RewriteRule ^gestores/$ app/view/index.php?page=gestores [L]
 RewriteRule ^articulos/$ app/view/index.php?page=articulos [L]
+RewriteRule ^accesos/$ app/view/index.php?page=accesos [L]
+RewriteRule ^actividad/$ app/view/index.php?page=actividad [L]
+

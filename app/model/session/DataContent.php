@@ -199,6 +199,7 @@ class DataContent {
             $aux = [];
             $aux["cod_acceso"] = $acceso->getCodAcceso();
             $aux["cod_gestor"] = $acceso->getCodGestor();
+            $aux["nombre_gestor"] = $acceso->getNombreGestor();
             $aux["fecha_hora_acceso"] = $acceso->getFechaHoraAcceso();
             $aux["fecha_hora_salida"] = $acceso->getFechaHoraSalida();
             $returned["accesos"][] = $aux;

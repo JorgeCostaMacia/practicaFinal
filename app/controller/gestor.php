@@ -41,3 +41,11 @@ else if($dependency->getPage()->getPage() === 'articulos'){
     $dependency->getIncludesGestor()->phpArticulos($dependency);
     $dependency->getIncludesGestor()->jsArticulos();
 }
+else if($dependency->getPage()->getPage() === 'accesos'){
+    $dependency->getIncludesGestor()->phpAccesos($dependency);
+    $dependency->getIncludesGestor()->jsAccesos();
+}
+else if($dependency->getPage()->getPage() === 'accesos'){
+    $dependency->getIncludesGestor()->phpAccesos($dependency);
+    $dependency->getIncludesGestor()->jsAccesos();
+}
