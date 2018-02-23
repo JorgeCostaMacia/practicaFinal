@@ -8,8 +8,7 @@ function injectActividad(activi){
     for(let i = 0; i < activi.length; i++){
         $('#tbody').append(
             '<tr><td>' + activi[i]["cod_actividad"] + '</td>' +
-            '<td>' + activi[i]["cod_usuario"] + '</td>' +
-            '<td>' + activi[i]["tipo_usuario"] + '</td>' +
+            '<td>' + activi[i]["cod_usuario"] + ' - ' + activi[i]["tipo_usuario"] + '</td>' +
             '<td>' + activi[i]["cod_tabla"] + '</td>' +
             '<td>' + activi[i]["cod_linea"] + '</td>' +
             '<td>' + activi[i]["tabla"] + '</td>' +
@@ -50,11 +49,11 @@ function showDescarga(event){
     doc.setFontSize(15);
     doc.text(20,45,"Actividad");
 
-    let columns = ["cod_actividad", "cod_usuario", "tipo_usuario", "cod_tabla", "cod_linea", "tabla", "accion", "fecha"];
+    let columns = ["Codigo", "Usuario",  "Cod tabla", "Linea", "Tabla", "accion", "fecha"];
     let data = [];
 
     for(let i = 0; i < actividad.length; i++){
-        let acti = [actividad[i]["cod_actividad"], actividad[i]["cod_usuario"], actividad[i]["tipo_usuario"], actividad[i]["cod_tabla"], actividad[i]["cod_linea"], actividad[i]["tabla"], actividad[i]["accion"], actividad[i]["fecha"]];
+        let acti = [actividad[i]["cod_actividad"], actividad[i]["cod_usuario"] + ' - ' + actividad[i]["tipo_usuario"], actividad[i]["cod_tabla"], actividad[i]["cod_linea"], actividad[i]["tabla"], actividad[i]["accion"], actividad[i]["fecha"]];
         data.push(acti);
     }
     doc.autoTable(columns,data, {styles: {fontSize: 5, overflow: 'linebreak'}, margin:{ top: 50 }});

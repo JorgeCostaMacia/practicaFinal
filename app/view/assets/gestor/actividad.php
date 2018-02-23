@@ -30,14 +30,13 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>cod_actividad</th>
-                                <th>cod_usuario</th>
-                                <th>tipo_usuario</th>
-                                <th>cod_tabla</th>
-                                <th>cod_linea</th>
-                                <th>tabla</th>
-                                <th>accion</th>
-                                <th>fecha</th>
+                                <th>Codigo</th>
+                                <th>Usuario</th>
+                                <th>Cod tabla</th>
+                                <th>Linea</th>
+                                <th>Tabla</th>
+                                <th>Accion</th>
+                                <th>Fecha</th>
                             </tr>
                             </thead>
                             <tbody id="tbody">
