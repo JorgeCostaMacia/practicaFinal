@@ -1,7 +1,7 @@
 <?php
 
 class Lineas_pedidosCRUD{
-    function select($connection, $dataContent, $col, $more){
+    public function select($connection, $dataContent, $col, $more){
         $result = $connection->select($col, 'lineas_pedidos', $more);
         if ($result["success"]) {
             $dataContent->setSuccess(true);
@@ -14,7 +14,7 @@ class Lineas_pedidosCRUD{
         }
     }
 
-    function insert($connection, $dataContent, $maxCod_pedido){
+    public function insert($connection, $dataContent, $maxCod_pedido){
         $crud = new ArticulosCRUD();
 
         $query = 'INSERT INTO lineas_pedidos VALUE(:cod_linea, ' . $maxCod_pedido . ', :cod_articulo, :precio, :cantidad, :iva, :total, "pendiente")';
@@ -24,7 +24,7 @@ class Lineas_pedidosCRUD{
         $values = [];
         $values[] = [];
         foreach($_POST as $key=>$post){
-            if($key !== "action" && $key !== "usuario" && $key !== "cod_cliente"){
+            if($key !== "action" && $key !== "usuario" && $key !== "cod_cliente" && $key !== "cod_gestor"){
                 $values[$indexLinea]["cod_linea"] = $indexLinea;
                 list($name, $codArticulo) = explode("-", $key);
 
@@ -54,7 +54,7 @@ class Lineas_pedidosCRUD{
         return $values;
     }
 
-    function update($connection, $dataContent){
+    public function update($connection, $dataContent){
         $query = 'UPDATE lineas_pedidos SET cantidad=:cantidad, total=:total WHERE cod_pedido=' . $_POST["cod_pedido"] .  ' AND cod_linea=:cod_linea';
         $bindParams = ["cantidad", "total", "cod_linea"];
         $index = 0;

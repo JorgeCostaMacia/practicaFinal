@@ -10,6 +10,5 @@
     <body>
         <div id="mensajes"></div>
         <?php $dependency->getIncludes()->phpPriController($dependency); ?>
-        <?php //$dependency->getIncludes()->phpFooter(); ?>
     </body>
 </html>

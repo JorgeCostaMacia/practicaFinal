@@ -17,7 +17,7 @@
                     </select>
                     <input name="textSearch" placeholder="Buscar articulos" class="form-control" type="text" maxlength="30" />
                     <button type="button" id="search" class="btn btn-primary btn-block"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
-                    <button type="button" id="descarga" class="btn btn-warning btn-block" disabled><span class="glyphicon glyphicon-download" aria-hidden="true"></span></button>
+                    <button type="button" id="descarga" class="btn btn-warning btn-block" disabled><span class="glyphicon glyphicon-download" aria-hidden="true"></span> PDF</button>
                     <ul class="pagination">
                         <li><a href="#" id="anterior">«</a></li>
                         <li class="active"><a href="#" id="pageActual">1<span class="sr-only">(current)</span></a></li>

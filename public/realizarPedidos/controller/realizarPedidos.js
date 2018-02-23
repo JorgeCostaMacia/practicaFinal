@@ -1,5 +1,18 @@
 "use strict";
 
+function iniUsuarios(){
+    ajaxApp.callController(realizarPedidosApp.getParameterGetClientes(),'callBackIniUsuarios');
+}
+function callBackIniUsuarios(result){
+    if (!result["success"]) {
+        msjDanger("REALIZAR PEDIDOS", result["errores"][0]["errMessage"]);
+    }
+    else if(result["usuarios_cliente"].length > 0){
+        injectClientes(result["usuarios_cliente"]);
+        enableBuscar();
+    }
+}
+
 function search(){
     ajaxApp.callController(realizarPedidosApp.getParameterSearchArticulos(),'callBackSearchArticulos');
 }
@@ -33,8 +46,9 @@ function evalCantidades(){
 }
 
 function callBackEvalCantidades(result){
+    console.log(result);
     if(!result["success"]){
-        msjDanger("", result["errores"][0]["errMessage"]);
+        msjDanger("REALIZAR PEDIDOS", result["errores"][0]["errMessage"]);
     }
     else { msjSucces("REALIZAR PEDIDOS", "<strong>Se han procesado correctamente sus pedidos</strong>")}
 }

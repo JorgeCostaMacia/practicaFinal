@@ -49,3 +49,11 @@ else if($dependency->getPage()->getPage() === 'accesos'){
     $dependency->getIncludesGestor()->phpAccesos($dependency);
     $dependency->getIncludesGestor()->jsAccesos();
 }
+else if($dependency->getPage()->getPage() === 'actividad'){
+    $dependency->getIncludesGestor()->phpActividad($dependency);
+    $dependency->getIncludesGestor()->jsActividad();
+}
+else if($dependency->getPage()->getPage() === 'realizarPedidos'){
+    $dependency->getIncludesGestor()->phpRealizarPedidos($dependency);
+    $dependency->getIncludesGestor()->jsRealizarPedidos();
+}

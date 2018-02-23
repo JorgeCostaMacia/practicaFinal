@@ -215,7 +215,7 @@ class DataContent {
             $aux["tabla"] = $_actividad->getTabla();
             $aux["accion"] = $_actividad->getAccion();
             $aux["fecha"] = $_actividad->getFecha();
-            $returned["accesos"][] = $aux;
+            $returned["actividad"][] = $aux;
         }
 
         foreach($this->albaranes as $albaran){

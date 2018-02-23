@@ -120,4 +120,41 @@ class AjaxGestor{
         $crud = new AccesosCRUD();
         $crud->select($this->connection, $this->dataContent, 'accesos.cod_acceso, accesos.cod_gestor, accesos.fecha_hora_acceso,accesos.fecha_hora_salida, usuarios_gestion.nombre_completo as nombre_gestor  ','INNER JOIN usuarios_gestion ON accesos.cod_gestor = usuarios_gestion.cod_gestor WHERE ' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%" LIMIT ' . $this->offest . ',' . $this->itemsPage);
     }
+
+    public function searchActividad(){
+        $crud = new ActividadCRUD();
+        $crud->select($this->connection, $this->dataContent, '*','WHERE ' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%" LIMIT ' . $this->offest . ',' . $this->itemsPage);
+    }
+
+    public function getClientes(){
+        $crud = new Usuarios_clienteCRUD();
+        $crud->select($this->connection, $this->dataContent, '*','WHERE estado="activo"');
+    }
+
+    public function searchArticulosActivos(){
+        $crud = new ArticulosCRUD();
+        $crud->select($this->connection, $this->dataContent, '*', 'WHERE estado="activo" AND ' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%"');
+    }
+
+    public function procesarArticulos(){
+        $this->connection->startTransaction();
+
+        $crud = new PedidosCRUD();
+        $max_cod = $crud->selectMax($this->connection, $this->dataContent);
+        if($this->dataContent->getSuccess()){
+            $crud->insert($this->connection, $this->dataContent, $max_cod);
+        }
+        if($this->dataContent->getSuccess()){
+            $crud = new Lineas_pedidosCRUD();
+            $values = $crud->insert($this->connection, $this->dataContent, $max_cod);
+        }
+        if($this->dataContent->getSuccess()){
+            $crud = new ActividadCRUD();
+            $crud->insert($this->connection, $this->dataContent, $max_cod, "pedidos", "crear", trim($_POST['cod_gestor']), 'gestor');
+        }
+        if($this->dataContent->getSuccess()){
+            $crud->prepareLineas($this->connection, $this->dataContent, $max_cod, $values, 'lineas_pedidos', 'crear', trim($_POST['cod_gestor']), 'gestor');
+        }
+        $this->connection->endTransaction($this->dataContent->getSuccess());
+    }
 }

@@ -4,14 +4,17 @@ function cleanTbody(){
     $('#tbody').empty();
 }
 
-function injectAccesos(accesos){
-    for(let i = 0; i < accesos.length; i++){
+function injectActividad(activi){
+    for(let i = 0; i < activi.length; i++){
         $('#tbody').append(
-            '<tr><td>' + accesos[i]["cod_acceso"] + '</td>' +
-            '<td>' + accesos[i]["cod_gestor"] + '</td>' +
-            '<td>' + accesos[i]["nombre_gestor"] + '</td>' +
-            '<td>' + accesos[i]["fecha_hora_acceso"] + '</td>' +
-            '<td>' + accesos[i]["fecha_hora_salida"] + '</td></tr>'
+            '<tr><td>' + activi[i]["cod_actividad"] + '</td>' +
+            '<td>' + activi[i]["cod_usuario"] + '</td>' +
+            '<td>' + activi[i]["tipo_usuario"] + '</td>' +
+            '<td>' + activi[i]["cod_tabla"] + '</td>' +
+            '<td>' + activi[i]["cod_linea"] + '</td>' +
+            '<td>' + activi[i]["tabla"] + '</td>' +
+            '<td>' + activi[i]["accion"] + '</td>' +
+            '<td>' + activi[i]["fecha"] + '</td></tr>'
         );
     }
 }
@@ -28,8 +31,8 @@ function disableDescarga(){$('#descarga').attr('disabled', true);}
 function showDescarga(event){
     let doc = new jsPDF('p', 'mm', [297, 210]);
     doc.setProperties({
-        title: 'Accesos',
-        subject: 'Listado accesos',
+        title: 'Actividad',
+        subject: 'Listado actividad',
         author: 'Gestor',
         creator: 'Gestor'
     });
@@ -45,14 +48,14 @@ function showDescarga(event){
     doc.text(150,36,"C/ imagen Elche Alicante");
 
     doc.setFontSize(15);
-    doc.text(20,45,"Accesos");
+    doc.text(20,45,"Actividad");
 
-    let columns = ["cod_acceso", "cod_gestor", "nombre_gestor", "fecha_hora_acceso", "fecha_hora_salida"];
+    let columns = ["cod_actividad", "cod_usuario", "tipo_usuario", "cod_tabla", "cod_linea", "tabla", "accion", "fecha"];
     let data = [];
 
-    for(let i = 0; i < accesos.length; i++){
-        let acceso = [accesos[i]["cod_acceso"], accesos[i]["cod_gestor"], accesos[i]["nombre_gestor"], accesos[i]["fecha_hora_acceso"], accesos[i]["fecha_hora_salida"]];
-        data.push(acceso);
+    for(let i = 0; i < actividad.length; i++){
+        let acti = [actividad[i]["cod_actividad"], actividad[i]["cod_usuario"], actividad[i]["tipo_usuario"], actividad[i]["cod_tabla"], actividad[i]["cod_linea"], actividad[i]["tabla"], actividad[i]["accion"], actividad[i]["fecha"]];
+        data.push(acti);
     }
     doc.autoTable(columns,data, {styles: {fontSize: 5, overflow: 'linebreak'}, margin:{ top: 50 }});
 

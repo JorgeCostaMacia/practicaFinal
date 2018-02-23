@@ -27,6 +27,6 @@ class Includes {
     function phpHeadController($dependency){ include_once "../controller/head.php"; }
     function phpHead($dependency){ include_once _layoutsPathPHP . "head.php"; }
     function phpPriController($dependency){ include_once "../controller/primary.php"; }
-    function phpFooter(){ include_once _layoutsPathPHP . "footer.php"; }
+    function phpFooter(){ include_once _assetsPathPHP . "footer.php"; }
     function phpLogin(){ include_once _assetsPathPHP . "login.php";}
 }

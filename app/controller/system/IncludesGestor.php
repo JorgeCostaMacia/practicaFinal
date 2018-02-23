@@ -45,7 +45,14 @@ class IncludesGestor extends Includes{
         $this->jsComun('../');
         echo '<script src="../' . _jsPath . 'gestor/accesos.min.js"></script>';
     }
-
+    public function jsActividad(){
+        $this->jsComun('../');
+        echo '<script src="../' . _jsPath . 'gestor/actividad.min.js"></script>';
+    }
+    function jsRealizarPedidos(){
+        $this->jsComun('../');
+        echo   '<script src="../' . _jsPath . 'gestor/realizarPedidos.min.js"></script>';
+    }
 
     public function phpController($dependency){ include_once "../controller/gestor.php"; }
     public function phpNav($dependency){ include_once _assetsPathPHP . "gestor/nav.php";}
@@ -58,5 +65,6 @@ class IncludesGestor extends Includes{
     public function phpGestores($dependency){ include_once _assetsPathPHP . "gestor/gestores.php"; }
     public function phpArticulos($dependency){ include_once _assetsPathPHP . "gestor/articulos.php"; }
     public function phpAccesos($dependency){ include_once _assetsPathPHP . "gestor/accesos.php"; }
-
+    public function phpActividad($dependency){ include_once _assetsPathPHP . "gestor/actividad.php"; }
+    function phpRealizarPedidos($dependency){include_once _assetsPathPHP . "gestor/realizarPedidos.php";}
 }
