@@ -13,6 +13,7 @@
                     </select>
                     <input name="textSearch" placeholder="Buscar gestores" class="form-control" type="text" maxlength="30" />
                     <button type="button" id="search" class="btn btn-primary btn-block"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    <br>
                     <ul class="pagination">
                         <li><a href="#" id="anterior">«</a></li>
                         <li class="active"><a href="#" id="pageActual">1<span class="sr-only">(current)</span></a></li>

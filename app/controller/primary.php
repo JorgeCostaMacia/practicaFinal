@@ -55,6 +55,6 @@ if($dependency->getSession()->getUsuario() != null){
     else { $dependency->getPage()->redirectHome();}
 }
 
-if($dependency->getPage()->getPage() != 'login' || $dependency->getPage()->getPage() != 'home'){
+if($dependency->getPage()->getPage() === 'login' || $dependency->getPage()->getPage() === 'home'){
     $dependency->getIncludes()->phpFooter();
 }

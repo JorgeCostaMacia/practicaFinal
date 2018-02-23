@@ -8,8 +8,7 @@ function injectAccesos(accesos){
     for(let i = 0; i < accesos.length; i++){
         $('#tbody').append(
             '<tr><td>' + accesos[i]["cod_acceso"] + '</td>' +
-            '<td>' + accesos[i]["cod_gestor"] + '</td>' +
-            '<td>' + accesos[i]["nombre_gestor"] + '</td>' +
+            '<td>' + accesos[i]["cod_gestor"] + ' - ' + accesos[i]["nombre_gestor"] +'</td>' +
             '<td>' + accesos[i]["fecha_hora_acceso"] + '</td>' +
             '<td>' + accesos[i]["fecha_hora_salida"] + '</td></tr>'
         );
@@ -47,11 +46,11 @@ function showDescarga(event){
     doc.setFontSize(15);
     doc.text(20,45,"Accesos");
 
-    let columns = ["cod_acceso", "cod_gestor", "nombre_gestor", "fecha_hora_acceso", "fecha_hora_salida"];
+    let columns = ["Codigo", "Gestor", "Acceso", "Salida"];
     let data = [];
 
     for(let i = 0; i < accesos.length; i++){
-        let acceso = [accesos[i]["cod_acceso"], accesos[i]["cod_gestor"], accesos[i]["nombre_gestor"], accesos[i]["fecha_hora_acceso"], accesos[i]["fecha_hora_salida"]];
+        let acceso = [accesos[i]["cod_acceso"], accesos[i]["cod_gestor"] + ' - ' + accesos[i]["nombre_gestor"], accesos[i]["fecha_hora_acceso"], accesos[i]["fecha_hora_salida"]];
         data.push(acceso);
     }
     doc.autoTable(columns,data, {styles: {fontSize: 5, overflow: 'linebreak'}, margin:{ top: 50 }});

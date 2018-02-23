@@ -14,6 +14,7 @@
                     </select>
                     <input name="textSearch" placeholder="Buscar articulos" class="form-control" type="text" maxlength="30" />
                     <button type="button" id="search" class="btn btn-primary btn-block"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    <br>
                     <button type="button" id="descarga" class="btn btn-warning btn-block" disabled><span class="glyphicon glyphicon-download" aria-hidden="true"></span> PDF</button>
                     <ul class="pagination">
                         <li><a href="#" id="anterior">«</a></li>
@@ -26,11 +27,10 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>cod_acceso</th>
-                                <th>cod_gestor</th>
-                                <th>nombre_gestor</th>
-                                <th>fecha_hora_acceso</th>
-                                <th>fecha_hora_salida</th>
+                                <th>Codigo</th>
+                                <th>Gestor</th>
+                                <th>Acceso</th>
+                                <th>Salida</th>
                             </tr>
                             </thead>
                             <tbody id="tbody">

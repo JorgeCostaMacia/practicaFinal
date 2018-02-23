@@ -2,50 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e713c46a-2ebf-45c8-858a-63d755f86ffd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/actividad.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/class/Actividad.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/class/Ajax.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/ini.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/libraries/jspdf.addimage.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/libraries/jspdf.autotable.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/libraries/jspdf.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/view/actividad.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/view/mensajes.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/view/assets/gestor/realizarPedidos.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/gestor/actividad.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/gestor/realizarPedidos.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/realizarPedidos/controller/class/Ajax.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/realizarPedidos/controller/class/RealizarPedidos.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/realizarPedidos/controller/ini.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/realizarPedidos/controller/inputsHandler.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/realizarPedidos/controller/realizarPedidos.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/realizarPedidos/libraries/typeValidate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/realizarPedidos/view/mensajes.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/realizarPedidos/view/realizarPedidos.js" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/controller/ajax.php" afterPath="$PROJECT_DIR$/app/controller/ajax.php" />
       <change beforePath="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" afterPath="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/crud/AccesosCRUD.php" afterPath="$PROJECT_DIR$/app/controller/crud/AccesosCRUD.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/crud/ActividadCRUD.php" afterPath="$PROJECT_DIR$/app/controller/crud/ActividadCRUD.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/crud/ArticulosCRUD.php" afterPath="$PROJECT_DIR$/app/controller/crud/ArticulosCRUD.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/crud/Lineas_pedidosCRUD.php" afterPath="$PROJECT_DIR$/app/controller/crud/Lineas_pedidosCRUD.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/crud/PedidosCRUD.php" afterPath="$PROJECT_DIR$/app/controller/crud/PedidosCRUD.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/crud/SolicitudesCRUD.php" afterPath="$PROJECT_DIR$/app/controller/crud/SolicitudesCRUD.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/crud/Usuarios_clienteCRUD.php" afterPath="$PROJECT_DIR$/app/controller/crud/Usuarios_clienteCRUD.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/gestor.php" afterPath="$PROJECT_DIR$/app/controller/gestor.php" />
       <change beforePath="$PROJECT_DIR$/app/controller/primary.php" afterPath="$PROJECT_DIR$/app/controller/primary.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/system/Includes.php" afterPath="$PROJECT_DIR$/app/controller/system/Includes.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" afterPath="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" />
-      <change beforePath="$PROJECT_DIR$/app/model/session/DataContent.php" afterPath="$PROJECT_DIR$/app/model/session/DataContent.php" />
-      <change beforePath="$PROJECT_DIR$/app/src/sinMin/public/cliente/realizarPedidos/controller/realizarPedidos.js" afterPath="$PROJECT_DIR$/app/src/sinMin/public/cliente/realizarPedidos/controller/realizarPedidos.js" />
       <change beforePath="$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/view/accesos.js" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/view/accesos.js" />
+      <change beforePath="$PROJECT_DIR$/app/view/assets/cliente/pedidos.php" afterPath="$PROJECT_DIR$/app/view/assets/cliente/pedidos.php" />
       <change beforePath="$PROJECT_DIR$/app/view/assets/cliente/realizarPedidos.php" afterPath="$PROJECT_DIR$/app/view/assets/cliente/realizarPedidos.php" />
       <change beforePath="$PROJECT_DIR$/app/view/assets/gestor/accesos.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/accesos.php" />
       <change beforePath="$PROJECT_DIR$/app/view/assets/gestor/actividad.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/actividad.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/index.php" afterPath="$PROJECT_DIR$/app/view/index.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/layout/errorDocument.php" afterPath="$PROJECT_DIR$/app/view/assets/errorDocument.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/layout/footer.php" afterPath="$PROJECT_DIR$/app/view/assets/footer.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/assets/gestor/articulos.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/articulos.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/assets/gestor/clientes.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/clientes.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/assets/gestor/gestores.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/gestores.php" />
+      <change beforePath="$PROJECT_DIR$/app/view/assets/gestor/realizarPedidos.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/realizarPedidos.php" />
       <change beforePath="$PROJECT_DIR$/public/js/gestor/accesos.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/accesos.min.js" />
+      <change beforePath="$PROJECT_DIR$/public/js/gestor/realizarPedidos.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/realizarPedidos.min.js" />
+      <change beforePath="$PROJECT_DIR$/public/realizarPedidos/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/controller/class/Ajax.js" />
+      <change beforePath="$PROJECT_DIR$/public/realizarPedidos/controller/class/RealizarPedidos.js" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/controller/class/RealizarPedidos.js" />
+      <change beforePath="$PROJECT_DIR$/public/realizarPedidos/controller/ini.js" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/controller/ini.js" />
+      <change beforePath="$PROJECT_DIR$/public/realizarPedidos/controller/inputsHandler.js" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/controller/inputsHandler.js" />
+      <change beforePath="$PROJECT_DIR$/public/realizarPedidos/controller/realizarPedidos.js" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/controller/realizarPedidos.js" />
+      <change beforePath="$PROJECT_DIR$/public/realizarPedidos/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/libraries/typeValidate.js" />
+      <change beforePath="$PROJECT_DIR$/public/realizarPedidos/view/mensajes.js" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/view/mensajes.js" />
+      <change beforePath="$PROJECT_DIR$/public/realizarPedidos/view/realizarPedidos.js" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/view/realizarPedidos.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -58,46 +37,102 @@
     <favorites_list name="practicaFinal" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="IncludesGestor.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/system/IncludesGestor.php">
+    <leaf>
+      <file leaf-file-name="ini.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/ini.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+            <state relative-caret-position="15">
+              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lineas_pedidosCRUD.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/crud/Lineas_pedidosCRUD.php">
+      <file leaf-file-name="mensajes.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/view/mensajes.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding>
-                <marker date="1519383623000" expanded="true" signature="729:859" ph="INSERT INTO lineas_pedidos... " />
-                <marker date="1519383623000" expanded="true" signature="2502:2632" ph="UPDATE lineas_pedidos... " />
-                <marker date="1519383623000" expanded="true" signature="3835:3933" ph="DELETE FROM lineas_pedidos... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="realizarPedidos.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/realizarPedidos.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+            <state relative-caret-position="590">
+              <caret line="80" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="80" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="realizarPedidos.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/view/assets/cliente/realizarPedidos.php">
+      <file leaf-file-name="accesos.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/view/accesos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+            <state relative-caret-position="395">
+              <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accesos.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/gestor/accesos.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="659">
+              <caret line="0" column="274642" lean-forward="false" selection-start-line="0" selection-start-column="274642" selection-end-line="0" selection-end-column="274642" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jspdf.addimage.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/libraries/jspdf.addimage.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="8757" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jspdf.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/libraries/jspdf.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="0" column="3755" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="227792" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jspdf.autotable.min.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/libraries/jspdf.autotable.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3595">
+              <caret line="0" column="3115" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32828" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Accesos.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/class/Accesos.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ajax.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/class/Ajax.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="accesos.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/accesos.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="590">
+              <caret line="72" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="72" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -124,12 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/js/gestor/articulos.min.js" />
-        <option value="$PROJECT_DIR$/public/sinMin/gestor/articulos/view/articulos.js" />
-        <option value="$PROJECT_DIR$/app/model/entities/Accesos.php" />
-        <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/public/accesos/controller/class/Accesos.js" />
-        <option value="$PROJECT_DIR$/public/accesos/view/clientes.js" />
         <option value="$PROJECT_DIR$/public/accesos/controller/ini.js" />
         <option value="$PROJECT_DIR$/public/accesos/libraries/jsPdf.min.js" />
         <option value="$PROJECT_DIR$/public/accesos/libraries/jspdf.plugin.autotable.min.js" />
@@ -153,28 +182,34 @@
         <option value="$PROJECT_DIR$/public/actividad/controller/actividad.js" />
         <option value="$PROJECT_DIR$/app/model/session/DataContent.php" />
         <option value="$PROJECT_DIR$/public/actividad/view/actividad.js" />
-        <option value="$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/view/accesos.js" />
         <option value="$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/class/Accesos.js" />
-        <option value="$PROJECT_DIR$/public/js/gestor/accesos.min.js" />
         <option value="$PROJECT_DIR$/public/js/gestor/actividad.min.js" />
-        <option value="$PROJECT_DIR$/app/view/assets/gestor/accesos.php" />
-        <option value="$PROJECT_DIR$/app/view/assets/gestor/actividad.php" />
         <option value="$PROJECT_DIR$/app/view/index.php" />
-        <option value="$PROJECT_DIR$/app/controller/primary.php" />
         <option value="$PROJECT_DIR$/app/view/layout/footer.php" />
         <option value="$PROJECT_DIR$/app/controller/system/Includes.php" />
-        <option value="$PROJECT_DIR$/public/realizarPedidos/controller/ini.js" />
         <option value="$PROJECT_DIR$/app/controller/gestor.php" />
-        <option value="$PROJECT_DIR$/public/realizarPedidos/view/realizarPedidos.js" />
-        <option value="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" />
         <option value="$PROJECT_DIR$/app/controller/ajax.php" />
-        <option value="$PROJECT_DIR$/public/realizarPedidos/controller/realizarPedidos.js" />
         <option value="$PROJECT_DIR$/app/controller/crud/Lineas_pedidosCRUD.php" />
         <option value="$PROJECT_DIR$/public/realizarPedidos/controller/class/RealizarPedidos.js" />
+        <option value="$PROJECT_DIR$/app/view/assets/cliente/nav.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/app/controller/primary.php" />
+        <option value="$PROJECT_DIR$/app/view/assets/cliente/realizarPedidos.php" />
+        <option value="$PROJECT_DIR$/app/view/assets/gestor/actividad.php" />
+        <option value="$PROJECT_DIR$/app/view/assets/gestor/articulos.php" />
+        <option value="$PROJECT_DIR$/app/view/assets/gestor/clientes.php" />
+        <option value="$PROJECT_DIR$/app/view/assets/gestor/gestores.php" />
+        <option value="$PROJECT_DIR$/app/view/assets/cliente/pedidos.php" />
+        <option value="$PROJECT_DIR$/public/realizarPedidos/controller/ini.js" />
+        <option value="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" />
+        <option value="$PROJECT_DIR$/public/realizarPedidos/view/realizarPedidos.js" />
+        <option value="$PROJECT_DIR$/app/view/assets/gestor/realizarPedidos.php" />
+        <option value="$PROJECT_DIR$/public/realizarPedidos/controller/realizarPedidos.js" />
         <option value="$PROJECT_DIR$/public/js/gestor/realizarPedidos.min.js" />
         <option value="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" />
-        <option value="$PROJECT_DIR$/app/view/assets/gestor/realizarPedidos.php" />
-        <option value="$PROJECT_DIR$/app/view/assets/cliente/realizarPedidos.php" />
+        <option value="$PROJECT_DIR$/app/view/assets/gestor/accesos.php" />
+        <option value="$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/view/accesos.js" />
+        <option value="$PROJECT_DIR$/public/js/gestor/accesos.min.js" />
       </list>
     </option>
   </component>
@@ -219,6 +254,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -241,69 +278,92 @@
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="system" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="cliente" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="realizarPedidos" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="realizarPedidos" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="accesos" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="realizarPedidos" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="class" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="actividad" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="realizarPedidos" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="actividad" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="libraries" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="realizarPedidos" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,19 +374,19 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/view/assets" />
-      <recent name="$PROJECT_DIR$/app/src/sinMin/public/gestor" />
-      <recent name="$PROJECT_DIR$/app/src/sinMin/public" />
-      <recent name="$PROJECT_DIR$/app/src" />
-      <recent name="$PROJECT_DIR$/public/js/gestor" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/libraries" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/app/view/assets/gestor" />
       <recent name="$PROJECT_DIR$/public/actividad" />
       <recent name="$PROJECT_DIR$/app/src/pdf" />
-      <recent name="$PROJECT_DIR$/public/accesos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/sinMin/public/gestor" />
+      <recent name="$PROJECT_DIR$/app/view/assets" />
+      <recent name="$PROJECT_DIR$/app/src/sinMin/public" />
+      <recent name="$PROJECT_DIR$/app/src" />
+      <recent name="$PROJECT_DIR$/public/js/gestor" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -395,6 +455,8 @@
       <workItem from="1519285274239" duration="20971000" />
       <workItem from="1519325275875" duration="1082000" />
       <workItem from="1519332935749" duration="4744000" />
+      <workItem from="1519388119607" duration="2289000" />
+      <workItem from="1519401671885" duration="2496000" />
     </task>
     <task id="LOCAL-00001" summary="add model crud">
       <created>1518858853743</created>
@@ -522,46 +584,41 @@
       <option name="project" value="LOCAL" />
       <updated>1519377309687</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add realizarPedidos gestor">
+      <created>1519383959440</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1519383959440</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242963000" />
+    <option name="totallyTimeSpent" value="247776000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30533117" sideWeight="0.4951857" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3101777" sideWeight="0.4951857" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32737276" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4511692" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2956381" sideWeight="0.5048143" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4511692" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30048466" sideWeight="0.4951857" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32737276" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4511692" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2956381" sideWeight="0.5048143" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -587,7 +644,8 @@
     <MESSAGE value="add alta articulo" />
     <MESSAGE value="fixed error" />
     <MESSAGE value="accesos" />
-    <option name="LAST_COMMIT_MESSAGE" value="accesos" />
+    <MESSAGE value="add realizarPedidos gestor" />
+    <option name="LAST_COMMIT_MESSAGE" value="add realizarPedidos gestor" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -596,58 +654,303 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/libraries/jspdf.autotable.min.js">
+    <entry file="file://$PROJECT_DIR$/app/controller/system/IncludesCliente.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="0" column="2828" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32828" />
+        <state relative-caret-position="62">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/ajax/AjaxCliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="38" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/crud/PedidosCRUD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/crud/ActividadCRUD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-218">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/gestor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/session/DataContent.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="283" column="0" lean-forward="false" selection-start-line="283" selection-start-column="0" selection-end-line="283" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/crud/Lineas_pedidosCRUD.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/cliente/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/libraries/jspdf.addimage.min.js">
+    <entry file="file://$PROJECT_DIR$/app/controller/primary.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="39" column="2" lean-forward="true" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/css/comun.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4420">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/altaArticulo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/solicitudes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/cliente/misDatos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="8757" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/cliente/realizarPedidos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="17" column="20" lean-forward="true" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/cliente/pedidos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/clientes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/misDatos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/nav.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/gestores.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="24" lean-forward="false" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/actividad.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="21" column="12" lean-forward="true" selection-start-line="21" selection-start-column="12" selection-end-line="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/cliente/pedidos/controller/ini.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="1" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/view/mensajes.js">
+    <entry file="file://$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
+        <state relative-caret-position="309">
+          <caret line="132" column="0" lean-forward="true" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/cliente/pedidos/view/pedidos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/cliente/realizarPedidos/view/realizarPedidos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/cliente/pedidos/controller/pedidos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="74" column="1" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="74" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/articulos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="48" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/realizarPedidos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="70" lean-forward="true" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/controller/class/Ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/controller/class/RealizarPedidos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="45" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/controller/ini.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="29" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/controller/inputsHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/controller/realizarPedidos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="107" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="107" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/libraries/typeValidate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="137" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="137" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/view/mensajes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
           <caret line="80" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="80" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/gestor/accesos.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="0" column="272922" lean-forward="true" selection-start-line="0" selection-start-column="272922" selection-end-line="0" selection-end-column="272922" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/view/accesos.js">
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/realizarPedidos/view/realizarPedidos.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="59" selection-end-column="1" />
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="31" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/ini.js">
+    <entry file="file://$PROJECT_DIR$/public/js/gestor/realizarPedidos.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="9492" lean-forward="false" selection-start-line="0" selection-start-column="9492" selection-end-line="0" selection-end-column="9492" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/accesos.js">
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/view/actividad.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="72" selection-end-column="1" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/accesos.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="32" column="42" lean-forward="false" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/system/IncludesGestor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="55" column="0" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -662,350 +965,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/class/Ajax.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/gestor/actividad.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="274797" lean-forward="false" selection-start-line="0" selection-start-column="274797" selection-end-line="0" selection-end-column="274797" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/libraries/jspdf.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="0" column="429" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="227792" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/libraries/jspdf.autotable.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="0" column="1295" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32828" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/libraries/jspdf.addimage.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="8757" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/view/actividad.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="62" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/view/mensajes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="80" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="80" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/class/Actividad.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/class/Ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/actividad.js">
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/accesos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
+        <state relative-caret-position="590">
           <caret line="72" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="72" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/ini.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/accesos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="16" column="172" lean-forward="false" selection-start-line="16" selection-start-column="169" selection-end-line="16" selection-end-column="172" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/actividad.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="19" column="169" lean-forward="false" selection-start-line="19" selection-start-column="169" selection-end-line="19" selection-end-column="169" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/primary.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="44" lean-forward="false" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/system/Dependency.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/system/Includes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/articulos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="14" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/cliente/realizarPedidos/controller/class/RealizarPedidos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/crud/Usuarios_clienteCRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="11" lean-forward="false" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/system/IncludesCliente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="18" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="141" column="0" lean-forward="false" selection-start-line="141" selection-start-column="0" selection-end-line="141" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ajax/AjaxCliente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="38" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/crud/PedidosCRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="11" lean-forward="false" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/crud/ActividadCRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-218">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <marker date="1519378214000" expanded="true" signature="824:1054" ph="INSERT INTO actividad... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/gestor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="51" column="43" lean-forward="true" selection-start-line="51" selection-start-column="43" selection-end-line="51" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/session/DataContent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="283" column="0" lean-forward="false" selection-start-line="283" selection-start-column="0" selection-end-line="283" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/gestor/realizarPedidos.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8152" lean-forward="false" selection-start-line="0" selection-start-column="8152" selection-end-line="0" selection-end-column="8152" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/realizarPedidos/controller/class/Ajax.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="34" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/realizarPedidos/controller/class/RealizarPedidos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/realizarPedidos/controller/ini.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="12" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/realizarPedidos/controller/inputsHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/realizarPedidos/controller/realizarPedidos.js">
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/ini.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="53" selection-end-column="1" />
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/realizarPedidos/libraries/typeValidate.js">
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/view/mensajes.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="137" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="137" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/realizarPedidos/view/mensajes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
+        <state relative-caret-position="590">
           <caret line="80" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="80" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/realizarPedidos/view/realizarPedidos.js">
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/libraries/jspdf.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="26" selection-end-column="1" />
+        <state relative-caret-position="345">
+          <caret line="0" column="3755" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="227792" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/system/IncludesGestor.php">
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/libraries/jspdf.autotable.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="52" column="30" lean-forward="false" selection-start-line="52" selection-start-column="30" selection-end-line="52" selection-end-column="30" />
+        <state relative-caret-position="-3595">
+          <caret line="0" column="3115" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32828" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/crud/Lineas_pedidosCRUD.php">
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/libraries/jspdf.addimage.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <marker date="1519383623000" expanded="true" signature="729:859" ph="INSERT INTO lineas_pedidos... " />
-            <marker date="1519383623000" expanded="true" signature="2502:2632" ph="UPDATE lineas_pedidos... " />
-            <marker date="1519383623000" expanded="true" signature="3835:3933" ph="DELETE FROM lineas_pedidos... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/realizarPedidos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="27" column="42" lean-forward="false" selection-start-line="27" selection-start-column="42" selection-end-line="27" selection-end-column="42" />
+        <state relative-caret-position="0">
+          <caret line="0" column="14" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="8757" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/cliente/realizarPedidos.php">
+    <entry file="file://$PROJECT_DIR$/public/js/gestor/accesos.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="25" column="42" lean-forward="false" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+        <state relative-caret-position="659">
+          <caret line="0" column="274642" lean-forward="false" selection-start-line="0" selection-start-column="274642" selection-end-line="0" selection-end-column="274642" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/view/accesos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="45" column="24" lean-forward="true" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
           <folding />
         </state>
       </provider>

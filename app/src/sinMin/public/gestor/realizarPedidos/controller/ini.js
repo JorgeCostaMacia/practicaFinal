@@ -11,3 +11,20 @@ function addEventsRealizarPedidos(){
     $("#search").click(search);
     $("#procesar").click(evalCantidades);
 }
+
+
+function addEventsSiguiente(){
+    $('#siguiente').click(searchSiguiente);
+}
+
+function addEventsAnterior(){
+    $('#anterior').click(searchAnterior);
+}
+
+function delEventsSig(){
+    $('#siguiente').off();
+}
+
+function delEventsAnt(){
+    $('#anterior').off();
+}

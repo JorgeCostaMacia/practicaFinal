@@ -25,3 +25,8 @@ function injectClientes(clientes){
         $('#cod_cliente').append('<option value="' + clientes[i]['cod_cliente'] + '">' + clientes[i]['cod_cliente'] + '-' + clientes[i]['cif_dni'] + '</option>');
     }
 }
+
+function injectPageNumber(){
+    $('#pageActual').empty();
+    $('#pageActual').append($('#numPage').val());
+}

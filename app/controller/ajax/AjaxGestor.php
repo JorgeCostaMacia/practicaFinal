@@ -133,7 +133,7 @@ class AjaxGestor{
 
     public function searchArticulosActivos(){
         $crud = new ArticulosCRUD();
-        $crud->select($this->connection, $this->dataContent, '*', 'WHERE estado="activo" AND ' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%"');
+        $crud->select($this->connection, $this->dataContent, '*', 'WHERE estado="activo" AND ' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%" LIMIT ' . $this->offest . ',' . $this->itemsPage);
     }
 
     public function procesarArticulos(){
