@@ -31,13 +31,13 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>codigo</th>
-                                <th>nombre</th>
-                                <th>descripcion</th>
-                                <th>precio</th>
-                                <th>descuento</th>
-                                <th>iva</th>
-                                <th>cantidad</th>
+                                <th>Codigo</th>
+                                <th>Nombre</th>
+                                <th>Descripcion</th>
+                                <th>Precio</th>
+                                <th>Descuento</th>
+                                <th>Iva</th>
+                                <th>Cantidad</th>
                             </tr>
                             </thead>
                             <tbody id="tbody">

@@ -100,7 +100,6 @@ function evalCantidades(){
 }
 
 function callBackEvalCantidades(result){
-    console.log(result);
     if(!result["success"]){
         msjDanger("REALIZAR PEDIDOS", result["errores"][0]["errMessage"]);
     }

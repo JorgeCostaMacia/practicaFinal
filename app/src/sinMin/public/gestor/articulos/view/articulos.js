@@ -15,9 +15,9 @@ function cleanModificar(){
 function injectArticulos(articulos){
     for(let i = 0; i < articulos.length; i++){
         $('#tbody').append(
-            '<tr><td><input type="button" value="' + articulos[i]["cod_articulo"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + articulos[i]["nombre"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + articulos[i]["descripcion"] + '" class="form-control btn-default"></td>' +
+            '<tr><td>' + articulos[i]["cod_articulo"] + '</td>' +
+            '<td>' + articulos[i]["nombre"] + '</td>' +
+            '<td>' + articulos[i]["descripcion"] + '</td>' +
             '<td><button type="button" id="modificar-' + articulos[i]["cod_articulo"] + '" value="' + articulos[i]["cod_articulo"] + '" class="form-control btn-warning">Modificar</td></td></tr>'
         );
     }

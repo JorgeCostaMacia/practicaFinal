@@ -17,8 +17,8 @@ function injectSolicitudes(solicitudes){
 }
 
 function injectDetalles(solicitud){
-    let text = '<div class="table-responsive"><table class="table table-hover"><thead><tr><th>domicilio_social</th>' +
-        '<th>ciudad</th><th>email</th><th>telefono</th><th>nick</th><th>password</th></tr>' +
+    let text = '<div class="table-responsive"><table class="table table-hover"><thead><tr><th>Domicilio social</th>' +
+        '<th>Ciudad</th><th>Email</th><th>Telefono</th><th>Nick</th><th>Password</th></tr>' +
         '</thead><tbody>' +
         '<tr>' +
         '<td>' + solicitud["domicilio_social"] + '</td>' +

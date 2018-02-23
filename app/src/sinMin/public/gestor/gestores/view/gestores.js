@@ -15,9 +15,9 @@ function cleanModificar(){
 function injectGestores(gestores){
     for(let i = 0; i < gestores.length; i++){
         $('#tbody').append(
-            '<tr><td><input type="button" value="' + gestores[i]["cod_gestor"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + gestores[i]["nombre_completo"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + gestores[i]["nick"] + '" class="form-control btn-default"></td>' +
+            '<tr><td>' + gestores[i]["cod_gestor"] + '</td>' +
+            '<td>' + gestores[i]["nombre_completo"] + '</td>' +
+            '<td>' + gestores[i]["nick"] + '</td>' +
             '<td><button type="button" id="modificar-' + gestores[i]["cod_gestor"] + '" value="' + gestores[i]["cod_gestor"] + '" class="form-control btn-warning">Modificar</td></td></tr>'
         );
     }

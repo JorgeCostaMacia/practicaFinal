@@ -22,9 +22,9 @@
                         <table class="table table-hover">
                             <thead>
                                 <tr>
-                                    <th>cif_dni</th>
-                                    <th>nombre_completo</th>
-                                    <th>razon_social</th>
+                                    <th>CIF DNI</th>
+                                    <th>Nombre completo</th>
+                                    <th>Razon social</th>
                                     <th></th>
                                     <th></th>
                                     <th></th>

@@ -25,9 +25,9 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>cod_gestor</th>
-                                <th>nombre_completo</th>
-                                <th>nick</th>
+                                <th>Codigo</th>
+                                <th>Nombre completo</th>
+                                <th>Nick</th>
                                 <th></th>
                             </tr>
                             </thead>

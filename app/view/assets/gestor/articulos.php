@@ -27,9 +27,9 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>cod_articulo</th>
-                                <th>nombre</th>
-                                <th>descripcion</th>
+                                <th>Codigo</th>
+                                <th>Nombre</th>
+                                <th>Descripcion</th>
                                 <th></th>
                             </tr>
                             </thead>

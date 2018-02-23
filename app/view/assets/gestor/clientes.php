@@ -30,10 +30,10 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>cod_cliente</th>
-                                <th>cif_dni</th>
-                                <th>nombre_completo</th>
-                                <th>razon_social</th>
+                                <th>Codigo</th>
+                                <th>CIF DNI</th>
+                                <th>Nombre completo</th>
+                                <th>Nick</th>
                                 <th></th>
                             </tr>
                             </thead>

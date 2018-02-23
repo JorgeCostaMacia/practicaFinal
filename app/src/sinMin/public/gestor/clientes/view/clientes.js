@@ -15,10 +15,10 @@ function cleanModificar(){
 function injectClientes(clientes){
     for(let i = 0; i < clientes.length; i++){
         $('#tbody').append(
-            '<tr><td><input type="button" value="' + clientes[i]["cod_cliente"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + clientes[i]["cif_dni"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + clientes[i]["nombre_completo"] + '" class="form-control btn-default"></td>' +
-            '<td><input type="button" value="' + clientes[i]["razon_social"] + '" class="form-control btn-default"></td>' +
+            '<tr><td>' + clientes[i]["cod_cliente"] + '</td>' +
+            '<td>' + clientes[i]["cif_dni"] + '</td>' +
+            '<td>' + clientes[i]["nombre_completo"] + '</td>' +
+            '<td>' + clientes[i]["nick"] + '</td>' +
             '<td><button type="button" id="modificar-' + clientes[i]["cod_cliente"] + '" value="' + clientes[i]["cod_cliente"] + '" class="form-control btn-warning">Modificar</td></td></tr>'
         );
     }
