@@ -59,4 +59,5 @@ function showDescarga(event){
     doc.autoTable(columns,data, {styles: {fontSize: 5, overflow: 'linebreak'}, margin:{ top: 50 }});
 
     doc.output('dataurlnewwindow');
+    doc.save('actividad.pdf');
 }

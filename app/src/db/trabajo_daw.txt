@@ -124,9 +124,9 @@ create table lineas_pedidos(
 
 create table albaranes(
 	cod_albaran SMALLINT,
+	cod_pedido SMALLINT,
 	cod_cliente SMALLINT,
     fecha DATE,
-    concepto VARCHAR(30),
     estado ENUM('procesado', 'pendiente')
 )ENGINE=InnoDB;
 
@@ -156,7 +156,6 @@ create table facturas(
 	cod_cliente SMALLINT,
     fecha DATE,
     descuento DOUBLE,
-    concepto VARCHAR(30),
     estado ENUM('procesado', 'pendiente')
 )ENGINE=InnoDB;
 
@@ -220,6 +219,8 @@ ALTER TABLE lineas_pedidos ADD CONSTRAINT FK_LINEAS_PEDIDOS_ARTICULOS
 FOREIGN KEY(cod_articulo) REFERENCES articulos(cod_articulo) ON DELETE NO ACTION ON UPDATE CASCADE;
 ALTER TABLE albaranes ADD CONSTRAINT FK_ALBARANES_CLIENTES
 FOREIGN KEY(cod_cliente) REFERENCES usuarios_cliente(cod_cliente) ON DELETE NO ACTION ON UPDATE CASCADE;
+ALTER TABLE albaranes ADD CONSTRAINT FK_ALBARANES_PEDIDOS
+FOREIGN KEY(cod_pedido) REFERENCES pedidos(cod_pedido) ON DELETE NO ACTION ON UPDATE CASCADE;
 ALTER TABLE lineas_albaranes ADD CONSTRAINT FK_LINEAS_ALBARANES_ALBARANES
 FOREIGN KEY(cod_albaran) REFERENCES albaranes(cod_albaran) ON DELETE NO ACTION ON UPDATE CASCADE;
 ALTER TABLE lineas_albaranes ADD CONSTRAINT FK_LINEAS_ALBARANES_LINEAS_PEDIDOS

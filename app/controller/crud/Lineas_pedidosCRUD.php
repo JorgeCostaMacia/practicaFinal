@@ -24,7 +24,7 @@ class Lineas_pedidosCRUD{
         $values = [];
         $values[] = [];
         foreach($_POST as $key=>$post){
-            if($key !== "action" && $key !== "usuario" && $key !== "cod_cliente" && $key !== "cod_gestor"){
+            if(strpos($key, "cod_articulo") !== false) {
                 $values[$indexLinea]["cod_linea"] = $indexLinea;
                 list($name, $codArticulo) = explode("-", $key);
 
@@ -38,6 +38,7 @@ class Lineas_pedidosCRUD{
                     $values[$indexLinea]["total"] = $dataContent->getArticulos()[0]->getPrecio() * $post + ($dataContent->getArticulos()[0]->getIva() * $dataContent->getArticulos()[0]->getPrecio() * $post);
                     $indexLinea++;
                 }
+                $dataContent->setArticulos(array());
             }
         }
 
@@ -54,7 +55,7 @@ class Lineas_pedidosCRUD{
         return $values;
     }
 
-    public function update($connection, $dataContent){
+    public function updateCantidad($connection, $dataContent){
         $query = 'UPDATE lineas_pedidos SET cantidad=:cantidad, total=:total WHERE cod_pedido=' . $_POST["cod_pedido"] .  ' AND cod_linea=:cod_linea';
         $bindParams = ["cantidad", "total", "cod_linea"];
         $index = 0;
@@ -66,6 +67,33 @@ class Lineas_pedidosCRUD{
                     $this->select($connection, $dataContent, '*', 'WHERE cod_linea=' . explode("-", $key)[1]);
                     $values[$index]["cantidad"] = $post;
                     $values[$index]["total"] = $post * $dataContent->getLineasPedidos()[0]->getPrecio() + ($post * $dataContent->getLineasPedidos()[0]->getPrecio() * $dataContent->getLineasPedidos()[0]->getIva());
+                    $values[$index]["cod_linea"] = explode("-", $key)[1];
+                    $index++;
+                }
+            }
+        }
+
+        $result = $connection->prepare($query, $bindParams, $values);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+        }
+
+        return $values;
+    }
+
+    public function updateEstado($connection, $dataContent){
+        $query = 'UPDATE lineas_pedidos SET estado="procesado" WHERE cod_pedido=' . $_POST["cod_pedido"] .  ' AND cod_linea=:cod_linea';
+        $bindParams = ["cod_linea"];
+        $index = 0;
+        $values = [];
+        $values[] = [];
+        foreach($_POST as $key=>$post){
+            if(strpos($key, "cod_linea") !== false) {
+                if ($post === "pendiente") {
                     $values[$index]["cod_linea"] = explode("-", $key)[1];
                     $index++;
                 }

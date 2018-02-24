@@ -71,6 +71,8 @@ class AjaxCliente{
     }
 
     public function updateLineasPedidos(){
+        $this->connection->startTransaction();
+
         $crud = new Lineas_pedidosCRUD();
         $values = $crud->delete($this->connection, $this->dataContent);
         if($this->dataContent->getSuccess() && count($values[0]) > 0){
@@ -78,7 +80,7 @@ class AjaxCliente{
             $crud->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, 'lineas_pedidos', 'borrar', trim($_POST['cod_cliente']), 'cliente');
         }
         $crud = new Lineas_pedidosCRUD();
-        $values = $crud->update($this->connection, $this->dataContent);
+        $values = $crud->updateCantidad($this->connection, $this->dataContent);
         if($this->dataContent->getSuccess() && count($values[0]) > 0){
             $crud = new ActividadCRUD();
             $crud->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, 'lineas_pedidos', 'cambiar', trim($_POST['cod_cliente']), 'cliente');
@@ -94,5 +96,7 @@ class AjaxCliente{
                 $crud->insert($this->connection, $this->dataContent, $_POST["cod_pedido"], "pedidos", "borrar", trim($_POST['cod_cliente']), 'cliente');
             }
         }
+
+        $this->connection->endTransaction($this->dataContent->getSuccess());
     }
 }

@@ -36,6 +36,7 @@ else if($action === "altaArticulo"){$ajax->altaArticulo();}
 else if($action === "searchAccesos"){$ajax->searchAccesos();}
 else if($action === "searchActividad"){$ajax->searchActividad();}
 else if($action === "getClientes"){$ajax->getClientes();}
+else if($action === "procesarLineasPedidos"){$ajax->procesarLineasPedidos();}
 
 header('Content-Type',  'application/json; charset=utf-8');
 header('Content-Encoding',  'gzip');

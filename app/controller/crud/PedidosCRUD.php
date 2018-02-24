@@ -51,4 +51,16 @@ class PedidosCRUD{
             $dataContent->addErrores($result["error"]);
         }
     }
+
+    public function update($connection, $dataContent, $set){
+        $result = $connection->update('pedidos', $set, 'WHERE cod_pedido=' . $_POST["cod_pedido"]);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->addErrores($result["error"]);
+        }
+    }
 }

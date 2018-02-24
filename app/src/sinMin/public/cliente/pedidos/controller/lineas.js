@@ -12,6 +12,7 @@ function callBackSearchLineas(result){
     }
     else {
         addEventsButtonLineas();
+        lineasPedidos = result["lineas_pedidos"];
         injectLineas(result["lineas_pedidos"]);
     }
 }
@@ -23,7 +24,12 @@ function evalCantidades(){
         msjDanger("PEDIDOS", pedidosApp.getTextErrorCantidades(result["errores"]));
     }
     else {
-        ajaxApp.callController(pedidosApp.getParameterUpdateLineas(),'callBackEvalCantidades');
+        if(pedidosApp.evalExistPendientes()["success"]){
+            ajaxApp.callController(pedidosApp.getParameterUpdateLineas(),'callBackEvalCantidades');
+        }
+        else {
+            msjInfo("PEDIDOS", '<strong>No puede modificar las cantidades<br></strong>Todas las lineas han sido procesadas');
+        }
     }
 }
 

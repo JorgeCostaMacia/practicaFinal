@@ -157,4 +157,84 @@ class AjaxGestor{
         }
         $this->connection->endTransaction($this->dataContent->getSuccess());
     }
+
+    public function searchPedidos(){
+        if($_POST["campSearch"] == "cod_pedido" || $_POST["campSearch"] == "cod_cliente" || $_POST["campSearch"] == "fecha" || $_POST["campSearch"] == "estado"){
+            $where = 'pedidos.' . $_POST["campSearch"];
+        }
+        else {$where = 'usuarios_cliente.' . $_POST["campSearch"];}
+        $crud = new PedidosCRUD();
+        $crud->select($this->connection, $this->dataContent, 'pedidos.cod_pedido, pedidos.cod_cliente, pedidos.fecha, pedidos.estado, COUNT(cod_linea) as lineas, usuarios_cliente.nombre_completo as nombre_cliente', 'INNER JOIN lineas_pedidos ON pedidos.cod_pedido = lineas_pedidos.cod_pedido INNER JOIN usuarios_cliente ON pedidos.cod_cliente = usuarios_cliente.cod_cliente WHERE ' . $where . ' LIKE "%' . $_POST["textSearch"] . '%" GROUP BY cod_pedido LIMIT ' . $this->offest . ',' . $this->itemsPage);
+    }
+
+    public function searchLineasPedidos(){
+        $crud = new Lineas_pedidosCRUD();
+        $crud->select($this->connection, $this->dataContent, 'cod_linea, cod_pedido, lineas_pedidos.cod_articulo, nombre as nombre_articulo, lineas_pedidos.precio, cantidad, lineas_pedidos.iva, total, lineas_pedidos.estado','INNER JOIN articulos ON lineas_pedidos.cod_articulo = articulos.cod_articulo WHERE cod_pedido="' . $_POST["cod_pedido"] . '" GROUP BY cod_linea');
+    }
+
+    public function updateLineasPedidos(){
+        $this->connection->startTransaction();
+
+        $crud = new Lineas_pedidosCRUD();
+        $values = $crud->delete($this->connection, $this->dataContent);
+        if($this->dataContent->getSuccess() && count($values[0]) > 0){
+            $crud = new ActividadCRUD();
+            $crud->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, 'lineas_pedidos', 'borrar', trim($_POST['cod_gestor']), 'gestor');
+        }
+        $crud = new Lineas_pedidosCRUD();
+        $values = $crud->updateCantidad($this->connection, $this->dataContent);
+        if($this->dataContent->getSuccess() && count($values[0]) > 0){
+            $crud = new ActividadCRUD();
+            $crud->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, 'lineas_pedidos', 'cambiar', trim($_POST['cod_gestor']), 'gestor');
+        }
+
+        $crud = new Lineas_pedidosCRUD();
+        $crud->select($this->connection, $this->dataContent, '*', 'WHERE cod_pedido=' . $_POST["cod_pedido"]);
+        if(count($this->dataContent->getLineasPedidos()) === 0){
+            $crud = new PedidosCRUD();
+            $crud->delete($this->connection, $this->dataContent, " cod_pedido=" . $_POST["cod_pedido"]);
+            if($this->dataContent->getSuccess()) {
+                $crud = new ActividadCRUD();
+                $crud->insert($this->connection, $this->dataContent, $_POST["cod_pedido"], "pedidos", "borrar", trim($_POST['cod_gestor']), 'gestor');
+            }
+        }
+        $this->connection->endTransaction($this->dataContent->getSuccess());
+    }
+
+    public function procesarLineasPedidos(){
+        $this->connection->startTransaction();
+
+        $crud = new Lineas_pedidosCRUD();
+        $values = $crud->updateEstado($this->connection, $this->dataContent);
+        if($this->dataContent->getSuccess() && count($values[0]) > 0){
+            $crud = new ActividadCRUD();
+            $crud->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, 'lineas_pedidos', 'procesar', trim($_POST['cod_gestor']), 'gestor');
+
+            $crud = new AlbaranesCRUD();
+            $max_cod = $crud->selectMax($this->connection, $this->dataContent);
+            if($this->dataContent->getSuccess()){
+                $crud->insert($this->connection, $this->dataContent, $max_cod);
+            }
+            if($this->dataContent->getSuccess()){
+                $crud = new Lineas_albaranesCRUD();
+                $values = $crud->insert($this->connection, $this->dataContent, $max_cod);
+            }
+            if($this->dataContent->getSuccess() && count($values[0]) > 0){
+                $crud = new ActividadCRUD();
+                $crud->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, 'lineas_albaranes', 'crear', trim($_POST['cod_gestor']), 'gestor');
+            }
+            if($this->dataContent->getSuccess()){
+                $crud = new ActividadCRUD();
+                $crud->insert($this->connection, $this->dataContent, $max_cod, "albaranes", "crear", trim($_POST['cod_gestor']), 'gestor');
+            }
+        }
+        $crud = new Lineas_pedidosCRUD();
+        $crud->select($this->connection, $this->dataContent, '*', 'WHERE estado="pendiente" AND cod_pedido=' . $_POST["cod_pedido"]);
+        if($this->dataContent->getSuccess() && count($this->dataContent->getLineasPedidos()) === 0){
+            $crud = new PedidosCRUD();
+            $crud->update($this->connection, $this->dataContent, 'estado="procesado"');
+        }
+
+        $this->connection->endTransaction($this->dataContent->getSuccess());
+    }
 }

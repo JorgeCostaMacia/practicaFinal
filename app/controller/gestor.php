@@ -57,3 +57,7 @@ else if($dependency->getPage()->getPage() === 'realizarPedidos'){
     $dependency->getIncludesGestor()->phpRealizarPedidos($dependency);
     $dependency->getIncludesGestor()->jsRealizarPedidos();
 }
+else if($dependency->getPage()->getPage() === 'pedidos'){
+    $dependency->getIncludesGestor()->phpPedidos($dependency);
+    $dependency->getIncludesGestor()->jsPedidos();
+}

@@ -35,4 +35,15 @@ class Pedidos{
 
         return errorText;
     }
+
+    evalExistPendientes(){
+        let result = [];
+        result['success'] = false;
+        for(let i = 0; i < lineasPedidos.length; i++){
+            if(lineasPedidos[i]["estado"] === "pendiente"){
+                result['success'] = true;
+            }
+        }
+        return result;
+    }
 }
