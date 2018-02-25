@@ -3,6 +3,7 @@
 class Lineas_facturas {
     private $cod_linea;
     private $cod_factura;
+    private $cod_albaran;
     private $cod_articulo;
     private $nombre_articulo;
     private $precio;
@@ -17,6 +18,9 @@ class Lineas_facturas {
 
     public function getCodFactura(){return $this->cod_factura;}
     public function setCodFactura($cod_factura){$this->cod_factura = $cod_factura;}
+
+    public function getCodAlbaran(){return $this->cod_albaran;}
+    public function setCodAlbaran($cod_albaran){$this->cod_albaran = $cod_albaran;}
 
     public function getCodArticulo(){return $this->cod_articulo;}
     public function setCodArticulo($cod_articulo){$this->cod_articulo = $cod_articulo;}

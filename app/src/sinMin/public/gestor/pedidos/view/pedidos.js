@@ -75,9 +75,10 @@ function injectLineas(lineas, cod_cliente){
             tableLineas += '<td><input type="number" name="cod_linea-' + lineas[i]["cod_linea"] + '" value="' + lineas[i]["cantidad"] + '" class="cantidades form-control" min="0" step="1" disabled></td></tr>';
         }
     }
-    tableLineas += '<tr><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="button" id="procesarLineas" name="procesarLineas" class="form-control btn-warning" value="Procesar lineas"></td><td></td></tr>';
-    tableLineas += '<tr><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="button" id="buttonLineas" name="buttonLineas" class="form-control btn-warning" value="Actualizar cantidades"></td><td></td></tr>';
-    tableLineas += '<tr><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="button" id="buttonVolver" name="buttonVolver" class="form-control btn-primary" value="Volver pedidos"></td><td></td></tr>';
+
+    tableLineas += '<tr><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="button" id="procesarLineas" name="procesarLineas" class="form-control btn-warning" value="Procesar"></td><td></td></tr>';
+    tableLineas += '<tr><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="button" id="buttonLineas" name="buttonLineas" class="form-control btn-warning" value="Actualizar"></td><td></td></tr>';
+    tableLineas += '<tr><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="button" id="buttonVolver" name="buttonVolver" class="form-control btn-primary" value="Volver"></td><td></td></tr>';
     tableLineas += '</tbody></table></div></form>';
 
     $('#tablePedidos').attr('hidden', true);

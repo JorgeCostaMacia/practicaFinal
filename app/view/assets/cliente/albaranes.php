@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <form id="formSearch" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 navbar-right text-center">
+                <form id="formSearch" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 navbar-right text-center">
                     <input type="hidden" id="usuario" name="usuario" value="cliente">
                     <input type="hidden" id="cod_cliente" name="cod_cliente" value="<?= $dependency->getSession()->getUsuario()->getCodCliente(); ?>">
                     <input type="hidden" id="numPage" name="numPage" value="1">
@@ -20,7 +20,7 @@
                         <li><a href="#" id="siguiente">»</a></li>
                     </ul>
                 </form>
-                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" id="tableAlbaranes">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="tableAlbaranes">
                     <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
@@ -38,7 +38,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" id="tableLineas"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="tableLineas"></div>
             </div>
         </div>
     </div>

@@ -2,8 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <form id="formSearch" class="col-lg-2 col-md-2 col-sm-12 col-xs-12 navbar-right text-center">
+                <form id="formSearch" class="col-lg-4 col-md-4 col-sm-12 col-xs-12 navbar-right text-center">
                     <input type="hidden" id="usuario" name="usuario" value="gestor">
+                    <input type="hidden" id="cod_gestor" name="cod_gestor" value="<?= $dependency->getSession()->getUsuario()->getCodGestor(); ?>">
                     <input type="hidden" id="numPage" name="numPage" value="1">
                     <select name="campSearch" class="form-control">
                         <option value="cod_gestor">CIF / DNI</option>
@@ -20,7 +21,7 @@
                         <li><a href="#" id="siguiente">»</a></li>
                     </ul>
                 </form>
-                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" id="tableGestores">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="tableGestores">
                     <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
@@ -36,7 +37,7 @@
                         </table>
                     </div>
                 </div>
-                <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" id="tableModificar"></div>
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="tableModificar"></div>
             </div>
         </div>
     </div>

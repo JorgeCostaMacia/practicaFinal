@@ -17,7 +17,7 @@ class Lineas_albaranesCRUD{
     public function insert($connection, $dataContent, $maxCod_albaran){
         $crud = new ArticulosCRUD();
 
-        $query = 'INSERT INTO lineas_albaranes VALUE(:cod_linea, ' . $maxCod_albaran . ', :cod_articulo, :precio, :cantidad, :descuento, :iva, :total, "pendiente")';
+        $query = 'INSERT INTO lineas_albaranes VALUE(:cod_linea, ' . $maxCod_albaran . ',' . $_POST["cod_pedido"]. ', :cod_articulo, :precio, :cantidad, :descuento, :iva, :total, "pendiente")';
         $bindParams = ["cod_linea", "cod_articulo", "precio", "cantidad", "descuento", "iva", "total"];
         $indexLinea = 0;
 
@@ -25,11 +25,11 @@ class Lineas_albaranesCRUD{
         $values[] = [];
         foreach($_POST as $key=>$post){
             if(strpos($key, "cod_linea") !== false) {
-                list($name, $cod_linea) = explode("-", $key);
-                $values[$indexLinea]["cod_linea"] = $indexLinea;
+                $cod_linea = explode("-", $key)[1];
                 $crud->select($connection, $dataContent, 'precio, iva, descuento', 'WHERE cod_articulo=' . $_POST["cod_articulo-" . $cod_linea]);
 
                 if($dataContent->getSuccess()){
+                    $values[$indexLinea]["cod_linea"] =  $cod_linea;
                     $values[$indexLinea]["cod_articulo"] = $_POST["cod_articulo-" . $cod_linea];
                     $values[$indexLinea]["precio"] = $dataContent->getArticulos()[0]->getPrecio();
                     $values[$indexLinea]["cantidad"] = $_POST["cantidad-" . $cod_linea];
@@ -46,6 +46,105 @@ class Lineas_albaranesCRUD{
 
         $result = $connection->prepare($query, $bindParams, $values);
 
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+        }
+
+        return $values;
+    }
+
+    public function update($connection, $dataContent){
+        $query = 'UPDATE lineas_albaranes SET precio=:precio, descuento=:descuento, iva=:iva, total=:total WHERE cod_albaran=' . $_POST["cod_albaran"] .  ' AND cod_linea=:cod_linea';
+        $bindParams = ["precio", "descuento", "iva", "total", "cod_linea"];
+        $index = 0;
+        $values = [];
+        $values[] = [];
+        $cantidad = 0;
+        foreach($_POST as $key=>$post){
+            if(strpos($key, "cantidad-") !== false) {
+                if(!isset($_POST["borrar-" . explode("-", $key)[1]])){
+                    $cantidad = $post;
+                    $values[$index]["cod_linea"] = explode("-", $key)[1];
+                }
+            }
+            else if(strpos($key, "precio-") !== false) {
+                if(!isset($_POST["borrar-" . explode("-", $key)[1]])) {
+                    $values[$index]["precio"] = $post;
+                    $values[$index]["cod_linea"] = explode("-", $key)[1];
+                }
+            }
+            else if(strpos($key, "descuento-") !== false) {
+                if(!isset($_POST["borrar-" . explode("-", $key)[1]])) {
+                    $values[$index]["descuento"] = $post;
+                    $values[$index]["cod_linea"] = explode("-", $key)[1];
+                }
+            }
+            else if(strpos($key, "iva-") !== false) {
+                if(!isset($_POST["borrar-" . explode("-", $key)[1]])) {
+                    $values[$index]["iva"] = $post;
+                    $values[$index]["cod_linea"] = explode("-", $key)[1];
+
+                    $values[$index]["total"] = 1 * $cantidad * $values[$index]["precio"] * (1 * 1 + $values[$index]["iva"]);
+                    $values[$index]["total"] -= 1 * $values[$index]["total"] * $values[$index]["descuento"];
+                    $index++;
+                }
+            }
+        }
+
+        $result = $connection->prepare($query, $bindParams, $values);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+        }
+
+        return $values;
+    }
+    public function delete($connection, $dataContent){
+        $query = 'DELETE FROM lineas_albaranes WHERE cod_albaran=' . $_POST["cod_albaran"] .  ' AND cod_linea=:cod_linea';
+        $bindParams = ["cod_linea"];
+        $index = 0;
+        $values = [];
+        $values[] = [];
+        foreach($_POST as $key=>$post){
+            if(strpos($key, "borrar-") !== false) {
+                $values[$index]["cod_linea"] = explode("-", $key)[1];
+                $index++;
+            }
+        }
+
+        $result = $connection->prepare($query, $bindParams, $values);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+        }
+
+        return $values;
+
+    }
+    public function updateEstado($connection, $dataContent, $estado){
+        $query = 'UPDATE lineas_albaranes SET estado="' . $estado . '" WHERE cod_albaran=' . $_POST["cod_albaran"] .  ' AND cod_linea=:cod_linea';
+        $bindParams = ["cod_linea"];
+        $index = 0;
+        $values = [];
+        $values[] = [];
+        foreach($_POST as $key=>$post){
+            if(strpos($key, "cantidad-") !== false) {
+                    $values[$index]["cod_linea"] = explode("-", $key)[1];
+                    $index++;
+            }
+        }
+
+        $result = $connection->prepare($query, $bindParams, $values);
         if ($result["success"]) {
             $dataContent->setSuccess(true);
         }

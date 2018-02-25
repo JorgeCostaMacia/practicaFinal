@@ -40,6 +40,8 @@ else if($action === "procesarLineasPedidos"){$ajax->procesarLineasPedidos();}
 else if($action === "searchAlbaranes"){$ajax->searchAlbaranes();}
 else if($action === "searchLineasAlbaranes"){$ajax->searchLineasAlbaranes();}
 else if($action === "searchCliente"){$ajax->searchCliente();}
+else if($action === "updateAlbaran"){$ajax->updateAlbaran();}
+else if($action === "procesarAlbaran"){$ajax->procesarAlbaran();}
 
 
 

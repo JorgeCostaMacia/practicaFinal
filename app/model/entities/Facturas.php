@@ -2,6 +2,7 @@
 
 class Facturas {
     private $cod_factura;
+    private $cod_albaran;
     private $cod_cliente;
     private $nombre_cliente;
     private $fecha;
@@ -11,6 +12,9 @@ class Facturas {
 
     public function getCodFactura() { return $this->cod_factura; }
     public function setCodFactura($cod_factura) { $this->cod_factura = $cod_factura; }
+
+    public function getCodAlbaran(){return $this->cod_albaran;}
+    public function setCodAlbaran($cod_albaran){$this->cod_albaran = $cod_albaran;}
 
     public function getCodCliente() { return $this->cod_cliente; }
     public function setCodCliente($cod_cliente) { $this->cod_cliente = $cod_cliente; }

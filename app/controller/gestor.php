@@ -61,3 +61,7 @@ else if($dependency->getPage()->getPage() === 'pedidos'){
     $dependency->getIncludesGestor()->phpPedidos($dependency);
     $dependency->getIncludesGestor()->jsPedidos();
 }
+else if($dependency->getPage()->getPage() === 'albaranes'){
+    $dependency->getIncludesGestor()->phpAlbaranes($dependency);
+    $dependency->getIncludesGestor()->jsAlbaranes();
+}

@@ -26,7 +26,7 @@ class Lineas_pedidosCRUD{
         foreach($_POST as $key=>$post){
             if(strpos($key, "cod_articulo") !== false) {
                 $values[$indexLinea]["cod_linea"] = $indexLinea;
-                list($name, $codArticulo) = explode("-", $key);
+                $codArticulo = explode("-", $key)[1];
 
                 $crud->select($connection, $dataContent, 'precio, iva', 'WHERE cod_articulo=' . $codArticulo);
 
@@ -85,18 +85,32 @@ class Lineas_pedidosCRUD{
         return $values;
     }
 
-    public function updateEstado($connection, $dataContent){
-        $query = 'UPDATE lineas_pedidos SET estado="procesado" WHERE cod_pedido=' . $_POST["cod_pedido"] .  ' AND cod_linea=:cod_linea';
+    public function updateEstadoPrepare($connection, $dataContent, $estado, $values){
+        $query = 'UPDATE lineas_pedidos SET estado="' . $estado . '" WHERE cod_pedido=' . $_POST["cod_pedido"] .  ' AND cod_linea=:cod_linea';
+        $bindParams = ["cod_linea"];
+
+        $result = $connection->prepare($query, $bindParams, $values);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+        }
+
+        return $values;
+    }
+
+    public function updateEstado($connection, $dataContent, $estado){
+        $query = 'UPDATE lineas_pedidos SET estado="' . $estado . '" WHERE cod_pedido=' . $_POST["cod_pedido"] .  ' AND cod_linea=:cod_linea';
         $bindParams = ["cod_linea"];
         $index = 0;
         $values = [];
         $values[] = [];
         foreach($_POST as $key=>$post){
             if(strpos($key, "cod_linea") !== false) {
-                if ($post === "pendiente") {
-                    $values[$index]["cod_linea"] = explode("-", $key)[1];
-                    $index++;
-                }
+                $values[$index]["cod_linea"] = explode("-", $key)[1];
+                $index++;
             }
         }
 

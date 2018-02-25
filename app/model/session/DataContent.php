@@ -258,6 +258,7 @@ class DataContent {
             $aux = [];
             $aux["cod_linea"] = $linea_albaran->getCodLinea();
             $aux["cod_albaran"] = $linea_albaran->getCodAlbaran();
+            $aux["cod_pedido"] = $linea_albaran->getCodPedido();
             $aux["cod_articulo"] = $linea_albaran->getCodArticulo();
             $aux["nombre_articulo"] = $linea_albaran->getNombreArticulo();
             $aux["precio"] = $linea_albaran->getPrecio();
@@ -273,6 +274,7 @@ class DataContent {
             $aux = [];
             $aux["cod_linea"] = $linea_factura->getCodLinea();
             $aux["cod_factura"] = $linea_factura->getCodFactura();
+            $aux["cod_albaran"] = $linea_factura->getCodAlbaran();
             $aux["cod_articulo"] = $linea_factura->getCodArticulo();
             $aux["nombre_articulo"] = $linea_factura->getNombreArticulo();
             $aux["precio"] = $linea_factura->getPrecio();

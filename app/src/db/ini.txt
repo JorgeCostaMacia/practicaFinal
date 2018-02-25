@@ -9,7 +9,7 @@ create table actividad(
     cod_tabla SMALLINT,
     cod_linea SMALLINT,
     tabla VARCHAR(30),
-    accion ENUM('crear', 'cambiar', 'borrar', 'procesar'),
+    accion ENUM('crear', 'cambiar', 'borrar', 'procesar', 'pendiente'),
     fecha DATETIME
 )ENGINE=InnoDB;
 
@@ -138,6 +138,7 @@ create table albaranes(
 create table lineas_albaranes(
 	cod_linea SMALLINT,
     cod_albaran SMALLINT,
+    cod_pedido SMALLINT,
     cod_articulo SMALLINT,
 	precio DOUBLE,
 	cantidad DOUBLE,
@@ -153,6 +154,7 @@ create table lineas_albaranes(
 
 create table facturas(
 	cod_factura SMALLINT,
+	cod_albaran SMALLINT,
 	cod_cliente SMALLINT,
     fecha DATE,
     descuento DOUBLE,
@@ -167,6 +169,7 @@ create table facturas(
 create table lineas_facturas(
 	cod_linea SMALLINT,
     cod_factura SMALLINT,
+    cod_albaran SMALLINT,
     cod_articulo SMALLINT,
 	precio DOUBLE,
 	cantidad DOUBLE,
@@ -224,15 +227,17 @@ FOREIGN KEY(cod_pedido) REFERENCES pedidos(cod_pedido) ON DELETE NO ACTION ON UP
 ALTER TABLE lineas_albaranes ADD CONSTRAINT FK_LINEAS_ALBARANES_ALBARANES
 FOREIGN KEY(cod_albaran) REFERENCES albaranes(cod_albaran) ON DELETE NO ACTION ON UPDATE CASCADE;
 ALTER TABLE lineas_albaranes ADD CONSTRAINT FK_LINEAS_ALBARANES_LINEAS_PEDIDOS
-FOREIGN KEY(cod_linea) REFERENCES lineas_pedidos(cod_linea) ON DELETE NO ACTION ON UPDATE CASCADE;
+FOREIGN KEY(cod_linea, cod_pedido) REFERENCES lineas_pedidos(cod_linea, cod_pedido) ON DELETE NO ACTION ON UPDATE CASCADE;
 ALTER TABLE lineas_albaranes ADD CONSTRAINT FK_LINEAS_ALBARANES_ARTICULOS
 FOREIGN KEY(cod_articulo) REFERENCES articulos(cod_articulo) ON DELETE NO ACTION ON UPDATE CASCADE;
 ALTER TABLE facturas ADD CONSTRAINT FK_FACTURAS_CLIENTES
 FOREIGN KEY(cod_cliente) REFERENCES usuarios_cliente(cod_cliente) ON DELETE NO ACTION ON UPDATE CASCADE;
+ALTER TABLE facturas ADD CONSTRAINT FK_FACTURAS_ALBARANES
+FOREIGN KEY(cod_albaran) REFERENCES albaranes(cod_albaran) ON DELETE NO ACTION ON UPDATE CASCADE;
 ALTER TABLE lineas_facturas ADD CONSTRAINT FK_LINEAS_FACTURAS_FACTURAS
 FOREIGN KEY(cod_factura) REFERENCES facturas(cod_factura) ON DELETE NO ACTION ON UPDATE CASCADE;
 ALTER TABLE lineas_facturas ADD CONSTRAINT FK_LINEAS_FACTURAS_LINEAS_ALBARANES
-FOREIGN KEY(cod_linea) REFERENCES lineas_albaranes(cod_linea) ON DELETE NO ACTION ON UPDATE CASCADE;
+FOREIGN KEY(cod_linea, cod_albaran) REFERENCES lineas_albaranes(cod_linea, cod_albaran) ON DELETE NO ACTION ON UPDATE CASCADE;
 ALTER TABLE lineas_facturas ADD CONSTRAINT FK_LINEAS_FACTURAS_ARTICULOS
 FOREIGN KEY(cod_articulo) REFERENCES articulos(cod_articulo) ON DELETE NO ACTION ON UPDATE CASCADE;
 

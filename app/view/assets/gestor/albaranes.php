@@ -8,10 +8,6 @@
                     <input type="hidden" id="numPage" name="numPage" value="1">
                     <select name="campSearch" class="form-control">
                         <option value="cod_pedido">Codigo pedido</option>
-                        <option value="cod_cliente">Codigo cliente</option>
-                        <option value="cif_dni">Cif / dni cliente</option>
-                        <option value="nombre_completo">Nombre cliente</option>
-                        <option value="nick">Nick cliente</option>
                         <option value="fecha">Fecha</option>
                         <option value="estado">Estado</option>
                     </select>
@@ -24,12 +20,13 @@
                         <li><a href="#" id="siguiente">»</a></li>
                     </ul>
                 </form>
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="tablePedidos">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" id="tableAlbaranes">
                     <div class="table-responsive">
                         <table class="table table-hover">
                             <thead>
                             <tr>
                                 <th>Codigo</th>
+                                <th>Pedido</th>
                                 <th>Cliente</th>
                                 <th>Fecha</th>
                                 <th>Estado</th>

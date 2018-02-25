@@ -44,8 +44,12 @@ class AjaxGestor extends DependencyCRUD {
         $this->connection->startTransaction();
 
         $this->getSolicitudesCRUD()->select($this->connection, $this->dataContent, '*', 'WHERE cod_solicitud=' . $_POST["cod_solicitud"]);
-        $this->getSolicitudesCRUD()->delete($this->connection, $this->dataContent, 'cod_solicitud=' . $_POST["cod_solicitud"]);
-        $this->getUsuariosClienteCRUD()->insert($this->connection, $this->dataContent, $this->dataContent->getSolicitudes()[0]->getCifDni(), $this->dataContent->getSolicitudes()[0]->getNombreCompleto(), $this->dataContent->getSolicitudes()[0]->getRazonSocial(), $this->dataContent->getSolicitudes()[0]->getDomicilioSocial(), $this->dataContent->getSolicitudes()[0]->getCiudad(),$this->dataContent->getSolicitudes()[0]->getEmail(),$this->dataContent->getSolicitudes()[0]->getTelefono(),$this->dataContent->getSolicitudes()[0]->getNick(),$this->dataContent->getSolicitudes()[0]->getPassword());
+        if($this->dataContent->getSuccess()) {
+            $this->getSolicitudesCRUD()->delete($this->connection, $this->dataContent, 'cod_solicitud=' . $_POST["cod_solicitud"]);
+        }
+        if($this->dataContent->getSuccess()) {
+            $this->getUsuariosClienteCRUD()->insert($this->connection, $this->dataContent, $this->dataContent->getSolicitudes()[0]->getCifDni(), $this->dataContent->getSolicitudes()[0]->getNombreCompleto(), $this->dataContent->getSolicitudes()[0]->getRazonSocial(), $this->dataContent->getSolicitudes()[0]->getDomicilioSocial(), $this->dataContent->getSolicitudes()[0]->getCiudad(),$this->dataContent->getSolicitudes()[0]->getEmail(),$this->dataContent->getSolicitudes()[0]->getTelefono(),$this->dataContent->getSolicitudes()[0]->getNick(),$this->dataContent->getSolicitudes()[0]->getPassword());
+        }
 
         $this->connection->endTransaction($this->dataContent->getSuccess());
     }
@@ -84,17 +88,22 @@ class AjaxGestor extends DependencyCRUD {
 
     public function altaCliente(){
         $this->getSolicitudesCRUD()->select($this->connection, $this->dataContent, '*','WHERE nick="' . trim($_POST["nick"]) . '" OR cif_dni="' . strtoupper(trim($_POST['cif_dni'])) . '"');
-        $this->getUsuariosClienteCRUD()->select($this->connection, $this->dataContent, 'nick, cif_dni','WHERE nick="' . trim($_POST["nick"]) . '" OR cif_dni="' . strtoupper(trim($_POST['cif_dni'])) . '"');
-
-        if(count($this->dataContent->getUsuariosCliente()) === 0 && count($this->dataContent->getSolicitudes()) === 0) {
-            $this->getUsuariosClienteCRUD()->insert($this->connection, $this->dataContent, trim(strtoupper($_POST["cif_dni"])), trim($_POST["nombre_completo"]), trim($_POST["razon_social"]), trim($_POST["domicilio_social"]), trim($_POST["ciudad"]), trim($_POST["email"]), trim($_POST["telefono"]), trim($_POST["nick"]), trim($_POST["password"]));
+        if($this->dataContent->getSuccess()) {
+            $this->getUsuariosClienteCRUD()->select($this->connection, $this->dataContent, 'nick, cif_dni','WHERE nick="' . trim($_POST["nick"]) . '" OR cif_dni="' . strtoupper(trim($_POST['cif_dni'])) . '"');
+        }
+        if($this->dataContent->getSuccess()) {
+            if (count($this->dataContent->getUsuariosCliente()) === 0 && count($this->dataContent->getSolicitudes()) === 0) {
+                $this->getUsuariosClienteCRUD()->insert($this->connection, $this->dataContent, trim(strtoupper($_POST["cif_dni"])), trim($_POST["nombre_completo"]), trim($_POST["razon_social"]), trim($_POST["domicilio_social"]), trim($_POST["ciudad"]), trim($_POST["email"]), trim($_POST["telefono"]), trim($_POST["nick"]), trim($_POST["password"]));
+            }
         }
     }
 
     public function altaGestor(){
         $this->getUsuariosGestionCRUD()->select($this->connection, $this->dataContent, 'nick','WHERE nick="' . trim($_POST["nick"]) . '"');
-        if(count($this->dataContent->getUsuariosGestion()) === 0) {
-            $this->getUsuariosGestionCRUD()->insert($this->connection, $this->dataContent, trim($_POST["nombre_completo"]), trim($_POST["nick"]), trim($_POST["password"]));
+        if($this->dataContent->getSuccess()) {
+            if(count($this->dataContent->getUsuariosGestion()) === 0) {
+                $this->getUsuariosGestionCRUD()->insert($this->connection, $this->dataContent, trim($_POST["nombre_completo"]), trim($_POST["nick"]), trim($_POST["password"]));
+            }
         }
     }
 
@@ -130,6 +139,7 @@ class AjaxGestor extends DependencyCRUD {
         if($this->dataContent->getSuccess()){
             $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $max_cod, $values, 'lineas_pedidos', 'crear', trim($_POST['cod_gestor']), 'gestor');
         }
+
         $this->connection->endTransaction($this->dataContent->getSuccess());
     }
 
@@ -152,29 +162,36 @@ class AjaxGestor extends DependencyCRUD {
         if($this->dataContent->getSuccess() && count($values[0]) > 0){
             $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, 'lineas_pedidos', 'borrar', trim($_POST['cod_gestor']), 'gestor');
         }
-        $values = $this->getLineasPedidosCRUD()->updateCantidad($this->connection, $this->dataContent);
+        if($this->dataContent->getSuccess()) {
+            $values = $this->getLineasPedidosCRUD()->updateCantidad($this->connection, $this->dataContent);
+        }
         if($this->dataContent->getSuccess() && count($values[0]) > 0){
             $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, 'lineas_pedidos', 'cambiar', trim($_POST['cod_gestor']), 'gestor');
         }
-
-        $this->getLineasPedidosCRUD()->select($this->connection, $this->dataContent, '*', 'WHERE cod_pedido=' . $_POST["cod_pedido"]);
-        if(count($this->dataContent->getLineasPedidos()) === 0){
-            $this->getPedidosCRUD()->delete($this->connection, $this->dataContent, " cod_pedido=" . $_POST["cod_pedido"]);
+        if($this->dataContent->getSuccess()) {
+            $this->getLineasPedidosCRUD()->select($this->connection, $this->dataContent, '*', 'WHERE cod_pedido=' . $_POST["cod_pedido"]);
             if($this->dataContent->getSuccess()) {
-                $this->getActividadCRUD()->insert($this->connection, $this->dataContent, $_POST["cod_pedido"], "pedidos", "borrar", trim($_POST['cod_gestor']), 'gestor');
+                if (count($this->dataContent->getLineasPedidos()) === 0) {
+                    $this->getPedidosCRUD()->delete($this->connection, $this->dataContent, " cod_pedido=" . $_POST["cod_pedido"]);
+                    if ($this->dataContent->getSuccess()) {
+                        $this->getActividadCRUD()->insert($this->connection, $this->dataContent, $_POST["cod_pedido"], "pedidos", "borrar", trim($_POST['cod_gestor']), 'gestor');
+                    }
+                }
             }
         }
+
         $this->connection->endTransaction($this->dataContent->getSuccess());
     }
 
     public function procesarLineasPedidos(){
         $this->connection->startTransaction();
 
-        $values = $this->getLineasPedidosCRUD()->updateEstado($this->connection, $this->dataContent);
+        $values = $this->getLineasPedidosCRUD()->updateEstado($this->connection, $this->dataContent, "procesado");
         if($this->dataContent->getSuccess() && count($values[0]) > 0){
             $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, 'lineas_pedidos', 'procesar', trim($_POST['cod_gestor']), 'gestor');
-
-            $max_cod = $this->getAlbaranesCRUD()->selectMax($this->connection, $this->dataContent);
+            if($this->dataContent->getSuccess()) {
+                $max_cod = $this->getAlbaranesCRUD()->selectMax($this->connection, $this->dataContent);
+            }
             if($this->dataContent->getSuccess()){
                 $this->getAlbaranesCRUD()->insert($this->connection, $this->dataContent, $max_cod);
             }
@@ -185,12 +202,99 @@ class AjaxGestor extends DependencyCRUD {
                 $values = $this->getLineasAlbaranesCRUD()->insert($this->connection, $this->dataContent, $max_cod);
             }
             if($this->dataContent->getSuccess() && count($values[0]) > 0){
-                $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, 'lineas_albaranes', 'crear', trim($_POST['cod_gestor']), 'gestor');
+                $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $max_cod, $values, 'lineas_albaranes', 'crear', trim($_POST['cod_gestor']), 'gestor');
             }
         }
-        $this->getLineasPedidosCRUD()->select($this->connection, $this->dataContent, '*', 'WHERE estado="pendiente" AND cod_pedido=' . $_POST["cod_pedido"]);
+        if($this->dataContent->getSuccess()) {
+            $this->getLineasPedidosCRUD()->select($this->connection, $this->dataContent, '*', 'WHERE estado="pendiente" AND cod_pedido=' . $_POST["cod_pedido"]);
+        }
         if($this->dataContent->getSuccess() && count($this->dataContent->getLineasPedidos()) === 0){
             $this->getPedidosCRUD()->update($this->connection, $this->dataContent, 'estado="procesado"');
+            if($this->dataContent->getSuccess()){
+                $this->getActividadCRUD()->insert($this->connection, $this->dataContent, $_POST["cod_pedido"], "pedidos", "procesar", trim($_POST['cod_gestor']), 'gestor');
+            }
+        }
+
+        $this->connection->endTransaction($this->dataContent->getSuccess());
+    }
+
+    public function searchAlbaranes(){
+        $this->getAlbaranesCRUD()->select($this->connection, $this->dataContent, 'albaranes.cod_albaran, albaranes.cod_pedido, albaranes.cod_cliente, albaranes.fecha, albaranes.estado, COUNT(cod_linea) as lineas, usuarios_cliente.nombre_completo as nombre_cliente', 'INNER JOIN lineas_albaranes ON albaranes.cod_albaran = lineas_albaranes.cod_albaran INNER JOIN usuarios_cliente ON albaranes.cod_cliente = usuarios_cliente.cod_cliente WHERE ' . 'albaranes.' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%"' . ' GROUP BY cod_albaran LIMIT ' . $this->offset . ',' . $this->itemsPage);
+    }
+
+    public function searchLineasAlbaranes(){
+        $this->getLineasAlbaranesCRUD()->select($this->connection, $this->dataContent, 'cod_linea, cod_albaran, cod_pedido, lineas_albaranes.cod_articulo, nombre as nombre_articulo, lineas_albaranes.precio, cantidad, lineas_albaranes.descuento, lineas_albaranes.iva, total, lineas_albaranes.estado','INNER JOIN articulos ON lineas_albaranes.cod_articulo = articulos.cod_articulo WHERE cod_albaran="' . $_POST["cod_albaran"] . '" GROUP BY cod_linea');
+    }
+
+    public function searchCliente(){
+        $this->getUsuariosClienteCRUD()->select($this->connection, $this->dataContent, '*','WHERE cod_cliente=' . $_POST["cod_cliente"]);
+    }
+    public function updateAlbaran(){
+        $this->connection->startTransaction();
+
+        $values = $this->getLineasAlbaranesCRUD()->update($this->connection, $this->dataContent);
+        if($this->dataContent->getSuccess() && count($values[0]) > 0){
+            $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $_POST["cod_albaran"], $values, "lineas_albaranes", "cambiar", $_POST["cod_gestor"], "gestor");
+        }
+        if($this->dataContent->getSuccess()){
+            $values = $this->getLineasAlbaranesCRUD()->delete($this->connection, $this->dataContent);
+        }
+        if($this->dataContent->getSuccess() && count($values[0]) > 0){
+            $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $_POST["cod_albaran"], $values, "lineas_albaranes", "borrar", $_POST["cod_gestor"], "gestor");
+            if($this->dataContent->getSuccess()) {
+                $this->getLineasPedidosCRUD()->updateEstadoPrepare($this->connection, $this->dataContent, 'pendiente', $values);
+            }
+            if($this->dataContent->getSuccess()) {
+                $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, "lineas_pedidos", "pendiente", $_POST["cod_gestor"], "gestor");
+            }
+            if($this->dataContent->getSuccess()) {
+                $this->getPedidosCRUD()->update($this->connection, $this->dataContent, 'estado="pendiente"');
+            }
+        }
+        if($this->dataContent->getSuccess()) {
+            $this->getLineasAlbaranesCRUD()->select($this->connection, $this->dataContent, '*', 'WHERE cod_albaran=' . $_POST["cod_albaran"]);
+        }
+        if($this->dataContent->getSuccess()) {
+            if(count($this->dataContent->getLineasAlbaranes()) === 0){
+                $this->getAlbaranesCRUD()->delete($this->connection, $this->dataContent, 'cod_albaran=' . $_POST["cod_albaran"]);
+                if($this->dataContent->getSuccess()) {
+                    $this->getActividadCRUD()->insert($this->connection, $this->dataContent, $_POST["cod_albaran"], "albaranes", "borrar", trim($_POST['cod_gestor']), 'gestor');
+                }
+
+            }
+        }
+
+
+            $this->connection->endTransaction($this->dataContent->getSuccess());
+    }
+
+    public function procesarAlbaran(){
+        $this->connection->startTransaction();
+
+        $values = $this->getLineasAlbaranesCRUD()->updateEstado($this->connection, $this->dataContent, "procesado");
+        if($this->dataContent->getSuccess() && count($values[0]) > 0) {
+            $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $_POST["cod_albaran"], $values, 'lineas_albaranes', 'procesar', trim($_POST['cod_gestor']), 'gestor');
+            if($this->dataContent->getSuccess()) {
+                $max_cod = $this->getFacturasCRUD()->selectMax($this->connection, $this->dataContent);
+            }
+            if($this->dataContent->getSuccess()){
+                $this->getFacturasCRUD()->insert($this->connection, $this->dataContent, $max_cod);
+            }
+            if($this->dataContent->getSuccess()){
+                $this->getActividadCRUD()->insert($this->connection, $this->dataContent, $max_cod, "facturas", "crear", trim($_POST['cod_gestor']), 'gestor');
+            }
+            if($this->dataContent->getSuccess()){
+                $values = $this->getLineasFacturasCRUD()->insert($this->connection, $this->dataContent, $max_cod);
+            }
+            if($this->dataContent->getSuccess() && count($values[0]) > 0){
+                $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $max_cod, $values, 'lineas_facturas', 'crear', trim($_POST['cod_gestor']), 'gestor');
+            }
+            if($this->dataContent->getSuccess()){
+                $this->getAlbaranesCRUD()->update($this->connection, $this->dataContent, 'estado="procesado"');
+            }
+            if($this->dataContent->getSuccess()){
+                $this->getActividadCRUD()->insert($this->connection, $this->dataContent, $_POST["cod_albaran"], "albaranes", "procesar", trim($_POST['cod_gestor']), 'gestor');
+            }
         }
 
         $this->connection->endTransaction($this->dataContent->getSuccess());

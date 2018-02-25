@@ -69,16 +69,19 @@ class AjaxCliente extends DependencyCRUD {
         if($this->dataContent->getSuccess() && count($values[0]) > 0){
             $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, 'lineas_pedidos', 'borrar', trim($_POST['cod_cliente']), 'cliente');
         }
-        $values = $this->getLineasPedidosCRUD()->updateCantidad($this->connection, $this->dataContent);
+        if($this->dataContent->getSuccess() && count($values[0]) > 0){
+            $values = $this->getLineasPedidosCRUD()->updateCantidad($this->connection, $this->dataContent);
+        }
         if($this->dataContent->getSuccess() && count($values[0]) > 0){
             $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, 'lineas_pedidos', 'cambiar', trim($_POST['cod_cliente']), 'cliente');
         }
-
-        $this->getLineasPedidosCRUD()->select($this->connection, $this->dataContent, '*', 'WHERE cod_pedido=' . $_POST["cod_pedido"]);
-        if(count($this->dataContent->getLineasPedidos()) === 0){
-            $this->getPedidosCRUD()->delete($this->connection, $this->dataContent, " cod_pedido=" . $_POST["cod_pedido"]);
-            if($this->dataContent->getSuccess()) {
-                $this->getActividadCRUD()->insert($this->connection, $this->dataContent, $_POST["cod_pedido"], "pedidos", "borrar", trim($_POST['cod_cliente']), 'cliente');
+        if($this->dataContent->getSuccess() && count($values[0]) > 0) {
+            $this->getLineasPedidosCRUD()->select($this->connection, $this->dataContent, '*', 'WHERE cod_pedido=' . $_POST["cod_pedido"]);
+            if (count($this->dataContent->getLineasPedidos()) === 0 && $this->dataContent->getSuccess()) {
+                $this->getPedidosCRUD()->delete($this->connection, $this->dataContent, " cod_pedido=" . $_POST["cod_pedido"]);
+                if ($this->dataContent->getSuccess()) {
+                    $this->getActividadCRUD()->insert($this->connection, $this->dataContent, $_POST["cod_pedido"], "pedidos", "borrar", trim($_POST['cod_cliente']), 'cliente');
+                }
             }
         }
 

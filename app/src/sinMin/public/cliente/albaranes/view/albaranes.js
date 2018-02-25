@@ -56,8 +56,7 @@ function injectLineas(lineas){
             '<td>' + lineas[i]["iva"].replace(".", ",") + '</td>' +
             '<td>' + lineas[i]["total"].replace(".", ",") + '</td>' +
             '<td>' + lineas[i]["estado"] + '</td>' +
-            '<td><input type="number" value="' + lineas[i]["cantidad"] + '" class="cantidades form-control" disabled></td></tr>';
-
+            '<td>' + lineas[i]["cantidad"] + '</td></tr>';
     }
 
     tableLineas += '<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><button type="button" id="descarga" name="descarga" class="form-control btn-warning" value=""><span class="glyphicon glyphicon-download" aria-hidden="true"></span> PDF</button></td></tr>';

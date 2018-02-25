@@ -57,6 +57,10 @@ class IncludesGestor extends Includes{
         $this->jsComun('../');
         echo   '<script src="../' . _jsPath . 'gestor/pedidos.min.js"></script>';
     }
+    function jsAlbaranes(){
+        $this->jsComun('../');
+        echo   '<script src="../' . _jsPath . 'gestor/albaranes.min.js"></script>';
+    }
 
     public function phpController($dependency){ include_once "../controller/gestor.php"; }
     public function phpNav($dependency){ include_once _assetsPathPHP . "gestor/nav.php";}
@@ -72,5 +76,5 @@ class IncludesGestor extends Includes{
     public function phpActividad($dependency){ include_once _assetsPathPHP . "gestor/actividad.php"; }
     function phpRealizarPedidos($dependency){include_once _assetsPathPHP . "gestor/realizarPedidos.php";}
     function phpPedidos($dependency){include_once _assetsPathPHP . "gestor/pedidos.php";}
-
+    function phpAlbaranes($dependency){include_once _assetsPathPHP . "gestor/albaranes.php";}
 }

@@ -3,6 +3,7 @@
 class Lineas_albaranes {
     private $cod_linea;
     private $cod_albaran;
+    private $cod_pedido;
     private $cod_articulo;
     private $nombre_articulo;
     private $precio;
@@ -17,6 +18,9 @@ class Lineas_albaranes {
 
     public function getCodAlbaran() { return $this->cod_albaran; }
     public function setCodAlbaran($cod_albaran) { $this->cod_albaran = $cod_albaran; }
+
+    public function getCodPedido(){return $this->cod_pedido;}
+    public function setCodPedido($cod_pedido){$this->cod_pedido = $cod_pedido;}
 
     public function getCodArticulo() { return $this->cod_articulo; }
     public function setCodArticulo($cod_articulo) { $this->cod_articulo = $cod_articulo; }

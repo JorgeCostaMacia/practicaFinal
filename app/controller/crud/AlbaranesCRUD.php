@@ -38,4 +38,28 @@ class AlbaranesCRUD{
             $dataContent->addErrores($result["error"]);
         }
     }
+
+    public function update($connection, $dataContent, $set){
+        $result = $connection->update('albaranes', $set, 'WHERE cod_albaran="' . $_POST['cod_albaran'] . '"');
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->addErrores($result["error"]);
+        }
+    }
+
+    public function delete($connection, $dataContent, $where){
+        $result = $connection->delete('albaranes', $where);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->addErrores($result["error"]);
+        }
+    }
 }

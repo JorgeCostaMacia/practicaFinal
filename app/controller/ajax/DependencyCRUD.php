@@ -5,7 +5,9 @@ abstract class DependencyCRUD{
     private $actividadCRUD;
     private $albaranesCRUD;
     private $articulosCRUD;
+    private $facturasCRUD;
     private $lineas_albaranesCRUD;
+    private $lineas_facturasCRUD;
     private $lineas_pedidosCRUD;
     private $pedidosCRUD;
     private $solicitudesCRUD;
@@ -44,12 +46,28 @@ abstract class DependencyCRUD{
         else { return $this->articulosCRUD; }
     }
 
+    public function getFacturasCRUD(){
+        if (!$this->facturasCRUD) {
+            $this->facturasCRUD = new FacturasCRUD();
+            return $this->facturasCRUD;
+        }
+        else { return $this->facturasCRUD; }
+    }
+
     public function getLineasAlbaranesCRUD(){
         if (!$this->lineas_albaranesCRUD) {
             $this->lineas_albaranesCRUD = new Lineas_albaranesCRUD();
             return $this->lineas_albaranesCRUD;
         }
         else { return $this->lineas_albaranesCRUD; }
+    }
+
+    public function getLineasFacturasCRUD(){
+        if (!$this->lineas_facturasCRUD) {
+            $this->lineas_facturasCRUD = new Lineas_facturasCRUD();
+            return $this->lineas_facturasCRUD;
+        }
+        else { return $this->lineas_facturasCRUD; }
     }
 
     public function getLineasPedidosCRUD(){
