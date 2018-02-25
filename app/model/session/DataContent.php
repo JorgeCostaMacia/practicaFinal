@@ -221,9 +221,10 @@ class DataContent {
         foreach($this->albaranes as $albaran){
             $aux = [];
             $aux["cod_albaran"] = $albaran->getCodAlbaran();
+            $aux["cod_pedido"] = $albaran->getCodPedido();
             $aux["cod_cliente"] = $albaran->getCodCliente();
+            $aux["nombre_cliente"] = $albaran->getNombreCliente();
             $aux["fecha"] = $albaran->getFecha();
-            $aux["concepto"] = $albaran->getConcepto();
             $aux["estado"] = $albaran->getEstado();
             $aux["lineas"] = $albaran->getLineas();
             $returned["albaranes"][] = $aux;
@@ -245,9 +246,9 @@ class DataContent {
             $aux = [];
             $aux["cod_factura"] = $factura->getCodFactura();
             $aux["cod_cliente"] = $factura->getCodCliente();
+            $aux["nombre_cliente"] = $factura->getNombreCliente();
             $aux["fecha"] = $factura->getFecha();
             $aux["descuento"] = $factura->getDescuento();
-            $aux["concepto"] = $factura->getConcepto();
             $aux["estado"] = $factura->getEstado();
             $aux["lineas"] = $factura->getLineas();
             $returned["facturas"][] = $aux;
@@ -258,6 +259,7 @@ class DataContent {
             $aux["cod_linea"] = $linea_albaran->getCodLinea();
             $aux["cod_albaran"] = $linea_albaran->getCodAlbaran();
             $aux["cod_articulo"] = $linea_albaran->getCodArticulo();
+            $aux["nombre_articulo"] = $linea_albaran->getNombreArticulo();
             $aux["precio"] = $linea_albaran->getPrecio();
             $aux["cantidad"] = $linea_albaran->getCantidad();
             $aux["descuento"] = $linea_albaran->getDescuento();
@@ -272,6 +274,7 @@ class DataContent {
             $aux["cod_linea"] = $linea_factura->getCodLinea();
             $aux["cod_factura"] = $linea_factura->getCodFactura();
             $aux["cod_articulo"] = $linea_factura->getCodArticulo();
+            $aux["nombre_articulo"] = $linea_factura->getNombreArticulo();
             $aux["precio"] = $linea_factura->getPrecio();
             $aux["cantidad"] = $linea_factura->getCantidad();
             $aux["descuento"] = $linea_factura->getDescuento();
@@ -299,10 +302,10 @@ class DataContent {
             $aux = [];
             $aux["cod_pedido"] = $pedido->getCodPedido();
             $aux["cod_cliente"] = $pedido->getCodCliente();
+            $aux["nombre_cliente"] = $pedido->getNombreCliente();
             $aux["fecha"] = $pedido->getFecha();
             $aux["estado"] = $pedido->getEstado();
             $aux["lineas"] = $pedido->getLineas();
-            $aux["nombre_cliente"] = $pedido->getNombreCliente();
             $returned["pedidos"][] = $aux;
         }
 

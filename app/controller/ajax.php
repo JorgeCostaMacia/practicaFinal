@@ -38,6 +38,10 @@ else if($action === "searchActividad"){$ajax->searchActividad();}
 else if($action === "getClientes"){$ajax->getClientes();}
 else if($action === "procesarLineasPedidos"){$ajax->procesarLineasPedidos();}
 else if($action === "searchAlbaranes"){$ajax->searchAlbaranes();}
+else if($action === "searchLineasAlbaranes"){$ajax->searchLineasAlbaranes();}
+else if($action === "searchCliente"){$ajax->searchCliente();}
+
+
 
 header('Content-Type',  'application/json; charset=utf-8');
 header('Content-Encoding',  'gzip');

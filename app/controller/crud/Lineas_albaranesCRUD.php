@@ -1,6 +1,19 @@
 <?php
 
 class Lineas_albaranesCRUD{
+    public function select($connection, $dataContent, $col, $more) {
+        $result = $connection->select($col, 'lineas_albaranes', $more);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+            $dataContent->setLineasAlbaranes($connection->format_select_Object($result["result"], 'Lineas_albaranes'));
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->addErrores($result["error"]);
+        }
+    }
+
     public function insert($connection, $dataContent, $maxCod_albaran){
         $crud = new ArticulosCRUD();
 

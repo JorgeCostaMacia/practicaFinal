@@ -86,6 +86,14 @@ class AjaxCliente extends DependencyCRUD {
     }
 
     public function searchAlbaranes(){
+        $this->getAlbaranesCRUD()->select($this->connection, $this->dataContent, 'albaranes.cod_albaran, albaranes.cod_pedido, albaranes.cod_cliente, albaranes.fecha, albaranes.estado, COUNT(cod_linea) as lineas, usuarios_cliente.nombre_completo as nombre_cliente', 'INNER JOIN lineas_albaranes ON albaranes.cod_albaran = lineas_albaranes.cod_albaran INNER JOIN usuarios_cliente ON albaranes.cod_cliente = usuarios_cliente.cod_cliente WHERE ' . 'albaranes.' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%"' . ' AND albaranes.cod_cliente="' . $_POST["cod_cliente"] . '" GROUP BY cod_albaran LIMIT ' . $this->offset . ',' . $this->itemsPage);
+    }
 
+    public function searchLineasAlbaranes(){
+        $this->getLineasAlbaranesCRUD()->select($this->connection, $this->dataContent, 'cod_linea, cod_albaran, lineas_albaranes.cod_articulo, nombre as nombre_articulo, lineas_albaranes.precio, cantidad, lineas_albaranes.descuento, lineas_albaranes.iva, total, lineas_albaranes.estado','INNER JOIN articulos ON lineas_albaranes.cod_articulo = articulos.cod_articulo WHERE cod_albaran="' . $_POST["cod_albaran"] . '" GROUP BY cod_linea');
+    }
+
+    public function searchCliente(){
+        $this->getUsuariosClienteCRUD()->select($this->connection, $this->dataContent, '*','WHERE cod_cliente=' . $_POST["cod_cliente"]);
     }
 }

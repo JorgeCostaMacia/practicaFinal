@@ -25,4 +25,17 @@ class AlbaranesCRUD{
             $dataContent->addErrores($result["error"]);
         }
     }
+
+    public function select($connection, $dataContent, $col, $more) {
+        $result = $connection->select($col, 'albaranes', $more);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+            $dataContent->setAlbaranes($connection->format_select_Object($result["result"], 'Albaranes'));
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->addErrores($result["error"]);
+        }
+    }
 }

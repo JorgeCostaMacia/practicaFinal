@@ -4,6 +4,7 @@ class Lineas_facturas {
     private $cod_linea;
     private $cod_factura;
     private $cod_articulo;
+    private $nombre_articulo;
     private $precio;
     private $cantidad;
     private $descuento;
@@ -19,6 +20,9 @@ class Lineas_facturas {
 
     public function getCodArticulo(){return $this->cod_articulo;}
     public function setCodArticulo($cod_articulo){$this->cod_articulo = $cod_articulo;}
+
+    public function getNombreArticulo(){return $this->nombre_articulo;}
+    public function setNombreArticulo($nombre_articulo){$this->nombre_articulo = $nombre_articulo;}
 
     public function getPrecio(){return $this->precio;}
     public function setPrecio($precio){$this->precio = $precio;}

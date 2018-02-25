@@ -23,14 +23,7 @@ class IncludesCliente extends Includes{
     }
     function jsAlbaranes(){
         $this->jsComun('../');
-        echo '<script src="../public/albaranes/view/albaranes.js"></script>';
-        echo '<script src="../public/albaranes/view/mensajes.js"></script>';
-        echo '<script src="../public/albaranes/controller/class/Ajax.js"></script>';
-        echo '<script src="../public/albaranes/controller/class/Albaranes.js"></script>';
-        echo '<script src="../public/albaranes/controller/albaranes.js"></script>';
-        echo '<script src="../public/albaranes/controller/lineas.js"></script>';
-        echo '<script src="../public/albaranes/controller/ini.js"></script>';
-        //echo '<script src="../' . _jsPath . 'cliente/pedidos.min.js"></script>';
+        echo '<script src="../' . _jsPath . 'cliente/albaranes.min.js"></script>';
     }
 
     function phpController($dependency){ include_once "../controller/cliente.php"; }
