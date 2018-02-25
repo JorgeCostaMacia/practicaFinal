@@ -77,4 +77,8 @@ class Pedidos{
         }
         return result;
     }
+    formatDate(date){
+        let format = date.split("-");
+        return format[2] + "-" + format[1] + "-" + format[0];
+    }
 }

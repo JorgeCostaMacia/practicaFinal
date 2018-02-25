@@ -17,7 +17,7 @@ function injectPedidos(pedidos){
         $('#tbody').append(
             '<tr><td>' + pedidos[i]["cod_pedido"] + '</td>' +
             '<td>' + pedidos[i]["cod_cliente"] + ' - ' + pedidos[i]["nombre_cliente"] + '</td>' +
-            '<td>' + pedidos[i]["fecha"] + '</td>' +
+            '<td>' + pedidosApp.formatDate(pedidos[i]["fecha"]) + '</td>' +
             '<td>' + pedidos[i]["estado"] + '</td>' +
             '<td><input type="button" id="cod_pedido-' + pedidos[i]["cod_pedido"] + '" value="' + pedidos[i]["lineas"] + '" class="form-control btn-primary"></td></tr>'
         );
@@ -54,9 +54,9 @@ function injectLineas(lineas, cod_cliente){
         tableLineas +=
             '<tr><td>' + lineas[i]["cod_linea"] + '</td>' +
             '<td>' + lineas[i]["cod_articulo"] + ' - ' + lineas[i]["nombre_articulo"] + '</td>' +
-            '<td>' + lineas[i]["precio"] + '</td>' +
-            '<td>' + lineas[i]["iva"] + '</td>' +
-            '<td>' + lineas[i]["total"] + '</td>';
+            '<td>' + lineas[i]["precio"].replace(".", ",") + '</td>' +
+            '<td>' + lineas[i]["iva"].replace(".", ",") + '</td>' +
+            '<td>' + lineas[i]["total"].replace(".", ",") + '</td>';
 
         if(lineas[i]["estado"] === 'pendiente'){
             tableLineas += '<td><div class="material-switch">'+
