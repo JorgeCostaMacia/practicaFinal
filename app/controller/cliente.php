@@ -21,3 +21,7 @@ else if($dependency->getPage()->getPage() === 'pedidos'){
     $dependency->getIncludesCliente()->phpPedidos($dependency);
     $dependency->getIncludesCliente()->jsPedidos();
 }
+else if($dependency->getPage()->getPage() === 'albaranes'){
+    $dependency->getIncludesCliente()->phpAlbaranes($dependency);
+    $dependency->getIncludesCliente()->jsAlbaranes();
+}

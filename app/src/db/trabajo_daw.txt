@@ -9,7 +9,7 @@ create table actividad(
     cod_tabla SMALLINT,
     cod_linea SMALLINT,
     tabla VARCHAR(30),
-    accion ENUM('crear', 'cambiar', 'borrar'),
+    accion ENUM('crear', 'cambiar', 'borrar', 'procesar'),
     fecha DATETIME
 )ENGINE=InnoDB;
 
