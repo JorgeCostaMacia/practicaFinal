@@ -9,8 +9,8 @@ function injectAccesos(accesos){
         $('#tbody').append(
             '<tr><td>' + accesos[i]["cod_acceso"] + '</td>' +
             '<td>' + accesos[i]["cod_gestor"] + ' - ' + accesos[i]["nombre_gestor"] +'</td>' +
-            '<td>' + accesos[i]["fecha_hora_acceso"] + '</td>' +
-            '<td>' + accesos[i]["fecha_hora_salida"] + '</td></tr>'
+            '<td>' + accesosApp.formatDate(accesos[i]["fecha_hora_acceso"]) + '</td>' +
+            '<td>' + accesosApp.formatDate(accesos[i]["fecha_hora_salida"]) + '</td></tr>'
         );
     }
 }
@@ -50,7 +50,7 @@ function showDescarga(event){
     let data = [];
 
     for(let i = 0; i < accesos.length; i++){
-        let acceso = [accesos[i]["cod_acceso"], accesos[i]["cod_gestor"] + ' - ' + accesos[i]["nombre_gestor"], accesos[i]["fecha_hora_acceso"], accesos[i]["fecha_hora_salida"]];
+        let acceso = [accesos[i]["cod_acceso"], accesos[i]["cod_gestor"] + ' - ' + accesos[i]["nombre_gestor"], accesosApp.formatDate(accesos[i]["fecha_hora_acceso"]), accesosApp.formatDate(accesos[i]["fecha_hora_salida"])];
         data.push(acceso);
     }
     doc.autoTable(columns,data, {styles: {fontSize: 5, overflow: 'linebreak'}, margin:{ top: 50 }});
