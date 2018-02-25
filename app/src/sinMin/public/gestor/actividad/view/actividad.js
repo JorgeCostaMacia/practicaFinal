@@ -5,17 +5,22 @@ function cleanTbody(){
 }
 
 function injectActividad(activi){
+    let textActividad = "";
+
+
     for(let i = 0; i < activi.length; i++){
-        $('#tbody').append(
-            '<tr><td>' + activi[i]["cod_actividad"] + '</td>' +
+        textActividad += '<tr><td>' + activi[i]["cod_actividad"] + '</td>' +
             '<td>' + activi[i]["cod_usuario"] + ' - ' + activi[i]["tipo_usuario"] + '</td>' +
-            '<td>' + activi[i]["cod_tabla"] + '</td>' +
-            '<td>' + activi[i]["cod_linea"] + '</td>' +
-            '<td>' + activi[i]["tabla"] + '</td>' +
+            '<td>' + activi[i]["cod_tabla"] + '</td>';
+            if(activi[i]["cod_linea"] != null){
+                textActividad += '<td>' + activi[i]["cod_linea"] + '</td>';
+            }
+            else { textActividad += '<td>vacio</td>';}
+        textActividad += '<td>' + activi[i]["tabla"] + '</td>' +
             '<td>' + activi[i]["accion"] + '</td>' +
-            '<td>' + activi[i]["fecha"] + '</td></tr>'
-        );
+            '<td>' + actividadApp.formatDate(activi[i]["fecha"]) + '</td></tr>';
     }
+    $('#tbody').append(textActividad);
 }
 
 function injectPageNumber(){
@@ -53,7 +58,12 @@ function showDescarga(event){
     let data = [];
 
     for(let i = 0; i < actividad.length; i++){
-        let acti = [actividad[i]["cod_actividad"], actividad[i]["cod_usuario"] + ' - ' + actividad[i]["tipo_usuario"], actividad[i]["cod_tabla"], actividad[i]["cod_linea"], actividad[i]["tabla"], actividad[i]["accion"], actividad[i]["fecha"]];
+        let codLinea = "";
+        if(actividad[i]["cod_linea"] != null){
+            codLinea += actividad[i]["cod_linea"];
+        }
+        else { codLinea += "vacio";}
+        let acti = [actividad[i]["cod_actividad"], actividad[i]["cod_usuario"] + ' - ' + actividad[i]["tipo_usuario"], actividad[i]["cod_tabla"], codLinea, actividad[i]["tabla"], actividad[i]["accion"], actividadApp.formatDate(actividad[i]["fecha"])];
         data.push(acti);
     }
     doc.autoTable(columns,data, {styles: {fontSize: 5, overflow: 'linebreak'}, margin:{ top: 50 }});

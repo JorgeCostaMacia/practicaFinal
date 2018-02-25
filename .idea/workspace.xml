@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="e713c46a-2ebf-45c8-858a-63d755f86ffd" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/class/Accesos.js" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/class/Accesos.js" />
-      <change beforePath="$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/view/accesos.js" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/view/accesos.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/gestor/accesos.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/accesos.min.js" />
+      <change beforePath="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/class/Actividad.js" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/class/Actividad.js" />
+      <change beforePath="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/view/actividad.js" afterPath="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/view/actividad.js" />
+      <change beforePath="$PROJECT_DIR$/public/js/gestor/actividad.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/actividad.min.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,10 +39,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/pedidos/controller/lineas.js" />
         <option value="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" />
-        <option value="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/view/actividad.js" />
-        <option value="$PROJECT_DIR$/public/js/gestor/actividad.min.js" />
         <option value="$PROJECT_DIR$/app/src/sinMin/public/gestor/pedidos/controller/pedidos.js" />
         <option value="$PROJECT_DIR$/app/src/sinMin/public/gestor/pedidos/controller/ini.js" />
         <option value="$PROJECT_DIR$/app/src/sinMin/public/gestor/pedidos/view/pedidos.js" />
@@ -90,6 +87,9 @@
         <option value="$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/view/accesos.js" />
         <option value="$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/class/Accesos.js" />
         <option value="$PROJECT_DIR$/public/js/gestor/accesos.min.js" />
+        <option value="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/class/Actividad.js" />
+        <option value="$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/view/actividad.js" />
+        <option value="$PROJECT_DIR$/public/js/gestor/actividad.min.js" />
       </list>
     </option>
   </component>
@@ -176,61 +176,6 @@
               <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="accesos" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="accesos" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="accesos" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="class" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="accesos" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="libraries" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sinMin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="gestor" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="accesos" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
@@ -351,7 +296,7 @@
       <workItem from="1519416671007" duration="1953000" />
       <workItem from="1519464564752" duration="28931000" />
       <workItem from="1519550572540" duration="798000" />
-      <workItem from="1519552596152" duration="9156000" />
+      <workItem from="1519552596152" duration="10014000" />
     </task>
     <task id="LOCAL-00001" summary="add model crud">
       <created>1518858853743</created>
@@ -535,11 +480,18 @@
       <option name="project" value="LOCAL" />
       <updated>1519560179351</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="format accesos">
+      <created>1519561864739</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1519561864739</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294714000" />
+    <option name="totallyTimeSpent" value="295572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -594,7 +546,8 @@
     <MESSAGE value="update add page realizarPedidos clientes" />
     <MESSAGE value="add pedidos gestor" />
     <MESSAGE value="add albaranes clientes and fixed format error" />
-    <option name="LAST_COMMIT_MESSAGE" value="add albaranes clientes and fixed format error" />
+    <MESSAGE value="format accesos" />
+    <option name="LAST_COMMIT_MESSAGE" value="format accesos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -610,88 +563,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/model/entities/Lineas_pedidos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="22" column="2" lean-forward="true" selection-start-line="22" selection-start-column="2" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/session/DataContent.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="270" column="0" lean-forward="true" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/assets/gestor/accesos.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="84" lean-forward="true" selection-start-line="5" selection-start-column="84" selection-end-line="5" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/entities/Lineas_facturas.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/entities/Lineas_albaranes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="17" column="38" lean-forward="false" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/crud/AlbaranesCRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="39" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/crud/Lineas_albaranesCRUD.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <marker date="1519554687000" expanded="true" signature="739:884" ph="INSERT INTO lineas_albaranes... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ajax.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ajax/AjaxCliente.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="577">
-          <caret line="96" column="91" lean-forward="true" selection-start-line="96" selection-start-column="91" selection-end-line="96" selection-end-column="91" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="109" column="28" lean-forward="true" selection-start-line="109" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/cliente/albaranes/libraries/jspdf.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-107">
@@ -956,14 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/class/Accesos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/libraries/jspdf.autotable.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1016,6 +879,94 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="262">
           <caret line="27" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/accesos/controller/class/Accesos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="13" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/class/Actividad.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/class/Ajax.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/actividad.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="72" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="72" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/controller/ini.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/libraries/jspdf.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="0" column="647" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="227792" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/libraries/jspdf.addimage.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="62" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="8757" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/libraries/jspdf.autotable.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="0" column="1757" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32828" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/gestor/actividad.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="0" column="274727" lean-forward="false" selection-start-line="0" selection-start-column="274727" selection-end-line="0" selection-end-column="274727" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/view/mensajes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1200">
+          <caret line="80" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="80" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/sinMin/public/gestor/actividad/view/actividad.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="72" selection-end-column="1" />
           <folding />
         </state>
       </provider>
