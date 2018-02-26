@@ -34,8 +34,8 @@ function addEventsModificar(clientes){
 }
 
 function addEventsUpdate(){
-    $("#updateGestor").off();
-    $("#buttonVolver").off();
+    $(document).off('click', "#updateGestor");
+    $(document).off('click', "#buttonVolver");
     $(document).on('click', "#updateGestor", evalModificar);
     $(document).on('click', "#buttonVolver", restoreGestores);
 }

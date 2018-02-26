@@ -66,8 +66,8 @@ function injectLineas(lineas){
         }
     }
 
-    tableLineas += '<tr><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="button" id="buttonLineas" name="buttonLineas" class="form-control btn-warning" value="Actualizar cantidades"></td></tr>';
-    tableLineas += '<tr><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="button" id="buttonVolver" name="buttonVolver" class="form-control btn-primary" value="Volver pedidos"></td></tr>';
+    tableLineas += '<tr><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="button" id="buttonLineas" name="buttonLineas" class="form-control btn-warning" value="Actualizar"></td></tr>';
+    tableLineas += '<tr><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="button" id="buttonVolver" name="buttonVolver" class="form-control btn-primary" value="Volver"></td></tr>';
     tableLineas += '</tbody></table></div></form>';
 
     $('#tablePedidos').attr('hidden', true);

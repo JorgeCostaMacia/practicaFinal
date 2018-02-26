@@ -4,7 +4,7 @@ function evalRegistro(){
     let result = altaGestorApp.evalInputsRegistro();
 
     if(!result["succes"]){
-        msjDanger("ALTA CLIENTE", altaGestorApp.getTextErrorRegistro(result["errores"]));
+        msjDanger("ALTA GESTOR", altaGestorApp.getTextErrorRegistro(result["errores"]));
     }
     else {
         ajaxApp.callController(altaGestorApp.getParameterRegistro(),'callBackEvalRegistro');

@@ -104,5 +104,7 @@ function callBackEvalUpdate(result){
     }
     else {
         msjSucces("ARTICULOS", "<strong>Se ha modificado correctamente</strong>");
+        cleanTbody();
+        restoreArticulos();
     }
 }

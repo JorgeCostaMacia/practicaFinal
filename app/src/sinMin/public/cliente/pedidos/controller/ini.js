@@ -3,6 +3,7 @@
 var pedidosApp = new Pedidos();
 var ajaxApp = new Ajax();
 var lineasPedidos = "";
+var cod_pedido = "";
 
 document.onload = addEventsPedidos();
 
@@ -35,8 +36,8 @@ function addEventsLineas(pedidos){
 }
 
 function addEventsButtonLineas(){
-    $("#buttonLineas").off();
-    $("#buttonVolver").off();
+    $(document).off('click', "#buttonLineas");
+    $(document).off('click', "#buttonVolver");
     $(document).on('click', "#buttonLineas", evalCantidades);
     $(document).on('click', "#buttonVolver", restorePedidos);
 }

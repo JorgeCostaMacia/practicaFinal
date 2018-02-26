@@ -73,13 +73,18 @@ class Lineas_pedidosCRUD{
             }
         }
 
-        $result = $connection->prepare($query, $bindParams, $values);
-        if ($result["success"]) {
-            $dataContent->setSuccess(true);
+        if(count($values[0]) > 0){
+            $result = $connection->prepare($query, $bindParams, $values);
+            if ($result["success"]) {
+                $dataContent->setSuccess(true);
+            }
+            else {
+                $dataContent->setSuccess(false);
+                $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            }
         }
         else {
-            $dataContent->setSuccess(false);
-            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->setSuccess(true);
         }
 
         return $values;

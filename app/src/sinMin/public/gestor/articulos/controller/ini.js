@@ -34,8 +34,8 @@ function addEventsModificar(articulos){
 }
 
 function addEventsUpdate(){
-    $("#updateCliente").off();
-    $("#buttonVolver").off();
+    $(document).off('click', "#updateArticulo");
+    $(document).off('click', "#buttonVolver");
     $(document).on('click', "#updateArticulo", evalModificar);
     $(document).on('click', "#buttonVolver", restoreArticulos);
 }

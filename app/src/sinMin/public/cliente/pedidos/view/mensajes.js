@@ -1,8 +1,9 @@
 "use strict";
 
 function msjDanger(accion, text) {
+    let idMsj = Math.floor((Math.random() * 10000000000000000) + 1);
     $("#mensajes").append(
-        '<div class="modal fade bd-example-modal-lg" id="danger" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
+        '<div class="modal fade bd-example-modal-lg" id="danger' + idMsj + '" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
         '<div class="modal-dialog modal-lg">' +
         '<div class="modal-content">' +
         '<div class="modal-header modal-header-danger">' +
@@ -16,13 +17,13 @@ function msjDanger(accion, text) {
         '</div>' +
         '</div>'
     );
-
-    $("#danger").modal("show");
+    $("#danger" + idMsj).modal("show");
 }
 
 function msjWarning(accion, text) {
+    let idMsj = Math.floor((Math.random() * 10000000000000000) + 1);
     $("#mensajes").append(
-        '<div class="modal fade bd-example-modal-lg" id="warning" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
+        '<div class="modal fade bd-example-modal-lg" id="warning' + idMsj + '" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
         '<div class="modal-dialog modal-lg">' +
         '<div class="modal-content">' +
         '<div class="modal-header modal-header-warning">' +
@@ -37,12 +38,13 @@ function msjWarning(accion, text) {
         '</div>'
     );
 
-    $("#warning").modal("show");
+    $("#warning" + idMsj).modal("show");
 }
 
 function msjSucces(accion, text) {
+    let idMsj = Math.floor((Math.random() * 10000000000000000) + 1);
     $("#mensajes").append(
-        '<div class="modal fade bd-example-modal-lg" id="success" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
+        '<div class="modal fade bd-example-modal-lg" id="success' + idMsj + '" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
         '<div class="modal-dialog modal-lg">' +
         '<div class="modal-content">' +
         '<div class="modal-header modal-header-success">' +
@@ -57,12 +59,13 @@ function msjSucces(accion, text) {
         '</div>'
     );
 
-    $("#success").modal("show");
+    $("#success" + idMsj).modal("show");
 }
 
 function msjInfo(accion, text) {
+    let idMsj = Math.floor((Math.random() * 10000000000000000) + 1);
     $("#mensajes").append(
-        '<div class="modal fade bd-example-modal-lg" id="info" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
+        '<div class="modal fade bd-example-modal-lg" id="info' + idMsj + '" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">' +
         '<div class="modal-dialog modal-lg">' +
         '<div class="modal-content">' +
         '<div class="modal-header modal-header-info">' +
@@ -77,5 +80,5 @@ function msjInfo(accion, text) {
         '</div>'
     );
 
-    $("#info").modal("show");
+    $("#info" + idMsj).modal("show");
 }

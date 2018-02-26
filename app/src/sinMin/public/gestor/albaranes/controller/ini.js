@@ -37,8 +37,11 @@ function addEventsLineas(albaranes){
 }
 
 function addEventsButtonLineas(){
-    $("#descarga").off();
-    $("#buttonVolver").off();
+    $(document).off('click', "#procesar", procesarAlbaran);
+    $(document).off('click', "#actualizar", actualizarAlbaran);
+    $(document).off('click', "#descarga", searchCliente);
+    $(document).off('click', "#buttonVolver", restoreAlbaranes);
+
     $(document).on('click', "#procesar", procesarAlbaran);
     $(document).on('click', "#actualizar", actualizarAlbaran);
     $(document).on('click', "#descarga", searchCliente);

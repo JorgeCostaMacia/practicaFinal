@@ -2,7 +2,7 @@
 
 function searchLineas(event){
     cleanLineas();
-    var cod_pedido = event.target.id.split('-')[1];
+    cod_pedido = event.target.id.split('-')[1];
     ajaxApp.callController(pedidosApp.getParameterSearchLineas(cod_pedido),'callBackSearchLineas');
 }
 
@@ -39,7 +39,7 @@ function callBackEvalCantidades(result){
     }
     else {
         msjSucces("PEDIDOS", "<strong>Se ha actualizado correctamente su pedido</strong>");
-        restorePedidos();
         cleanTbody();
+        restorePedidos();
     }
 }

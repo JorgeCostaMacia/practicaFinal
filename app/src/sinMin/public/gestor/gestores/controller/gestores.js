@@ -104,5 +104,7 @@ function callBackEvalUpdate(result){
     }
     else {
         msjSucces("GESTORES", "<strong>Se ha modificado correctamente</strong>");
+        cleanTbody();
+        restoreGestores();
     }
 }

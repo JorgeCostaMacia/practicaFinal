@@ -105,5 +105,7 @@ function callBackEvalUpdate(result){
     }
     else {
         msjSucces("CLIENTES", "<strong>Se ha modificado correctamente</strong>");
+        cleanTbody();
+        restoreClientes();
     }
 }

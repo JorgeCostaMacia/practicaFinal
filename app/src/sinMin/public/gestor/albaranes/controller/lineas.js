@@ -63,20 +63,36 @@ function callBackProcesarAlbaran(result){
     }
     else {
         msjSucces("ALBARANES", "<strong>Se ha procesado correctamente el albaran</strong>");
-        search();
+        cleanTbody();
+        restoreAlbaranes();
     }
 }
 
 function  actualizarAlbaran(){
-    for(let i = 0; i < albaranes.length; i++){
-        if(albaranes[i]["cod_albaran"] === cod_albaran){
-            if(albaranes[i]["estado"] === "pendiente"){
-                ajaxApp.callController(albaranesApp.getParameterUpdateAlbaran(),'callBackActualizarAlbaran');
-            }
-            else {
-                msjInfo("ALBARANES", '<strong>No se puede realizar la accion<br></strong>Todas las lineas han sido procesadas');
+    let result1 = albaranesApp.evalInputsPrecio();
+    let result2 = albaranesApp.evalInputsDescuentos();
+
+    if(result1["success"] && result2["success"]){
+        for(let i = 0; i < albaranes.length; i++){
+            if(albaranes[i]["cod_albaran"] === cod_albaran){
+                if(albaranes[i]["estado"] === "pendiente"){
+                    ajaxApp.callController(albaranesApp.getParameterUpdateAlbaran(),'callBackActualizarAlbaran');
+                }
+                else {
+                    msjInfo("ALBARANES", '<strong>No se puede realizar la accion<br></strong>Todas las lineas han sido procesadas');
+                }
             }
         }
+    }
+    else {
+        let textError = "";
+        if(!result1["success"]){
+            textError += albaranesApp.getTextErrorPrecio(result1["errores"]);
+        }
+        if(!result2["success"]){
+            textError += albaranesApp.getTextErrorDescuento(result2["errores"]);
+        }
+        msjDanger("ALBARANES", textError);
     }
 }
 
@@ -86,6 +102,7 @@ function callBackActualizarAlbaran(result){
     }
     else {
         msjSucces("ALBARANES", "<strong>Se actualizaron los datos correctamente</strong>");
-        search();
+        cleanTbody();
+        restoreAlbaranes();
     }
 }
