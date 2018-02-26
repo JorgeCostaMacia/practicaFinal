@@ -90,7 +90,7 @@ class Lineas_pedidosCRUD{
         return $values;
     }
 
-    public function updateEstadoPrepare($connection, $dataContent, $estado, $values){
+    public function updateEstadoAlbaran($connection, $dataContent, $estado, $values){
         $query = 'UPDATE lineas_pedidos SET estado="' . $estado . '" WHERE cod_pedido=' . $_POST["cod_pedido"] .  ' AND cod_linea=:cod_linea';
         $bindParams = ["cod_linea"];
 

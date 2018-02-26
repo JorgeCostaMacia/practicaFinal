@@ -242,13 +242,16 @@ class AjaxGestor extends DependencyCRUD {
         if($this->dataContent->getSuccess() && count($values[0]) > 0){
             $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $_POST["cod_albaran"], $values, "lineas_albaranes", "borrar", $_POST["cod_gestor"], "gestor");
             if($this->dataContent->getSuccess()) {
-                $this->getLineasPedidosCRUD()->updateEstadoPrepare($this->connection, $this->dataContent, 'pendiente', $values);
+                $this->getLineasPedidosCRUD()->updateEstadoAlbaran($this->connection, $this->dataContent, 'pendiente', $values);
             }
             if($this->dataContent->getSuccess()) {
                 $this->getActividadCRUD()->prepareLineas($this->connection, $this->dataContent, $_POST["cod_pedido"], $values, "lineas_pedidos", "pendiente", $_POST["cod_gestor"], "gestor");
             }
             if($this->dataContent->getSuccess()) {
                 $this->getPedidosCRUD()->update($this->connection, $this->dataContent, 'estado="pendiente"');
+            }
+            if($this->dataContent->getSuccess()) {
+                $this->getActividadCRUD()->insert($this->connection, $this->dataContent, $_POST["cod_pedido"], "pedidos", "pendiente", trim($_POST['cod_gestor']), 'gestor');
             }
         }
         if($this->dataContent->getSuccess()) {
