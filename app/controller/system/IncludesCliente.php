@@ -15,7 +15,16 @@ class IncludesCliente extends Includes{
     }
     function jsRealizarPedidos(){
         $this->jsComun('../');
-        echo   '<script src="../' . _jsPath . 'cliente/realizarPedidos.min.js"></script>';
+        echo '<script src="../public/src/sinMin/public/cliente/realizarPedidos/view/mensajes.js"></script>';
+        echo '<script src="../public/src/sinMin/public/cliente/realizarPedidos/view/realizarPedidos.js"></script>';
+        echo '<script src="../public/src/sinMin/public/cliente/realizarPedidos/libraries/typeValidate.js"></script>';
+        echo '<script src="../public/src/sinMin/public/cliente/realizarPedidos/controller/class/Ajax.js"></script>';
+        echo '<script src="../public/src/sinMin/public/cliente/realizarPedidos/controller/class/RealizarPedidos.js"></script>';
+        echo '<script src="../public/src/sinMin/public/cliente/realizarPedidos/controller/InputsHandler.js"></script>';
+        echo '<script src="../public/src/sinMin/public/cliente/realizarPedidos/controller/realizarPedidos.js"></script>';
+        echo '<script src="../public/src/sinMin/public/cliente/realizarPedidos/controller/ini.js"></script>';
+
+        //echo   '<script src="../' . _jsPath . 'cliente/realizarPedidos.min.js"></script>';
     }
     function jsPedidos(){
         $this->jsComun('../');

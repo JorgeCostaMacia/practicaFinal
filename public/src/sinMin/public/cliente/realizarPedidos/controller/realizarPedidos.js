@@ -18,7 +18,7 @@ function callBackSearchArticulos(result){
             articulos = result["articulos"];
             injectArticulos(articulos);
             addEventsSiguiente();
-            enableProcesar();
+            addEventsAgregar();
         }
         else {
             disableProcesar();
@@ -44,6 +44,7 @@ function callBackSearchSiguiente(result){
         if(result["articulos"].length !== 0){
             cleanTbody();
             injectArticulos(result["articulos"]);
+            addEventsAgregar();
             addEventsSiguiente();
         }
         else{ $('#numPage').val($('#numPage').val() * 1 - 1); }
@@ -68,6 +69,7 @@ function callBackSearchAnterior(result){
     else {
         cleanTbody();
         injectArticulos(result["articulos"]);
+        addEventsAgregar();
         addEventsSiguiente();
         if($('#numPage').val() !== "1" ){ addEventsAnterior();}
 
@@ -75,14 +77,15 @@ function callBackSearchAnterior(result){
     }
 }
 
-function evalCantidades(){
+function evalCantidadesAgregar(){
     let result = realizarPedidosApp.evalInputsCantidades();
 
     if(!result["success"]){
         msjDanger("REALIZAR PEDIDOS", realizarPedidosApp.getTextErrorCantidades(result["errores"]));
     }
-    else if(!result["empty"]){ ajaxApp.callController(realizarPedidosApp.getParameterProcesarArticulos(),'callBackEvalCantidades');}
+    else if(!result["empty"]){ realizarPedidosApp.addLocalStorage();}
     else {msjInfo("REALIZAR PEDIDOS", '<strong>Todas las cantidades son 0</strong>')}
+    console.log(localStorage);
 }
 
 function callBackEvalCantidades(result){
@@ -90,4 +93,12 @@ function callBackEvalCantidades(result){
         msjDanger("", result["errores"][0]["errMessage"]);
     }
     else { msjSucces("REALIZAR PEDIDOS", "<strong>Se han procesado correctamente sus pedidos</strong>")}
+}
+
+function carrito(){
+
+}
+
+function evalCantidadesCarrito(){
+
 }

@@ -8,7 +8,7 @@ document.onload = addEventsRealizarPedidos();
 
 function addEventsRealizarPedidos(){
     $("#search").click(search);
-    $("#procesar").click(evalCantidades);
+    //$("#procesar").click(evalCantidades);
 }
 
 function addEventsSiguiente(){
@@ -25,4 +25,9 @@ function delEventsSig(){
 
 function delEventsAnt(){
     $('#anterior').off();
+}
+
+function addEventsAgregar(){
+    $(document).off('click', "#agregar");
+    $(document).on('click', "#agregar", evalCantidadesAgregar);
 }

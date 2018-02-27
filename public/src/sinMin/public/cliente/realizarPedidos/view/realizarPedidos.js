@@ -15,8 +15,10 @@ function injectArticulos(articulos){
             '<td>' + articulos[i]['descuento'].replace(".", ",") + '</td>' +
             '<td>' + articulos[i]['iva'].replace(".", ",") + '</td>' +
             '<td><input type="number"  id="cod_articulo-' + articulos[i]['cod_articulo'] + '" name="cod_articulo-' + articulos[i]['cod_articulo'] + '" min="0" step="1" value="0"></td>' +
-            '</tr>');
+            '</tr>'
+        );
     }
+    $('#tbody').append('<tr><td></td><td></td><td></td><td></td><td></td><td></td><td><input type="button" id="agregar" name="agregar" class="form-control btn-warning" value="Agregar"></td></tr>');
 }
 
 function injectPageNumber(){
