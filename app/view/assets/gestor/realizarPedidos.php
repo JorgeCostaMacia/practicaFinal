@@ -18,7 +18,8 @@
                     <button type="button" id="search" class="btn btn-primary btn-block" disabled><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
                     <br>
                     <select name="cod_cliente" id="cod_cliente" class="form-control"></select>
-                    <button type="button" id="procesar" class="btn btn-warning btn-block" disabled><span class="icon glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+                    <button type="button" id="carrito" class="btn btn-warning btn-block" disabled><span class="icon glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+                    <button type="button" id="borrar" class="btn btn-danger btn-block"><span class="icon glyphicon glyphicon-shopping-cart" aria-hidden="true"> Borrar</span></button>
                     <ul class="pagination">
                         <li><a href="#" id="anterior">«</a></li>
                         <li class="active"><a href="#" id="pageActual">1<span class="sr-only">(current)</span></a></li>
@@ -29,6 +30,7 @@
                     <form id="formPedido" name="formPedido">
                         <div class="table-responsive">
                         <table class="table table-hover">
+                            <h1 id="title">Articulos</h1>
                             <thead>
                             <tr>
                                 <th>Codigo</th>

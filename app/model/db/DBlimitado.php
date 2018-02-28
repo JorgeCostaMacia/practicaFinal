@@ -5,7 +5,7 @@ class DBlimitado extends DBquery {
 
     function __construct(){
         try {
-            $this->connection =  new PDO(_DBTYPE . ':host=' . _HOST . ';dbname=' . _DB. ';charset=' . _CHARSET, _USSER_GESTOR, _PASS_GESTOR);
+            $this->connection =  new PDO(_DBTYPE . ':host=' . _HOST . ';dbname=' . _DB. ';charset=' . _CHARSET, _USSER_LIMITADO, _PASS_LIMITADO);
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }
         catch (PDOException $_exception) {

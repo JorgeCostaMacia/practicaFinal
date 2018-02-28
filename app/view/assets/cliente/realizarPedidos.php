@@ -18,6 +18,7 @@
                     <button type="button" id="search" class="btn btn-primary btn-block"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
                     <br>
                     <button type="button" id="carrito" class="btn btn-warning btn-block"><span class="icon glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></button>
+                    <button type="button" id="borrar" class="btn btn-danger btn-block"><span class="icon glyphicon glyphicon-shopping-cart" aria-hidden="true"> Borrar</span></button>
                     <ul class="pagination">
                         <li><a href="#" id="anterior">«</a></li>
                         <li class="active"><a href="#" id="pageActual">1<span class="sr-only">(current)</span></a></li>
