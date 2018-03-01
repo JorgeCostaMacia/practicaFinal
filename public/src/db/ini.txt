@@ -245,22 +245,14 @@ FOREIGN KEY(cod_articulo) REFERENCES articulos(cod_articulo) ON DELETE NO ACTION
 /*                      USUARIOS CLIENTE                        */
 /****************************************************************/
 
-insert into usuarios_cliente VALUES(1,"74370738p", "Jorge Costa Cliente", "jorge.sa", "jorge", "Elche", "jorge@gmail.com", "671840402", "jorgeCliente", "jorgeCliente", "activo");
+insert into usuarios_cliente VALUES(1,"12345678g", "Cliente Cliente Cliente", "cliente.sa", "cliente", "Cliente", "cliente@gmail.com", "123456789", "cliente", "cliente", "activo");
 
 
 /****************************************************************/
 /*                      USUARIOS GESTOR                         */
 /****************************************************************/
 
-insert into usuarios_gestion VALUES(1, "Jorge Costa Gestor", "jorgeGestor", "jorgeGestor", "activo");
-
-
-/****************************************************************/
-/*                      SOLICITUDES                             */
-/****************************************************************/
-
-insert into solicitudes VALUES(1,"38515222C", "Jorge Costa Solicitud", "jorge.sa", "jorge", "Elche", "jorge@gmail.com", "671840402", "jorgeSolicitud", "jorgeSolicitud");
-
+insert into usuarios_gestion VALUES(1, "Gestor Gestor Gestor", "gestor", "gestor", "activo");
 
 /****************************************************************/
 /*                      ARTICULOS                               */
