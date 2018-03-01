@@ -63,7 +63,7 @@ function injectModificar(articulo){
         '<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">'+
             '<div class="input-group input-group-lg">'+
                 '<span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>'+
-                '<input type="number" name="descuento" id="descuento" maxlength="10" step="0.01" min="0" max="1" class="form-control" value="' + articulo["descuento"] + '" placeholder="Descuento" required>'+
+                '<input type="number" name="descuento" id="descuento" maxlength="3" step="1" min="0" max="100" class="form-control" value="' + articulo["descuento"] + '" placeholder="Descuento" required>'+
             '</div>'+
             '<br>'+
         '</div>'+
@@ -73,28 +73,28 @@ function injectModificar(articulo){
                 '<select name="iva" id="iva" class="form-control">';
                     if(articulo["iva"] === "0"){
                         tableModificar += '<option value="0" selected>Iva 0</option>';
-                        tableModificar += '<option value="0.04">Iva 0.04</option>';
-                        tableModificar += '<option value="0.10">Iva 0.10</option>';
-                        tableModificar += '<option value="0.21">Iva 0.21</option>';
+                        tableModificar += '<option value="4">Iva 4</option>';
+                        tableModificar += '<option value="10">Iva 10</option>';
+                        tableModificar += '<option value="21">Iva 21</option>';
                     }
-                    else if(articulo["iva"] === "0.04"){
+                    else if(articulo["iva"] === "4"){
                         tableModificar += '<option value="0">Iva 0</option>';
-                        tableModificar += '<option value="0.04" selected>Iva 0.04</option>';
-                        tableModificar += '<option value="0.10">Iva 0.10</option>';
-                        tableModificar += '<option value="0.21">Iva 0.21</option>';
+                        tableModificar += '<option value="4" selected>Iva 4</option>';
+                        tableModificar += '<option value="10">Iva 10</option>';
+                        tableModificar += '<option value="21">Iva 21</option>';
                     }
-                    else if(articulo["iva"] === "0.1" || articulo["iva"] === "0.10" ){
+                    else if(articulo["iva"] === "10" ){
                         tableModificar += '<option value="0">Iva 0</option>';
-                        tableModificar += '<option value="0.04">Iva 0.04</option>';
-                        tableModificar += '<option value="0.10" selected>Iva 0.10</option>';
-                        tableModificar += '<option value="0.21">Iva 0.21</option>';
+                        tableModificar += '<option value="4">Iva 4</option>';
+                        tableModificar += '<option value="10" selected>Iva 10</option>';
+                        tableModificar += '<option value="21">Iva 21</option>';
 
                     }
-                    else if(articulo["iva"] === "0.21"){
+                    else if(articulo["iva"] === "21"){
                         tableModificar += '<option value="0">Iva 0</option>';
-                        tableModificar += '<option value="0.04">Iva 0.04</option>';
-                        tableModificar += '<option value="0.10">Iva 0.10</option>';
-                        tableModificar += '<option value="0.21" selected>Iva 0.21</option>';
+                        tableModificar += '<option value="4">Iva 4</option>';
+                        tableModificar += '<option value="10">Iva 10</option>';
+                        tableModificar += '<option value="21" selected>Iva 21</option>';
                     }
                 tableModificar += '</select>'+
             '</div>'+

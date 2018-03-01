@@ -18,7 +18,8 @@ function callBackSearchLineas(result){
 }
 
 function evalCantidades(){
-    if(!pedidosApp.evalInputsCantidades()["success"]){
+    let result = pedidosApp.evalInputsCantidades();
+    if(!result["success"]){
         msjDanger("PEDIDOS", pedidosApp.getTextErrorCantidades(result["errores"]));
     }
     else {

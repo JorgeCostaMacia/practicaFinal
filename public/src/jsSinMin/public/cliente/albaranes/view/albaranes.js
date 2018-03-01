@@ -51,16 +51,16 @@ function injectLineas(lineas){
         tableLineas +=
             '<tr><td>' + lineas[i]["cod_linea"] + '</td>' +
             '<td>' + lineas[i]["cod_articulo"] + '-' + lineas[i]["nombre_articulo"] + '</td>' +
-            '<td>' + lineas[i]["precio"] + '</td>' +
+            '<td>' + lineas[i]["precio"].replace(".", ",") + '</td>' +
             '<td>' + lineas[i]["descuento"].replace(".", ",") + '</td>' +
             '<td>' + lineas[i]["iva"].replace(".", ",") + '</td>' +
             '<td>' + lineas[i]["total"].replace(".", ",") + '</td>' +
             '<td>' + lineas[i]["estado"] + '</td>' +
-            '<td>' + lineas[i]["cantidad"] + '</td></tr>';
+            '<td>' + lineas[i]["cantidad"].replace(".", ",") + '</td></tr>';
     }
 
     tableLineas += '<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><button type="button" id="descarga" name="descarga" class="form-control btn-warning" value=""><span class="glyphicon glyphicon-download" aria-hidden="true"></span> PDF</button></td></tr>';
-    tableLineas += '<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><button type="button" id="buttonVolver" name="buttonVolver" class="form-control btn-primary">Volver albaranes</button></td></tr>';
+    tableLineas += '<tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><button type="button" id="buttonVolver" name="buttonVolver" class="form-control btn-primary">Volver</button></td></tr>';
     tableLineas += '</tbody></table></div></form>';
 
     $('#tableAlbaranes').attr('hidden', true);

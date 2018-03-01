@@ -245,6 +245,7 @@ class DataContent {
         foreach($this->facturas as $factura){
             $aux = [];
             $aux["cod_factura"] = $factura->getCodFactura();
+            $aux["cod_albaran"] = $factura->getCodAlbaran();
             $aux["cod_cliente"] = $factura->getCodCliente();
             $aux["nombre_cliente"] = $factura->getNombreCliente();
             $aux["fecha"] = $factura->getFecha();

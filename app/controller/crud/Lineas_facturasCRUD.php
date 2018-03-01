@@ -1,6 +1,19 @@
 <?php
 
 class Lineas_facturasCRUD{
+    public function select($connection, $dataContent, $col, $more) {
+        $result = $connection->select($col, 'lineas_facturas', $more);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+            $dataContent->setLineasFacturas($connection->format_select_Object($result["result"], 'Lineas_facturas'));
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->addErrores($result["error"]);
+        }
+    }
+
     public function insert($connection, $dataContent, $maxCod_factura){
         $crud = new Lineas_albaranesCRUD();
 
@@ -42,4 +55,28 @@ class Lineas_facturasCRUD{
 
         return $values;
     }
+
+    public function delete($connection, $dataContent){
+        $result = $connection->delete('lineas_facturas', 'cod_factura=' . $_POST["cod_factura"]);
+
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+        }
+    }
+    public function update($connection, $dataContent, $set){
+        $result = $connection->update('lineas_facturas', $set, 'WHERE cod_factura=' . $_POST["cod_factura"]);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->addErrores($result["error"]);
+        }
+    }
+
 }

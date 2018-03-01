@@ -35,8 +35,9 @@ class Lineas_albaranesCRUD{
                     $values[$indexLinea]["cantidad"] = $_POST["cantidad-" . $cod_linea];
                     $values[$indexLinea]["descuento"] = $dataContent->getArticulos()[0]->getDescuento();
                     $values[$indexLinea]["iva"] = $dataContent->getArticulos()[0]->getIva();
-                    $values[$indexLinea]["total"] = $dataContent->getArticulos()[0]->getPrecio() * $_POST["cantidad-" . $cod_linea] + ($dataContent->getArticulos()[0]->getIva() * $dataContent->getArticulos()[0]->getPrecio() * $_POST["cantidad-" . $cod_linea]);
-                    $values[$indexLinea]["total"] -= $values[$indexLinea]["total"] * $values[$indexLinea]["descuento"];
+                    $values[$indexLinea]["total"] = $dataContent->getArticulos()[0]->getPrecio() * $_POST["cantidad-" . $cod_linea];
+                    $values[$indexLinea]["total"] -= ($values[$indexLinea]["total"] * $values[$indexLinea]["descuento"] / 100);
+                    $values[$indexLinea]["total"] += ($values[$indexLinea]["total"] * $dataContent->getArticulos()[0]->getIva() / 100);
                     $indexLinea++;
                 }
 
@@ -87,9 +88,9 @@ class Lineas_albaranesCRUD{
                 if(!isset($_POST["borrar-" . explode("-", $key)[1]])) {
                     $values[$index]["iva"] = $post;
                     $values[$index]["cod_linea"] = explode("-", $key)[1];
-
-                    $values[$index]["total"] = 1 * $cantidad * $values[$index]["precio"] * (1 * 1 + $values[$index]["iva"]);
-                    $values[$index]["total"] -= 1 * $values[$index]["total"] * $values[$index]["descuento"];
+                    $values[$index]["total"] = $cantidad * $values[$index]["precio"];
+                    $values[$index]["total"] -= ($values[$index]["total"] * $values[$index]["descuento"] / 100);
+                    $values[$index]["total"] += ($values[$index]["total"] * $values[$index]["iva"] / 100);
                     $index++;
                 }
             }
@@ -143,6 +144,22 @@ class Lineas_albaranesCRUD{
                     $index++;
             }
         }
+
+        $result = $connection->prepare($query, $bindParams, $values);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+        }
+
+        return $values;
+    }
+
+    public function updateEstadoFacturas($connection, $dataContent, $estado, $values){
+        $query = 'UPDATE lineas_albaranes SET estado="' . $estado . '" WHERE cod_albaran=' . $_POST["cod_albaran"] .  ' AND cod_linea=:cod_linea';
+        $bindParams = ["cod_linea"];
 
         $result = $connection->prepare($query, $bindParams, $values);
         if ($result["success"]) {

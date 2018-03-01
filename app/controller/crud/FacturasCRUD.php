@@ -26,4 +26,41 @@ class FacturasCRUD{
             $dataContent->addErrores($result["error"]);
         }
     }
+
+    public function select($connection, $dataContent, $col, $more) {
+        $result = $connection->select($col, 'facturas', $more);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+            $dataContent->setFacturas($connection->format_select_Object($result["result"], 'Facturas'));
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->addErrores($result["error"]);
+        }
+    }
+
+    public function delete($connection, $dataContent){
+        $result = $connection->delete('facturas', 'cod_factura=' . $_POST["cod_factura"]);
+
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+        }
+    }
+
+    public function update($connection, $dataContent, $set){
+        $result = $connection->update('facturas', $set, 'WHERE cod_factura=' . $_POST["cod_factura"]);
+        if ($result["success"]) {
+            $dataContent->setSuccess(true);
+        }
+        else {
+            $dataContent->setSuccess(false);
+            $dataContent->addErrores(new DBerror("Se produjo un error intentelo mas tarde"));
+            $dataContent->addErrores($result["error"]);
+        }
+    }
 }

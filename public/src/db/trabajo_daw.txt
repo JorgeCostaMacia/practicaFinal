@@ -85,8 +85,8 @@ create table articulos(
     nombre VARCHAR(30),
     descripcion VARCHAR(30),
     precio DOUBLE,
-    descuento DOUBLE,
-    iva DOUBLE,
+    descuento SMALLINT,
+    iva SMALLINT,
     estado ENUM('activo', 'inactivo')
 )ENGINE=InnoDB;
 
@@ -111,8 +111,8 @@ create table lineas_pedidos(
     cod_pedido SMALLINT,
     cod_articulo SMALLINT,
 	precio DOUBLE,
-	cantidad DOUBLE,
-	iva DOUBLE,
+	cantidad SMALLINT,
+	iva SMALLINT,
 	total DOUBLE,
 	estado ENUM('procesado', 'pendiente')
 )ENGINE=InnoDB;
@@ -141,9 +141,9 @@ create table lineas_albaranes(
     cod_pedido SMALLINT,
     cod_articulo SMALLINT,
 	precio DOUBLE,
-	cantidad DOUBLE,
-	descuento DOUBLE,
-	iva DOUBLE,
+	cantidad SMALLINT,
+	descuento SMALLINT,
+	iva SMALLINT,
 	total DOUBLE,
 	estado ENUM('procesado', 'pendiente')
 )ENGINE=InnoDB;
@@ -157,7 +157,7 @@ create table facturas(
 	cod_albaran SMALLINT,
 	cod_cliente SMALLINT,
     fecha DATE,
-    descuento DOUBLE,
+    descuento SMALLINT,
     estado ENUM('procesado', 'pendiente')
 )ENGINE=InnoDB;
 
@@ -172,9 +172,9 @@ create table lineas_facturas(
     cod_albaran SMALLINT,
     cod_articulo SMALLINT,
 	precio DOUBLE,
-	cantidad DOUBLE,
-	descuento DOUBLE,
-	iva DOUBLE,
+	cantidad SMALLINT,
+	descuento SMALLINT,
+	iva SMALLINT,
 	total DOUBLE,
 	estado ENUM('procesado', 'pendiente')
 )ENGINE=InnoDB;
@@ -240,3 +240,33 @@ ALTER TABLE lineas_facturas ADD CONSTRAINT FK_LINEAS_FACTURAS_LINEAS_ALBARANES
 FOREIGN KEY(cod_linea, cod_albaran) REFERENCES lineas_albaranes(cod_linea, cod_albaran) ON DELETE NO ACTION ON UPDATE CASCADE;
 ALTER TABLE lineas_facturas ADD CONSTRAINT FK_LINEAS_FACTURAS_ARTICULOS
 FOREIGN KEY(cod_articulo) REFERENCES articulos(cod_articulo) ON DELETE NO ACTION ON UPDATE CASCADE;
+
+/****************************************************************/
+/*                      USUARIOS CLIENTE                        */
+/****************************************************************/
+
+insert into usuarios_cliente VALUES(1,"74370738p", "Jorge Costa Cliente", "jorge.sa", "jorge", "Elche", "jorge@gmail.com", "671840402", "jorgeCliente", "jorgeCliente", "activo");
+
+
+/****************************************************************/
+/*                      USUARIOS GESTOR                         */
+/****************************************************************/
+
+insert into usuarios_gestion VALUES(1, "Jorge Costa Gestor", "jorgeGestor", "jorgeGestor", "activo");
+
+
+/****************************************************************/
+/*                      SOLICITUDES                             */
+/****************************************************************/
+
+insert into solicitudes VALUES(1,"38515222C", "Jorge Costa Solicitud", "jorge.sa", "jorge", "Elche", "jorge@gmail.com", "671840402", "jorgeSolicitud", "jorgeSolicitud");
+
+
+/****************************************************************/
+/*                      ARTICULOS                               */
+/****************************************************************/
+
+insert into articulos VALUES(1, "articuloUno", "articuloUno", 1,5,21,"activo");
+insert into articulos VALUES(2, "articuloDos", "articuloDos", 1,5,21,"activo");
+insert into articulos VALUES(3, "articuloCuatro", "articuloTres", 1,5,21,"activo");
+insert into articulos VALUES(4, "articuloCuatro", "articuloCuatro", 1,5,21,"activo");

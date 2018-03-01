@@ -73,60 +73,60 @@ function injectLineas(lineas){
                 tableLineas += '<td><select name="iva-' + lineas[i]["cod_linea"] + '" id="iva-' + lineas[i]["cod_linea"] + '" class="form-control">';
                 if(lineas[i]["iva"] === "0"){
                     tableLineas += '<option value="0" selected>0</option>';
-                    tableLineas += '<option value="0.04">0.04</option>';
-                    tableLineas += '<option value="0.10">0.10</option>';
-                    tableLineas += '<option value="0.21">0.21</option>';
+                    tableLineas += '<option value="4">4</option>';
+                    tableLineas += '<option value="10">10</option>';
+                    tableLineas += '<option value="21">21</option>';
                 }
-                else if(lineas[i]["iva"] === "0.04"){
+                else if(lineas[i]["iva"] === "4"){
                     tableLineas += '<option value="0">0</option>';
-                    tableLineas += '<option value="0.04" selected>0.04</option>';
-                    tableLineas += '<option value="0.10">0.10</option>';
-                    tableLineas += '<option value="0.21">0.21</option>';
+                    tableLineas += '<option value="4" selected>4</option>';
+                    tableLineas += '<option value="10">10</option>';
+                    tableLineas += '<option value="21">21</option>';
                 }
-                else if(lineas[i]["iva"] === "0.1" || lineas[i]["iva"] === "0.10" ){
+                else if(lineas[i]["iva"] === "1" || lineas[i]["iva"] === "10" ){
                     tableLineas += '<option value="0">0</option>';
-                    tableLineas += '<option value="0.04">0.04</option>';
-                    tableLineas += '<option value="0.10" selected>0.10</option>';
-                    tableLineas += '<option value="0.21">0.21</option>';
+                    tableLineas += '<option value="0.04">4</option>';
+                    tableLineas += '<option value="0.10" selected>10</option>';
+                    tableLineas += '<option value="0.21">21</option>';
 
                 }
-                else if(lineas[i]["iva"] === "0.21"){
+                else if(lineas[i]["iva"] === "21"){
                     tableLineas += '<option value="0">0</option>';
-                    tableLineas += '<option value="0.04">0.04</option>';
-                    tableLineas += '<option value="0.10">0.10</option>';
-                    tableLineas += '<option value="0.21" selected>0.21</option>';
+                    tableLineas += '<option value="4">4</option>';
+                    tableLineas += '<option value="10">10</option>';
+                    tableLineas += '<option value="21" selected>21</option>';
                 }
                 tableLineas += '</select></td>';
             }
             else {
                 tableLineas += '<td><input type="number" name="precio-' + lineas[i]["cod_linea"] + '" value="' + lineas[i]["precio"] + '" class="precios form-control" min="0" disabled></td>';
-                tableLineas += '<td><input type="number" name="descuento-' + lineas[i]["cod_linea"] + '" value="' + lineas[i]["descuento"] + '" class="descuentos form-control" min="0" max="1" step="0.01" disabled></td>';
+                tableLineas += '<td><input type="number" name="descuento-' + lineas[i]["cod_linea"] + '" value="' + lineas[i]["descuento"] + '" class="descuentos form-control" min="0" max="100" step="1" disabled></td>';
 
                 tableLineas += '<td><select name="iva-' + lineas[i]["cod_linea"] + '" id="iva-' + lineas[i]["cod_linea"] + '" class="form-control" disabled>';
                 if(lineas[i]["iva"] === "0"){
                     tableLineas += '<option value="0" selected>0</option>';
-                    tableLineas += '<option value="0.04">0.04</option>';
-                    tableLineas += '<option value="0.10">0.10</option>';
-                    tableLineas += '<option value="0.21">0.21</option>';
+                    tableLineas += '<option value="4">4</option>';
+                    tableLineas += '<option value="10">10</option>';
+                    tableLineas += '<option value="21">21</option>';
                 }
-                else if(lineas[i]["iva"] === "0.04"){
+                else if(lineas[i]["iva"] === "4"){
                     tableLineas += '<option value="0">0</option>';
-                    tableLineas += '<option value="0.04" selected>0.04</option>';
-                    tableLineas += '<option value="0.10">0.10</option>';
-                    tableLineas += '<option value="0.21">0.21</option>';
+                    tableLineas += '<option value="4" selected>4</option>';
+                    tableLineas += '<option value="10">10</option>';
+                    tableLineas += '<option value="21">21</option>';
                 }
-                else if(lineas[i]["iva"] === "0.1" || lineas[i]["iva"] === "0.10" ){
+                else if(lineas[i]["iva"] === "10" ){
                     tableLineas += '<option value="0">0</option>';
-                    tableLineas += '<option value="0.04">0.04</option>';
-                    tableLineas += '<option value="0.10" selected>0.10</option>';
-                    tableLineas += '<option value="0.21">0.21</option>';
+                    tableLineas += '<option value="4">4</option>';
+                    tableLineas += '<option value="10" selected>10</option>';
+                    tableLineas += '<option value="21">21</option>';
 
                 }
-                else if(lineas[i]["iva"] === "0.21"){
+                else if(lineas[i]["iva"] === "21"){
                     tableLineas += '<option value="0">0</option>';
-                    tableLineas += '<option value="0.04">0.04</option>';
-                    tableLineas += '<option value="0.10">0.10</option>';
-                    tableLineas += '<option value="0.21" selected>0.21</option>';
+                    tableLineas += '<option value="4">0.04</option>';
+                    tableLineas += '<option value="10">0.10</option>';
+                    tableLineas += '<option value="21" selected>0.21</option>';
                 }
                 tableLineas += '</select></td>';
             }

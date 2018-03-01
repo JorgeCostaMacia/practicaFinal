@@ -3,7 +3,7 @@
 class Ajax{
     callController(parameter, callBackFunction){
         $.ajax({
-            url: '../app/controller/ajax.php',
+            url: '../ajax/',
             type:"POST",
             data: parameter,
             dataType: 'json',

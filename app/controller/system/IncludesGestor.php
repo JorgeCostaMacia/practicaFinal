@@ -1,7 +1,7 @@
 <?php
 
 class IncludesGestor extends Includes{
-    function css(){
+    public function css(){
         foreach(_actualPath as $apath){
             $filePath = $apath . _cssPath . _cssGestorFileName . '.css';
             if (file_exists($filePath) && is_file($filePath)) {
@@ -49,17 +49,21 @@ class IncludesGestor extends Includes{
         $this->jsComun('../');
         echo '<script src="../' . _jsPath . 'gestor/actividad.min.js"></script>';
     }
-    function jsRealizarPedidos(){
+    public function jsRealizarPedidos(){
         $this->jsComun('../');
         echo   '<script src="../' . _jsPath . 'gestor/realizarPedidos.min.js"></script>';
     }
-    function jsPedidos(){
+    public function jsPedidos(){
         $this->jsComun('../');
         echo   '<script src="../' . _jsPath . 'gestor/pedidos.min.js"></script>';
     }
-    function jsAlbaranes(){
+    public function jsAlbaranes(){
         $this->jsComun('../');
         echo   '<script src="../' . _jsPath . 'gestor/albaranes.min.js"></script>';
+    }
+    public function jsFacturas(){
+        $this->jsComun('../');
+        echo '<script src="../' . _jsPath . 'gestor/facturas.min.js"></script>';
     }
 
     public function phpController($dependency){ include_once "../controller/gestor.php"; }
@@ -74,7 +78,8 @@ class IncludesGestor extends Includes{
     public function phpArticulos($dependency){ include_once _assetsPathPHP . "gestor/articulos.php"; }
     public function phpAccesos($dependency){ include_once _assetsPathPHP . "gestor/accesos.php"; }
     public function phpActividad($dependency){ include_once _assetsPathPHP . "gestor/actividad.php"; }
-    function phpRealizarPedidos($dependency){include_once _assetsPathPHP . "gestor/realizarPedidos.php";}
-    function phpPedidos($dependency){include_once _assetsPathPHP . "gestor/pedidos.php";}
-    function phpAlbaranes($dependency){include_once _assetsPathPHP . "gestor/albaranes.php";}
+    public function phpRealizarPedidos($dependency){include_once _assetsPathPHP . "gestor/realizarPedidos.php";}
+    public function phpPedidos($dependency){include_once _assetsPathPHP . "gestor/pedidos.php";}
+    public function phpAlbaranes($dependency){include_once _assetsPathPHP . "gestor/albaranes.php";}
+    public function phpFacturas($dependency){include_once _assetsPathPHP . "gestor/facturas.php";}
 }

@@ -107,10 +107,10 @@ function esNumero(dato){
 }
 
 function esPositivo(dato){
-    return parseInt(dato) > 0;
+    return 1 * dato > 0;
 }
 function esEntero(dato){
-    return parseInt(dato) % 1 === 0;
+    return 1 * dato % 1 === 0;
 }
 
 function esGuion(dato){

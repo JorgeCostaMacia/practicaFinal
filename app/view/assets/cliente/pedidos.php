@@ -7,9 +7,15 @@
                     <input type="hidden" id="cod_cliente" name="cod_cliente" value="<?= $dependency->getSession()->getUsuario()->getCodCliente(); ?>">
                     <input type="hidden" id="numPage" name="numPage" value="1">
                     <select name="campSearch" class="form-control">
-                        <option value="cod_pedido">Codigo pedido</option>
-                        <option value="fecha">Fecha</option>
-                        <option value="estado">Estado</option>
+                        <option value="pedidos.cod_pedido">Codigo pedido</option>
+                        <option value="pedidos.fecha">Fecha</option>
+                        <option value="pedidos.estado">Estado</option>
+                        <option value="lineas_pedidos.cod_linea">Codigo linea</option>
+                        <option value="lineas_pedidos.cod_articulo">Codigo articulo</option>
+                        <option value="lineas_pedidos.precio">Precio</option>
+                        <option value="lineas_pedidos.cantidad">Cantidad</option>
+                        <option value="lineas_pedidos.iva">Iva</option>
+                        <option value="lineas_pedidos.total">Total</option>
                     </select>
                     <input name="textSearch" placeholder="Buscar pedidos" class="form-control" type="text" maxlength="30" />
                     <button type="button" id="search" class="btn btn-primary btn-block"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>

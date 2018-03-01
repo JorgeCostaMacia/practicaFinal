@@ -1,7 +1,7 @@
 <?php
 
 class Includes {
-    function cssComun(){
+    public function cssComun(){
         foreach(_cssComunFileName as $name){
             foreach(_actualPath as $apath){
                 $filePath = $apath . _cssPath . $name . '.css';
@@ -11,22 +11,22 @@ class Includes {
             }
         }
     }
-    function jsComun($actualPath = ""){
+    public function jsComun($actualPath = ""){
         echo '<script src="' . $actualPath . _jsPath . _jsJquery . '.js"></script>' .
             '<script src="' . $actualPath . _jsPath . _jsBootstrap . '.js"></script>' .
             '<script src="' . $actualPath . _jsPath . _jsComun . '.js"></script>';
     }
-    function jsLogin(){
+    public function jsLogin(){
         $this->jsComun();
         echo '<script src="' . _jsPath . 'login.min.js"></script>';
     }
-    function jsHome(){
+    public function jsHome(){
         $this->jsComun('../');
     }
 
-    function phpHeadController($dependency){ include_once "../controller/head.php"; }
-    function phpHead($dependency){ include_once _layoutsPathPHP . "head.php"; }
-    function phpPriController($dependency){ include_once "../controller/primary.php"; }
-    function phpFooter(){ include_once _assetsPathPHP . "footer.php"; }
-    function phpLogin(){ include_once _assetsPathPHP . "login.php";}
+    public function phpHeadController($dependency){ include_once "../controller/head.php"; }
+    public function phpHead($dependency){ include_once _layoutsPathPHP . "head.php"; }
+    public function phpPriController($dependency){ include_once "../controller/primary.php"; }
+    public function phpFooter(){ include_once _assetsPathPHP . "footer.php"; }
+    public function phpLogin(){ include_once _assetsPathPHP . "login.php";}
 }

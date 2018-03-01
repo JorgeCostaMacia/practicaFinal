@@ -35,7 +35,8 @@ class Lineas_pedidosCRUD{
                     $values[$indexLinea]["precio"] = $dataContent->getArticulos()[0]->getPrecio();
                     $values[$indexLinea]["cantidad"] = $post;
                     $values[$indexLinea]["iva"] = $dataContent->getArticulos()[0]->getIva();
-                    $values[$indexLinea]["total"] = $dataContent->getArticulos()[0]->getPrecio() * $post + ($dataContent->getArticulos()[0]->getIva() * $dataContent->getArticulos()[0]->getPrecio() * $post);
+                    $values[$indexLinea]["total"] = $dataContent->getArticulos()[0]->getPrecio() * $post;
+                    $values[$indexLinea]["total"] += ($values[$indexLinea]["total"] * $dataContent->getArticulos()[0]->getIva() / 100);
                     $indexLinea++;
                 }
                 $dataContent->setArticulos(array());
@@ -66,7 +67,8 @@ class Lineas_pedidosCRUD{
                 if ($post > 0) {
                     $this->select($connection, $dataContent, '*', 'WHERE cod_linea=' . explode("-", $key)[1]);
                     $values[$index]["cantidad"] = $post;
-                    $values[$index]["total"] = $post * $dataContent->getLineasPedidos()[0]->getPrecio() + ($post * $dataContent->getLineasPedidos()[0]->getPrecio() * $dataContent->getLineasPedidos()[0]->getIva());
+                    $values[$index]["total"] = $post * $dataContent->getLineasPedidos()[0]->getPrecio();
+                    $values[$index]["total"] += ($values[$index]["total"] * $dataContent->getLineasPedidos()[0]->getIva() / 100);
                     $values[$index]["cod_linea"] = explode("-", $key)[1];
                     $index++;
                 }

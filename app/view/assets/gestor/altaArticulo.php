@@ -28,7 +28,7 @@
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                         <div class="input-group input-group-lg">
                             <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
-                            <input type="number" name="descuento" id="descuento" maxlength="10" step="0.01" min="0" max="1" class="form-control" placeholder="Descuento" required>
+                            <input type="number" name="descuento" id="descuento" maxlength="10" step="1" min="0" max="100" class="form-control" placeholder="Descuento" required>
                         </div>
                         <br>
                     </div>
@@ -37,9 +37,9 @@
                             <span class="input-group-addon"><span class="glyphicon glyphicon-euro"></span></span>
                             <select class="form-control" name="iva" id="iva">
                                 <option value="0">Iva 0</option>
-                                <option value="0.04">Iva 0.04</option>
-                                <option value="0.10">Iva 0.10</option>
-                                <option value="0.21">Iva 0.21</option>
+                                <option value="04">Iva 4</option>
+                                <option value="10">Iva 10</option>
+                                <option value="21">Iva 21</option>
                             </select>
                         </div>
                         <br>

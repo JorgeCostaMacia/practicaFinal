@@ -55,7 +55,7 @@ class AjaxCliente extends DependencyCRUD {
     }
 
     public function searchPedidos(){
-        $this->getPedidosCRUD()->select($this->connection, $this->dataContent, 'pedidos.cod_pedido, pedidos.cod_cliente, pedidos.fecha, pedidos.estado, COUNT(cod_linea) as lineas, usuarios_cliente.nombre_completo as nombre_cliente', 'INNER JOIN lineas_pedidos ON pedidos.cod_pedido = lineas_pedidos.cod_pedido INNER JOIN usuarios_cliente ON pedidos.cod_cliente = usuarios_cliente.cod_cliente WHERE ' . 'pedidos.' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%"' . ' AND pedidos.cod_cliente="' . $_POST["cod_cliente"] . '" GROUP BY cod_pedido LIMIT ' . $this->offset . ',' . $this->itemsPage);
+        $this->getPedidosCRUD()->select($this->connection, $this->dataContent, 'pedidos.cod_pedido, pedidos.cod_cliente, pedidos.fecha, pedidos.estado, COUNT(cod_linea) as lineas, usuarios_cliente.nombre_completo as nombre_cliente', 'INNER JOIN lineas_pedidos ON pedidos.cod_pedido = lineas_pedidos.cod_pedido INNER JOIN usuarios_cliente ON pedidos.cod_cliente = usuarios_cliente.cod_cliente WHERE ' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%"' . ' AND pedidos.cod_cliente="' . $_POST["cod_cliente"] . '" GROUP BY cod_pedido LIMIT ' . $this->offset . ',' . $this->itemsPage);
     }
 
     public function searchLineasPedidos(){
@@ -89,7 +89,7 @@ class AjaxCliente extends DependencyCRUD {
     }
 
     public function searchAlbaranes(){
-        $this->getAlbaranesCRUD()->select($this->connection, $this->dataContent, 'albaranes.cod_albaran, albaranes.cod_pedido, albaranes.cod_cliente, albaranes.fecha, albaranes.estado, COUNT(cod_linea) as lineas, usuarios_cliente.nombre_completo as nombre_cliente', 'INNER JOIN lineas_albaranes ON albaranes.cod_albaran = lineas_albaranes.cod_albaran INNER JOIN usuarios_cliente ON albaranes.cod_cliente = usuarios_cliente.cod_cliente WHERE ' . 'albaranes.' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%"' . ' AND albaranes.cod_cliente="' . $_POST["cod_cliente"] . '" GROUP BY cod_albaran LIMIT ' . $this->offset . ',' . $this->itemsPage);
+        $this->getAlbaranesCRUD()->select($this->connection, $this->dataContent, 'albaranes.cod_albaran, albaranes.cod_pedido, albaranes.cod_cliente, albaranes.fecha, albaranes.estado, COUNT(cod_linea) as lineas, usuarios_cliente.nombre_completo as nombre_cliente', 'INNER JOIN lineas_albaranes ON albaranes.cod_albaran = lineas_albaranes.cod_albaran INNER JOIN usuarios_cliente ON albaranes.cod_cliente = usuarios_cliente.cod_cliente WHERE ' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%"' . ' AND albaranes.cod_cliente="' . $_POST["cod_cliente"] . '" GROUP BY cod_albaran LIMIT ' . $this->offset . ',' . $this->itemsPage);
     }
 
     public function searchLineasAlbaranes(){
@@ -98,5 +98,13 @@ class AjaxCliente extends DependencyCRUD {
 
     public function searchCliente(){
         $this->getUsuariosClienteCRUD()->select($this->connection, $this->dataContent, '*','WHERE cod_cliente=' . $_POST["cod_cliente"]);
+    }
+
+    public function searchFacturas(){
+        $this->getFacturasCRUD()->select($this->connection, $this->dataContent, 'facturas.cod_factura, facturas.cod_albaran, facturas.cod_cliente, facturas.fecha, facturas.descuento, facturas.estado, COUNT(cod_linea) as lineas, usuarios_cliente.nombre_completo as nombre_cliente', 'INNER JOIN lineas_facturas ON facturas.cod_factura = lineas_facturas.cod_factura INNER JOIN usuarios_cliente ON facturas.cod_cliente = usuarios_cliente.cod_cliente WHERE ' . $_POST["campSearch"] . ' LIKE "%' . $_POST["textSearch"] . '%"' . ' AND facturas.cod_cliente="' . $_POST["cod_cliente"] . '" GROUP BY cod_factura LIMIT ' . $this->offset . ',' . $this->itemsPage);
+    }
+
+    public function searchLineasFacturas(){
+        $this->getLineasFacturasCRUD()->select($this->connection, $this->dataContent, 'cod_linea, cod_factura, lineas_facturas.cod_articulo, nombre as nombre_articulo, lineas_facturas.precio, cantidad, lineas_facturas.descuento, lineas_facturas.iva, total, lineas_facturas.estado','INNER JOIN articulos ON lineas_facturas.cod_articulo = articulos.cod_articulo WHERE cod_factura="' . $_POST["cod_factura"] . '" GROUP BY cod_linea');
     }
 }

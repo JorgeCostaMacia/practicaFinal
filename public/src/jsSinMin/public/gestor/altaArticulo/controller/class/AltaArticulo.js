@@ -49,15 +49,15 @@ class AltaArticulo{
             errorText += "Ha de contener al menos 5 caracteres<br>";
         }
         if(!result["precio"]){
-            errorText += "<strong>Formato de precio completo incorrecto</strong><br>";
+            errorText += "<strong>Formato de precio incorrecto</strong><br>";
             errorText += "Ha de contener numeros, admite decimales<br>";
             errorText += "Su valor minimo admisible es 0<br>";
         }
         if(!result["descuento"]){
-            errorText += "<strong>Formato de descuento completo incorrecto</strong><br>";
-            errorText += "Ha de contener numeros, admite decimales<br>";
+            errorText += "<strong>Formato de descuento incorrecto</strong><br>";
+            errorText += "Solo admite numeros enteros posivos<br>";
             errorText += "Su valor minimo admisible es 0<br>";
-            errorText += "Su valor maximo admisible es 1, equivale a 100%<br>";
+            errorText += "Su valor maximo admisible es 100<br>";
         }
 
         return errorText;

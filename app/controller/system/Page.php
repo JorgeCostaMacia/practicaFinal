@@ -11,7 +11,7 @@ class Page {
     public function getPage() {return $this->page;}
     public function setPage($page){$this->page = $page;}
 
-    function getTitle(){
+    public function getTitle(){
         if($this->page === "login") { return "Login"; }
         else if($this->page === "home") { return "Home"; }
         else if($this->page === "misDatos") { return "Mis datos"; }
@@ -30,16 +30,16 @@ class Page {
         else if($this->page === "actividad") { return "Actividad"; }
     }
 
-    function redirectHome(){
+    public function redirectHome(){
        echo '<script>window.location.assign("home/"); </script>';
     }
-    function redirectLogout(){
+    public function redirectLogout(){
         echo '<script>window.location.assign("logout/"); </script>';
     }
-    function redirectLogin(){
+    public function redirectLogin(){
         echo '<script>window.location.assign("../"); </script>';
     }
-    function redirectCheckLogin(){
+    public function redirectCheckLogin(){
         echo '<script> if(window.location.href.split("practicaFinal/")[1] != ""){window.location.assign("../");}</script>';
     }
 }

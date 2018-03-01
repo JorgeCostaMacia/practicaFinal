@@ -65,3 +65,7 @@ else if($dependency->getPage()->getPage() === 'albaranes'){
     $dependency->getIncludesGestor()->phpAlbaranes($dependency);
     $dependency->getIncludesGestor()->jsAlbaranes();
 }
+else if($dependency->getPage()->getPage() === 'facturas'){
+    $dependency->getIncludesGestor()->phpFacturas($dependency);
+    $dependency->getIncludesGestor()->jsFacturas();
+}

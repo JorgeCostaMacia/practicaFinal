@@ -85,8 +85,8 @@ create table articulos(
     nombre VARCHAR(30),
     descripcion VARCHAR(30),
     precio DOUBLE,
-    descuento DOUBLE,
-    iva DOUBLE,
+    descuento SMALLINT,
+    iva SMALLINT,
     estado ENUM('activo', 'inactivo')
 )ENGINE=InnoDB;
 
@@ -111,8 +111,8 @@ create table lineas_pedidos(
     cod_pedido SMALLINT,
     cod_articulo SMALLINT,
 	precio DOUBLE,
-	cantidad DOUBLE,
-	iva DOUBLE,
+	cantidad SMALLINT,
+	iva SMALLINT,
 	total DOUBLE,
 	estado ENUM('procesado', 'pendiente')
 )ENGINE=InnoDB;
@@ -141,9 +141,9 @@ create table lineas_albaranes(
     cod_pedido SMALLINT,
     cod_articulo SMALLINT,
 	precio DOUBLE,
-	cantidad DOUBLE,
-	descuento DOUBLE,
-	iva DOUBLE,
+	cantidad SMALLINT,
+	descuento SMALLINT,
+	iva SMALLINT,
 	total DOUBLE,
 	estado ENUM('procesado', 'pendiente')
 )ENGINE=InnoDB;
@@ -157,7 +157,7 @@ create table facturas(
 	cod_albaran SMALLINT,
 	cod_cliente SMALLINT,
     fecha DATE,
-    descuento DOUBLE,
+    descuento SMALLINT,
     estado ENUM('procesado', 'pendiente')
 )ENGINE=InnoDB;
 
@@ -172,9 +172,9 @@ create table lineas_facturas(
     cod_albaran SMALLINT,
     cod_articulo SMALLINT,
 	precio DOUBLE,
-	cantidad DOUBLE,
-	descuento DOUBLE,
-	iva DOUBLE,
+	cantidad SMALLINT,
+	descuento SMALLINT,
+	iva SMALLINT,
 	total DOUBLE,
 	estado ENUM('procesado', 'pendiente')
 )ENGINE=InnoDB;
@@ -266,7 +266,7 @@ insert into solicitudes VALUES(1,"38515222C", "Jorge Costa Solicitud", "jorge.sa
 /*                      ARTICULOS                               */
 /****************************************************************/
 
-insert into articulos VALUES(1, "articulo1", "articulo1", 1,0.5,0.21,"activo");
-insert into articulos VALUES(2, "articulo2", "articulo2", 1,0.5,0.21,"activo");
-insert into articulos VALUES(3, "articulo3", "articulo3", 1,0.5,0.21,"activo");
-insert into articulos VALUES(4, "articulo4", "articulo4", 1,0.5,0.21,"activo");
+insert into articulos VALUES(1, "articuloUno", "articuloUno", 1,5,21,"activo");
+insert into articulos VALUES(2, "articuloDos", "articuloDos", 1,5,21,"activo");
+insert into articulos VALUES(3, "articuloCuatro", "articuloTres", 1,5,21,"activo");
+insert into articulos VALUES(4, "articuloCuatro", "articuloCuatro", 1,5,21,"activo");

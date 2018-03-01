@@ -8,4 +8,3 @@ document.onload = addEventsLogin();
 function addEventsLogin(){
     $("#registrar").click(evalRegistro);
 }
-

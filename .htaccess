@@ -4,9 +4,13 @@ Allow from all
 DirectoryIndex app/view/index.php?page=login
 Options -Indexes
 
-ErrorDocument 404 "La pagina buscada no existe o no se encuentra disponible"
+ErrorDocument 404 /practicaFinal/app/view/error/404.html
+ErrorDocument 500 /practicaFinal/app/view/error/500.html
 
 RewriteEngine on
+
+RewriteRule ^ajax/$ app/controller/ajax.php?permiso=habilitado [L]
+
 RewriteRule ^home/$ app/view/index.php?page=home [L]
 RewriteRule ^logout/$ app/view/index.php?page=logout [L]
 

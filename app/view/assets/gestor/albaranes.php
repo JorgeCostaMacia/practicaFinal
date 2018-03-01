@@ -7,9 +7,21 @@
                     <input type="hidden" id="cod_gestor" name="cod_gestor" value="<?= $dependency->getSession()->getUsuario()->getCodGestor(); ?>">
                     <input type="hidden" id="numPage" name="numPage" value="1">
                     <select name="campSearch" class="form-control">
-                        <option value="cod_pedido">Codigo pedido</option>
-                        <option value="fecha">Fecha</option>
-                        <option value="estado">Estado</option>
+                        <option value="albaranes.cod_cliente">Codigo cliente</option>
+                        <option value="usuarios_cliente.cif_dni">Cif / dni cliente</option>
+                        <option value="usuarios_cliente.nombre_completo">Nombre cliente</option>
+                        <option value="usuarios_cliente.nick">Nick cliente</option>
+                        <option value="albaranes.cod_albaran">Codigo albaran</option>
+                        <option value="albaranes.cod_pedido">Codigo pedido</option>
+                        <option value="albaranes.fecha">Fecha</option>
+                        <option value="albaranes.estado">Estado</option>
+                        <option value="lineas_albaranes.cod_linea">Codigo linea</option>
+                        <option value="lineas_albaranes.cod_articulo">Codigo articulo</option>
+                        <option value="lineas_albaranes.precio">Precio</option>
+                        <option value="lineas_albaranes.cantidad">Cantidad</option>
+                        <option value="lineas_albaranes.descuento">Descuento</option>
+                        <option value="lineas_albaranes.iva">Iva</option>
+                        <option value="lineas_albaranes.total">Total</option>
                     </select>
                     <input name="textSearch" placeholder="Buscar pedidos" class="form-control" type="text" maxlength="30" />
                     <button type="button" id="search" class="btn btn-primary btn-block"><span class="icon glyphicon glyphicon-search" aria-hidden="true"></span></button>
