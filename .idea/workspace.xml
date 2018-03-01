@@ -2,121 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e713c46a-2ebf-45c8-858a-63d755f86ffd" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/config/.htaccess" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controller/ajax/.htaccess" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controller/crud/.htaccess" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/controller/system/.htaccess" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/model/.htaccess" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/view/assets/.htaccess" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/view/assets/cliente/facturas.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/view/assets/gestor/facturas.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/view/error/404.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/view/error/500.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/view/layout/.htaccess" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/view/libraries/.htaccess" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/.htaccess" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/cliente/facturas.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/js/gestor/facturas.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/facturas/controller/class/Ajax.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/facturas/controller/class/Facturas.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/facturas/controller/facturas.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/facturas/controller/ini.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/facturas/controller/lineas.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/facturas/libraries/jspdf.addimage.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/facturas/libraries/jspdf.autotable.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/facturas/libraries/jspdf.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/facturas/view/facturas.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/facturas/view/mensajes.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/controller/class/Ajax.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/controller/class/Facturas.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/controller/facturas.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/controller/ini.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/controller/inputsHandler.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/controller/lineas.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/libraries/jspdf.addimage.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/libraries/jspdf.autotable.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/libraries/jspdf.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/libraries/typeValidate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/view/facturas.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/view/mensajes.js" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" afterPath="$PROJECT_DIR$/.htaccess" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.txt" afterPath="$PROJECT_DIR$/README.txt" />
-      <change beforePath="$PROJECT_DIR$/app/controller/ajax.php" afterPath="$PROJECT_DIR$/app/controller/ajax.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/ajax/AjaxCliente.php" afterPath="$PROJECT_DIR$/app/controller/ajax/AjaxCliente.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" afterPath="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/cliente.php" afterPath="$PROJECT_DIR$/app/controller/cliente.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/crud/FacturasCRUD.php" afterPath="$PROJECT_DIR$/app/controller/crud/FacturasCRUD.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/crud/Lineas_albaranesCRUD.php" afterPath="$PROJECT_DIR$/app/controller/crud/Lineas_albaranesCRUD.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/crud/Lineas_facturasCRUD.php" afterPath="$PROJECT_DIR$/app/controller/crud/Lineas_facturasCRUD.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/crud/Lineas_pedidosCRUD.php" afterPath="$PROJECT_DIR$/app/controller/crud/Lineas_pedidosCRUD.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/gestor.php" afterPath="$PROJECT_DIR$/app/controller/gestor.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/system/Includes.php" afterPath="$PROJECT_DIR$/app/controller/system/Includes.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/system/IncludesCliente.php" afterPath="$PROJECT_DIR$/app/controller/system/IncludesCliente.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" afterPath="$PROJECT_DIR$/app/controller/system/IncludesGestor.php" />
-      <change beforePath="$PROJECT_DIR$/app/controller/system/Page.php" afterPath="$PROJECT_DIR$/app/controller/system/Page.php" />
-      <change beforePath="$PROJECT_DIR$/app/model/session/DataContent.php" afterPath="$PROJECT_DIR$/app/model/session/DataContent.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/cliente/albaranes.php" afterPath="$PROJECT_DIR$/app/view/assets/cliente/albaranes.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/cliente/pedidos.php" afterPath="$PROJECT_DIR$/app/view/assets/cliente/pedidos.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/gestor/albaranes.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/albaranes.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/gestor/altaArticulo.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/altaArticulo.php" />
-      <change beforePath="$PROJECT_DIR$/app/view/assets/gestor/pedidos.php" afterPath="$PROJECT_DIR$/app/view/assets/gestor/pedidos.php" />
-      <change beforePath="$PROJECT_DIR$/public/js/cliente/albaranes.min.js" afterPath="$PROJECT_DIR$/public/js/cliente/albaranes.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/cliente/misDatos.min.js" afterPath="$PROJECT_DIR$/public/js/cliente/misDatos.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/cliente/pedidos.min.js" afterPath="$PROJECT_DIR$/public/js/cliente/pedidos.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/cliente/realizarPedidos.min.js" afterPath="$PROJECT_DIR$/public/js/cliente/realizarPedidos.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/gestor/accesos.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/accesos.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/gestor/actividad.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/actividad.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/gestor/albaranes.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/albaranes.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/gestor/altaArticulo.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/altaArticulo.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/gestor/altaCliente.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/altaCliente.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/gestor/altaGestor.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/altaGestor.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/gestor/articulos.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/articulos.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/gestor/clientes.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/clientes.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/gestor/gestores.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/gestores.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/gestor/misDatos.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/misDatos.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/gestor/pedidos.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/pedidos.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/gestor/realizarPedidos.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/realizarPedidos.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/gestor/solicitudes.min.js" afterPath="$PROJECT_DIR$/public/js/gestor/solicitudes.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/js/login.min.js" afterPath="$PROJECT_DIR$/public/js/login.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/db/ini.txt" afterPath="$PROJECT_DIR$/public/src/db/ini.txt" />
-      <change beforePath="$PROJECT_DIR$/public/src/db/trabajo_daw.txt" afterPath="$PROJECT_DIR$/public/src/db/trabajo_daw.txt" />
-      <change beforePath="$PROJECT_DIR$/public/src/img.txt" afterPath="$PROJECT_DIR$/public/src/img/404.txt" />
-      <change beforePath="$PROJECT_DIR$/public/src/img/404.png" afterPath="$PROJECT_DIR$/public/src/img/404.png" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/albaranes/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/albaranes/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/albaranes/view/albaranes.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/albaranes/view/albaranes.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/misDatos/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/misDatos/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/pedidos/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/pedidos/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/realizarPedidos/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/realizarPedidos/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/accesos/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/accesos/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/actividad/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/actividad/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/albaranes/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/albaranes/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/albaranes/controller/inputsHandler.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/albaranes/controller/inputsHandler.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/albaranes/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/albaranes/libraries/typeValidate.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/albaranes/view/albaranes.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/albaranes/view/albaranes.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/altaArticulo/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/altaArticulo/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/altaArticulo/controller/class/AltaArticulo.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/altaArticulo/controller/class/AltaArticulo.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/altaArticulo/controller/ini.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/altaArticulo/controller/ini.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/altaArticulo/controller/inputsHandler.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/altaArticulo/controller/inputsHandler.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/altaArticulo/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/altaArticulo/libraries/typeValidate.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/altaCliente/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/altaCliente/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/altaGestor/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/altaGestor/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/articulos/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/articulos/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/articulos/controller/class/Articulos.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/articulos/controller/class/Articulos.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/articulos/controller/inputsHandler.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/articulos/controller/inputsHandler.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/articulos/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/articulos/libraries/typeValidate.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/articulos/view/articulos.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/articulos/view/articulos.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/clientes/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/clientes/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/gestores/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/gestores/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/misDatos/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/misDatos/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/pedidos/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/pedidos/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/pedidos/controller/lineas.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/pedidos/controller/lineas.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/pedidos/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/pedidos/libraries/typeValidate.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/realizarPedidos/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/realizarPedidos/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/realizarPedidos/libraries/typeValidate.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/realizarPedidos/libraries/typeValidate.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/solicitudes/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/gestor/solicitudes/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/jsSinMin/public/login/controller/class/Ajax.js" afterPath="$PROJECT_DIR$/public/src/jsSinMin/public/login/controller/class/Ajax.js" />
-      <change beforePath="$PROJECT_DIR$/public/src/pdf.txt" afterPath="$PROJECT_DIR$/public/src/pdf/pdf.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -129,7 +16,38 @@
     <favorites_list name="practicaFinal" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="README.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="990">
+              <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="primary.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/primary.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-295">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="head.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/head.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -199,7 +117,6 @@
         <option value="$PROJECT_DIR$/app/controller/ajax/AjaxGestor.php" />
         <option value="$PROJECT_DIR$/public/src/jsSinMin/public/cliente/albaranes/view/albaranes.js" />
         <option value="$PROJECT_DIR$/public/js/cliente/albaranes.min.js" />
-        <option value="$PROJECT_DIR$/README.txt" />
         <option value="$PROJECT_DIR$/app/model/.htaccess" />
         <option value="$PROJECT_DIR$/app/config/.htaccess" />
         <option value="$PROJECT_DIR$/app/controller/.htaccess" />
@@ -207,6 +124,7 @@
         <option value="$PROJECT_DIR$/app/view/libraries/500.html" />
         <option value="$PROJECT_DIR$/app/view/error/500.html" />
         <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/README.txt" />
       </list>
     </option>
   </component>
@@ -258,6 +176,23 @@
             <path>
               <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
               <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="practicaFinal" type="b2602c69:ProjectViewProjectNode" />
+              <item name="practicaFinal" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="view" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -372,7 +307,7 @@
       <workItem from="1519827442660" duration="9718000" />
       <workItem from="1519893223217" duration="15217000" />
       <workItem from="1519919052368" duration="8783000" />
-      <workItem from="1519928987761" duration="1155000" />
+      <workItem from="1519928987761" duration="3104000" />
     </task>
     <task id="LOCAL-00001" summary="add model crud">
       <created>1518858853743</created>
@@ -612,16 +547,24 @@
       <option name="project" value="LOCAL" />
       <updated>1519832230112</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="finish project, add html error and htaccess">
+      <created>1519931642756</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1519931642756</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="393899000" />
+    <option name="totallyTimeSpent" value="395848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39176092" sideWeight="0.4951857" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39176092" sideWeight="0.4951857" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32979977" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -649,8 +592,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refact login&#10;      Fix error and add login gestor&#10;      &#10;add logout&#10;     add logout accesos" />
-    <MESSAGE value="add:&#10; cliente and gestor controller&#10; cliente and gestor includes manager" />
     <MESSAGE value="add solicitudes" />
     <MESSAGE value="update add iva" />
     <MESSAGE value="update css and separate to comun cliente and gestor" />
@@ -674,7 +615,9 @@
     <MESSAGE value="update" />
     <MESSAGE value="update actividad" />
     <MESSAGE value="update view refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="update view refactor" />
+    <MESSAGE value="finish project, add html error" />
+    <MESSAGE value="finish project, add html error and htaccess" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish project, add html error and htaccess" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -683,31 +626,11 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/controller/facturas.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="123" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="123" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/controller/ini.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="50" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="50" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/src/jsSinMin/public/gestor/facturas/libraries/typeValidate.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="142" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="142" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/gestor/facturas.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="0" column="299493" lean-forward="false" selection-start-line="0" selection-start-column="299493" selection-end-line="0" selection-end-column="299493" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -715,6 +638,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -722,6 +646,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1245">
           <caret line="83" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="83" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -729,6 +654,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
           <caret line="189" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="189" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -736,6 +662,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="44" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -743,6 +670,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="8757" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -750,6 +678,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="0" column="1160" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="32828" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -757,6 +686,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="0" column="1523" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="227792" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -764,6 +694,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="367" column="125" lean-forward="false" selection-start-line="367" selection-start-column="125" selection-end-line="367" selection-end-column="125" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -809,6 +740,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="64" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -816,6 +748,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -854,6 +787,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="237">
           <caret line="122" column="1" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="122" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -937,14 +871,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="53" lean-forward="false" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/copia/practicaFinal2/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -973,14 +899,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1082,6 +1000,46 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="10" column="797" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="12" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/system/Page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/cliente.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/primary.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-295">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
         </state>
       </provider>
