@@ -1,11 +1,11 @@
-Proveedores 2
+﻿Proveedores 2
 
 Practica utilizando PHP - JS - JQUERY - AJAX - PDO - MYSQL
 Esta implementada con MVC
 Para hacer mas fluida la app, se realiza la mayor parte con js y llamadas ajax su clase correspondiente
 
-v1 - Solo permite un albaran por factura y una factura por albaran
-v2 - Permiso agrupar albaranes en una factura por cliente
+v1 - Permite varios albaranes por pedido y una unica factura por albaran
+v2 - Permite agrupar albaranes en una factura de un mismo cliente
 
 - - - - - PHP - - - - -
 El control de acceso se realiza mediante sesiones
