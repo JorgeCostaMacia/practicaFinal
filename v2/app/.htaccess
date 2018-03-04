@@ -1,0 +1,5 @@
+#<RequireAny>
+    #Require ip 127.0.0.1 127.0.0.0 localhost
+    #Require expr "!(%{QUERY_STRING} =~ /ajax/)"
+    #Require expr "%{REQUEST_URI} in { '/index.php' }"
+#</RequireAny>

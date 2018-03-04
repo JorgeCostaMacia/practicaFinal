@@ -1,0 +1,5 @@
+ new jsPDF('p', 'mm', [297, 210]); //vertical
+ new jsPDF('l', 'mm', [297, 210]); // horizontal
+
+doc.output('dataurlnewwindow');
+doc.save('doc.pdf');

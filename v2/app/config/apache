@@ -1,0 +1,7 @@
+.httpd.conf
+
+include this lines:
+
+<Directory path_proyecth_htdocs>
+    AllowOverride All
+</Directory>

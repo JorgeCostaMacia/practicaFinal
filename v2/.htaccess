@@ -1,0 +1,62 @@
+Order allow,deny
+Allow from all
+
+DirectoryIndex app/view/index.php?page=login
+Options -Indexes
+
+ErrorDocument 403 /practicaFinal/app/view/error/403.html
+ErrorDocument 404 /practicaFinal/app/view/error/404.html
+ErrorDocument 500 /practicaFinal/app/view/error/500.html
+
+RewriteEngine on
+
+RewriteRule ^ajax/$ app/controller/ajax.php?permiso=habilitado [L]
+
+RewriteRule ^home/$ app/view/index.php?page=home [L]
+RewriteRule ^logout/$ app/view/index.php?page=logout [L]
+
+RewriteRule ^misDatos/$ app/view/index.php?page=misDatos [L]
+RewriteRule ^realizarPedidos/$ app/view/index.php?page=realizarPedidos [L]
+RewriteRule ^pedidos/$ app/view/index.php?page=pedidos [L]
+RewriteRule ^albaranes/$ app/view/index.php?page=albaranes [L]
+RewriteRule ^facturas/$ app/view/index.php?page=facturas [L]
+
+RewriteRule ^altaArticulo/$ app/view/index.php?page=altaArticulo [L]
+RewriteRule ^altaCliente/$ app/view/index.php?page=altaCliente [L]
+RewriteRule ^altaGestor/$ app/view/index.php?page=altaGestor [L]
+RewriteRule ^solicitudes/$ app/view/index.php?page=solicitudes [L]
+RewriteRule ^clientes/$ app/view/index.php?page=clientes [L]
+RewriteRule ^gestores/$ app/view/index.php?page=gestores [L]
+RewriteRule ^articulos/$ app/view/index.php?page=articulos [L]
+RewriteRule ^accesos/$ app/view/index.php?page=accesos [L]
+RewriteRule ^actividad/$ app/view/index.php?page=actividad [L]
+
+
+<IfModule mod_deflate.c>
+    <IfModule mod_setenvif.c>
+        <IfModule mod_headers.c>
+            SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+            RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+        </IfModule>
+    </IfModule>
+
+    <IfModule mod_filter.c>
+        AddOutputFilterByType DEFLATE application/atom+xml \
+                                      application/javascript \
+                                      application/json \
+                                      application/rss+xml \
+                                      application/vnd.ms-fontobject \
+                                      application/x-font-ttf \
+                                      application/x-web-app-manifest+json \
+                                      application/xhtml+xml \
+                                      application/xml \
+                                      font/opentype \
+                                      image/svg+xml \
+                                      image/x-icon \
+                                      text/css \
+                                      text/html \
+                                      text/plain \
+                                      text/x-component \
+                                      text/xml
+    </IfModule>
+</IfModule>

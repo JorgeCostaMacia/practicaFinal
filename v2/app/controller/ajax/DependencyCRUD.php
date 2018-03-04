@@ -1,0 +1,115 @@
+<?php
+
+abstract class DependencyCRUD{
+    private $accesosCRUD;
+    private $actividadCRUD;
+    private $albaranesCRUD;
+    private $articulosCRUD;
+    private $facturasCRUD;
+    private $lineas_albaranesCRUD;
+    private $lineas_facturasCRUD;
+    private $lineas_pedidosCRUD;
+    private $pedidosCRUD;
+    private $solicitudesCRUD;
+    private $usuarios_clienteCRUD;
+    private $usuarios_gestionCRUD;
+
+    public function getAccesosCRUD() {
+        if (!$this->accesosCRUD) {
+            $this->accesosCRUD = new AccesosCRUD();
+            return $this->accesosCRUD;
+        }
+        else { return $this->accesosCRUD; }
+    }
+
+    public function getActividadCRUD(){
+        if (!$this->actividadCRUD) {
+            $this->actividadCRUD = new ActividadCRUD();
+            return $this->actividadCRUD;
+        }
+        else { return $this->actividadCRUD; }
+    }
+
+    public function getAlbaranesCRUD(){
+        if (!$this->albaranesCRUD) {
+            $this->albaranesCRUD = new AlbaranesCRUD();
+            return $this->albaranesCRUD;
+        }
+        else { return $this->albaranesCRUD; }
+    }
+
+    public function getArticulosCRUD(){
+        if (!$this->articulosCRUD) {
+            $this->articulosCRUD = new ArticulosCRUD();
+            return $this->articulosCRUD;
+        }
+        else { return $this->articulosCRUD; }
+    }
+
+    public function getFacturasCRUD(){
+        if (!$this->facturasCRUD) {
+            $this->facturasCRUD = new FacturasCRUD();
+            return $this->facturasCRUD;
+        }
+        else { return $this->facturasCRUD; }
+    }
+
+    public function getLineasAlbaranesCRUD(){
+        if (!$this->lineas_albaranesCRUD) {
+            $this->lineas_albaranesCRUD = new Lineas_albaranesCRUD();
+            return $this->lineas_albaranesCRUD;
+        }
+        else { return $this->lineas_albaranesCRUD; }
+    }
+
+    public function getLineasFacturasCRUD(){
+        if (!$this->lineas_facturasCRUD) {
+            $this->lineas_facturasCRUD = new Lineas_facturasCRUD();
+            return $this->lineas_facturasCRUD;
+        }
+        else { return $this->lineas_facturasCRUD; }
+    }
+
+    public function getLineasPedidosCRUD(){
+        if (!$this->lineas_pedidosCRUD) {
+            $this->lineas_pedidosCRUD = new Lineas_pedidosCRUD();
+            return $this->lineas_pedidosCRUD;
+        }
+        else { return $this->lineas_pedidosCRUD; }
+    }
+
+    public function getPedidosCRUD(){
+        if (!$this->pedidosCRUD) {
+            $this->pedidosCRUD = new PedidosCRUD();
+            return $this->pedidosCRUD;
+        }
+        else { return $this->pedidosCRUD; }
+    }
+
+    public function getSolicitudesCRUD(){
+        if (!$this->solicitudesCRUD) {
+            $this->solicitudesCRUD = new SolicitudesCRUD();
+            return $this->solicitudesCRUD;
+        }
+        else { return $this->solicitudesCRUD; }
+    }
+
+    public function getUsuariosClienteCRUD() {
+        if (!$this->usuarios_clienteCRUD) {
+            $this->usuarios_clienteCRUD = new Usuarios_clienteCRUD();
+            return $this->usuarios_clienteCRUD;
+        }
+        else { return $this->usuarios_clienteCRUD; }
+    }
+
+    public function getUsuariosGestionCRUD() {
+        if (!$this->usuarios_gestionCRUD) {
+            $this->usuarios_gestionCRUD = new Usuarios_gestionCRUD();
+            return $this->usuarios_gestionCRUD;
+        }
+        else { return $this->usuarios_gestionCRUD; }
+    }
+
+
+
+}

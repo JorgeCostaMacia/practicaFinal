@@ -1,0 +1,22 @@
+
+/****************************************************************/
+/*                      USUARIOS CLIENTE                        */
+/****************************************************************/
+
+insert into usuarios_cliente VALUES(1,"12345678g", "Cliente Cliente Cliente", "cliente.sa", "cliente", "Cliente", "cliente@gmail.com", "123456789", "cliente", "cliente", "activo");
+
+
+/****************************************************************/
+/*                      USUARIOS GESTOR                         */
+/****************************************************************/
+
+insert into usuarios_gestion VALUES(1, "Gestor Gestor Gestor", "gestor", "gestor", "activo");
+
+/****************************************************************/
+/*                      ARTICULOS                               */
+/****************************************************************/
+
+insert into articulos VALUES(1, "articuloUno", "articuloUno", 1,5,21,"activo");
+insert into articulos VALUES(2, "articuloDos", "articuloDos", 1,5,21,"activo");
+insert into articulos VALUES(3, "articuloCuatro", "articuloTres", 1,5,21,"activo");
+insert into articulos VALUES(4, "articuloCuatro", "articuloCuatro", 1,5,21,"activo");
