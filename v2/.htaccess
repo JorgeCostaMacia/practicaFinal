@@ -1,12 +1,11 @@
-Order allow,deny
-Allow from all
+Require all granted
 
 DirectoryIndex app/view/index.php?page=login
-Options -Indexes
+#Options -Indexes
 
-ErrorDocument 403 /practicaFinal/app/view/error/403.html
-ErrorDocument 404 /practicaFinal/app/view/error/404.html
-ErrorDocument 500 /practicaFinal/app/view/error/500.html
+ErrorDocument 403 /practicaFinal/app/view/error/403.html?page=error
+ErrorDocument 404 /practicaFinal/app/view/error/404.html?page=error
+ErrorDocument 500 /practicaFinal/app/view/error/500.html?page=error
 
 RewriteEngine on
 

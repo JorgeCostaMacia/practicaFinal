@@ -54,4 +54,6 @@ if(isset($_GET["permiso"])){
         header('Content-Encoding',  'gzip');
         echo $dataContent->toJson();
     }
+    else { die(); }
 }
+else { die(); }

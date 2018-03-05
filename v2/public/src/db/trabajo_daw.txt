@@ -7,7 +7,7 @@ create table actividad(
 	cod_usuario SMALLINT,
     tipo_usuario ENUM('gestor', 'cliente'),
     cod_tabla SMALLINT,
-    cod_linea VARCHAR(5),
+    cod_linea VARCHAR(30),
     tabla VARCHAR(30),
     accion ENUM('crear', 'cambiar', 'borrar', 'procesar', 'pendiente'),
     fecha DATETIME

@@ -20,9 +20,9 @@
                                 <a href="../facturas/" class="btnHome btn btn-primary btn-lg col-lg-3 col-md-3 col-sm-6 col-xs-12" role="button"><span class="glyphicon glyphicon-shopping-cart"></span> <br/>Facturas</a>
                             </div>
                             <div class="butGrup col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                <a href="../misDatos/" class="btnHome btn btn-primary btn-lg col-lg-3 col-md-3 col-sm-6 col-xs-12" role="button"><span class="glyphicon glyphicon-plus-sign"></span><br/>Articulo</a>
-                                <a href="../logout/" class="btnHome btn btn-primary btn-lg col-lg-3 col-md-3 col-sm-6 col-xs-12" role="button"><span class="glyphicon glyphicon-plus-sign"></span> <br/>Cliente</a>
-                                <a href="../logout/" class="btnHome btn btn-primary btn-lg col-lg-3 col-md-3 col-sm-6 col-xs-12" role="button"><span class="glyphicon glyphicon-plus-sign"></span> <br/>Gestor</a>
+                                <a href="../altaArticulo/" class="btnHome btn btn-primary btn-lg col-lg-3 col-md-3 col-sm-6 col-xs-12" role="button"><span class="glyphicon glyphicon-plus-sign"></span><br/>Articulo</a>
+                                <a href="../altaCliente/" class="btnHome btn btn-primary btn-lg col-lg-3 col-md-3 col-sm-6 col-xs-12" role="button"><span class="glyphicon glyphicon-plus-sign"></span> <br/>Cliente</a>
+                                <a href="../altaGestor/" class="btnHome btn btn-primary btn-lg col-lg-3 col-md-3 col-sm-6 col-xs-12" role="button"><span class="glyphicon glyphicon-plus-sign"></span> <br/>Gestor</a>
 
                             </div>
                             <div class="butGrup col-lg-6 col-md-6 col-sm-6 col-xs-12">

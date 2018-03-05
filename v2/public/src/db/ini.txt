@@ -7,7 +7,7 @@ create table actividad(
 	cod_usuario SMALLINT,
     tipo_usuario ENUM('gestor', 'cliente'),
     cod_tabla SMALLINT,
-    cod_linea VARCHAR(5),
+    cod_linea VARCHAR(100),
     tabla VARCHAR(30),
     accion ENUM('crear', 'cambiar', 'borrar', 'procesar', 'pendiente'),
     fecha DATETIME
@@ -265,3 +265,10 @@ insert into articulos VALUES(1, "articuloUno", "articuloUno", 1,5,21,"activo");
 insert into articulos VALUES(2, "articuloDos", "articuloDos", 1,5,21,"activo");
 insert into articulos VALUES(3, "articuloCuatro", "articuloTres", 1,5,21,"activo");
 insert into articulos VALUES(4, "articuloCuatro", "articuloCuatro", 1,5,21,"activo");
+insert into articulos VALUES(5, "articuloCinco", "articuloCinco", 1,5,21,"activo");
+insert into articulos VALUES(6, "articuloSeis", "articuloSeis", 1,5,21,"activo");
+insert into articulos VALUES(7, "articuloSiete", "articuloSiete", 1,5,21,"activo");
+insert into articulos VALUES(8, "articuloOcho", "articuloOcho", 1,5,21,"activo");
+insert into articulos VALUES(9, "articuloNueve", "articuloNueve", 1,5,21,"activo");
+insert into articulos VALUES(10, "articuloDiez", "articuloDiez", 1,5,21,"activo");
+insert into articulos VALUES(11, "articuloOnce", "articuloOnce", 1,5,21,"activo");

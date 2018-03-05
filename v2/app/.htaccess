@@ -1,5 +1,41 @@
+Require ip 127.0.0.1
+Require ip 127.0.0.0
+
+Require expr %{QUERY_STRING} =~ /.*page.*/
+Require expr %{QUERY_STRING} =~ /.*permiso.*/
+
+#Require expr %{REQUEST_URI} =~ /ajax/
+
+#Require expr %{QUERY_STRING} =~ /home/
+#Require expr %{QUERY_STRING} =~ /misDatos/
+#Require expr %{QUERY_STRING} =~ /logout/
+
+#Require expr %{QUERY_STRING} =~ /realizarPedidos/
+#Require expr %{QUERY_STRING} =~ /pedidos/
+#Require expr %{QUERY_STRING} =~ /albaranes/
+#Require expr %{QUERY_STRING} =~ /facturas/
+
+#Require expr %{QUERY_STRING} =~ /altaArticulo/
+#Require expr %{QUERY_STRING} =~ /altaCliente/
+#Require expr %{QUERY_STRING} =~ /altaGestor/
+
+#Require expr %{QUERY_STRING} =~ /solicitudes/
+#Require expr %{QUERY_STRING} =~ /clientes/
+#Require expr %{QUERY_STRING} =~ /gestores/
+#Require expr %{QUERY_STRING} =~ /articulos/
+
+#Require expr %{QUERY_STRING} =~ /accesos/
+#Require expr %{QUERY_STRING} =~ /actividad/
+
 #<RequireAny>
-    #Require ip 127.0.0.1 127.0.0.0 localhost
-    #Require expr "!(%{QUERY_STRING} =~ /ajax/)"
-    #Require expr "%{REQUEST_URI} in { '/index.php' }"
+#Require ip 127.0.0.1
+#Require ip 127.0.0.0
+#Require ip 159.65.17.130
+
+#Require expr "%{REQUEST_URI} in { '/index.php' }"
+
+#Require expr "(%{QUERY_STRING} =~ /ajax/)"
+#Require expr "%{REQUEST_URI} in { '/index.php' }"
+ #   Require expr "%{REQUEST_URI} in { '/error/' }"
 #</RequireAny>
+

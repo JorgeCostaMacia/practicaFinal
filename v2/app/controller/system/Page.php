@@ -22,7 +22,7 @@ class Page {
         else if($this->page === "solicitudes") { return "Solicitudes"; }
         else if($this->page === "clientes") { return "Clientes"; }
         else if($this->page === "gestores") { return "Gestores"; }
-        else if($this->page === "articulo") { return "Articulo"; }
+        else if($this->page === "articulos") { return "Articulos"; }
         else if($this->page === "altaArticulo") { return "Alta articulo"; }
         else if($this->page === "altaCliente") { return "Alta cliente"; }
         else if($this->page === "altaGestor") { return "Alta gestor"; }
